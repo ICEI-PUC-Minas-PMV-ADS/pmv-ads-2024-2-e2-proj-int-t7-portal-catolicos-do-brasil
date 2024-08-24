@@ -11,7 +11,7 @@ Este projeto visa solucionar a dificuldade que muitos católicos enfrentam ao bu
 
 ## Integrantes
 
-* Arthur Gonçalves Dias
+* Arthur Gonçalves Vieira
 * Estevão Barboza da Gama dos Reis Silva
 * Gabriel Barboza da Gama Reis Silva
 * João Henrique Andrade Leite
