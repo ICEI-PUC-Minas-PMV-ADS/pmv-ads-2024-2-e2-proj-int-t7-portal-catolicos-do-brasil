@@ -47,53 +47,55 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+As tabelas a seguir detalham os requisitos funcionais, não funcionais e restrições do projeto. Para determinar a prioridade de cada requisito, foi utilizado a técnica MoSCoW, que classifica os requisitos em quatro categorias:
+
+<ul>
+    <li>Must have (Essenciais): Requisitos indispensáveis para o sucesso do projeto.</li>
+    <li>Should have (Importantes): Requisitos importantes, mas que não são críticos.</li>
+    <li>Could have (Desejáveis): Requisitos que agregam valor, mas não são prioritários.</li>
+    <li>Won’t have (Não necessários agora): Requisitos que podem ser adiados ou excluídos.</li>
+</ul>
+
+Cada requisito foi avaliado e categorizado de acordo com seu impacto no objetivo do projeto e nas necessidades dos usuários. A técnica MoSCoW nos permitiu focar nos requisitos mais críticos, garantindo que o projeto atenda suas metas principais dentro dos recursos e prazos disponíveis.
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+|ID| Descrição                | Prioridade e Justificativa |
+|-------|---------------------------------|----|
+| RF-01 |  <strong>Busca de igrejas e horários de missas por geolocalização</strong> <p> <li>Implementar uma funcionalidade de busca que permita aos usuários encontrar igrejas e horários de missas baseados na geolocalização.</li> <p> <li>Desenvolver um sistema de CRUD para gerenciamento das informações de igrejas e missas no banco de dados colaborativo.</li> | <strong>Essencial</strong> <p>Principal funcionalidade do portal  | 
+| RF-02 |  <strong>Informações de Liturgia e homilia do dia</strong> <p> <li>Exibir diariamente as informações de liturgia e homilia do dia, obtidas por meio de uma API confiável.</li> | <strong>Essencial</strong> <p>Conteúdo diário importante para os usuários.  |
+| RF-03 |  <strong>Agenda para eventos das igrejas</strong> <p> <li>Fornecer um formulário para as igrejas divulgarem seus eventos pastorais com um CRUD para gerenciamento dessas informações (gerenciado pelos administradores do site).</li>  | <strong>Importante</strong> <p>Funcionalidade útil, mas não crítica para o projeto | 
+| RF-04 |  <strong>Espaço para publicidades pagas</strong> <p> <li>Desenvolver um módulo para exibição de publicidades pagas, com possibilidade de gerenciar anúncios e relatórios de desempenho.</li>  | <strong>Desejável</strong> <p>Pode gerar receita, mas não é prioritário para o lançamento inicial. |
+| RF-05 |  <strong>Formulário para Cadastro de Paróquias e Missas</strong> <p> <li>Criar um formulário para que os usuários enviem dados de suas paróquias e horários de missas. As informações serão validadas antes de serem inseridas no banco de dados.</li>  | <strong>Importante</strong> <p>Facilita a expansão do banco de dados de forma colaborativa, com possível suporte da PUC para o fornecimento ou colaboração nas cargas de dados. |
+
+**Prioridade: Essencial (Must have) / Importante (Should have) / Desejável (Could have). 
+<br>
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|ID      | Descrição               | Prioridade e Justificativa |
+|--------|-------------------------|----|
+| RNF-01 |  <strong>Compatibilidade e responsividade</strong> <p> <li>A aplicação deve ser responsiva, adaptando-se a diferentes tamanhos de tela e dispositivos, como celulares, tablets e desktops.</li> | <strong>Essencial</strong> <p>Garantir que o portal funcione bem em todos os dispositivos é crucial para oferecer uma boa experiência de usuário e atender às expectativas modernas de acessibilidade e usabilidade. |
+| RNF-02 |  <strong>Santo do dia</strong> <p> <li>Exibir o santo do dia com informações relevantes, sem necessidade de CRUD, utilizando uma fonte estática ou API externa.</li> | <strong>Importante</strong> <p>Relevante para a experiência do usuário, mas não essencial para o funcionamento. |
+| RNF-03 |  <strong>Matérias relevantes</strong> <p> <li>Implementar uma área para matérias relevantes com foco em temas católicos, utilizando integração com fontes RSS ou APIs de notícias.</li> | <strong>Desejável</strong> <p>Aumenta o engajamento, mas pode ser adicionado em uma versão posterior. | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+**Prioridade: Essencial (Must have) / Importante (Should have) / Desejável (Could have).  
+<br>
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+O projeto está restrito pelos itens apresentados na tabela a seguir:
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+ID      | Restrição               |
+|--------|-------------------------|
+| 01 | Backend desenvolvido em C#.|
+| 02 | Frontend desenvolvido com HTML, CSS e Bootstrap.|
+| 03 | Necessidade do uso de pelo menos uma API.|
+| 04 | Banco de dados MySQL, com implementação de 2 a 3 CRUD’s (por exemplo, para gestão de igrejas, missas e eventos).|
+| 05 | Hospedagem na AWS ou Azure, com integração de SGBD (Sistema de Gerenciamento de Banco de Dados).|
+| 06 | Conformidade com a LGPD para proteção de dados pessoais.|
+| 07 | Autorização para uso de conteúdo externo, como liturgias e notícias.|
 
 ## Diagrama de Casos de Uso
 
