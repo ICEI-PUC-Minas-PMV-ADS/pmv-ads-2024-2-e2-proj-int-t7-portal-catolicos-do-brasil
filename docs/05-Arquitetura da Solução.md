@@ -14,7 +14,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 > - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 ## Modelo ER (Projeto Conceitual)
-O Modelo ER representa através de um diagrama como as entidades que  se relacionam entre si na aplicação interativa.A seguir é possível visualizar o Modelo ER do nosso projeto.
+O Modelo Entidade e Relaciona apresenta através de um diagrama  as entidades que  como elas relacionam entre si na aplicação interativa.A seguir é possível visualizar o Modelo ER do nosso projeto.
 
 ![image](https://github.com/user-attachments/assets/902c82c1-15e7-4583-82ed-e394b1162d2f)
 
