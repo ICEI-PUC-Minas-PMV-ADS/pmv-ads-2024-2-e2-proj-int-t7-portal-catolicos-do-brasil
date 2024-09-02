@@ -88,4 +88,4 @@ ID      | Restrição               |
 
 ## Diagrama de Casos de Uso
 
-<img src="../docs/img/Diagrama de casos de uso.png">
+<img src="../docs/img/Diagrama de Casos de Uso.png">
