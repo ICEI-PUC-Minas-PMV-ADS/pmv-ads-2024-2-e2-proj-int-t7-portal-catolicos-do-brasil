@@ -8,20 +8,18 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
-
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 ## Modelo ER (Projeto Conceitual)
 O Modelo Entidade e Relaciona apresenta através de um diagrama  as entidades que  como elas relacionam entre si na aplicação interativa.A seguir é possível visualizar o Modelo ER do nosso projeto.
 
-![image](https://github.com/user-attachments/assets/902c82c1-15e7-4583-82ed-e394b1162d2f)
+![image](https://github.com/user-attachments/assets/bcd93d30-6d3d-43b1-b570-937c0f9ad65b)
+
 
 
 ## Projeto da Base de Dados
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas,  com tabelas que representam as entidades e relacionamentos, incluindo chaves primárias e estrangeiras para garantir a integridade. A imagem a seguir mostra essa modelagem para o sistema a ser desenvolvido.
-![image](https://github.com/user-attachments/assets/eecb7e89-30bf-4b81-aab7-369b0cdb153e)
+![image](https://github.com/user-attachments/assets/d35be968-8eb6-4a58-bc90-045c3b22f1f4)
+
 
 
 
