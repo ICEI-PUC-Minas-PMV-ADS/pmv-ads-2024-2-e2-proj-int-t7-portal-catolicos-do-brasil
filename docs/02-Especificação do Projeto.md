@@ -51,13 +51,17 @@ Cada requisito foi avaliado e categorizado de acordo com seu impacto no objetivo
 
 |ID| Descrição                | Prioridade e Justificativa |
 |-------|---------------------------------|----|
-| RF-01 |  <strong>Busca de igrejas e horários de missas por geolocalização</strong> <p> <li>Implementar uma funcionalidade de busca que permita aos usuários encontrar igrejas e horários de missas baseados na geolocalização.</li> <p> <li>Desenvolver um sistema de CRUD para gerenciamento das informações de igrejas e missas no banco de dados colaborativo.</li> | <strong>Essencial</strong> <p>Principal funcionalidade do portal  | 
-| RF-02 |  <strong>Informações de Liturgia e homilia do dia</strong> <p> <li>Exibir diariamente as informações de liturgia e homilia do dia, obtidas por meio de uma API confiável.</li> | <strong>Essencial</strong> <p>Conteúdo diário importante para os usuários.  |
-| RF-03 |  <strong>Agenda para eventos das igrejas</strong> <p> <li>Fornecer um formulário para as igrejas divulgarem seus eventos pastorais com um CRUD para gerenciamento dessas informações (gerenciado pelos administradores do site).</li>  | <strong>Importante</strong> <p>Funcionalidade útil, mas não crítica para o projeto | 
-| RF-04 |  <strong>Espaço para publicidades pagas</strong> <p> <li>Desenvolver um módulo para exibição de publicidades pagas, com possibilidade de gerenciar anúncios e relatórios de desempenho.</li>  | <strong>Desejável</strong> <p>Pode gerar receita, mas não é prioritário para o lançamento inicial. |
-| RF-05 |  <strong>Formulário para Cadastro de Paróquias e Missas</strong> <p> <li>Criar um formulário para que os usuários enviem dados de suas paróquias e horários de missas. As informações serão validadas antes de serem inseridas no banco de dados.</li>  | <strong>Importante</strong> <p>Facilita a expansão do banco de dados de forma colaborativa, com possível suporte da PUC para o fornecimento ou colaboração nas cargas de dados. |
+| RF-01 |  <strong>Pesquisar igrejas e horários de missas por geolocalização</strong> <p> <li>Implementar uma funcionalidade de busca que permita aos usuários encontrar igrejas e horários de missas baseados na geolocalização.</li> <p> <li>Desenvolver um sistema de CRUD para gerenciamento das informações de igrejas e missas no banco de dados colaborativo.</li> | <strong>Essencial</strong> <p>Principal funcionalidade do portal  | 
+| RF-02 |  <strong>Trazer informações de Liturgia e homilia do dia</strong> <p> <li>Exibir diariamente as informações de liturgia e homilia do dia, obtidas por meio de uma API confiável.</li> | <strong>Essencial</strong> <p>Conteúdo diário importante para os usuários.  |
+| RF-03 |  <strong>Listar eventos das igrejas</strong> <p> <li>Fornecer um formulário para as igrejas divulgarem seus eventos pastorais com um CRUD para gerenciamento dessas informações (gerenciado pelos administradores do site).</li>  | <strong>Importante</strong> <p>Funcionalidade útil, mas não crítica para o projeto | 
+| RF-04 |  <strong>Disponibilizar espaço para publicidades pagas</strong> <p> <li>Desenvolver um módulo para exibição de publicidades pagas, com possibilidade de gerenciar anúncios e relatórios de desempenho.</li>  | <strong>Desejável</strong> <p>Pode gerar receita, mas não é prioritário para o lançamento inicial. |
+| RF-05 |  <strong>Enviar formulário sobre anúncios publicitários</strong> <p> <li>Oferecer um formulário para que anunciantes enviem informações sobre anúncios publicitários que desejam veicular no portal.</li>  | <strong>Desejável</strong> <p>Simplifica o processo de inserção de anúncios, podendo aumentar as oportunidades de monetização do portal. |
+| RF-06 |  <strong>Enviar formulário para Cadastro de Paróquias e Missas</strong> <p> <li>Criar um formulário para que os usuários enviem dados de suas paróquias e horários de missas. As informações serão validadas antes de serem inseridas no banco de dados.</li>  | <strong>Importante</strong> <p>Facilita a expansão do banco de dados de forma colaborativa, com possível suporte da PUC para o fornecimento ou colaboração nas cargas de dados. |
+| RF-07 |  <strong>Enviar formulário de dados sobre horários das missas</strong> <p> <li>Disponibilizar um formulário específico para que os usuários enviem informações detalhadas sobre os horários das missas em suas paróquias.</li>  | <strong>Importante</strong> <p>Permite a atualização contínua e precisa dos horários de missas, melhorando a confiabilidade das informações no portal. |
+| RF-08 |  <strong>Enviar formulário sobre os eventos das paróquias</strong> <p> <li>Disponibilizar um formulário para que as paróquias possam enviar detalhes sobre seus eventos, como festas, novenas e encontros.</li>  | <strong>Importante</strong> <p>Facilita a divulgação de eventos, aumentando o engajamento da comunidade e a utilidade do portal. |
+| RF-09 |  <strong>Gerenciar informações do portal</strong> <p> <li>Desenvolver funcionalidade para que gestores/desenvolvedores possam gerenciar todas as informações do portal, incluindo usuários, conteúdos, anúncios e eventos.</li>  | <strong>Essencial</strong> <p>Essencial para a manutenção e administração eficiente do portal, garantindo que todas as informações estejam atualizadas e corretas. |
 
-**Prioridade: Essencial (Must have) / Importante (Should have) / Desejável (Could have). 
+**Prioridade: Essencial (Must have) / Importante (Should have) / Desejável (Could have).** 
 <br>
 
 ### Requisitos não Funcionais
@@ -69,7 +73,7 @@ Cada requisito foi avaliado e categorizado de acordo com seu impacto no objetivo
 | RNF-03 |  <strong>Matérias relevantes</strong> <p> <li>Implementar uma área para matérias relevantes com foco em temas católicos, utilizando integração com fontes RSS ou APIs de notícias.</li> | <strong>Desejável</strong> <p>Aumenta o engajamento, mas pode ser adicionado em uma versão posterior. | 
 
 
-**Prioridade: Essencial (Must have) / Importante (Should have) / Desejável (Could have).  
+**Prioridade: Essencial (Must have) / Importante (Should have) / Desejável (Could have).** 
 <br>
 
 ## Restrições
