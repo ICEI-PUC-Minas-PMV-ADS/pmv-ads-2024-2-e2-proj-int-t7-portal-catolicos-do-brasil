@@ -40,6 +40,4 @@ Quando analisamos a prática da religião, uma pesquisa também realizada pelo D
 Com esses dados infundi-se que nosso público alvo são em sua maioria pessoas acima dos 45 anos que ganham até 2 salários mínimos e por isso podem apresentar uma dificuldade maior de acesso ao mundo digital, bem como navegar por ele, mas são engajados em atividades religiosas, como a participação em missas, sacramentos, e celebrações litúrgicas. Além disso, estão frequentemente envolvidos em comunidades paroquiais, movimentos religiosos, e festividades tradicionais;
 
 
-https://g1.globo.com/politica/noticia/2020/01/13/50percent-dos-brasileiros-sao-catolicos-31percent-evangelicos-e-10percent-nao-tem-religiao-diz-datafolha.ghtml acesso em 21/08/2024 às 08:03hs
 
-https://gaudiumpress.org/content/pesquisa-traca-o-perfil-dos-catolicos-no-brasil/ acesso em 21/08/2024 às 08:14hs
