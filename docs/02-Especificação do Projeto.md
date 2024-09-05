@@ -12,11 +12,6 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 <img src="../docs/img/Persona Portal Católico (2).png" width="700"/>
 <img src="../docs/img/Persona Portal Católico (3).png" width="700"/>
 
-https://g1.globo.com/politica/noticia/2020/01/13/50percent-dos-brasileiros-sao-catolicos-31percent-evangelicos-e-10percent-nao-tem-religiao-diz-datafolha.ghtml acesso em 21/08/2024 às 08:03hs
-
-https://gaudiumpress.org/content/pesquisa-traca-o-perfil-dos-catolicos-no-brasil/ acesso em 21/08/2024 às 08:14hs
-
-https://ideascale.com/pt-br/blogue/definicao-de-mapa-de-persona/ acesso em 21/08/2024 às 13:06hs
 
 ## Histórias de Usuários
 
