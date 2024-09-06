@@ -19,8 +19,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Fiel  | Quero acessar as leituras e a homilia do dia           | Para que eu possa me preparar espiritualmente e acompanhar melhor a celebração da missa.               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+|José Silva |ter acesso rápido e pratico aos horários das missas mais próximas de mim, em qualquer lugar do Brasil que eu esteja,         | Para programar minha agenda e conseguir participar das celebrações com mais frequência.               |
+|Secretário Paroquial     | Poder registrar informações sobre minha paróquia e seus horários de missas                 | Para que os fieis possam acessar as informações de maneira atualizada sobre a paroquia.|
+|Lara Carvalho     | acessar as leituras e a homilia do dia,                | Para que eu possa me manter integrada na vida católica. |
+|Maria Helena     |Acessar informações sobre o Santo do Dia,                | conhecer mais sobre os santos e pedir a ajuda deles nas minhas orações diárias. |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
