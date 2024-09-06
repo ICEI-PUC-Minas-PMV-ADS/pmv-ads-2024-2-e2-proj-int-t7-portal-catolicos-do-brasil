@@ -11,7 +11,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 <img src="../docs/img/Persona Portal Católico.png" width="700"/>
 <img src="../docs/img/Persona Portal Católico (2).png" width="700"/>
 <img src="../docs/img/Persona Portal Católico (3).png" width="700"/>
-
+<br>
 
 ## Histórias de Usuários
 
@@ -19,19 +19,14 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|José Silva |ter acesso rápido e pratico aos horários das missas mais próximas de mim, em qualquer lugar do Brasil que eu esteja,         | Para programar minha agenda e conseguir participar das celebrações com mais frequência.               |
+|José Silva |Ter acesso rápido e pratico aos horários das missas mais próximas de mim, em qualquer lugar do Brasil que eu esteja,         | Para programar minha agenda e conseguir participar das celebrações com mais frequência.               |
 |Secretário Paroquial     | Poder registrar informações sobre minha paróquia e seus horários de missas                 | Para que os fieis possam acessar as informações de maneira atualizada sobre a paroquia.|
-|Lara Carvalho     | acessar as leituras e a homilia do dia,                | Para que eu possa me manter integrada na vida católica. |
-|Maria Helena     |Acessar informações sobre o Santo do Dia,                | conhecer mais sobre os santos e pedir a ajuda deles nas minhas orações diárias. |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+|Lara Carvalho     | Acessar as leituras e a homilia do dia,                | Para que eu possa me manter integrada na vida católica. |
+|Maria Helena     |Acessar informações sobre o Santo do Dia,                | Conhecer mais sobre os santos e interceder a eles nas minhas orações diárias. |
+|Lara Carvalho    |Acessar artigos de como é feita a eleição do papa e demais temas religiosos,                | Incluir algumas informações na matéria que estou desenvolvendo no meu estágio. |
+|Secretário Paroquial   |De um ambiente onde a paroquia possa divulgar de maneira gratuita os seus eventos,                | Que a comunidade possa participar e estar presente nas atividades religiosas e sociais. |
+|Gestor de Marketing de uma farmácia   |Divulgar em um portal que haja alta visibilidade do meu publico alvo,                | Que possamos alavancar as vendas do nosso estabelecimento. |
+<br>
 
 ## Requisitos
 
