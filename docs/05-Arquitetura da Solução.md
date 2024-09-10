@@ -12,7 +12,8 @@ O diagrama de classes ilustra graficamente como será a estrutura do software, e
 ## Modelo ER (Projeto Conceitual)
 O Modelo Entidade e Relaciona apresenta através de um diagrama  as entidades que  como elas relacionam entre si na aplicação interativa.A seguir é possível visualizar o Modelo ER do nosso projeto.
 
-![image](https://github.com/user-attachments/assets/0106102a-4d3a-4b15-8500-9175f4197889)
+![image](https://github.com/user-attachments/assets/70632926-8ad8-4543-a38e-af552d79fd83)
+
 
 
 
