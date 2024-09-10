@@ -19,7 +19,10 @@ O Modelo Entidade e Relaciona apresenta através de um diagrama  as entidades qu
 
 ## Projeto da Base de Dados
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas,  com tabelas que representam as entidades e relacionamentos, incluindo chaves primárias e estrangeiras para garantir a integridade. A imagem a seguir mostra essa modelagem para o sistema a ser desenvolvido.
-![image](https://github.com/user-attachments/assets/d35be968-8eb6-4a58-bc90-045c3b22f1f4)
+![image](https://github.com/user-attachments/assets/862ef4f0-35b9-42a4-bbc3-c0163ea59945)
+
+
+
 
 
 
