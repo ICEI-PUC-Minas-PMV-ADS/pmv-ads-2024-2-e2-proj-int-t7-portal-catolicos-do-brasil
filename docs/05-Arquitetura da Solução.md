@@ -12,7 +12,8 @@ O diagrama de classes ilustra graficamente como será a estrutura do software, e
 ## Modelo ER (Projeto Conceitual)
 O Modelo Entidade e Relaciona apresenta através de um diagrama  as entidades que  como elas relacionam entre si na aplicação interativa.A seguir é possível visualizar o Modelo ER do nosso projeto.
 
-![image](https://github.com/user-attachments/assets/70632926-8ad8-4543-a38e-af552d79fd83)
+![image](https://github.com/user-attachments/assets/8f9a1a78-4981-4f5e-9643-26d26284bafe)
+
 
 
 
@@ -20,7 +21,8 @@ O Modelo Entidade e Relaciona apresenta através de um diagrama  as entidades qu
 
 ## Projeto da Base de Dados
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas,  com tabelas que representam as entidades e relacionamentos, incluindo chaves primárias e estrangeiras para garantir a integridade. A imagem a seguir mostra essa modelagem para o sistema a ser desenvolvido.
-![image](https://github.com/user-attachments/assets/f6fd676c-1dfe-43c8-839b-f52e85aaac5b)
+![image](https://github.com/user-attachments/assets/2b4d3e72-bf8f-497a-a6c5-9149afbbecae)
+
 
 
 
