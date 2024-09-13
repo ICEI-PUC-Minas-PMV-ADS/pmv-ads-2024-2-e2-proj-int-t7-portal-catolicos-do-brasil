@@ -42,24 +42,24 @@ Aqui está sendo apresentado o plano de testes do Portal Católico do Brasil, ba
 
 | **Caso de Teste - 005** 	| **Enviar formulário para Cadastro de Paróquias e Missas** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-006 - A aplicação deve fornecer um formulário para as igrejas enviarem seus dados como nome, endereço, telefone, bem como dia e horário de suas missas, com um CRUD para gerenciamento dessas informações que deverá ser feito pelos administradores do site. |
+|	Requisito Associado 	| RF-005 - A aplicação deve fornecer um formulário para as igrejas enviarem seus dados como nome, endereço, telefone, bem como dia e horário de suas missas, com um CRUD para gerenciamento dessas informações que deverá ser feito pelos administradores do site. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://aindavamoshospedar.html e no Footer clicar em "Cadstre aqui" |
-|Critério de Êxito | - O usuário deve conseguir preencher e enviar seus dados pelo formulário clicando no botão enviar; <br>. - Essas informações deverão ser armazenadas no banco de dados para então serem validadas e inseridas na página missas; |
+|Critério de Êxito | - O usuário deve conseguir preencher e enviar seus dados pelo formulário clicando no botão enviar; <br> - Essas informações deverão ser armazenadas no banco de dados para então serem validadas e inseridas na página missas; |
 |  	|  	|
 
 
 
 | **Caso de Teste - 006** 	| **Enviar formulário sobre os eventos das paróquias** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-008 - A aplicação deve fornecer um formulário para as igrejas divulgarem seus eventos pastorais com um CRUD para gerenciamento dessas informações que deverá ser gerenciado pelos administradores do site.|
+|	Requisito Associado 	| RF-006 - A aplicação deve fornecer um formulário para as igrejas divulgarem seus eventos pastorais com um CRUD para gerenciamento dessas informações que deverá ser gerenciado pelos administradores do site.|
 | Objetivo do Teste 	| Verificar se o formulário disponiblizado na página https://aindavamoshospedar.html está recebendo e enviando corretamente as informações dos eventos cadastrados pelas igrejas. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://aindavamoshospedar.html<br> - no menu principal clicar em  "EVENTOS" <br> - Ser direcionado para a página https://aindavamoshospedar.html, onde encontrará o link "Cadastre aqui"<br> - Ao clicar será direcionado para a página https://aindavamoshospedar.html onde encontrará o formulário; |
-|Critério de Êxito | - O usuário deve conseguir preencher o formulário e enviar as informações clicando no botão enviar; <br>. - Essas informações deverão ser armazenadas no banco de dados para então serem validadas e inseridas na página Eventos; |
+|Critério de Êxito | - O usuário deve conseguir preencher o formulário e enviar as informações clicando no botão enviar; <br> - Essas informações deverão ser armazenadas no banco de dados para então serem validadas e inseridas na página Eventos; |
 |  	|  	|
 
 | **Caso de Teste - 007** 	| **Gerenciar informações do portal** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-009 - A aplicação deve fornecer um módulo simples para que gestores/desenvolvedores possam gerenciar todas as informações do portal, incluindo usuários, conteúdos, anúncios e eventos.|
+|	Requisito Associado 	| RF-007 - A aplicação deve fornecer um módulo simples para que gestores/desenvolvedores possam gerenciar todas as informações do portal, incluindo usuários, conteúdos, anúncios e eventos.|
 | Objetivo do Teste 	| Verificar se a aplicação oferece uma forma de gerenciar as informações e CRUD's presentes no site. |
 | Passos 	| - Acessar o servidor e implementar os CRUD's <br> - Verificar se as mudanças foram efetuadas na aplicação; |
 |Critério de Êxito | - As mudanças implementadas deverão ter sido efetuadas na aplicação; |
