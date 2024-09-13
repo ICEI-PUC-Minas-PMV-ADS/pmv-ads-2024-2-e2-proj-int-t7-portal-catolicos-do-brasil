@@ -16,7 +16,7 @@ Deverá ser verificado se o usuário encontra dificuldades nos seguintes quesito
 
 ## Participantes
 
-Todos os testes serão executados de forma remota e por funcionalidades, levando em consideração o plano de teste de software: para cada funcionalidade, um integrante do grupo que não participou do desenvolvimento desta, deverá testar, avaliar e anotar suas impressões de acordo com o questionário de avaliação abaixo:
+Todos os testes serão executados de forma remota e por funcionalidades, levando em consideração o  <a href="08-Plano de Testes de Software.md">plano de teste de software</a>: para cada funcionalidade, um integrante do grupo que não participou do desenvolvimento desta, deverá testar, avaliar e anotar suas impressões de acordo com o questionário de avaliação abaixo:
 
 | | **Tarefas** | **Facilidade de Uso (1-5)** | **Feedback Detalhado** | **Tempo de execução** | **Número de Erros** |
 | :---: | :---: | :---: | :---: | :---: | :---: |
