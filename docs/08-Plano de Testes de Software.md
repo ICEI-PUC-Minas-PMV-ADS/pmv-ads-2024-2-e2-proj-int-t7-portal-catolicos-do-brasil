@@ -21,7 +21,7 @@ Aqui está sendo apresentado o plano de testes do Portal Católico do Brasil, ba
 |  	|  	|
 
 
-| **Caso de Teste - 003** 	| **Listar eventos das igrejas** 	|
+| **Caso de Teste - 003** 	| **Pesquisar eventos paroquiais cadastrados pelas igrejas** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-003 - A aplicação deve permitir aos usuários ter acesso aos eventos paroquiais das igrejas que os cadastrarem para serem divulgados.|
 | Objetivo do Teste 	| Verificar se o usuário consegue efetuar a busca dos eventos paroquiais cadastrados pelas igrejas e respectivos dados de endereço, telefone, dias e horários, bem como ao clicar no botão "ver no mapa", ser direcionado para a página/aplicativo do google maps com o respectivo endereço. |
@@ -31,7 +31,7 @@ Aqui está sendo apresentado o plano de testes do Portal Católico do Brasil, ba
 
 
 
-| **Caso de Teste - 004** 	| **Disponibilizar espaço para publicidades pagas** 	|
+| **Caso de Teste - 004** 	| **Disponibilizar espaços para publicidades pagas** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-004 - A aplicação apresentar espaços para exibição de publicidades pagas, com um CRUD para gerenciar tais inserções.|
 | Objetivo do Teste 	| Verificar se os anúncios foram publicados corretamente. |
@@ -40,7 +40,7 @@ Aqui está sendo apresentado o plano de testes do Portal Católico do Brasil, ba
 |  	|  	|
 
 
-| **Caso de Teste - 006** 	| **Enviar formulário para Cadastro de Paróquias e Missas** 	|
+| **Caso de Teste - 005** 	| **Enviar formulário para Cadastro de Paróquias e Missas** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-006 - A aplicação deve fornecer um formulário para as igrejas enviarem seus dados como nome, endereço, telefone, bem como dia e horário de suas missas, com um CRUD para gerenciamento dessas informações que deverá ser feito pelos administradores do site. |
 | Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://aindavamoshospedar.html e no Footer clicar em "Cadstre aqui" |
@@ -48,15 +48,8 @@ Aqui está sendo apresentado o plano de testes do Portal Católico do Brasil, ba
 |  	|  	|
 
 
-| **Caso de Teste - 007** 	| **Enviar formulário para Cadastro de Paróquias e Missas** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-006 - A aplicação deve fornecer um formulário para as igrejas enviarem seus dados como nome, endereço, telefone, bem como dia e horário de suas missas, com um CRUD para gerenciamento dessas informações que deverá ser feito pelos administradores do site. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://aindavamoshospedar.html e no Footer clicar em "Cadstre aqui" |
-|Critério de Êxito | - O usuário deve conseguir preencher e enviar seus dados pelo formulário clicando no botão enviar; <br>. - Essas informações deverão ser armazenadas no banco de dados para então serem validadas e inseridas na página missas; |
-|  	|  	|
 
-
-| **Caso de Teste - 008** 	| **Enviar formulário sobre os eventos das paróquias** 	|
+| **Caso de Teste - 006** 	| **Enviar formulário sobre os eventos das paróquias** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-008 - A aplicação deve fornecer um formulário para as igrejas divulgarem seus eventos pastorais com um CRUD para gerenciamento dessas informações que deverá ser gerenciado pelos administradores do site.|
 | Objetivo do Teste 	| Verificar se o formulário disponiblizado na página https://aindavamoshospedar.html está recebendo e enviando corretamente as informações dos eventos cadastrados pelas igrejas. |
@@ -64,7 +57,7 @@ Aqui está sendo apresentado o plano de testes do Portal Católico do Brasil, ba
 |Critério de Êxito | - O usuário deve conseguir preencher o formulário e enviar as informações clicando no botão enviar; <br>. - Essas informações deverão ser armazenadas no banco de dados para então serem validadas e inseridas na página Eventos; |
 |  	|  	|
 
-| **Caso de Teste - 009** 	| **Gerenciar informações do portal** 	|
+| **Caso de Teste - 007** 	| **Gerenciar informações do portal** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-009 - A aplicação deve fornecer um módulo simples para que gestores/desenvolvedores possam gerenciar todas as informações do portal, incluindo usuários, conteúdos, anúncios e eventos.|
 | Objetivo do Teste 	| Verificar se a aplicação oferece uma forma de gerenciar as informações e CRUD's presentes no site. |
