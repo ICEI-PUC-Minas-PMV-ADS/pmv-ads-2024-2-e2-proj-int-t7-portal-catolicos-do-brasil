@@ -1,31 +1,24 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
+Aqui está sendo apresentado o plano de testes do Portal Católico do Brasil, baseados nos requisitos funcionais apresentados na <a href="docs/02-Especificação do Projeto.md"> Especificação do Projeto</a></span> e no <a href="docs/04-Projeto de Interface.md"> Projeto de Interface<a/>;
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
-
-Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
-
-Por exemplo:
  
-| **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
+| **Caso de Teste - 001** 	| **Pesquisar igrejas e horários de missas por geolocalização** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-|Critério de Êxito | - O cadastro foi realizado com sucesso. |
+|	Requisito Associado 	| RF-001 - A aplicação deve implementar uma funcionalidade de busca que permita aos usuários encontrar igrejas e horários de missas baseados na geolocalização. |
+| Objetivo do Teste 	| Verificar se o usuário consegue efetuar a busca de igrejas e respectivos dados de endereço, telefone, dias e horários de missas, bem como ao clicar no botão "ver no mapa", ser direcionado para a página/aplicativo do google maps com o respectivo endereço. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://aindavamoshospedar.html<br> - filtrar no formulário "Pesquisar igrejas e missas" (utilizando os campos disponíveis) <br> - Clicar em "Buscar" |
+|Critério de Êxito | - Ser direcionado para a página https://aindavamoshospedar.html onde será apresentado os cards com as igrejas resultantes da pesquisa com o botões de "ver no mapa" que ao ser clicado direcionará o usuário para a página/aplicativo do google maps com o respectivo endereço . |
 |  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
+
+
+| **Caso de Teste - 002** 	| **Trazer informações de Liturgia e homilia do dia** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-002 - A aplicação deve permitir a exibição diaria das informações de liturgia e homilia do dia, obtidas por meio de uma API confiável.|
+| Objetivo do Teste 	| Verificar se o usuário consegue ter acesso às liturgias e homilias do dia de forma atualizada, considerando a data que está acessando. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://aindavamoshospedar.html<br> - no menu principal clicar em  "LITURGIA" <br> - Ser direcionado para a página https://aindavamoshospedar.html, onde encontrará todas as leituras do dia em que acessar, bem como a homilia; |
+|Critério de Êxito | - O usuário deve encontrar na página em questão, todas as leituras e homilia do dia correspondente a data em que estiver acessando. |
+|  	|  	|
 
  
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+
