@@ -1,6 +1,6 @@
 # Plano de Testes de Software
 
-Aqui está sendo apresentado o plano de testes do Portal Católico do Brasil, baseados nos requisitos funcionais apresentados na <a href="docs/02-Especificação do Projeto.md"> Especificação do Projeto</a></span> e no <a href="docs/04-Projeto de Interface.md"> Projeto de Interface<a/>;
+Aqui está sendo apresentado o plano de testes do Portal Católico do Brasil, baseados nos requisitos funcionais apresentados na <a href="02-Especificação do Projeto.md"> Especificação do Projeto</a></span> e no <a href="04-Projeto de Interface.md"> Projeto de Interface<a/>;
 
  
 | **Caso de Teste - 001** 	| **Pesquisar igrejas e horários de missas por geolocalização** 	|
