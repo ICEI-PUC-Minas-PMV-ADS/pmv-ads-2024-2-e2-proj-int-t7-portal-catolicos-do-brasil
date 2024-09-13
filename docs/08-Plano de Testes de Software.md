@@ -68,6 +68,6 @@ Aqui está sendo apresentado o plano de testes do Portal Católico do Brasil, ba
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-009 - A aplicação deve fornecer um módulo simples para que gestores/desenvolvedores possam gerenciar todas as informações do portal, incluindo usuários, conteúdos, anúncios e eventos.|
 | Objetivo do Teste 	| Verificar se a aplicação oferece uma forma de gerenciar as informações e CRUD's presentes no site. |
-| Passos 	| - Acessar o servidor e ao implementar os CRUD's <br> - Verificar se as mudanças foram efetuadas na aplicação; |
+| Passos 	| - Acessar o servidor e implementar os CRUD's <br> - Verificar se as mudanças foram efetuadas na aplicação; |
 |Critério de Êxito | - As mudanças implementadas deverão ter sido efetuadas na aplicação; |
 |  	|  	|
