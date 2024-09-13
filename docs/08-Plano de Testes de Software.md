@@ -64,3 +64,21 @@ Aqui está sendo apresentado o plano de testes do Portal Católico do Brasil, ba
 | Passos 	| - Acessar o servidor e implementar os CRUD's <br> - Verificar se as mudanças foram efetuadas na aplicação; |
 |Critério de Êxito | - As mudanças implementadas deverão ter sido efetuadas na aplicação; |
 |  	|  	|
+
+
+| **Caso de Teste - 008** 	| **Trazer informações do Santo do dia** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-008 - A aplicação deve Exibir os santos celebrados no dia correspondente à data da pesquisa.|
+| Objetivo do Teste 	| Verificar se o usuário consegue ter acesso às informações do Santo do dia de forma atualizada, considerando a data que está acessando. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://aindavamoshospedar.html<br> - no menu principal clicar em  "SANTO DO DIA" <br> - Ser direcionado para a página https://aindavamoshospedar.html, onde encontrará a informações do Santo do dia em que está acessando; |
+|Critério de Êxito | - O usuário deve encontrar na página em questão, as informações do Santo do dia correspondente a data em que estiver acessando. |
+|  	|  	|
+
+
+| **Caso de Teste - 009** 	| **Trazer Publicações de temas relevantes do cenário católico** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-009 - A aplicação deve Exibir matérias relevantes do cenário Católico.|
+| Objetivo do Teste 	| Verificar se o usuário consegue ter acesso às materias publicadas com visualização correta e otimizada e com funcionamento correto dos links. |
+| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://aindavamoshospedar.html<br> - no menu principal clicar em  "PUBLICAÇÕES" <br> - Ser direcionado para a página https://aindavamoshospedar.html, onde encontrará a relação de todas as publicações presentes no site; <br> - clicando no "leia mais" o usuário deverá ser direcionado para a página da matéria correspondente; |
+|Critério de Êxito | - O usuário deve encontrar na página em questão, as matérias e ao clicar no "leia mais" deverá ser direcionado para a página da matéria completa. |
+|  	|  	|
