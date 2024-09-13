@@ -12,7 +12,7 @@
 		<li><strong>Liturgia:</strong> Acessa informações sobre a liturgia diária.</li>
 		<li><strong>Santo do Dia:</strong> Exibe o santo do dia com informações detalhadas.</li>
 		<li><strong>Eventos:</strong> Lista os eventos católicos em destaque.</li>
-		<li><strong>Artigos:</strong> Seção dedicada a artigos relacionados à fé católica e temas afins.</li>
+		<li><strong>Publicações:</strong> Seção dedicada às publicações relacionadas à fé católica e temas afins.</li>
 	</ul>
 	<li><strong>Área de Busca:</strong> Uma ferramenta de pesquisa que permite ao usuário encontrar paróquias e horários de missas, filtrando por estado, cidade, bairro e nome da paróquia ou utilizando a geolocalização atual do usuário.</li>
 	<li><strong>Sessões Informativas:</strong></li>
@@ -20,7 +20,7 @@
 		<li><strong>Liturgia diária:</strong> Exibe um resumo da liturgia do dia.</li>
 		<li><strong>Santo do Dia:</strong> Informações sobre o santo celebrado naquele dia.</li>
 	</ul>
-	<li><strong>Seção de Artigos:</strong> Apresenta artigos de interesse católico, como "Como rezar o terço" e "Eleição do Papa".</li>
+	<li><strong>Seção de Publicações:</strong> Apresenta publicações de interesse católico, como "Como rezar o terço" e "Eleição do Papa".</li>
 	<li><strong>Banners Publicitários:</strong> Espaço reservado para patrocinadores e anúncios.</li>
 	<li><strong>Rodapé (Footer):</strong> Contém links para colaboração (onde paróquias podem ser cadastradas), informações de contato e ícones de redes sociais.</li>
 </ul>
@@ -41,7 +41,7 @@
 		<li><strong>Liturgia:</strong> Acessa informações sobre a liturgia diária.</li>
 		<li><strong>Santo do Dia:</strong> Exibe o santo do dia com informações detalhadas.</li>
 		<li><strong>Eventos:</strong> Lista os eventos católicos em destaque.</li>
-		<li><strong>Artigos:</strong> Seção dedicada a artigos relacionados à fé católica e temas afins.</li>
+		<li><strong>Publicações:</strong> Seção dedicada às publicações relacionadas à fé católica e temas afins.</li>
 	</ul>
 	<li><strong>Dados da Paróquia:</strong> Para cada paróquia listada, são exibidos:</li>
 	<ul>
@@ -69,7 +69,7 @@
 		<li><strong>Liturgia:</strong> Acessa informações sobre a liturgia diária.</li>
 		<li><strong>Santo do Dia:</strong> Exibe o santo do dia com informações detalhadas.</li>
 		<li><strong>Eventos:</strong> Lista os eventos católicos em destaque.</li>
-		<li><strong>Artigos:</strong> Seção dedicada a artigos relacionados à fé católica e temas afins.</li>
+		<li><strong>Publicações:</strong> Seção dedicada às publicações relacionadas à fé católica e temas afins.</li>
 	</ul>
 	<li><strong>Dados da Paróquia:</strong> Para cada paróquia a ser cadastrada, são solicitados:</li>
 	<ul>
@@ -99,7 +99,7 @@
 		<li><strong>Liturgia:</strong> Acessa informações sobre a liturgia diária.</li>
 		<li><strong>Santo do Dia:</strong> Exibe o santo do dia com informações detalhadas.</li>
 		<li><strong>Eventos:</strong> Lista os eventos católicos em destaque.</li>
-		<li><strong>Artigos:</strong> Seção dedicada a artigos relacionados à fé católica e temas afins.</li>
+		<li><strong>Publicações:</strong> Seção dedicada às publicações relacionadas à fé católica e temas afins.</li>
 	</ul>
 		<li><strong>Liturgia do Dia:</strong> Exibe o conteúdo litúrgico do dia, incluindo:</li>
 		<ul>
@@ -130,7 +130,7 @@ funcionalidades:</p>
 		<li><strong>Liturgia:</strong> Acessa informações sobre a liturgia diária.</li>
 		<li><strong>Santo do Dia:</strong> Exibe o santo do dia com informações detalhadas.</li>
 		<li><strong>Eventos:</strong> Lista os eventos católicos em destaque.</li>
-		<li><strong>Artigos:</strong> Seção dedicada a artigos relacionados à fé católica e temas afins.</li>
+		<li><strong>Publicações:</strong> Seção dedicada às publicações relacionadas à fé católica e temas afins.</li>
 	</ul>
 	<li><strong>Área de Busca:</strong> Similar à tela de pesquisa de missas, os usuários podem filtrar eventos por estado, cidade, bairro e paróquia, com a opção de usar a localização atual para facilitar a pesquisa.</li>
 	<li><strong>Resultados da Pesquisa:</strong> Após realizar a busca, os eventos encontrados são exibidos em uma lista que inclui:</li>
@@ -159,7 +159,7 @@ funcionalidades:</p>
 		<li><strong>Liturgia:</strong> Acessa informações sobre a liturgia diária.</li>
 		<li><strong>Santo do Dia:</strong> Exibe o santo do dia com informações detalhadas.</li>
 		<li><strong>Eventos:</strong> Lista os eventos católicos em destaque.</li>
-		<li><strong>Artigos:</strong> Seção dedicada a artigos relacionados à fé católica e temas afins.</li>
+		<li><strong>Publicações:</strong> Seção dedicada às publicações relacionadas à fé católica e temas afins.</li>
 	</ul>
 		<li><strong>Formulário de Cadastro de Eventos:</strong></li>
 		<ul>
@@ -200,7 +200,7 @@ funcionalidades:</p>
 		<li><strong>Liturgia:</strong> Acessa informações sobre a liturgia diária.</li>
 		<li><strong>Santo do Dia:</strong> Exibe o santo do dia com informações detalhadas.</li>
 		<li><strong>Eventos:</strong> Lista os eventos católicos em destaque.</li>
-		<li><strong>Artigos:</strong> Seção dedicada a artigos relacionados à fé católica e temas afins.</li>
+		<li><strong>Publicações:</strong> Seção dedicada às publicações relacionadas à fé católica e temas afins.</li>
 	</ul>
 	<li><strong>Conteúdo Principal:</strong></li>
 	<ul>
@@ -216,8 +216,8 @@ funcionalidades:</p>
 <br>
 <br>
 
-## Artigos
-<p>Os Artigos oferece conteúdo informativo e catequético para os usuários. Sua estrutura está organizada da seguinte forma:</p>
+## Publicações
+<p>As Publicações oferecem conteúdos informativos e catequéticos para os usuários. Sua estrutura está organizada da seguinte forma:</p>
 
 <ul>
 	<li><strong>Cabeçalho (Header):</strong> Contém o logotipo do portal e um menu de navegação com as seguintes seções:</li>
@@ -227,25 +227,25 @@ funcionalidades:</p>
 		<li><strong>Liturgia:</strong> Acessa informações sobre a liturgia diária.</li>
 		<li><strong>Santo do Dia:</strong> Exibe o santo do dia com informações detalhadas.</li>
 		<li><strong>Eventos:</strong> Lista os eventos católicos em destaque.</li>
-		<li><strong>Artigos:</strong> Seção dedicada a artigos relacionados à fé católica e temas afins.</li>
+		<li><strong>Publicações:</strong> Seção dedicada às publicações relacionadas à fé católica e temas afins.</li>
 	</ul>
-	<li><strong>Seção de Artigos:</strong> Apresenta artigos específicos com links para leituras completas:</li>
+	<li><strong>Seção de Publicações:</strong> Apresenta publicações específicas com links para leituras completas:</li>
 	<ul>
 		<li><strong>Como rezar o terço:</strong> Explicação sobre como rezar o terço, com detalhes ilustrativos.</li>
-		<li><strong>Eleição do Papa:</strong> Artigo que esclarece o processo de escolha de um Papa, voltado para católicos e não católicos.</li>
+		<li><strong>Eleição do Papa:</strong> Máteria que esclarece o processo de escolha de um Papa, voltado para católicos e não católicos.</li>
 	</ul>
 	<li><strong>Banners Publicitários:</strong> Espaço reservado para patrocinadores e anúncios.</li>
 	<li><strong>Rodapé (Footer):</strong> Contém links para colaboração (onde paróquias podem ser cadastradas), informações de contato e ícones de redes sociais.</li>
 </ul>
 <br>
 
-<img src='../docs/img/Artigos.png' width="400px">
+<img src='../docs/img/Publicacoess.png' width="400px">
 
 <br>
 <br>
 
-## Artigo: Como Rezar o Terço
-<p>A página de artigo foi projetada para ser clara e informativa, proporcionando aos usuários um guia visual e detalhado sobre o assunto abordado. A estrutura principal está dividida da seguinte forma:</p>
+## Publicação: Como Rezar o Terço
+<p>A página de publicação foi projetada para ser clara e informativa, proporcionando aos usuários um guia visual e detalhado sobre o assunto abordado. A estrutura principal está dividida da seguinte forma:</p>
 
 <ul>
 	<li><strong>Cabeçalho (Header):</strong> Contém o logotipo do portal e um menu de navegação com as seguintes seções:</li>
@@ -255,16 +255,16 @@ funcionalidades:</p>
 		<li><strong>Liturgia:</strong> Acessa informações sobre a liturgia diária.</li>
 		<li><strong>Santo do Dia:</strong> Exibe o santo do dia com informações detalhadas.</li>
 		<li><strong>Eventos:</strong> Lista os eventos católicos em destaque.</li>
-		<li><strong>Artigos:</strong> Seção dedicada a artigos relacionados à fé católica e temas afins.</li>
+		<li><strong>Publicações:</strong> Seção dedicada às publicações relacionadas à fé católica e temas afins.</li>
 	</ul>
-	<li><strong>Corpo do Artigo:</strong> O artigo pode ser dividido em partes, oferecendo uma melhor fluidez sobre a sequência dos assuntos envolvidos.</li>
-	<li><strong>Fontes:</strong> Ao final do artigo, há uma seção que atribui os créditos à fonte do conteúdo. (Caso sejam artigos de fontes externas)</li>
+	<li><strong>Corpo da Publicação:</strong> A publicação pode ser dividida em partes, oferecendo uma melhor fluidez sobre a sequência dos assuntos envolvidos.</li>
+	<li><strong>Fontes:</strong> Ao final do publicação, há uma seção que atribui os créditos à fonte do conteúdo. (Caso sejam publicações de fontes externas)</li>
 	<li><strong>Banners Publicitários:</strong> Espaço reservado para patrocinadores e anúncios.</li>
 	<li><strong>Rodapé (Footer):</strong> Contém links para colaboração (onde paróquias podem ser cadastradas), informações de contato e ícones de redes sociais.</li>
 </ul>
 <br>
 
-<img src='../docs/img/Artigo.png' width="400px">
+<img src='../docs/img/Publicacao.png' width="400px">
 
 <br>
 <br>
