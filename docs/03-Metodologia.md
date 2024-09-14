@@ -19,8 +19,7 @@ Apresentação de cada página será com identidade voltada ao catolicismo, mant
  serão oferecidos artigos, vídeos, eventos, fóruns,loja virtual, transmissão ao vivo, etc.
 
 Não funcionais:
-
- Aparência:
+Aparência:
  Terá um design visual que seja atraente e apropriado para o público católico, refletindo a identidade da igreja.
 
  Consistência:
