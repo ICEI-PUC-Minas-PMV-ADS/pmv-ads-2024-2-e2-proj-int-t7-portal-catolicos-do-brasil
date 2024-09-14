@@ -1,12 +1,12 @@
 
 # Metodologia
- 1.Objetivo:
+ 1. Objetivo:
 Este projeto visa solucionar a dificuldade que muitos católicos enfrentam ao buscar informações online sobre paróquias e arquidioceses, como localização de compras, horários de missas e agendas de eventos, proporcionando recursos espirituais, notícias da igreja, eventos comunitários, etc.
 
  Público-Alvo:
 Pessoas que buscam comodidade,objetividade e rapidez ao buscar informações.
 
- 2.Desenvolvimento
+ 2. Desenvolvimento
 Estrutura:
 O portal oferecerá um menu de busca dentro de cada categoria.
 
@@ -34,7 +34,7 @@ Aparência:
 
  Escalabilidade: O portal deverá suportar um número crescente de usuários e conteúdos sem degradação de desempenho.
 
-  3.Implementação
+  3. Implementação
 Construção do Portal:
 
 Desenvolvimento: O portal será contruído conforme o planejamento, incorporando as funcionalidades e o design definidos.
@@ -54,10 +54,11 @@ Avaliação:
 
 Feedback: serão recolhidas opiniões dos usuários para identificar pontos fortes e áreas de melhoria.
 Monitoramento:serão utilizadas ferramentas de análise para acompanhar o desempenho do portal e o comportamento dos usuários.
+
 Manutenção:
 serão realizadas atualizações regulares e serão feitas melhorias com base no feedback e nas mudanças das necessidades dos usuários.
 
- 5.Conclusão:
+ 5. Conclusão:
 Revisão:
 Será avaliado o sucesso do projeto em relação aos objetivos iniciais,documentando o processo e as lições aprendidas para futuras referências.
 
