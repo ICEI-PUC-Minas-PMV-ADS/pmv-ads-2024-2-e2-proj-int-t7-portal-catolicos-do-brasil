@@ -34,7 +34,7 @@ Aparência:
 
  Escalabilidade: O portal deverá suportar um número crescente de usuários e conteúdos sem degradação de desempenho.
 
- 3.Implementação
+  3.Implementação
 Construção do Portal:
 
 Desenvolvimento: O portal será contruído conforme o planejamento, incorporando as funcionalidades e o design definidos.
