@@ -1,74 +1,14 @@
 
 # Metodologia
- 1. Objetivo:
-Este projeto visa solucionar a dificuldade que muitos católicos enfrentam ao buscar informações online sobre paróquias e arquidioceses, como localização de compras, horários de missas e agendas de eventos, proporcionando recursos espirituais, notícias da igreja, eventos comunitários, etc.
-
- Público-Alvo:
-Pessoas que buscam comodidade,objetividade e rapidez ao buscar informações.
-
- 2. Desenvolvimento
-Estrutura:
-O portal oferecerá um menu de busca dentro de cada categoria.
-
-Design:
-Apresentação de cada página será com identidade voltada ao catolicismo, mantendo a paleta de cores.
-
- Definição de Requisitos:
-
- Funcionais:
- serão oferecidos artigos, vídeos, eventos, fóruns,loja virtual, transmissão ao vivo, etc.
-
-Não funcionais:
-Aparência:
- Terá um design visual que seja atraente e apropriado para o público católico, refletindo a identidade da igreja.
-
- Consistência:
- Terá aparência uniforme em todas as páginas do portal, com uma paleta de cores e tipografia coerentes.
-
- Acessibilidade
- Legibilidade: serão utilizadas fontes legíveis e contraste adequado entre texto e fundo para facilitar a leitura.
-
- Performance:
-
- Velocidade de Carregamento: O portal carregará rapidamente, mesmo em conexões de internet mais lentas.
-
- Escalabilidade: O portal deverá suportar um número crescente de usuários e conteúdos sem degradação de desempenho.
-
-  3. Implementação
-Construção do Portal:
-
-Desenvolvimento: O portal será contruído conforme o planejamento, incorporando as funcionalidades e o design definidos.
-Integração de Conteúdo: serão adicionados textos, imagens, vídeos e outros recursos.
-
-Teste:
-
-Testes de Funcionalidade: Serão verificadas se todas as funcionalidades estão operando corretamente.
-Testes de Usabilidade: Será garantido que o portal seja fácil de usar e navegação intuitiva.
-
- 4. Lançamento e Avaliação
-Lançamento:
-
-O portal será publicado online e terá sua divulgação para seu público-alvo.
-
-Avaliação:
-
-Feedback: serão recolhidas opiniões dos usuários para identificar pontos fortes e áreas de melhoria.
-Monitoramento:serão utilizadas ferramentas de análise para acompanhar o desempenho do portal e o comportamento dos usuários.
-
-Manutenção:
-serão realizadas atualizações regulares e serão feitas melhorias com base no feedback e nas mudanças das necessidades dos usuários.
-
- 5. Conclusão:
-Revisão:
-Será avaliado o sucesso do projeto em relação aos objetivos iniciais,documentando o processo e as lições aprendidas para futuras referências.
+ Nesse projeto será utilizado o método scrum que  é uma estrutura ágil para uma colaboração em equipe, bastante usada no desenvolvimento de software e em outros setores. O Scrum permite que as equipes dividam o trabalho em metas a serem realizadas dentro de interações com limite de tempo geralmente chamadas sprints.
 
 <span style="color:red">Pré-requisitos: <a href="02-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
 ## Controle de Versão
 
-A ferramenta de controle de versão adotada no projeto foi o
+A ferramenta de controle de versão adotada no projeto será 
 [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+será utilizado para hospedagem do repositório.
 
 O projeto segue a seguinte convenção para o nome de branches:
 
@@ -95,6 +35,11 @@ etiquetas:
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
+* Product Owner: João H.
+* Scrum Master: Paulo H.
+* Equipe de desenvolvimento:Tobias Domingos,Estevão Barboza,Gabriel Barboza,João Henrique,Paulo Henrique,Thainá Crisóstomo.
+* Equipe de design: aulo Henrique,Tobias Domingos,Estevão Barboza,Gabriel Barboza,João Henrique,Thainá Crisóstomo.
+
 
 Apresente a divisão de papéis entre os membros do grupo.
 
@@ -121,9 +66,11 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+- Editor de código: Visual Studio,Github
+- Ferramentas de comunicação: WhatsApp,Teams.
+- Ferramentas de desenho de tela: Figma.
+- Ferramenta de Hospedagem: 
+- Quadro de Tasks: GitHub.
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
