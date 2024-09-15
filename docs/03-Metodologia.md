@@ -68,7 +68,7 @@ As ferramentas empregadas no projeto são:
 
 - Editor de código: Visual Studio,Github
 - Ferramentas de comunicação: WhatsApp,Teams.
-- Ferramentas de desenho de tela: Figma.
+- Ferramentas de desenho de tela: Figma, Visual Paradigm.
 - Ferramenta de Hospedagem: 
 - Quadro de Tasks: GitHub.
 
