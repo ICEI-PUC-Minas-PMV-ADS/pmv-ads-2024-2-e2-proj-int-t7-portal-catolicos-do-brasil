@@ -37,8 +37,8 @@ etiquetas:
 ### Divisão de Papéis
 * Product Owner: João H.
 * Scrum Master: Paulo H.
-* Equipe de desenvolvimento:Tobias Domingos,Estevão Barboza,Gabriel Barboza,João Henrique,Paulo Henrique,Thainá Crisóstomo.
-* Equipe de design: aulo Henrique,Tobias Domingos,Estevão Barboza,Gabriel Barboza,João Henrique,Thainá Crisóstomo.
+* Equipe de desenvolvimento: Tobias Domingos, Estevão Barboza, Gabriel Barboza, João Henrique, Paulo Henrique, Thainá Crisóstomo.
+* Equipe de design: Paulo Henrique, Tobias Domingos, Estevão Barboza, Gabriel Barboza, João Henrique, Thainá Crisóstomo.
 
 
 Apresente a divisão de papéis entre os membros do grupo.
