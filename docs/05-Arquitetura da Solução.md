@@ -7,11 +7,13 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ## Diagrama de Classes
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
+
 <img src="../docs/img/Diagrama de classe.png">
 
 ## Diagrama de Fluxo
 
 O diagrama de fluxo detalha graficamente o caminho que os dados e as interações percorrem dentro do sistema. Ele é uma representação visual das etapas sequenciais que os usuários e o sistema seguem, facilitando a compreensão dos processos e decisões que ocorrem em cada fase.
+
 <img src="../docs/img/Diagrama de Fluxo.jpeg">
 
 
