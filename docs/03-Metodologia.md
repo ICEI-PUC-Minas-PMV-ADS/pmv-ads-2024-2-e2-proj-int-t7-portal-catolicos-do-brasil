@@ -23,7 +23,7 @@ etiquetas:
 - `melhorias`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-<!--Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
+<!-- Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
 
 > **Links Úteis**:
 > - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
@@ -41,12 +41,12 @@ etiquetas:
 * Equipe de design: Paulo Henrique, Tobias Domingos, Estevão Barboza, Gabriel Barboza, João Henrique, Thainá Crisóstomo.
 
 
-<!--Apresente a divisão de papéis entre os membros do grupo.
+<!-- Apresente a divisão de papéis entre os membros do grupo.
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu 
 > Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)-->
+> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0) -->
 
 ### Processo
 
@@ -78,8 +78,8 @@ integração semelhante e por isso foram selecionadas. Por fim, para criar
 diagramas utilizamos essa ferramenta por melhor captar as
 necessidades da nossa solução.
 
-<!--Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
+<!-- Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
  
 > **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
 > - [Slack](https://slack.com/)
-> - [Github](https://github.com/)-->
+> - [Github](https://github.com/) -->
