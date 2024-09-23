@@ -239,7 +239,7 @@ funcionalidades:</p>
 </ul>
 <br>
 
-<img src='../docs/img/Publicacoess.png' width="400px">
+<img src='../docs/img/Publicacoes.png' width="400px">
 
 <br>
 <br>
