@@ -13,7 +13,7 @@ Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos 
 |RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas |  |  |
 
 
-<!-- # Instruções de acesso
+# Instruções de acesso
 
 Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
 
@@ -27,4 +27,4 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 > - [JSON Tutorial](https://www.w3resource.com/JSON)
 > - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
 > - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm) -->
+> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
