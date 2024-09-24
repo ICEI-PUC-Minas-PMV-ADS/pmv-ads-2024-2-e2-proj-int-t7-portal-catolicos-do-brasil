@@ -37,6 +37,7 @@ O Modelo Entidade e Relaciona apresenta através de um diagrama  as entidades qu
 
 ## Projeto da Base de Dados
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas,  com tabelas que representam as entidades e relacionamentos, incluindo chaves primárias e estrangeiras para garantir a integridade. A imagem a seguir mostra essa modelagem para o sistema a ser desenvolvido.
+
 ![image](https://github.com/user-attachments/assets/68edd79a-27bb-45e3-a4d6-7846cdd81104)
 
 
@@ -54,7 +55,7 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 
 
 
-## Tecnologias Utilizadas
+<!-- ## Tecnologias Utilizadas
 
 Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
 
@@ -69,4 +70,4 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 > - [Website com GitHub Pages](https://pages.github.com/)
 > - [Programação colaborativa com Repl.it](https://repl.it/)
 > - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html) -->
