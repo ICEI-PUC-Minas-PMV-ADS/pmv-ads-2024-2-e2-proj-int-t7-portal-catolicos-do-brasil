@@ -20,7 +20,7 @@ O diagrama de fluxo detalha graficamente o caminho que os dados e as interaçõe
 ## Modelo ER (Projeto Conceitual)
 O Modelo Entidade e Relaciona apresenta através de um diagrama  as entidades que  como elas relacionam entre si na aplicação interativa.A seguir é possível visualizar o Modelo ER do nosso projeto.
 
-![image](https://github.com/user-attachments/assets/23daa6b9-9477-4c79-8e6c-9cb3b4e0c134)
+![image](https://github.com/user-attachments/assets/180f94b3-dda9-4bbf-9e2c-d4192a96c86d)
 
 
 
@@ -42,7 +42,8 @@ O Modelo Entidade e Relaciona apresenta através de um diagrama  as entidades qu
 ## Projeto da Base de Dados
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas,  com tabelas que representam as entidades e relacionamentos, incluindo chaves primárias e estrangeiras para garantir a integridade. A imagem a seguir mostra essa modelagem para o sistema a ser desenvolvido.
 
-![image](https://github.com/user-attachments/assets/e05f8bf2-e904-4079-a8e7-c5eb48f652de)
+![image](https://github.com/user-attachments/assets/5ba057a3-cc38-4a73-8fce-8966940564ae)
+
 
 
 
