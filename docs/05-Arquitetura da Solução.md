@@ -20,7 +20,8 @@ O diagrama de fluxo detalha graficamente o caminho que os dados e as interaçõe
 ## Modelo ER (Projeto Conceitual)
 O Modelo Entidade e Relaciona apresenta através de um diagrama  as entidades que  como elas relacionam entre si na aplicação interativa.A seguir é possível visualizar o Modelo ER do nosso projeto.
 
-![image](https://github.com/user-attachments/assets/9cd1e662-3c0a-4186-898e-9a51d17b2d22)
+![image](https://github.com/user-attachments/assets/2bb427f2-e419-446c-9f8f-689aa7ad970a)
+
 
 
 
