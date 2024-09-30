@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PortalCatolicoBrasil/1.0.0": {
+        "runtime": {
+          "PortalCatolicoBrasil.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PortalCatolicoBrasil/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
