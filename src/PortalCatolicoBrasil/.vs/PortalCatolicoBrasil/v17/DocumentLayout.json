@@ -1,21 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\PortalCatolicoBrasil\\",
+  "WorkspaceRootPath": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59CCDE4D-EA4B-4AE7-8D70-A8C5CFE601B5}|PortalCatolicoBrasil.csproj|c:\\users\\paulo\\documentos\\portalcatolicobrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\portalcatolicobrasil\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59CCDE4D-EA4B-4AE7-8D70-A8C5CFE601B5}|PortalCatolicoBrasil.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59CCDE4D-EA4B-4AE7-8D70-A8C5CFE601B5}|PortalCatolicoBrasil.csproj|c:\\users\\paulo\\documentos\\portalcatolicobrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\portalcatolicobrasil\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{59CCDE4D-EA4B-4AE7-8D70-A8C5CFE601B5}|PortalCatolicoBrasil.csproj|c:\\users\\paulo\\documentos\\portalcatolicobrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\portalcatolicobrasil\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{59CCDE4D-EA4B-4AE7-8D70-A8C5CFE601B5}|PortalCatolicoBrasil.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59CCDE4D-EA4B-4AE7-8D70-A8C5CFE601B5}|PortalCatolicoBrasil.csproj|c:\\users\\paulo\\documentos\\portalcatolicobrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\portalcatolicobrasil\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{59CCDE4D-EA4B-4AE7-8D70-A8C5CFE601B5}|PortalCatolicoBrasil.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59CCDE4D-EA4B-4AE7-8D70-A8C5CFE601B5}|PortalCatolicoBrasil.csproj|c:\\users\\paulo\\documentos\\portalcatolicobrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\portalcatolicobrasil\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{59CCDE4D-EA4B-4AE7-8D70-A8C5CFE601B5}|PortalCatolicoBrasil.csproj|c:\\users\\paulo\\documentos\\portalcatolicobrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\portalcatolicobrasil\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{59CCDE4D-EA4B-4AE7-8D70-A8C5CFE601B5}|PortalCatolicoBrasil.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -26,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-01T00:06:57.585Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -38,52 +43,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\PortalCatolicoBrasil\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\PortalCatolicoBrasil\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-30T19:47:59.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\PortalCatolicoBrasil\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\PortalCatolicoBrasil\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T19:09:09.001Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\PortalCatolicoBrasil\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\PortalCatolicoBrasil\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADoAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T19:01:02.181Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\PortalCatolicoBrasil\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\PortalCatolicoBrasil\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T18:57:20.582Z"
+              "WhenOpened": "2024-09-30T18:57:20.582Z",
+              "EditorCaption": ""
             }
           ]
         }

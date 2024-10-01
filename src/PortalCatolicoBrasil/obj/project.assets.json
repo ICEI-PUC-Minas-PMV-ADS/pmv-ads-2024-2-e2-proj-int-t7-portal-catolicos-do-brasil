@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
+      "projectUniqueName": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
       "projectName": "PortalCatolicoBrasil",
-      "projectPath": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
+      "projectPath": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
       "packagesPath": "C:\\Users\\Paulo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\PortalCatolicoBrasil\\obj\\",
+      "outputPath": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

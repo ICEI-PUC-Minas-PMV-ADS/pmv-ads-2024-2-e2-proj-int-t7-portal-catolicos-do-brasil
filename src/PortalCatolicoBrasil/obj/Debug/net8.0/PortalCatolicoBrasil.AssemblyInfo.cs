@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PortalCatolicoBrasil")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9b1a339b170c20b57afcb6c07c911bb539cf483")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6067f676d844df7218abec46db199a96720b99d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PortalCatolicoBrasil")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PortalCatolicoBrasil")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
