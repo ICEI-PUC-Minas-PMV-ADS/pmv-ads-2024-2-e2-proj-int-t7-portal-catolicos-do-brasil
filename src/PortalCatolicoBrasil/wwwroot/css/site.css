@@ -65,11 +65,7 @@ header {
 
 .menu {
     color: black;
-    display: flex;
     font-size: 18px;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     position: absolute;
     height: 65px;
     background: #F7F7F7;
@@ -80,20 +76,23 @@ header {
     margin-left: auto;
     margin-right: auto;
     top: 155px;
-    position: absolute;
-    width: 1024px;
+    width: 1000px;
     left: calc(50% - 1000px/2);
 }
 
-ul li {
-    list-style: none;
-    display: inline;
-    padding: 24px;
-    text-decoration: none;
-    
+.ul--nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
 
-a {
+.li--nav {
+    list-style: none;
+    text-decoration: none;
+}
+
+.a--nav {
     text-decoration: none;
     color: black;
 }
@@ -142,3 +141,65 @@ footer {
 }
 
 /* NÃO MODIFICAR O CÓDIGO ANTES DAQUI-------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*-----------------INÍCIO LITURGIA-----------------*/
+.btn--group {
+    --button-background: #D6E8FF;
+    --button-color: #1e1e1e;
+    display: flex;
+    min-width: 300px;
+    width: 960px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--button-color);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 18px;
+    top: 635PX;
+    left: calc(50% - 960px/2);
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+}
+
+.btn--group > button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    border: none;
+    outline: none;
+    position: relative;
+    background-color: #F7F7F7;
+}
+
+.btn--group .active {
+    background-color: var(--button-background);
+    color: var(--button-color);
+}
+
+.btn--group > button:hover {
+    background: #E9F2FF;
+    color: var(--button-color);
+}
+
+.btn--group > button:not(:last-child):after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    right: 0px;
+    z-index: 1;
+}
+
+.liturgia--text{
+    margin-top: 60px;
+}
+/*-----------------FIM LITURGIA-----------------*/

@@ -11,44 +11,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="~/emojione_church.ico" rel="icon" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    
-
-    @*
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/PortalCatolicoBrasil.styles.css" asp-append-version="true" /> *@
+    <link rel="stylesheet" href="~/PortalCatolicoBrasil.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-       
+
         <div class="cabecalho">
             <img src="~/css/images/emojione_church.png" class="imagemCabecalho">
             <h1 class="poppins-regular nomePortal">PORTAL CATÓLICO DO BRASIL</h1>
 
         </div>
-           
 
-    <nav class="menu poppins-medium">
-            <ul class="">
-                <li class="">
-                    <a class=" " asp-area="" asp-controller="Home" asp-action="Index">INÍCIO</a>
+
+        <nav class="menu poppins-medium">
+            <ul class="ul--nav">
+                <li class="li--nav">
+                    <a class="a--nav" asp-area="" asp-controller="Home" asp-action="Index">INÍCIO</a>
                 </li>
-                <li class="">
-                    <a class=" " asp-area="" asp-controller="Home" asp-action="Missas">MISSAS</a>
+                <li class="li--nav">
+                    <a class="a--nav" asp-area="" asp-controller="Home" asp-action="Missas">MISSAS</a>
                 </li>
-                 <li class="">
-                    <a class=" " asp-area="" asp-controller="Home" asp-action="Liturgias">LITURGIA</a>
-                 </li>
-                <li class="">
-                    <a class=" " asp-area="" asp-controller="Home" asp-action="Eventos">EVENTOS</a>
+                <li class="li--nav">
+                    <a class="a--nav" asp-area="" asp-controller="Home" asp-action="Liturgia">LITURGIA</a>
                 </li>
-                <li class="">
-                    <a class=" " asp-area="" asp-controller="Home" asp-action="SantoDoDia">SANTO DO DIA</a>
+                <li class="li--nav">
+                    <a class="a--nav" asp-area="" asp-controller="Home" asp-action="Eventos">EVENTOS</a>
                 </li>
-                <li class="">
-                    <a class=" " asp-area="" asp-controller="Home" asp-action="Publicacoes">PUBLICAÇÕES</a>
+                <li class="li--nav">
+                    <a class="a--nav" asp-area="" asp-controller="Home" asp-action="SantoDoDia">SANTO DO DIA</a>
+                </li>
+                <li class="li--nav">
+                    <a class="a--nav" asp-area="" asp-controller="Home" asp-action="Publicacoes">PUBLICAÇÕES</a>
                 </li>
             </ul>
-    </nav>
+        </nav>
 
 
 
@@ -75,30 +72,30 @@
     <footer class="footer poppins-regular">
 
         <div class="rodape">
-        
-        <div class="imagemRodape poppins-regular">
-            <img src="~/css/images/emojione_church.png">
+
+            <div class="imagemRodape poppins-regular">
+                <img src="~/css/images/emojione_church.png">
             </div>
-        
-            
+
+
             <div class="colabore">
-            <h3>Colabore Conosco</h3>
-            <p>Cadastro de paróquias e missas aqui!</p>
-            <p>Cadastre os eventos de sua paróquias aqui!</p>
-            </div> 
-            
+                <h4>Colabore Conosco</h4>
+                <p>Cadastro de paróquias e missas aqui!</p>
+                <p>Cadastre os eventos de sua paróquias aqui!</p>
+            </div>
+
             <div class="contato">
-            <h3>Contato</h3>
-            <p>portalcatolicobrasil@gmail.com</p>
+                <h4>Contato</h4>
+                <p>portalcatolicobrasil@gmail.com</p>
             </div>
 
             <div class="redes">
-            <h3>Redes Sociais</h3>
-            <p>Icones</p>
+                <h4>Redes Sociais</h4>
+                <p>Icones</p>
             </div>
 
         </div>
-           
+
 
     </footer>
 
@@ -110,9 +107,9 @@
 
 
     @* <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Portal Católico do Brasil - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <div class="container">
+    &copy; 2024 - Portal Católico do Brasil - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
     </footer> *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
