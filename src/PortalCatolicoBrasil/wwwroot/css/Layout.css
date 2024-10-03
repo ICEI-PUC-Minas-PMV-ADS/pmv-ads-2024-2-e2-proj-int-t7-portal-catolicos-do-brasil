@@ -77,3 +77,47 @@ a {
     color: black;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0px;
+    padding-top: 50px;
+    margin-top:50px;
+    background: #EDEDED;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;     
+    gap: 50px;
+    position: absolute;
+    max-width: 1045px;
+    min-width: 300px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0px;
+    padding-top: 50px;
+    margin-top: 50px;
+    background: #EDEDED;
+}
+
+.direitos {
+    background: #EDEDED;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    padding-top: 0;
+    
+}
+
