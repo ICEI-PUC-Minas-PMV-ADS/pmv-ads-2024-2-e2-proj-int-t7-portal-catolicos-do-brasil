@@ -1,3 +1,6 @@
+
+/* NÃO MODIFICAR O CÓDIGO A PARTIR DAQUI----------------------------------------------------------------------------------------------------*/
+
 html {
   font-size: 14px;
 }
@@ -18,5 +21,124 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    color: #1E1E1E;
 }
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    color: black;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.cabecalho {
+    width: 1000px;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: baseline;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 25px;
+    justify-content: center;
+}
+
+.imagemCabecalho {
+}
+
+.cruz-back {
+    width: 100%;
+    margin-top: 30px;
+    z-index: -1;
+}
+
+.menu {
+    color: black;
+    display: flex;
+    font-size: 18px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    height: 65px;
+    background: #F7F7F7;
+    box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    max-width: 1000px;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 155px;
+    position: absolute;
+    width: 1024px;
+    left: calc(50% - 1000px/2);
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    padding: 24px;
+    text-decoration: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0px;
+    padding-top: 50px;
+    margin-top: 50px;
+    background: #EDEDED;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 50px;
+    position: absolute;
+    max-width: 1045px;
+    min-width: 300px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0px;
+    padding-top: 50px;
+    margin-top: 50px;
+    background: #EDEDED;
+}
+
+.direitos {
+    background: #EDEDED;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    padding-top: 0;
+}
+
+/* NÃO MODIFICAR O CÓDIGO ANTES DAQUI-------------------------------------------------------------------------------------------------------*/
