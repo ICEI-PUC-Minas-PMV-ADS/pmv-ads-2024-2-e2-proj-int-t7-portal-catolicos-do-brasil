@@ -1,15 +1,54 @@
-﻿@{
+﻿@using PortalCatolicoBrasil.Utils
+
+@{
     ViewData["Title"] = "Liturgia";
 }
 
-<div class="text-center btn--group poppins-semibold">
-    <button class="active">1ª LEITURA</button>
-    <button>SALMO</button>
-    <button>2ª LEITURA</button>
-    <button>HOMILIA</button>
+<div class="btn--group">
+    <button class="active poppins-medium">1ª LEITURA</button>
+    <button class="poppins-medium">SALMO</button>
+    <button class="poppins-medium">2ª LEITURA</button>
+    <button class="poppins-medium">EVANGELHO</button>
 </div>
-<br />
 
-<div id="liturgia-container">
-    <p>Carregando a liturgia...</p>
+<div class="liturgia-container">
+
+    <div class="liturgia-data-current">
+        <div class="icon-event">
+        <i class="material-symbols-outlined">event</i>
+        </div>
+        <p id="liturgiaData" class="liturgiaData poppins-medium"></p>
+    </div>
+
+    <div class="corLiturgia">
+        @* <span class="material-symbols-rounded red">personal_places</span> *@
+        <img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/flag.png" alt="flag" />
+        <span class="corLiturgia poppins-regular" id="corLiturgia"></span>
+    </div>
+
+    <p class="liturgiaText poppins-regular" id="liturgiaText"></p>
+
+    <div class="content" id="primeiraLeituraContent">
+        <span class="primeiraLeituraReferenciaText poppins-regular" id="primeiraLeituraReferenciaText"></span>
+        <span class="primeiraLeituraTituloText poppins-regular" id="primeiraLeituraTituloText"></span>
+        <span class="primeiraLeituraTextoText poppins-regular" id="primeiraLeituraTextoText"></span>
+    </div>
+
+    <div class="content" id="salmoContent" style="display: none;">
+        <span class="segundaLeituraReferenciaText poppins-regular" id="segundaLeituraReferenciaText"></span>
+        <span class="segundaLeituraTituloText poppins-regular" id="segundaLeituraTituloText"></span>
+        <span class="segundaLeituraTextoText poppins-regular" id="segundaLeituraTextoText"></span>
+    </div>
+
+    <div class="content" id="segundaLeituraContent" style="display: none;">
+        <span class="salmoReferenciaText poppins-regular" id="salmoReferenciaText"></span>
+        <span class="salmoRefraoText poppins-regular" id="salmoRefraoText"></span>
+        <span class="salmoTextoText poppins-regular" id="salmoTextoText"></span>
+    </div>
+
+    <div class="content" id="evangelhoContent" style="display: none;">
+        <span class="evangelhoReferenciaText poppins-regular" id="evangelhoReferenciaText"></span>
+        <span class="evangelhoTituloText poppins-regular" id="evangelhoTituloText"></span>
+        <span class="evangelhoTextoText poppins-regular" id="evangelhoTextoText"></span>
+    </div>
 </div>
