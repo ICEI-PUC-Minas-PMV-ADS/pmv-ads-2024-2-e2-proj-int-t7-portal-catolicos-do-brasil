@@ -167,37 +167,37 @@ footer {
     box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
 }
 
-    .btn--group > button {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        transition: all 0.25s ease-in-out;
-        border: none;
-        outline: none;
-        position: relative;
-        background-color: #F7F7F7;
-    }
+.btn--group > button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    border: none;
+    outline: none;
+    position: relative;
+    background-color: #F7F7F7;
+}
 
-    .btn--group .active {
-        background-color: var(--button-background);
-        color: var(--button-color);
-    }
+.btn--group .active {
+    background-color: var(--button-background);
+    color: var(--button-color);
+}
 
-    .btn--group > button:hover {
-        background: #E9F2FF;
-        color: var(--button-color);
-    }
+.btn--group > button:hover {
+    background: #E9F2FF;
+    color: var(--button-color);
+}
 
-    .btn--group > button:not(:last-child):after {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 2px;
-        right: 0px;
-        z-index: 1;
-    }
+.btn--group > button:not(:last-child):after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    right: 0px;
+    z-index: 1;
+}
 
 
 
@@ -221,7 +221,7 @@ footer {
 .liturgia-data-current {
     display: flex;
     height: 50px;
-    gap: 3px;
+    gap: 5px;
 }
 
 .icon-event {
@@ -231,8 +231,13 @@ footer {
     color: rgb(8, 73, 105, 77%);
 }
 
-.material-symbols-outlined {
+/*.material-symbols-outlined {
     font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' -25, 'opsz' 48;
+    
+}*/
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 200, 'opsz' 48;
     font-size: 30px !important;
 }
 
@@ -250,10 +255,14 @@ footer {
     gap: 3px;
     font-size: 16px;
 }
-
+/*
 .material-symbols-rounded {
     font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' -25, 'opsz' 40;
     height: 24px;
+}*/
+
+.material-symbols-rounded {
+    font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 24
 }
 
 .red {

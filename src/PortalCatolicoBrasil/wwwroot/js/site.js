@@ -1,5 +1,4 @@
-﻿/*-----------------INÍCIO LITURGIA-----------------*/
-
+/*-----------------INÍCIO LITURGIA-----------------*/
 const buttons = document.querySelectorAll(".btn--group button");
 const contents = {
     '1ª LEITURA': document.getElementById('primeiraLeituraContent'),
@@ -12,11 +11,11 @@ buttons.forEach(button => {
     button.addEventListener("click", function () {
         buttons.forEach(btn => btn.classList.remove("active"));
         this.classList.add("active");
-        
+
         Object.values(contents).forEach(content => {
             content.style.display = 'none';
         });
-        
+
         const key = this.innerText;
         if (contents[key]) {
             contents[key].style.display = 'block';
@@ -37,20 +36,6 @@ function formatarData(data) {
 
     return `${dia} ${mes} ${ano}`;
 }
-
-//function formatarEvangelho(dados) {
-//    const evangelhoContainer = document.getElementById("evangelhoTextoText");
-//    evangelhoContainer.innerHTML = `
-//        <h3>Evangelho (${dados.evangelho.referencia})</h3>
-//        <p><strong>— Aleluia, Aleluia, Aleluia.</strong></p>
-//        <p>— Convertei-vos e crede no Evangelho, pois o Reino de Deus está chegando!</p>
-//        <p><em>Proclamação do Evangelho de Jesus Cristo + segundo ${dados.evangelho.autor}</em></p>
-//        <p><strong>— Glória a vós, Senhor.</strong></p>
-//        <p>${dados.evangelho.texto}</p>
-//        <p><strong>— Palavra da Salvação.</strong></p>
-//    `;
-//}
-
 
 async function obterLiturgia() {
     const container = document.getElementById('liturgiaText');
@@ -73,12 +58,12 @@ async function obterLiturgia() {
     }
 }
 
-
 async function preencherLiturgia() {
     try {
         const liturgia = await obterLiturgia();
         if (liturgia) {
             fillFormWithData(liturgia);
+            atualizarCorLiturgica(liturgia.cor);
         }
     } catch (error) {
         console.error('Erro ao preencher o formulário:', error);
@@ -107,7 +92,6 @@ function fillFormWithData(dados) {
         salmoTextoText: dados.salmo.texto,
         evangelhoReferenciaText: dados.evangelho.referencia,
         evangelhoTituloText: dados.evangelho.titulo,
-        // Aqui usamos innerHTML para preservar a formatação do evangelho
         evangelhoTextoText: `
             <h3>Evangelho (${dados.evangelho.referencia})</h3>
             <p><strong>— Aleluia, Aleluia, Aleluia.</strong></p>
@@ -119,18 +103,44 @@ function fillFormWithData(dados) {
         `,
     };
 
-    for (const [fieldId, value] of Object.entries(fieldsMapping)) {
+    for (const [fieldId, value] of Object.entries(fieldsMapping)) { //TODO: Verificar o fillForm do evangelho (alternância dos textos)
         const field = document.getElementById(fieldId);
         if (field) {
             if (fieldId === 'evangelhoTextoText') {
-                field.innerHTML = value; // Utiliza innerHTML para o evangelho
+                field.innerHTML = value;
             } else {
-                field.textContent = value; // Utiliza textContent para os outros
+                field.textContent = value;
             }
         }
     }
 }
 
+function atualizarCorLiturgica(corLiturgica) {
+    const liturgiaIcon = document.querySelector('.liturgia-icon');
+    if (liturgiaIcon) {
+        let cor;
+        switch (corLiturgica.toLowerCase()) {
+            case 'verde':
+                cor = 'green';
+                break;
+            case 'vermelho':
+                cor = 'red';
+                break;
+            case 'roxo':
+                cor = 'purple';
+                break;
+            case 'branco':
+                cor = 'lightgray';
+                break;
+            case 'rosa':
+                cor = 'pink';
+                break;
+            default:
+                cor = 'black';
+        }
+        liturgiaIcon.style.color = cor;
+    }
+}
 
 window.onload = function () {
     preencherLiturgia();
