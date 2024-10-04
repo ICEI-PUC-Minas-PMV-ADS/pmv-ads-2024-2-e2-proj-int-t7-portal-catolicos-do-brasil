@@ -1,5 +1,5 @@
 
-/* NÃO MODIFICAR O CÓDIGO A PARTIR DAQUI----------------------------------------------------------------------------------------------------*/
+/* Nï¿½O MODIFICAR O Cï¿½DIGO A PARTIR DAQUI----------------------------------------------------------------------------------------------------*/
 
 html {
     font-size: 14px;
@@ -140,13 +140,13 @@ footer {
     padding-top: 0;
 }
 
-/* NÃO MODIFICAR O CÓDIGO ANTES DAQUI-------------------------------------------------------------------------------------------------------*/
+/* Nï¿½O MODIFICAR O Cï¿½DIGO ANTES DAQUI-------------------------------------------------------------------------------------------------------*/
 
 
 
 
 
-/*-----------------INÍCIO LITURGIA-----------------*/
+/*-----------------INï¿½CIO LITURGIA-----------------*/
 .btn--group {
     --button-background: #D6E8FF;
     --button-color: #1e1e1e;
@@ -263,3 +263,17 @@ footer {
 
 
 /*-----------------FIM LITURGIA-----------------*/
+
+
+/*-----------------INICIO SANTO DO DIA-----------------*/
+
+.container-santodia {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*-----------------FIM SANTO DO DIA-----------------*/
