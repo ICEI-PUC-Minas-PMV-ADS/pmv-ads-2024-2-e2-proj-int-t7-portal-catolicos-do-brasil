@@ -216,4 +216,46 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-/*-----------------FIM SANTO DO DIA-----------------*/
+
+
+
+/*-----------------INICIO INDEX-----------------*/
+
+.bg-info {
+    background-color: #E6F1FF !important;
+}
+
+.publicacoes {
+    background-color: #EFF5FE !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botaogps{
+    border-radius:50px;
+}
+
+.buscar{
+    width: 130px;
+}
+
+.campoform{
+    background-color: #EDEDED;
+    border: none;
+}
+
+.formpai {
+    border: none;
+    box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.mainindex{
+    width:1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/*-----------------FIM INDEX-----------------*/
