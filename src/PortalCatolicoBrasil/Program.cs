@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using PortalCatolicoBrasil.Interfaces;
+using PortalCatolicoBrasil.Models;
 using PortalCatolicoBrasil.Service;
 
 namespace PortalCatolicoBrasil
@@ -10,9 +12,13 @@ namespace PortalCatolicoBrasil
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddControllersWithViews();
+
             builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
             builder.Services.AddHttpClient<ILiturgiaService, LiturgiaService>();
+
+            builder.Services.AddDbContext<AppDbContext> (options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 
