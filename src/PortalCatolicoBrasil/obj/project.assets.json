@@ -10652,7 +10652,11 @@
   },
   "packageFolders": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\maboc\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\gb\\.nuget\\packages\\": {}
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 =======
     "C:\\Users\\Joao\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
@@ -10662,11 +10666,19 @@
     "version": "1.0.0",
     "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
       "projectName": "PortalCatolicoBrasil",
       "projectPath": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
       "packagesPath": "C:\\Users\\maboc\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
+      "projectName": "PortalCatolicoBrasil",
+      "projectPath": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
+      "packagesPath": "C:\\Users\\gb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\",
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 =======
       "projectUniqueName": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
       "projectName": "PortalCatolicoBrasil",
@@ -10677,7 +10689,11 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
 <<<<<<< HEAD
+<<<<<<< HEAD
         "C:\\Users\\maboc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\gb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 =======
         "C:\\Users\\Joao\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
