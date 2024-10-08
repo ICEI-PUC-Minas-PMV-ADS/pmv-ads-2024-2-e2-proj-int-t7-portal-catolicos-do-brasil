@@ -328,3 +328,90 @@ footer {
 
 
 /*-----------------FIM INDEX-----------------*/
+
+/*-----------------FIM SANTO DO DIA-----------------*/
+
+/*-----------------INICIO PUBLICACOES-----------------*/
+
+.container-publicacoes {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linha {
+    border: none;
+    border-top: 1px solid #333333; /* Cor mais escura para a linha */
+    margin: 0;
+    opacity: 0.3; /* Torna a linha um pouco mais opaca */
+    margin-top: 5px;
+}
+
+.leia-mais {
+    display: block; /* Garante que o link ocupe uma linha própria */
+    margin-top: 10px; /* Espaço adicional acima do link */
+    text-align: right; /* Alinha o link à direita */
+}
+
+/*-----------------FIM PUBLICACOES-----------------*/
+
+/*-----------------INICIO PRIMEIRA PUBLICACAO-----------------*/
+
+.container-primeirapublicacao {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botao-voltar {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    width: 110px;
+    text-decoration: none;
+}
+
+    .botao-voltar::before {
+        content: '←';
+        margin-right: 10px;
+    }
+
+    .botao-voltar:hover {
+        background-color: #e0e0e0;
+    }
+
+    .botao-voltar:visited, .botao-voltar:link {
+        color: black; /* Garante que a cor do texto seja sempre preta */
+    }
+
+/*-----------------FIM PRIMEIRA PUBLICACAO-----------------*/
+
+/*-----------------INICIO SEGUNDA PUBLICACAO-----------------*/
+
+.container-segundapublicacao {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*-----------------FIM SEGUNDA PUBLICACAO-----------------*/
