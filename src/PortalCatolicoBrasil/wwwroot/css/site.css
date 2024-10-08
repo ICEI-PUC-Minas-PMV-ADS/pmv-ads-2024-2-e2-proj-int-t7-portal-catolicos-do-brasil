@@ -285,6 +285,50 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
+/*-----------------INICIO INDEX-----------------*/
+
+.bg-info {
+    background-color: #E6F1FF !important;
+}
+
+.publicacoes {
+    background-color: #EFF5FE !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botaogps{
+    border-radius:50px;
+}
+
+.buscar{
+    width: 130px;
+}
+
+.campoform{
+    background-color: #EDEDED;
+    border: none;
+}
+
+.formpai {
+    border: none;
+    box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.mainindex{
+    width:1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/*-----------------FIM INDEX-----------------*/
+
 /*-----------------FIM SANTO DO DIA-----------------*/
 
 /*-----------------INICIO PUBLICACOES-----------------*/
@@ -306,6 +350,7 @@ footer {
     opacity: 0.3; /* Torna a linha um pouco mais opaca */
     margin-top: 5px;
 }
+
 .leia-mais {
     display: block; /* Garante que o link ocupe uma linha própria */
     margin-top: 10px; /* Espaço adicional acima do link */
@@ -345,18 +390,18 @@ footer {
     text-decoration: none;
 }
 
-.botao-voltar::before {
-    content: '←';
-    margin-right: 10px;
-}
+    .botao-voltar::before {
+        content: '←';
+        margin-right: 10px;
+    }
 
-.botao-voltar:hover {
-    background-color: #e0e0e0;
-}
+    .botao-voltar:hover {
+        background-color: #e0e0e0;
+    }
 
-.botao-voltar:visited, .botao-voltar:link {
-    color: black; /* Garante que a cor do texto seja sempre preta */
-}
+    .botao-voltar:visited, .botao-voltar:link {
+        color: black; /* Garante que a cor do texto seja sempre preta */
+    }
 
 /*-----------------FIM PRIMEIRA PUBLICACAO-----------------*/
 
