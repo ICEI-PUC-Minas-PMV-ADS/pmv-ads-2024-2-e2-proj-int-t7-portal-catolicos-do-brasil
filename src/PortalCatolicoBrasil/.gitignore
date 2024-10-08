@@ -1,4 +1,3 @@
-
 .vs/
 /src/PortalCatolicoBrasil/.vs/PortalCatolicoBrasil/config/applicationhost.config
 /src/PortalCatolicoBrasil/.vs/PortalCatolicoBrasil/DesignTimeBuild/.dtbcache.v2
@@ -27,4 +26,3 @@
 
 /src/PortalCatolicoBrasil/obj/Debug/net8.0/ref/PortalCatolicoBrasil.dll
 /src/PortalCatolicoBrasil/obj/Debug/net8.0/refint/PortalCatolicoBrasil.dll
-/src/PortalCatolicoBrasil/Views/Home/Eventos.cshtml
