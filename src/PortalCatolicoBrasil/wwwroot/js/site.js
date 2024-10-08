@@ -90,10 +90,9 @@ function fillFormWithData(dados) {
         salmoReferenciaText: dados.salmo.referencia,
         salmoRefraoText: dados.salmo.refrao,
         salmoTextoText: dados.salmo.texto,
-        evangelhoReferenciaText: dados.evangelho.referencia,
+        evangelhoReferenciaText: "Evangelho ${dados.evangelho.referencia}",
         evangelhoTituloText: dados.evangelho.titulo,
         evangelhoTextoText: `
-            <h3>Evangelho (${dados.evangelho.referencia})</h3>
             <p><strong>— Aleluia, Aleluia, Aleluia.</strong></p>
             <p>— Convertei-vos e crede no Evangelho, pois o Reino de Deus está chegando!</p>
             <p><em>Proclamação do Evangelho de Jesus Cristo + segundo ${dados.evangelho.autor}</em></p>
@@ -112,7 +111,11 @@ function fillFormWithData(dados) {
                 field.textContent = value;
             }
         }
+
+
     }
+    liturgiaText.classList.add('tituloLiturgia poppins-semibold');
+
 }
 
 function atualizarCorLiturgica(corLiturgica) {

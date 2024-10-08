@@ -5,66 +5,27 @@
 /src/PortalCatolicoBrasil/.vs/PortalCatolicoBrasil/v17/.futdcache.v2
 /src/PortalCatolicoBrasil/.vs/PortalCatolicoBrasil/v17/.suo
 /src/PortalCatolicoBrasil/.vs/PortalCatolicoBrasil/v17/DocumentLayout.json
-# Sistema e ambientes locais
-.vscode/
-.idea/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
- 
-# Arquivos binários e de objetos
-bin/
-obj/
-*.exe
-*.dll
-*.pdb
-*.cache
-*.log
-*.vspscc
-*.vssscc
- 
-# Configurações de pacotes
-packages/
-*.nupkg
-*.snupkg
- 
-# Configurações do Visual Studio
-.vs/
-.vscode/
-debug/
-release/
- 
-# Logs
-*.log
-log/
- 
-# Configurações de banco de dados local
-App_Data/
- 
-# Configurações do Rider/JetBrains
-.idea/
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
- 
-# Arquivos de publicação
-publish/
- 
-# Dependências do NuGet
-project.lock.json
-project.fragment.lock.json
-artifacts/
- 
-# Cache de build
-*.dbmdl
-*.jfm
- 
-# Arquivos de configuração temporários
-*.tmp
-*.bak
- 
-# Certificados de desenvolvimento
-*.pfx
-*.cer
+
+	
+/src/PortalCatolicoBrasil/bin/Debug/net8.0/PortalCatolicoBrasil.dll
+/src/PortalCatolicoBrasil/bin/Debug/net8.0/PortalCatolicoBrasil.GeneratedMSBuildEditorConfig.editorconfig
+
+/src/PortalCatolicoBrasil/bin/Debug/net8.0/PortalCatolicoBrasil.exe
+/src/PortalCatolicoBrasil/bin/Debug/net8.0/PortalCatolicoBrasil.pdb
+
+/src/PortalCatolicoBrasil/obj/Debug/net8.0/apphost.exe
+/src/PortalCatolicoBrasil/obj/Debug/net8.0/PortalCatolicoBrasil.AssemblyInfo.cs
+/src/PortalCatolicoBrasil/obj/Debug/net8.0/PortalCatolicoBrasil.AssemblyInfoInputs.cache
+/src/PortalCatolicoBrasil/obj/Debug/net8.0/PortalCatolicoBrasil.csproj.CoreCompileInputs.cache
+/src/PortalCatolicoBrasil/obj/Debug/net8.0/PortalCatolicoBrasil.dll
+/src/PortalCatolicoBrasil/obj/Debug/net8.0/PortalCatolicoBrasil.pdb
+/src/PortalCatolicoBrasil/obj/Debug/net8.0/PortalCatolicoBrasil.sourcelink.json
+
+/src/PortalCatolicoBrasil/obj/Debug/Release/net8.0/PortalCatolicoBrasil.AssemblyInfo.cs
+/src/PortalCatolicoBrasil/obj/Debug/Release/net8.0/PortalCatolicoBrasil.AssemblyInfoInputs.cache
+/src/PortalCatolicoBrasil/obj/Debug/Release/net8.0/PortalCatolicoBrasil.csproj.AssemblyReference.cache
+/src/PortalCatolicoBrasil/obj/Debug/Release/net8.0/PortalCatolicoBrasil.GeneratedMSBuildEditorConfig.editorconfig
+
+/src/PortalCatolicoBrasil/obj/Debug/net8.0/ref/PortalCatolicoBrasil.dll
+/src/PortalCatolicoBrasil/obj/Debug/net8.0/refint/PortalCatolicoBrasil.dll
+src/
