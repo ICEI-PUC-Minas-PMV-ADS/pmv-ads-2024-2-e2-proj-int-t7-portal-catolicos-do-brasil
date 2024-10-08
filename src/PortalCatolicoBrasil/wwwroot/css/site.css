@@ -312,6 +312,9 @@ footer {
     text-align: right; /* Alinha o link à direita */
     text-decoration: none;
 }
+.leia-mais:hover {
+    color: dodgerblue !important;
+}
 
 /*-----------------FIM PUBLICACOES-----------------*/
 
