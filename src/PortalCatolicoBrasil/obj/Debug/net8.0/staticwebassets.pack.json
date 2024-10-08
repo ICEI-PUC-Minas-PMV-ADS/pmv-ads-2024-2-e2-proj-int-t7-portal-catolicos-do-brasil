@@ -9,6 +9,26 @@
       "PackagePath": "staticwebassets\\css\\Images\\Banner Cabecalho.png"
     },
     {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\Calcitran.png",
+      "PackagePath": "staticwebassets\\css\\Images\\Calcitran.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\Drogaria.png",
+      "PackagePath": "staticwebassets\\css\\Images\\Drogaria.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\ImageEstatuaPapa.png",
+      "PackagePath": "staticwebassets\\css\\Images\\ImageEstatuaPapa.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\ImageTerco.png",
+      "PackagePath": "staticwebassets\\css\\Images\\ImageTerco.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\ImagensLiturigia.png",
+      "PackagePath": "staticwebassets\\css\\Images\\ImagensLiturigia.png"
+    },
+    {
       "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\banner_paleativo.png",
       "PackagePath": "staticwebassets\\css\\Images\\banner_paleativo.png"
     },
@@ -19,6 +39,46 @@
     {
       "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\emojione_church.png",
       "PackagePath": "staticwebassets\\css\\Images\\emojione_church.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\imagesSantoDia.png",
+      "PackagePath": "staticwebassets\\css\\Images\\imagesSantoDia.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\papa.png",
+      "PackagePath": "staticwebassets\\css\\Images\\papa.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\papa1.png",
+      "PackagePath": "staticwebassets\\css\\Images\\papa1.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\terco.png",
+      "PackagePath": "staticwebassets\\css\\Images\\terco.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\terco1.png",
+      "PackagePath": "staticwebassets\\css\\Images\\terco1.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\terco2.png",
+      "PackagePath": "staticwebassets\\css\\Images\\terco2.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\terco3.png",
+      "PackagePath": "staticwebassets\\css\\Images\\terco3.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\terco4.png",
+      "PackagePath": "staticwebassets\\css\\Images\\terco4.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\terco5.png",
+      "PackagePath": "staticwebassets\\css\\Images\\terco5.png"
+    },
+    {
+      "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\terco6.png",
+      "PackagePath": "staticwebassets\\css\\Images\\terco6.png"
     },
     {
       "Id": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Layout.css",
