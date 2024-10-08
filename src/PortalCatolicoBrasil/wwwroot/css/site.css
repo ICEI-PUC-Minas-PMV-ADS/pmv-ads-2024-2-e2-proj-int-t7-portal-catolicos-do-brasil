@@ -310,6 +310,7 @@ footer {
     display: block; /* Garante que o link ocupe uma linha própria */
     margin-top: 10px; /* Espaço adicional acima do link */
     text-align: right; /* Alinha o link à direita */
+    text-decoration: none;
 }
 
 /*-----------------FIM PUBLICACOES-----------------*/
