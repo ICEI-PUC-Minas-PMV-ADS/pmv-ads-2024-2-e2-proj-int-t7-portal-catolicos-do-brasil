@@ -10,9 +10,12 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PortalCatolicoBrasil
 build_property.RootNamespace = PortalCatolicoBrasil
 <<<<<<< HEAD
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\maboc\Source\Repos\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 build_property.ProjectDir = C:\Users\maboc\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\
 =======
 <<<<<<< HEAD
@@ -41,12 +44,16 @@ build_property.ProjectDir = C:\Users\Paulo\Documentos\PortalCatolicoBrasil\pmv-a
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+<<<<<<< HEAD
 <<<<<<< HEAD
 build_property.MSBuildProjectDirectory = C:\Users\maboc\Source\Repos\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil
 build_property._RazorSourceGeneratorDebug = 
@@ -102,6 +109,8 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Shared/_Layout.cshtml]
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 build_property.MSBuildProjectDirectory = C:\Users\maboc\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil
 build_property._RazorSourceGeneratorDebug = 
 
@@ -380,6 +389,9 @@ build_metadata.AdditionalFiles.CssScope =
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9p0ibui4uo

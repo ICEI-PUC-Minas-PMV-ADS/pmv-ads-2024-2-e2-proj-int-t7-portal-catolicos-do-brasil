@@ -1675,7 +1675,10 @@ C:\Users\Paulo\Documentos\PortalCatolicoBrasil\pmv-ads-2024-2-e2-proj-int-t7-por
 C:\Users\Paulo\Documentos\PortalCatolicoBrasil\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\PortalCa.E5253AB2.Up2Date
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2235,6 +2238,9 @@ C:\Users\maboc\Desktop\Projeto_faculdade\src\PortalCatolicoBrasil\obj\Debug\net8
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 C:\Users\gb\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\PortalCatolicoBrasil.dll
 C:\Users\gb\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\refint\PortalCatolicoBrasil.dll
@@ -2785,8 +2791,11 @@ C:\Users\gb\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-po
 C:\Users\gb\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\PortalCatolicoBrasil.genruntimeconfig.cache
 C:\Users\gb\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\ref\PortalCatolicoBrasil.dll
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
 =======
@@ -3339,6 +3348,9 @@ C:\Users\gb\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-po
 C:\Users\gb\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\PortalCatolicoBrasil.genruntimeconfig.cache
 C:\Users\gb\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\ref\PortalCatolicoBrasil.dll
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 C:\Users\tobia\Documents\Projeto Portal Catolicos\src\PortalCatolicoBrasil\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\tobia\Documents\Projeto Portal Catolicos\src\PortalCatolicoBrasil\bin\Debug\net8.0\appsettings.json
@@ -4438,6 +4450,7 @@ C:\Users\User\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-
 C:\Users\User\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\ref\PortalCatolicoBrasil.dll
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\maboc\Source\Repos\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\PortalCatolicoBrasil.csproj.AssemblyReference.cache
 C:\Users\maboc\Source\Repos\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\PortalCatolicoBrasil.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\maboc\Source\Repos\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\PortalCatolicoBrasil.AssemblyInfoInputs.cache
@@ -4451,6 +4464,10 @@ C:\Users\maboc\Source\Repos\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-br
 C:\Users\maboc\Source\Repos\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\PortalCatolicoBrasil.dll
 C:\Users\maboc\Source\Repos\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\refint\PortalCatolicoBrasil.dll
 C:\Users\maboc\Source\Repos\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\obj\Debug\net8.0\PortalCatolicoBrasil.pdb
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0

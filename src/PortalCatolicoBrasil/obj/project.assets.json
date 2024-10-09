@@ -10652,9 +10652,12 @@
   },
   "packageFolders": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\maboc\\.nuget\\packages\\": {}
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
     "C:\\Users\\Paulo\\.nuget\\packages\\": {},
 =======
 <<<<<<< HEAD
@@ -10676,11 +10679,15 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 >>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\maboc\\Source\\Repos\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
       "projectName": "PortalCatolicoBrasil",
@@ -10694,6 +10701,10 @@
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
       "projectName": "PortalCatolicoBrasil",
+=======
+      "projectUniqueName": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
+      "projectName": "PortalCatolicoBrasil",
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "projectPath": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
       "packagesPath": "C:\\Users\\Paulo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\",
@@ -10757,6 +10768,9 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 >>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10836,9 +10850,12 @@
           }
         },
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
 =======
 <<<<<<< HEAD
@@ -10855,6 +10872,9 @@
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       }
     }
@@ -10865,7 +10885,11 @@
       "level": "Warning",
       "warningLevel": 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
       "message": "Problema ao ler o arquivo de cache C:\\Users\\maboc\\Source\\Repos\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
       "message": "Problema ao ler o arquivo de cache C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e

@@ -2,6 +2,7 @@
   "Version": 1,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "Hash": "YWQKv8mH0DpMnpPrfHqOtPANnyHAcesCtza/IJN4D10=",
 =======
   "Hash": "9Qzsf8DtB4zS5a5mMnOZEPlfhFPnfWQbTSz81lHKuyo=",
@@ -20,12 +21,30 @@
   "Hash": "s4JLx2ilNFJ/10eNpghM9pr8TW0vIGpaNRgg1uuM560=",
 =======
   "Hash": "YWQKv8mH0DpMnpPrfHqOtPANnyHAcesCtza/IJN4D10=",
+=======
+  "Hash": "qitQ+fLBcFBAPLLVdPs3LuNYczD1W6qFeOpLYe/3HNM=",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  "Hash": "qitQ+fLBcFBAPLLVdPs3LuNYczD1W6qFeOpLYe/3HNM=",
+=======
+<<<<<<< HEAD
+>>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
+<<<<<<< HEAD
+  "Hash": "s4JLx2ilNFJ/10eNpghM9pr8TW0vIGpaNRgg1uuM560=",
+=======
+  "Hash": "YWQKv8mH0DpMnpPrfHqOtPANnyHAcesCtza/IJN4D10=",
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 =======
   "Hash": "9Qzsf8DtB4zS5a5mMnOZEPlfhFPnfWQbTSz81lHKuyo=",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
   "Source": "PortalCatolicoBrasil",
   "BasePath": "_content/PortalCatolicoBrasil",
@@ -36,6 +55,7 @@
     {
       "Name": "PortalCatolicoBrasil\\wwwroot",
       "Source": "PortalCatolicoBrasil",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
@@ -56,12 +76,30 @@
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
+=======
+      "ContentRoot": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      "ContentRoot": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
+=======
+<<<<<<< HEAD
+>>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
+<<<<<<< HEAD
+      "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
+=======
+      "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 =======
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "BasePath": "_content/PortalCatolicoBrasil",
       "Pattern": "**"
@@ -71,7 +109,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PortalCatolicoBrasil.styles.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Computed",
@@ -93,12 +134,19 @@
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PortalCatolicoBrasil.styles.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -109,6 +157,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -127,7 +180,10 @@
       "CopyToPublishDirectory": "PreserveNewest",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "OriginalItemSpec": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PortalCatolicoBrasil.styles.css"
     },
     {
@@ -153,6 +209,9 @@
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "OriginalItemSpec": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PortalCatolicoBrasil.styles.css"
     },
@@ -161,6 +220,7 @@
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
       "OriginalItemSpec": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PortalCatolicoBrasil.styles.css"
@@ -172,6 +232,8 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 =======
 >>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
@@ -199,6 +261,9 @@
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "BasePath": "_content/PortalCatolicoBrasil",
       "RelativePath": "PortalCatolicoBrasil.bundle.scp.css",
@@ -214,7 +279,10 @@
       "CopyToPublishDirectory": "PreserveNewest",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "OriginalItemSpec": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PortalCatolicoBrasil.bundle.scp.css"
     },
     {
@@ -240,6 +308,9 @@
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "OriginalItemSpec": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PortalCatolicoBrasil.bundle.scp.css"
     },
@@ -248,6 +319,7 @@
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
       "OriginalItemSpec": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PortalCatolicoBrasil.bundle.scp.css"
@@ -259,6 +331,8 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 =======
 >>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
@@ -286,6 +360,9 @@
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "BasePath": "_content/PortalCatolicoBrasil",
       "RelativePath": "css/Images/Banner Cabecalho.png",
@@ -304,7 +381,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\cruz_background.png",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -326,12 +406,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\cruz_background.png",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -380,6 +467,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -401,7 +493,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\emojione_church.png",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -423,12 +518,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Images\\emojione_church.png",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -458,6 +560,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -479,7 +586,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Layout.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -501,12 +611,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\Layout.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -764,6 +881,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -785,7 +907,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\site.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -807,12 +932,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\css\\site.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -823,6 +955,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -844,7 +981,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\emojione_church.ico",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -866,12 +1006,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\emojione_church.ico",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -882,6 +1029,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -903,7 +1055,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\fonts\\fonts.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -925,12 +1080,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\fonts\\fonts.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -941,6 +1103,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -962,7 +1129,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\js\\site.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -984,12 +1154,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\js\\site.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1000,6 +1177,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1021,7 +1203,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1043,12 +1228,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1059,6 +1251,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1080,7 +1277,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1102,12 +1302,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1118,6 +1325,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1139,7 +1351,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1161,12 +1376,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1177,6 +1399,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1198,7 +1425,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1220,12 +1450,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1236,6 +1473,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1257,7 +1499,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1279,12 +1524,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1295,6 +1547,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1316,7 +1573,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1338,12 +1598,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1354,6 +1621,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1375,7 +1647,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1397,12 +1672,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1413,6 +1695,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1434,7 +1721,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1456,12 +1746,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1472,6 +1769,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1493,7 +1795,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1515,12 +1820,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1531,6 +1843,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1552,7 +1869,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1574,12 +1894,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1590,6 +1917,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1611,7 +1943,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1633,12 +1968,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1649,6 +1991,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1670,7 +2017,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1692,12 +2042,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1708,6 +2065,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1729,7 +2091,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1751,12 +2116,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1767,6 +2139,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1788,7 +2165,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1810,12 +2190,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1826,6 +2213,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1847,7 +2239,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1869,12 +2264,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1885,6 +2287,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1906,7 +2313,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1928,12 +2338,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -1944,6 +2361,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -1965,7 +2387,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -1987,12 +2412,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2003,6 +2435,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2024,7 +2461,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2046,12 +2486,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2062,6 +2509,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2083,7 +2535,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2105,12 +2560,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2121,6 +2583,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2142,7 +2609,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2164,12 +2634,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2180,6 +2657,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2201,7 +2683,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2223,12 +2708,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2239,6 +2731,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2260,7 +2757,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2282,12 +2782,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2298,6 +2805,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2319,7 +2831,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2341,12 +2856,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2357,6 +2879,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2378,7 +2905,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2400,12 +2930,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2416,6 +2953,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2437,7 +2979,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2459,12 +3004,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2475,6 +3027,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2496,7 +3053,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2518,12 +3078,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2534,6 +3101,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2555,7 +3127,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2577,12 +3152,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2593,6 +3175,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2614,7 +3201,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2636,12 +3226,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2652,6 +3249,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2673,7 +3275,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2695,12 +3300,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2711,6 +3323,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2732,7 +3349,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2754,12 +3374,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2770,6 +3397,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2791,7 +3423,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2813,12 +3448,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2829,6 +3471,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2850,7 +3497,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2872,12 +3522,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2888,6 +3545,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2909,7 +3571,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2931,12 +3596,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -2947,6 +3619,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -2968,7 +3645,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -2990,12 +3670,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3006,6 +3693,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3027,7 +3719,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3049,12 +3744,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3065,6 +3767,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3086,7 +3793,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3108,12 +3818,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3124,6 +3841,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3145,7 +3867,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3167,12 +3892,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3183,6 +3915,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3204,7 +3941,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3226,12 +3966,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3242,6 +3989,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3263,7 +4015,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3285,12 +4040,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3301,6 +4063,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3322,7 +4089,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3344,12 +4114,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3360,6 +4137,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3381,7 +4163,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3403,12 +4188,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3419,6 +4211,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3440,7 +4237,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3462,12 +4262,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3478,6 +4285,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3499,7 +4311,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3521,12 +4336,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3537,6 +4359,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3558,7 +4385,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3580,12 +4410,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3596,6 +4433,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3617,7 +4459,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3639,12 +4484,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3655,6 +4507,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3676,7 +4533,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3698,12 +4558,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3714,6 +4581,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3735,7 +4607,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3757,12 +4632,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3773,6 +4655,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3794,7 +4681,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3816,12 +4706,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3832,6 +4729,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3853,7 +4755,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3875,12 +4780,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3891,6 +4803,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3912,7 +4829,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3934,12 +4854,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -3950,6 +4877,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -3971,7 +4903,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -3993,12 +4928,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -4009,6 +4951,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -4030,7 +4977,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -4052,12 +5002,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -4068,6 +5025,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -4089,7 +5051,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -4111,12 +5076,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -4127,6 +5099,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -4148,7 +5125,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -4170,12 +5150,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -4186,6 +5173,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -4207,7 +5199,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -4229,12 +5224,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -4245,6 +5247,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -4266,7 +5273,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -4288,12 +5298,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -4304,6 +5321,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
@@ -4325,7 +5347,10 @@
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
@@ -4347,12 +5372,19 @@
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\wwwroot\\",
 =======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
       "Identity": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "PortalCatolicoBrasil",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
@@ -4363,6 +5395,11 @@
       "ContentRoot": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\wwwroot\\",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0

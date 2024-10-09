@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\maboc\\Source\\Repos\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj": {}
   },
   "projects": {
@@ -26,6 +27,16 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
         "projectName": "PortalCatolicoBrasil",
+=======
+    "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
+        "projectName": "PortalCatolicoBrasil",
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
         "projectPath": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
         "packagesPath": "C:\\Users\\Paulo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\",
@@ -109,6 +120,9 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
 >>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -188,9 +202,12 @@
             }
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
 =======
 <<<<<<< HEAD
@@ -207,6 +224,9 @@
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
         }
       }

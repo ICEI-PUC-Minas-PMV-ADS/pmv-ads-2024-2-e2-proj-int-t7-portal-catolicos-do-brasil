@@ -15,9 +15,12 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32c8d4ba33057a61f3939e35e13d27e9c9eb00ec")]
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86385cb690269250fad1768eb041a3aae3e30582")]
 =======
 <<<<<<< HEAD
@@ -46,6 +49,9 @@ using System.Reflection;
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 [assembly: System.Reflection.AssemblyProductAttribute("PortalCatolicoBrasil")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PortalCatolicoBrasil")]

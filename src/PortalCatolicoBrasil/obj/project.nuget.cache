@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "M74YFOld5fc=",
   "success": true,
   "projectFilePath": "C:\\Users\\maboc\\Source\\Repos\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
@@ -13,6 +14,14 @@
   "expectedPackageFiles": [
 =======
 <<<<<<< HEAD
+=======
+  "dgSpecHash": "sEUOX78dfm4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
+  "expectedPackageFiles": [
+=======
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
   "dgSpecHash": "M3cZ33ijNEs=",
 =======
 <<<<<<< HEAD
@@ -25,6 +34,9 @@
   "success": true,
   "projectFilePath": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
   "expectedPackageFiles": [
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
     "C:\\Users\\maboc\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\maboc\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -243,7 +255,10 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
   "dgSpecHash": "9owvdYyDNNs=",
   "success": true,
@@ -907,6 +922,9 @@
 >>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 >>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
 >>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+<<<<<<< HEAD
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
+=======
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
   ],
   "logs": [
@@ -915,7 +933,11 @@
       "level": "Warning",
       "warningLevel": 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
       "message": "Problema ao ler o arquivo de cache C:\\Users\\maboc\\Source\\Repos\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 =======
       "message": "Problema ao ler o arquivo de cache C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
 >>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
