@@ -10,7 +10,23 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PortalCatolicoBrasil
 build_property.RootNamespace = PortalCatolicoBrasil
 <<<<<<< HEAD
+build_property.ProjectDir = C:\Users\maboc\Source\Repos\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\
+=======
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\maboc\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\
+=======
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\maboc\Desktop\Projeto_faculdade\src\PortalCatolicoBrasil\
+=======
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\maboc\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\maboc\Desktop\Projeto_faculdade\src\PortalCatolicoBrasil\
+=======
 build_property.ProjectDir = C:\Users\gb\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 =======
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -22,12 +38,180 @@ build_property.ProjectDir = C:\Users\Paulo\Documentos\PortalCatolicoBrasil\pmv-a
 build_property.ProjectDir = C:\Users\Paulo\Documentos\PortalCatolicoBrasil\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil\
 >>>>>>> Stashed changes
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 <<<<<<< HEAD
+build_property.MSBuildProjectDirectory = C:\Users\maboc\Source\Repos\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/Eventos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFdmVudG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/Liturgia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXR1cmdpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/PrimeiraPublicacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcmltZWlyYVB1YmxpY2FjYW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/Publicacoes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQdWJsaWNhY29lcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/SantoDoDia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYW50b0RvRGlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/SegundaPublicacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWd1bmRhUHVibGljYWNhby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Shared/_Layout.cshtml]
+=======
+<<<<<<< HEAD
+build_property.MSBuildProjectDirectory = C:\Users\maboc\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil
+build_property._RazorSourceGeneratorDebug = 
+
+=======
+<<<<<<< HEAD
+build_property.MSBuildProjectDirectory = C:\Users\maboc\Desktop\Projeto_faculdade\src\PortalCatolicoBrasil
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/maboc/Desktop/Projeto_faculdade/src/PortalCatolicoBrasil/Views/Home/Eventos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFdmVudG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+=======
+<<<<<<< HEAD
+build_property.MSBuildProjectDirectory = C:\Users\maboc\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil
+build_property._RazorSourceGeneratorDebug = 
+
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+[C:/Users/maboc/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/Liturgia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXR1cmdpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Shared/_Layout.cshtml]
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+build_property.MSBuildProjectDirectory = C:\Users\maboc\Desktop\Projeto_faculdade\src\PortalCatolicoBrasil
+build_property._RazorSourceGeneratorDebug = 
+
+>>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
+[C:/Users/maboc/Desktop/Projeto_faculdade/src/PortalCatolicoBrasil/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Desktop/Projeto_faculdade/src/PortalCatolicoBrasil/Views/Home/Liturgia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXR1cmdpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+<<<<<<< HEAD
+[C:/Users/maboc/Desktop/Projeto_faculdade/src/PortalCatolicoBrasil/Views/Home/PrimeiraPublicacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcmltZWlyYVB1YmxpY2FjYW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+=======
+>>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
+[C:/Users/maboc/Desktop/Projeto_faculdade/src/PortalCatolicoBrasil/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+<<<<<<< HEAD
+[C:/Users/maboc/Desktop/Projeto_faculdade/src/PortalCatolicoBrasil/Views/Home/Publicacoes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQdWJsaWNhY29lcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Desktop/Projeto_faculdade/src/PortalCatolicoBrasil/Views/Home/SantoDoDia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYW50b0RvRGlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Desktop/Projeto_faculdade/src/PortalCatolicoBrasil/Views/Home/SegundaPublicacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWd1bmRhUHVibGljYWNhby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+=======
+>>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
+[C:/Users/maboc/Desktop/Projeto_faculdade/src/PortalCatolicoBrasil/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Desktop/Projeto_faculdade/src/PortalCatolicoBrasil/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Desktop/Projeto_faculdade/src/PortalCatolicoBrasil/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Desktop/Projeto_faculdade/src/PortalCatolicoBrasil/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Desktop/Projeto_faculdade/src/PortalCatolicoBrasil/Views/Shared/_Layout.cshtml]
+<<<<<<< HEAD
+=======
+=======
 build_property.MSBuildProjectDirectory = C:\Users\gb\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil
 build_property._RazorSourceGeneratorDebug = 
 
@@ -64,6 +248,7 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gb/Source/Repos/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Shared/_Layout.cshtml]
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
 =======
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -192,5 +377,9 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/Paulo/Documentos/PortalCatolicoBrasil/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Shared/_Layout.cshtml]
 >>>>>>> Stashed changes
 >>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
+>>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9p0ibui4uo

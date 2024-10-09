@@ -15,14 +15,10 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d77374f2994f68bc3e51f91d227a77bd4b0edef5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32c8d4ba33057a61f3939e35e13d27e9c9eb00ec")]
 =======
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8bbf2d724c08e057abaed3fc18d13eef6d36c1a4")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bd4e2e4897ecfcce38969f3d51e3a3025760090")]
->>>>>>> Stashed changes
->>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc9683a2674133be1a78362a65fda79c5283ec36")]
+>>>>>>> ee9cffff95c357fe9362d41b843f5ff4f0a4662e
 [assembly: System.Reflection.AssemblyProductAttribute("PortalCatolicoBrasil")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PortalCatolicoBrasil")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
