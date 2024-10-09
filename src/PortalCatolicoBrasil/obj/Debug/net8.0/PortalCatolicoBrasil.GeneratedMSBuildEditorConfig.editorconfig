@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\maboc\Source\Repos\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\src\PortalCatolicoBrasil
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/Eventos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFdmVudG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,8 +30,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXR1cmdpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/PrimeiraPublicacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcmltZWlyYVB1YmxpY2FjYW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/Publicacoes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQdWJsaWNhY29lcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/SantoDoDia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYW50b0RvRGlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Home/SegundaPublicacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWd1bmRhUHVibGljYWNhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/maboc/Source/Repos/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/src/PortalCatolicoBrasil/Views/Shared/Error.cshtml]

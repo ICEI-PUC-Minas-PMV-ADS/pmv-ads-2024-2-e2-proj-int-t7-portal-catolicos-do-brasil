@@ -1,0 +1,124 @@
+@{
+    ViewData["Title"] = "Eventos";
+}
+
+<div class="container mt-5">
+    <form method="post" enctype="multipart/form-data">
+        <!-- Informações da Paróquia -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5>Informações da Paróquia</h5>
+            </div>
+            <div class="card-body">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="CNPJ">CNPJ</label>
+                        <input type="text" class="form-control" id="CNPJ" name="CNPJ" placeholder="Digite o CNPJ">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="Paroquia">Nome da Paróquia</label>
+                        <input type="text" class="form-control" id="Paroquia" name="Paroquia" placeholder="Digite o nome da paróquia">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="Telefone">Telefone</label>
+                        <input type="tel" class="form-control" id="Telefone" name="Telefone" placeholder="Digite o telefone">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="Email">E-mail</label>
+                        <input type="email" class="form-control" id="Email" name="Email" placeholder="Digite o e-mail">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Informações do Evento -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5>Informações do Evento</h5>
+            </div>
+            <div class="card-body">
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="TituloEvento">Título do evento</label>
+                        <input type="text" class="form-control" id="TituloEvento" name="TituloEvento" placeholder="Digite o título do evento">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="LocalEvento">Local do evento</label>
+                        <input type="text" class="form-control" id="LocalEvento" name="LocalEvento" placeholder="Digite o local do evento">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="CEP">CEP</label>
+                        <input type="text" class="form-control" id="CEP" name="CEP" placeholder="Digite o CEP">
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label for="Logradouro">Logradouro</label>
+                        <input type="text" class="form-control" id="Logradouro" name="Logradouro" placeholder="Rua, Avenida, Travessa, etc.">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="Estado">Estado*</label>
+                        <select class="form-control" id="Estado" name="Estado">
+                            <option selected>Escolher...</option>
+                            <!-- Opções de estados aqui -->
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Cidade">Cidade*</label>
+                        <select class="form-control" id="Cidade" name="Cidade">
+                            <option selected>Escolher...</option>
+                            <!-- Opções de cidades aqui -->
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Bairro">Bairro</label>
+                        <input type="text" class="form-control" id="Bairro" name="Bairro" placeholder="Digite o bairro">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="DataInicio">Data de início</label>
+                        <input type="date" class="form-control" id="DataInicio" name="DataInicio">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="HoraInicio">Horário de início</label>
+                        <input type="time" class="form-control" id="HoraInicio" name="HoraInicio">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="DataEncerramento">Data de encerramento</label>
+                        <input type="date" class="form-control" id="DataEncerramento" name="DataEncerramento">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="HoraEncerramento">Horário de encerramento</label>
+                        <input type="time" class="form-control" id="HoraEncerramento" name="HoraEncerramento">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="LinkEvento">Link do evento</label>
+                        <input type="url" class="form-control" id="LinkEvento" name="LinkEvento" placeholder="https://exemplo.com/evento">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="BannerEvento">Banner do evento (PNG, resolução 276 x 279px, máximo 1MB)</label>
+                        <input type="file" class="form-control-file" id="BannerEvento" name="BannerEvento">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão de enviar -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">ENVIAR</button>
+        </div>
+    </form>
+</div>
