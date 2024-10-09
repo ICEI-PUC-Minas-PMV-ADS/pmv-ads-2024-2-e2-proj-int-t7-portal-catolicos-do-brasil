@@ -1,6 +1,14 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj": {}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
     "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj": {}
   },
   "projects": {
@@ -12,9 +20,61 @@
         "projectPath": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
         "packagesPath": "C:\\Users\\maboc\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\maboc\\Desktop\\Projeto_faculdade\\src\\PortalCatolicoBrasil\\obj\\",
+<<<<<<< HEAD
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maboc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+=======
+    "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
+        "projectName": "PortalCatolicoBrasil",
+        "projectPath": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
+        "packagesPath": "C:\\Users\\gb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gb\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\",
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+=======
+    "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj": {}
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+  },
+  "projects": {
+    "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
+        "projectName": "PortalCatolicoBrasil",
+<<<<<<< HEAD
+        "projectPath": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
+        "packagesPath": "C:\\Users\\Paulo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paulo\\Documentos\\PortalCatolicoBrasil\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\",
+=======
+        "projectPath": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\PortalCatolicoBrasil.csproj",
+        "packagesPath": "C:\\Users\\Joao\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Joao\\Desktop\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil\\src\\PortalCatolicoBrasil\\obj\\",
+>>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+<<<<<<< HEAD
+          "C:\\Users\\Paulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+          "C:\\Users\\maboc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\gb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 96ecb30f8b2e353beb52bc819e3df7fe06e94fad
+=======
+          "C:\\Users\\Joao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
+>>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,7 +152,19 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+=======
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+=======
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+>>>>>>> 54631d06949e092d51642eefafba53228eaf74ff
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
+>>>>>>> 6926d3d1d065eeef836b7b4c703559a54c1fcd54
         }
       }
     }

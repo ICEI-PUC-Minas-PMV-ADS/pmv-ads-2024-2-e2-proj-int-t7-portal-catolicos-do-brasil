@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+﻿/*-----------------INÍCIO LITURGIA-----------------*/
+
+const buttons = document.querySelectorAll(".btn--group button");
+buttons.forEach(button => {
+    button.addEventListener("click", function () {
+        buttons.forEach(btn => btn.classList.remove("active"));
+        this.classList.add("active")
+    });
+});
+
+async function obterLiturgia() {
+    const container = document.getElementById('liturgia-container');
+    container.classList.add('liturgia--text');
+    container.innerHTML = '<p>Carregando...</p>';
+=======
 /*-----------------INÍCIO LITURGIA-----------------*/
 const buttons = document.querySelectorAll(".btn--group button");
 const contents = {
@@ -42,12 +58,20 @@ async function obterLiturgia() {
 
     container.classList.add('poppins-regular');
     container.innerHTML = '<p>Carregando a liturgia...</p>';
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 
     try {
         const response = await fetch('/liturgia');
         if (!response.ok) {
             throw new Error('Erro ao buscar a liturgia');
         }
+<<<<<<< HEAD
+        const data = await response.text();
+        container.innerHTML = data;
+    } catch (error) {
+        console.error('Erro:', error);
+        container.innerHTML = '<p>Erro ao carregar a liturgia.</p>';
+=======
         const dados = await response.json();
         console.log('Dados da liturgia:', dados);
         return dados;
@@ -142,10 +166,17 @@ function atualizarCorLiturgica(corLiturgica) {
                 cor = 'black';
         }
         liturgiaIcon.style.color = cor;
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
     }
 }
 
 window.onload = function () {
+<<<<<<< HEAD
+    obterLiturgia();
+};
+
+=======
     preencherLiturgia();
 };
+>>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
 /*-----------------FIM LITURGIA-----------------*/
