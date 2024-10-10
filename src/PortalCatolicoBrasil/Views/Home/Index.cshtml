@@ -1,9 +1,9 @@
 ﻿@{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Página Inicial";
 }
 
 <head>
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 
 <div class="mainindex">
@@ -12,42 +12,40 @@
     </div>
 
     <div class="formpai pesquisaMissa conteiner mt-3 pt-2 border p-4 bg-light poppins-regular">
-
         <form>
-        <div class="row mt-4">
-          <div class="col-sm-2">
-            <label for="Estado">Estado*</label>
-            <input type="text" class="campoform botaogps form-control" placeholder="" name="Estado">
-          </div>
-          <div class="col-sm-5">
-            <label for="Cidade">Cidade*</label>
-            <input type="text" class="campoform botaogps form-control" placeholder="" name="Cidade">
-          </div>
-          <div class="col-sm-5">
-            <label for="Cidade">Bairro</label>
-            <input type="text" class="campoform botaogps form-control" placeholder="" name="Bairro">
-          </div>
-          <div class="col-sm-10 pt-4">
-            <label for="Cidade">Paróquia</label>
-            <input type="text" class="campoform botaogps form-control" placeholder="" name="Paróquia">
-          </div>
-          <div class="col-sm-2 pt-5" style="width: 130px;">
-             <button type="button" class="buscar botaogps btn btn-primary">Buscar</button>
-          </div>
-          <div class="col-sm-8 pt-4">
-               <button type="button" class="botaogps btn btn-outline-primary ">Pesquisar por minha localização atual</button>
-          </div>
-        </div>
-      </form>
-
+            <div class="row mt-4">
+                <div class="col-sm-2">
+                    <label for="Estado">Estado*</label>
+                    <input type="text" class="campoform botaogps form-control" placeholder="" name="Estado">
+                </div>
+                <div class="col-sm-5">
+                    <label for="Cidade">Cidade*</label>
+                    <input type="text" class="campoform botaogps form-control" placeholder="" name="Cidade">
+                </div>
+                <div class="col-sm-5">
+                    <label for="Cidade">Bairro</label>
+                    <input type="text" class="campoform botaogps form-control" placeholder="" name="Bairro">
+                </div>
+                <div class="col-sm-10 pt-4">
+                    <label for="Cidade">Paróquia</label>
+                    <input type="text" class="campoform botaogps form-control" placeholder="" name="Paróquia">
+                </div>
+                <div class="col-sm-2 pt-5" style="width: 130px;">
+                    <button type="button" class="buscar botaogps btn btn-primary">Buscar</button>
+                </div>
+                <div class="col-sm-8 pt-4">
+                    <button type="button" class="botaogps btn btn-outline-primary ">Pesquisar por minha localização atual</button>
+                </div>
+            </div>
+        </form>
     </div>
 
     <div class="anuncio container my-5 bg-info rounded row poppins-regular">
         <div class="Drog col-sm-6">
-            <img src="~/css/Images/Drogaria.png" >
+            <img src="~/css/Images/Drogaria.png">
         </div>
         <div class="Calc col-sm-6">
-            <img src="~/css/Images/Calcitran.png" >
+            <img src="~/css/Images/Calcitran.png">
         </div>
     </div>
 
@@ -63,7 +61,7 @@
 
         <div class="santoIndex col-sm-6">
             <div>
-            <img src="~/css/Images/ImagesSantoDia.png" class="Santo">
+                <img src="~/css/Images/ImagesSantoDia.png" class="Santo">
             </div>
             <h3>Santo do dia ("São Fiacre")</h3>
             <p>São Fiacre (“Fiacro”) nasceu de família nobre na Irlanda e foi educado sob os cuidados de um bispo de eminente santidade, que teria sido, segundo alguns, Conan, o bispo de Soder ou das Ilhas Ocidentais (Hébridas Exteriores).</p>
@@ -71,55 +69,40 @@
         </div>
     </div>
 
-<div class="anuncio container my-5 bg-info rounded row poppins-regular">
+    <div class="anuncio container my-5 bg-info rounded row poppins-regular">
+        <div class="Drog col-sm-6">
+            <img src="~/css/Images/Drogaria.png">
+        </div>
 
-    <div class="Drog col-sm-6">
-        <img src="~/css/Images/Drogaria.png" >
+        <div class="Calc col-sm-6">
+            <img src="~/css/Images/Calcitran.png">
+        </div>
     </div>
 
-    <div class="Calc col-sm-6">
-        <img src="~/css/Images/Calcitran.png" >
+    <div class="publicacoes container p-5 my-5 bg-info rounded row poppins-regular">
+        <h6>PUBLICAÇÕES</h6> 
+        <hr/>
+
+        <div class="col-md-4">
+            <img src="~/css/Images/ImageTerco.png" class="Terco">
+        </div>
+
+        <div class="col-md-8 pb-5">
+            <h3>Como rezar o terço</h3>
+            <p>Aprenda de uma forma simples e divertida como rezar o terço para Nossa Mamãe do Céu;</p>
+            <span>LEIA MAIS</span>
+        </div> 
+        <hr/>
+
+        <div class="col-md-4">
+            <img src="~/css/Images/ImageEstatuaPapa.png" class="EstatuaPapa">
+        </div>
+
+        <div class="col-md-8 pb-5">
+            <h3>Eleição do Papa</h3>
+            <p>Uma dúvida comum não somente entre os católicos, mas também entre os não católicos é como é escolhido um Papa.</p>
+            <span>LEIA MAIS</span>
+        </div> 
+        <hr/>
     </div>
-
-</div>
-
-<div class="publicacoes container p-5 my-5 bg-info rounded row poppins-regular">
-
-     <h6 >PUBLICAÇÕES</h6> <hr />
-
-
-    <div class="col-md-4">
-        <img src="~/css/Images/ImageTerco.png" class="Terco">
-    </div>
-
-    <div class="col-md-8 pb-5">
-    <h3>Como rezar o terço</h3>
-
-    <p>Aprenda de uma forma simples e divertida como rezar o terço para Nossa Mamãe do Céu;</p>
-
-    <span>LEIA MAIS</span>
-    </div> <hr />
-
-    <div class="col-md-4">
-
-    <img src="~/css/Images/ImageEstatuaPapa.png" class="EstatuaPapa">
-
-    </div>
-
-
-
-    <div class="col-md-8 pb-5">
-
-    <h3>Eleição do Papa</h3>
-
-    <p>Uma dúvida comum não somente entre os católicos, mas também entre os não católicos é como é escolhido um Papa.</p>
-
-    <span>LEIA MAIS</span>
-
-    </div> <hr />
-
-</div>
-
-
-
 </div>

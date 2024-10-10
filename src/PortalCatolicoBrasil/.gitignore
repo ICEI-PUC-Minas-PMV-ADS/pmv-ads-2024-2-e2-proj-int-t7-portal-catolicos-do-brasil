@@ -1,4 +1,6 @@
 .vs/
+bin/
+obj/
 /src/PortalCatolicoBrasil/.vs/PortalCatolicoBrasil/config/applicationhost.config
 /src/PortalCatolicoBrasil/.vs/PortalCatolicoBrasil/DesignTimeBuild/.dtbcache.v2
 /src/PortalCatolicoBrasil/.vs/PortalCatolicoBrasil/v17/.futdcache.v2
@@ -26,3 +28,67 @@
 
 /src/PortalCatolicoBrasil/obj/Debug/net8.0/ref/PortalCatolicoBrasil.dll
 /src/PortalCatolicoBrasil/obj/Debug/net8.0/refint/PortalCatolicoBrasil.dll
+
+# Sistema e ambientes locais
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Arquivos binários e de objetos
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.vspscc
+*.vssscc
+
+# Configurações de pacotes
+packages/
+*.nupkg
+*.snupkg
+
+# Configurações do Visual Studio
+.vs/
+.vscode/
+debug/
+release/
+
+# Logs
+*.log
+log/
+
+# Configurações de banco de dados local
+App_Data/
+
+# Configurações do Rider/JetBrains
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+
+# Arquivos de publicação
+publish/
+
+# Dependências do NuGet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Cache de build
+*.dbmdl
+*.jfm
+
+# Arquivos de configuração temporários
+*.tmp
+*.bak
+
+# Certificados de desenvolvimento
+*.pfx
+*.cer

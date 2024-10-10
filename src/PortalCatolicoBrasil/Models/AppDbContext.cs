@@ -1,11 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PortalCatolicoBrasil.Models;
 
-namespace PortalCatolicoBrasil.Models
+public class AppDbContext : DbContext
 {
-    public class AppDbContext : DbContext
-    {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Liturgia> Liturgias { get; set; }
-    }
+    public DbSet<Liturgia> Liturgias { get; set; }
+    public DbSet<Evento> Eventos { get; set; }
 }

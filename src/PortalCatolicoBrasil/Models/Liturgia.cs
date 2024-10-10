@@ -1,53 +1,92 @@
 ﻿using Newtonsoft.Json;
-using System.ComponentModel.DataAnnotations.Schema;
-using PortalCatolicoBrasil.Models;
-using System.ComponentModel.DataAnnotations;
 
 namespace PortalCatolicoBrasil.Models
 {
     public class Liturgia
     {
-        [Key]
-        [JsonProperty("id")]
-        public int LiturgiaID { get; set; }
+        public class Antifonas
+        {
+            [JsonProperty("entrada")]
+            public string Entrada { get; set; }
 
-        [JsonProperty("data")]
-        public string? Data { get; set; }
+            [JsonProperty("ofertorio")]
+            public string Ofertorio { get; set; }
 
-        [JsonProperty("liturgia_text")]
-        public string? LiturgiaText { get; set; }
+            [JsonProperty("comunhao")]
+            public string Comunhao { get; set; }
+        }
 
-        [JsonProperty("cor")]
-        public string? Cor { get; set; }
+        public class Evangelho
+        {
+            [JsonProperty("referencia")]
+            public string Referencia { get; set; }
 
-        [JsonProperty("dia")]
-        public string? Dia { get; set; }
+            [JsonProperty("titulo")]
+            public string Titulo { get; set; }
 
-        [JsonProperty("oferendas")]
-        public string? Oferendas { get; set; }
+            [JsonProperty("texto")]
+            public string Texto { get; set; }
+        }
 
-        [JsonProperty("comunhao")]
-        public string? Comunhao { get; set; }
+        public class PrimeiraLeitura
+        {
+            [JsonProperty("referencia")]
+            public string Referencia { get; set; }
 
-        [JsonProperty("primeiraLeitura")]
-        public PrimeiraLeitura? PrimeiraLeitura { get; set; }
+            [JsonProperty("titulo")]
+            public string Titulo { get; set; }
 
-        [JsonProperty("segundaLeitura")]
-        public string? SegundaLeitura { get; set; }
+            [JsonProperty("texto")]
+            public string Texto { get; set; }
+        }
 
-        [JsonProperty("salmo")]
-        public Salmo? Salmo { get; set; }
+        public class Root
+        {
+            [JsonProperty("data")]
+            public string Data { get; set; }
 
-        [JsonProperty("evangelho")]
-        public Evangelho? Evangelho { get; set; }
+            [JsonProperty("liturgia")]
+            public string Liturgia { get; set; }
 
-        [JsonProperty("antifonas")]
-        public Antifona? Antifonas { get; set; }
+            [JsonProperty("cor")]
+            public string Cor { get; set; }
 
-        ForeignKeyAttribute? SalmoID { get; set; }
-        ForeignKeyAttribute? EvangelhoID { get; set; }
-        ForeignKeyAttribute? PrimeiraLeituraID { get; set; }
-        ForeignKeyAttribute? SegundaLeituraID { get; set; }
-        ForeignKeyAttribute? AntifonaID { get; set; }
+            [JsonProperty("dia")]
+            public string Dia { get; set; }
+
+            [JsonProperty("oferendas")]
+            public string Oferendas { get; set; }
+
+            [JsonProperty("comunhao")]
+            public string Comunhao { get; set; }
+
+            [JsonProperty("primeiraLeitura")]
+            public PrimeiraLeitura PrimeiraLeitura { get; set; }
+
+            [JsonProperty("segundaLeitura")]
+            public string SegundaLeitura { get; set; }
+
+            [JsonProperty("salmo")]
+            public Salmo Salmo { get; set; }
+
+            [JsonProperty("evangelho")]
+            public Evangelho Evangelho { get; set; }
+
+            [JsonProperty("antifonas")]
+            public Antifonas Antifona { get; set; }
+        }
+
+        public class Salmo
+        {
+            [JsonProperty("referencia")]
+            public string Referencia { get; set; }
+
+            [JsonProperty("refrao")]
+            public string Refrao { get; set; }
+
+            [JsonProperty("texto")]
+            public string Texto { get; set; }
+        }
     }
+
 }

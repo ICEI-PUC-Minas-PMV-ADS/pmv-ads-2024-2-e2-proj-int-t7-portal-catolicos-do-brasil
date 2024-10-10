@@ -1,6 +1,4 @@
-
-/* N�O MODIFICAR O C�DIGO A PARTIR DAQUI----------------------------------------------------------------------------------------------------*/
-
+﻿/* NÃO MODIFICAR O CÓDIGO A PARTIR DAQUI--------------------------------------------------------------------------------*/
 html {
     font-size: 14px;
 }
@@ -24,15 +22,11 @@ body {
     color: #1E1E1E;
 }
 
-
-
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 
 header {
     color: black;
@@ -139,29 +133,11 @@ footer {
     padding: 50px;
     padding-top: 0;
 }
-
-<<<<<<< HEAD
-/* N�O MODIFICAR O C�DIGO ANTES DAQUI-------------------------------------------------------------------------------------------------------*/
-<<<<<<< HEAD
-=======
-=======
-/* N�O MODIFICAR O C�DIGO ANTES DAQUI-------------------------------------------------------------------------------------------------------*/
->>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
->>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+/* NÃO MODIFICAR O CÓDIGO ANTES DAQUI--------------------------------------------------------------------------------*/
 
 
 
-
-
-<<<<<<< HEAD
-/*-----------------IN�CIO LITURGIA-----------------*/
-=======
-<<<<<<< HEAD
-/*-----------------IN�CIO LITURGIA-----------------*/
-=======
-/*-----------------IN�CIO LITURGIA-----------------*/
->>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
->>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+/*-----------------INÍCIO LITURGIA-----------------*/
 .btn--group {
     --button-background: #D6E8FF;
     --button-color: #1e1e1e;
@@ -171,30 +147,12 @@ footer {
     height: 70px;
     margin-left: auto;
     margin-right: auto;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
     margin-top: -35px;
->>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
->>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
     color: var(--button-color);
     border-radius: 10px;
     overflow: hidden;
     font-size: 18px;
-<<<<<<< HEAD
-    top: 635PX;
     left: calc(50% - 960px/2);
-    position: absolute;
-=======
-<<<<<<< HEAD
-    top: 635PX;
-    left: calc(50% - 960px/2);
-    position: absolute;
-=======
-    left: calc(50% - 960px/2);
->>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
->>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
     z-index: 2;
     box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
 }
@@ -231,28 +189,11 @@ footer {
     z-index: 1;
 }
 
-<<<<<<< HEAD
-.liturgia--text{
-    margin-top: 60px;
-}
-/*-----------------FIM LITURGIA-----------------*/
-=======
-<<<<<<< HEAD
-.liturgia--text{
-    margin-top: 60px;
-}
-/*-----------------FIM LITURGIA-----------------*/
-=======
-
-
-
-
-
 .liturgia-container {
     display: flex;
     flex-direction: column;
-    align-items:start;
-    justify-content:center;
+    align-items: start;
+    justify-content: center;
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -265,7 +206,7 @@ footer {
 .liturgia-data-current {
     display: flex;
     height: 50px;
-    gap: 5px;
+    gap: 3px;
 }
 
 .icon-event {
@@ -296,7 +237,7 @@ footer {
 }
 
 .material-symbols-rounded {
-    font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 24
+    font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 24;
 }
 
 .red {
@@ -304,12 +245,12 @@ footer {
     font-size: 20px !important;
 }
 
-.tituloLiturgia{
+.tituloLiturgia {
     font-size: 20px;
 }
-
-
 /*-----------------FIM LITURGIA-----------------*/
+
+
 /*-----------------INICIO SANTO DO DIA-----------------*/
 .container-santodia {
     display: flex;
@@ -320,12 +261,10 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-
+/*-----------------FIM SANTO DO DIA-----------------*/
 
 
 /*-----------------INICIO INDEX-----------------*/
-
-
 .bg-info {
     background-color: #E6F1FF !important;
 }
@@ -359,16 +298,10 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-
 /*-----------------FIM INDEX-----------------*/
 
-/*-----------------FIM SANTO DO DIA-----------------*/
 
 /*-----------------INICIO PUBLICACOES-----------------*/
-
 .container-publicacoes {
     display: flex;
     flex-direction: column;
@@ -396,11 +329,10 @@ footer {
 .leia-mais:hover {
     color: dodgerblue !important;
 }
-
 /*-----------------FIM PUBLICACOES-----------------*/
 
-/*-----------------INICIO PRIMEIRA PUBLICACAO-----------------*/
 
+/*-----------------INICIO PRIMEIRA PUBLICACAO-----------------*/
 .container-primeirapublicacao {
     display: flex;
     flex-direction: column;
@@ -426,23 +358,22 @@ footer {
     text-decoration: none;
 }
 
-    .botao-voltar::before {
-        content: '←';
-        margin-right: 10px;
-    }
+.botao-voltar::before {
+    content: '←';
+    margin-right: 10px;
+}
 
-    .botao-voltar:hover {
-        background-color: #e0e0e0;
-    }
+.botao-voltar:hover {
+    background-color: #e0e0e0;
+}
 
-    .botao-voltar:visited, .botao-voltar:link {
-        color: black; /* Garante que a cor do texto seja sempre preta */
-    }
-
+.botao-voltar:visited, .botao-voltar:link {
+    color: black; /* Garante que a cor do texto seja sempre preta */
+}
 /*-----------------FIM PRIMEIRA PUBLICACAO-----------------*/
 
-/*-----------------INICIO SEGUNDA PUBLICACAO-----------------*/
 
+/*-----------------INICIO SEGUNDA PUBLICACAO-----------------*/
 .container-segundapublicacao {
     display: flex;
     flex-direction: column;
@@ -452,8 +383,5 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-
-
 /*-----------------FIM SEGUNDA PUBLICACAO-----------------*/
->>>>>>> dc9fda35176c673ccf55f90f1df00d5f12eb0564
->>>>>>> 43f1f0a4ea46c157e62612e0a05ad09cf03429b0
+
