@@ -13,9 +13,10 @@ namespace PortalCatolicoBrasil.Controllers
             _context = context;
         }
 
+        // Método para retorna os dados salvos no banco com referencia a liturgia
         public async Task<IActionResult> Index()
         {
-            var dados = await _context.Liturgia.ToListAsync();
+            var dados = await _context.Liturgias.ToListAsync();
             return View(dados);
         }
     }

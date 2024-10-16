@@ -1,5 +1,3 @@
-using Hangfire;
-using Hangfire.SqlServer;
 using Microsoft.EntityFrameworkCore;
 using PortalCatolicoBrasil.Interfaces;
 using PortalCatolicoBrasil.Service;
@@ -20,22 +18,6 @@ namespace PortalCatolicoBrasil
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            //builder.Services.AddHangfire(configuration =>
-            //    configuration.SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
-            //                 .UseSimpleAssemblyNameTypeSerializer()
-            //                 .UseRecommendedSerializerSettings()
-            //                 .UseSqlServerStorage(builder.Configuration.GetConnectionString("DefaultConnection"),
-            //                     new Hangfire.SqlServer.SqlServerStorageOptions
-            //                     {
-            //                         CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
-            //                         SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
-            //                         QueuePollInterval = TimeSpan.Zero,
-            //                         UseRecommendedIsolationLevel = true,
-            //                         DisableGlobalLocks = true
-            //                     }));
-
-            //builder.Services.AddHangfireServer();
-
             var app = builder.Build();
 
             if (!app.Environment.IsDevelopment())
@@ -51,10 +33,6 @@ namespace PortalCatolicoBrasil
 
             app.UseAuthorization();
 
-            //app.UseHangfireDashboard("/hangfire");
-
-            //RecurringJob.AddOrUpdate("job-daily-youtube", () => Console.WriteLine("Buscando vídeo do YouTube..."), Cron.Daily);
-
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
@@ -62,5 +40,4 @@ namespace PortalCatolicoBrasil
             app.Run();
         }
     }
-
 }

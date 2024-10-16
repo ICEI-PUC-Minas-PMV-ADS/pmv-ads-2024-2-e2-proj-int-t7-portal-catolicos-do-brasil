@@ -1,11 +1,10 @@
 ﻿namespace PortalCatolicoBrasil.Utils
 {
-    public static class DateUtils
+    public class DateUtils
     {
         public static DateTime GetCurrentDate()
         {
-            return DateTime.Now.Date;
+            return DateTime.Now;
         }
     }
-
 }

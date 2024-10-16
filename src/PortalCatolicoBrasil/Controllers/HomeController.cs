@@ -33,7 +33,7 @@ namespace PortalCatolicoBrasil.Controllers
             return View();
         }
 
-        public IActionResult SantoDia()
+        public IActionResult SantoDoDia()
         {
             return View();
         }
