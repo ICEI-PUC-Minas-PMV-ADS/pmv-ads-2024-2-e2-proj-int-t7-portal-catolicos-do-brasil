@@ -7,45 +7,52 @@
     <button class="poppins-medium">SALMO</button>
     <button class="poppins-medium">2ª LEITURA</button>
     <button class="poppins-medium">EVANGELHO</button>
+    <button class="poppins-medium">HOMILIA</button>
 </div>
 
 <div class="liturgia-container">
 
-    <div class="liturgia-data-current">
-        <div class="icon-event">
-            <i class="material-symbols-outlined">event</i>
+    <div class="liturgia-header">
+        <div class="combo-data">
+            <div class="liturgia-data-current">
+                <i class="icon-event material-symbols-outlined">event</i>
+                <p id="liturgiaData" class="liturgiaData poppins-medium"></p>
+            </div>
+            <div class="corLiturgia">
+                <span class="liturgia-icon material-symbols-rounded">circle</span>
+                <span class="poppins-regular" id="corLiturgia"></span>
+            </div>
         </div>
-        <p id="liturgiaData" class="liturgiaData poppins-medium"></p>
-    </div>
 
-    <div class="corLiturgia">
-        <span class="liturgia-icon material-symbols-rounded">personal_places</span>
-        <span class="corLiturgia poppins-regular" id="corLiturgia"></span>
+        <p class="liturgiaText poppins-medium" id="liturgiaText"></p>
     </div>
-
-    <p class="liturgiaText poppins-regular" id="liturgiaText"></p>
 
     <div class="content" id="primeiraLeituraContent">
-        <span class="primeiraLeituraReferenciaText poppins-regular" id="primeiraLeituraReferenciaText"></span>
+        <span class="primeiraLeituraReferenciaText poppins-medium-italic" id="primeiraLeituraReferenciaText"></span>
         <span class="primeiraLeituraTituloText poppins-regular" id="primeiraLeituraTituloText"></span>
-        <span class="primeiraLeituraTextoText poppins-regular" id="primeiraLeituraTextoText"></span>
+        <span class="primeiraLeituraTextoText poppins-light" id="primeiraLeituraTextoText"></span>
     </div>
 
     <div class="content" id="salmoContent" style="display: none;">
-        <span class="segundaLeituraReferenciaText poppins-regular" id="segundaLeituraReferenciaText"></span>
-        <span class="segundaLeituraTituloText poppins-regular" id="segundaLeituraTituloText"></span>
-        <span class="segundaLeituraTextoText poppins-regular" id="segundaLeituraTextoText"></span>
+        <span class="salmoReferenciaText poppins-medium-italic" id="salmoReferenciaText"></span>
+        <p class="salmoRefraoText poppins-medium" id="salmoRefraoText"></p>
+        <p class="salmoTextoText poppins-light" id="salmoTextoText"></p>
     </div>
 
     <div class="content" id="segundaLeituraContent" style="display: none;">
-        <span class="salmoReferenciaText poppins-regular" id="salmoReferenciaText"></span>
-        <span class="salmoRefraoText poppins-regular" id="salmoRefraoText"></span>
-        <span class="salmoTextoText poppins-regular" id="salmoTextoText"></span>
+        <span class="segundaLeituraReferenciaText poppins-medium-italic" id="segundaLeituraReferenciaText"></span>
+        <span class="segundaLeituraTituloText poppins-regular" id="segundaLeituraTituloText"></span>
+        <span class="segundaLeituraTextoText poppins-light" id="segundaLeituraTextoText"></span>
     </div>
 
     <div class="content" id="evangelhoContent" style="display: none;">
-        <span class="evangelhoReferenciaText poppins-regular" id="evangelhoReferenciaText"></span>
+        <span class="evangelhoReferenciaText poppins-medium-italic" id="evangelhoReferenciaText"></span>
         <span class="evangelhoTituloText poppins-regular" id="evangelhoTituloText"></span>
-        <span class="evangelhoTextoText poppins-regular" id="evangelhoTextoText"></span>
+        <span class="evangelhoTextoText poppins-light" id="evangelhoTextoText"></span>
+    </div>
+
+    <div class="content" id="homiliaContent" style="display: none;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_aI1-jQ7PUg?si=NpwR3EEKkBZUSoNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="fonte-homilia poppins-regular">Fonte: https://youtu.be/_aI1-jQ7PUg</p>
     </div>
 </div>

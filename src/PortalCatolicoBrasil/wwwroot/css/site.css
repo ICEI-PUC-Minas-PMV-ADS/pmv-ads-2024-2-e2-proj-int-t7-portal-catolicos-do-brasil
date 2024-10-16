@@ -143,7 +143,7 @@ footer {
     --button-color: #1e1e1e;
     display: flex;
     min-width: 300px;
-    width: 960px;
+    width: 75%;
     height: 70px;
     margin-left: auto;
     margin-right: auto;
@@ -198,34 +198,56 @@ footer {
     margin-left: auto;
     margin-right: auto;
     min-width: 300px;
-    width: 960px;
-    gap: 20px;
+    width: 75%;
     color: #1e1e1e;
+
+}
+
+.liturgia-header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin-bottom: 30px;
+    padding-top: 0;
+}
+
+.combo-data {
+    padding-top: 6px;
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: flex-end;
 }
 
 .liturgia-data-current {
     display: flex;
-    height: 50px;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items:center;
+    height: 30px;
     gap: 3px;
 }
 
 .icon-event {
     height: 100%;
-    width: 30px;
-    padding-top: 5% !important;
-    color: rgb(8, 73, 105, 77%);
+    color: #717275;
 }
 
 .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 200, 'opsz' 48;
-    font-size: 30px !important;
+    font-size: 28px !important;
 }
 
 .liturgiaData {
     padding-top: 2px;
-    font-size: 30px;
+    font-size: 28px;
     height: 100%;
-    color: rgb(8, 73, 105, 77%);
+    color: #717275;
 }
 
 .corLiturgia {
@@ -233,24 +255,67 @@ footer {
     flex-direction: row;
     align-items: center;
     gap: 3px;
-    font-size: 16px;
+    font-size: 17px;
+}
+
+.content {
 }
 
 .material-symbols-rounded {
     font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 24;
 }
 
-.red {
-    color: #d02b2b;
-    font-size: 20px !important;
+.borda-icon-liturgia {
+    border: 2px solid #1E1E1E;
+    border-radius: 50px;
+    font-size: 15px !important;
+}
+
+.liturgia-icon {
+    font-size: 17px !important;
+}
+
+.liturgiaText {
+    line-height: 1.2em;
+    font-size: 1.7em;
+    padding-top: 0;
+    height: 100%;
 }
 
 .tituloLiturgia {
     font-size: 20px;
 }
+
+.primeiraLeituraReferenciaText,
+.salmoReferenciaText,
+.segundaLeituraReferenciaText,
+.evangelhoReferenciaText {
+    font-size: 1.3em;
+}
+
+.primeiraLeituraTituloText,
+.salmoRefraoText,
+.segundaLeituraTituloText,
+.evangelhoTituloText {
+    font-size: 1.2em;
+}
+
+.primeiraLeituraTextoText,
+.salmoTextoText,
+.segundaLeituraTextoText,
+.evangelhoTextoText {
+    font-size: 1.1em;
+}
+
+.salmoTextoText {
+    margin-top: -50px
+}
+
+.fonte-homilia {
+    font-size: 0.8em;
+    color: gray;
+}
 /*-----------------FIM LITURGIA-----------------*/
-
-
 /*-----------------INICIO SANTO DO DIA-----------------*/
 .container-santodia {
     display: flex;

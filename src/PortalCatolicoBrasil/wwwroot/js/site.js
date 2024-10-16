@@ -4,7 +4,8 @@ const contents = {
     '1ª LEITURA': document.getElementById('primeiraLeituraContent'),
     'SALMO': document.getElementById('salmoContent'),
     '2ª LEITURA': document.getElementById('segundaLeituraContent'),
-    'EVANGELHO': document.getElementById('evangelhoContent')
+    'EVANGELHO': document.getElementById('evangelhoContent'),
+    'HOMILIA': document.getElementById('homiliaContent')
 };
 
 buttons.forEach(button => {
@@ -35,6 +36,23 @@ function formatarData(data) {
     const ano = String(dataObj.getFullYear()).slice(-2);
 
     return `${dia} ${mes} ${ano}`;
+}
+
+function converterDiaSemana(input) {
+    const regex = /(\d+ª feira)/;
+
+    return input.replace(regex, (match) => {
+        const diaNumerico = match.charAt(0);
+        const diasSemana = {
+            '2': 'Segunda-feira',
+            '3': 'Terça-feira',
+            '4': 'Quarta-feira',
+            '5': 'Quinta-feira',
+            '6': 'Sexta-feira',
+        };
+
+        return diasSemana[diaNumerico] || match;
+    });
 }
 
 async function obterLiturgia() {
@@ -79,43 +97,70 @@ function preencherCampo(field, value) {
 function fillFormWithData(dados) {
     const fieldsMapping = {
         liturgiaData: formatarData(new Date()),
-        liturgiaText: dados.liturgia,
+        liturgiaText: `
+            <p>${converterDiaSemana(dados.liturgia)}</p>
+        `,
         corLiturgia: "COR LITÚRGICA: " + dados.cor.toUpperCase(),
-        primeiraLeituraReferenciaText: dados.primeiraLeitura.referencia,
-        primeiraLeituraTituloText: dados.primeiraLeitura.titulo,
-        primeiraLeituraTextoText: dados.primeiraLeitura.texto,
-        segundaLeituraReferenciaText: dados.segundaLeitura.referencia,
-        segundaLeituraTituloText: dados.segundaLeitura.titulo,
-        segundaLeituraTextoText: dados.segundaLeitura.texto,
-        salmoReferenciaText: dados.salmo.referencia,
-        salmoRefraoText: dados.salmo.refrao,
-        salmoTextoText: dados.salmo.texto,
-        evangelhoReferenciaText: "Evangelho ${dados.evangelho.referencia}",
-        evangelhoTituloText: dados.evangelho.titulo,
+        primeiraLeituraReferenciaText: `
+            <p>Primeira Leitura (${dados.primeiraLeitura.referencia})</p>
+        `,
+        primeiraLeituraTituloText: `
+            <p>${dados.primeiraLeitura.titulo}</p>
+        `,
+        primeiraLeituraTextoText: `
+            <p>${dados.primeiraLeitura.texto.replace(/(\d+)(?=[a-zA-Z])/g, '$1 ').replace(/\b\d+\b/g, '<span class="poppins-medium">$& </span>')}</p>
+            <p>— Palavra do Senhor.</p>
+            <p class="poppins-medium">— Graças a Deus.</p>
+        `,
+        salmoReferenciaText: `
+            <p>Responsório (${dados.salmo.referencia})</p>
+        `,
+        salmoRefraoText: `
+            <p class="poppins-light">— ${dados.salmo.refrao}</p>
+            <p>— ${dados.salmo.refrao}</p>
+        `,
+        salmoTextoText: dados.salmo.texto
+            //? `<p>${dados.salmo.texto.replace(/([.!?])\s*/g, '$1 <br><br>')}</p>`
+            ? `<p>${dados.salmo.texto.replace(/([—])\s*/g, '<br><br> $1 ')}.</p>`
+            //? `<p>${dados.salmo.texto.replace(/—/g, '<br>—')}</p>`
+            : `<p>Salmo não disponível.</p>
+        `,
+        segundaLeituraReferenciaText: dados.segundaLeitura?.referencia
+            ? `<p>Segunda Leitura (${dados.segundaLeitura.referencia})</p>`
+            : `<p class="poppins-regular-italic">Não há segunda leitura hoje!</p>`,
+        segundaLeituraTituloText: dados.segundaLeitura.titulo
+            ? `<p>${dados.segundaLeitura.titulo}</p>`
+            : ``,
+        segundaLeituraTextoText: dados.segundaLeitura.texto
+            ? `<p>${dados.segundaLeitura.texto.replace(/(\d+)(?=[a-zA-Z])/g, '$1 ').replace(/\b\d+\b/g, '<span class="poppins-medium">$& </span>')}</p>
+            <p>— Palavra do Senhor.</p>
+            <p class="poppins-medium">— Graças a Deus.</p>`
+            : ``,
+        evangelhoReferenciaText: `
+            <p>Evangelho (${dados.evangelho.referencia})</p>
+        `,
+        evangelhoTituloText: `
+            <p class="poppins-medium">— Aleluia, Aleluia, Aleluia.</p>
+            <p>${dados.evangelho.titulo}<p>
+        `,
         evangelhoTextoText: `
-            <p><strong>— Aleluia, Aleluia, Aleluia.</strong></p>
-            <p>— Convertei-vos e crede no Evangelho, pois o Reino de Deus está chegando!</p>
-            <p><em>Proclamação do Evangelho de Jesus Cristo + segundo ${dados.evangelho.autor}</em></p>
-            <p><strong>— Glória a vós, Senhor.</strong></p>
-            <p>${dados.evangelho.texto}</p>
-            <p><strong>— Palavra da Salvação.</strong></p>
+            <p class="poppins-medium">— Glória a vós, Senhor.</p>
+            <p>${dados.evangelho.texto.replace(/(\d+)(?=[a-zA-Z])/g, '$1 ').replace(/\b\d+\b/g, '<span class="poppins-medium">$& </span>')}</p>
+            <p>— Palavra da Salvação.</p>
+            <p class="poppins-medium">— Glória a vós, Senhor.</p>
         `,
     };
 
-    for (const [fieldId, value] of Object.entries(fieldsMapping)) { //TODO: Verificar o fillForm do evangelho (alternância dos textos)
+    for (const [fieldId, value] of Object.entries(fieldsMapping)) {
         const field = document.getElementById(fieldId);
         if (field) {
-            if (fieldId === 'evangelhoTextoText') {
+            if (fieldId === 'evangelhoTextoText', 'evangelhoReferenciaText') {
                 field.innerHTML = value;
             } else {
                 field.textContent = value;
             }
         }
-
-
     }
-    liturgiaText.classList.add('tituloLiturgia poppins-semibold');
-
 }
 
 function atualizarCorLiturgica(corLiturgica) {
@@ -133,19 +178,30 @@ function atualizarCorLiturgica(corLiturgica) {
                 cor = 'purple';
                 break;
             case 'branco':
-                cor = 'lightgray';
+                cor = 'white';
                 break;
             case 'rosa':
                 cor = 'pink';
                 break;
             default:
-                cor = 'black';
+                cor = 'lightgray';
         }
         liturgiaIcon.style.color = cor;
     }
 }
 
+function addBorderIcon() {
+    const liturgiaIcon = document.querySelector('.liturgia-icon');
+    /*let border = document.getElementsByClassName('liturgia-icon');*/
+    if (atualizarCorLiturgica(corLiturgica.cor) == 'branco') {
+        iconCorLiturgica.classList.add('borda-icon-liturgia');
+    } else {
+        mostrar.classList.remove('borda-icon-liturgia');
+    };
+}
+
 window.onload = function () {
     preencherLiturgia();
+    addBorderIcon();
 };
 /*-----------------FIM LITURGIA-----------------*/

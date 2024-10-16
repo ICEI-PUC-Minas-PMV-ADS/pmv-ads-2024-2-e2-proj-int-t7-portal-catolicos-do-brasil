@@ -14,7 +14,6 @@ namespace PortalCatolicoBrasil.Controllers
             _liturgiaService = liturgiaService;
         }
 
-        // Método para obter a liturgia baseada na data atual
         [HttpGet("liturgia")]
         public async Task<IActionResult> ObterLiturgia()
         {
