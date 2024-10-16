@@ -37,6 +37,7 @@ App_Data/
 
 # Configurações de banco de dados
 appsettings.json
+*.json
 
 # Configurações do Rider/JetBrains
 .idea/
