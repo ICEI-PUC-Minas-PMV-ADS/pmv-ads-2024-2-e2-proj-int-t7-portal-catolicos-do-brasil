@@ -10,83 +10,95 @@
     <a asp-action="Create" class="btn btn-primary">Criar Novo Evento</a>
 </p>
 
+<div class="container-fluid">
+    <!-- Banner superior -->
+    <div class="row mb-4">
+        <div class="col banner-anuncio-eventos">
+            <img src="../css/Images/card_divulgacao1.png" class="img-fluid" alt="Banner Superior">
+        </div>
+    </div>
+    </div>
 <div class="container mt-4">
+
     <!-- Formulário de busca -->
+    <h2 class="titulo-pesquisar-eventos">Pesquisar eventos</h2>
     <div class="card mb-4">
-        <div class="card-body">
-            <h5 class="card-title">Pesquisar eventos</h5>
+        <div class="card-body card-pesquisar-eventos">
             <form class="row g-3">
-                <div class="col-md-3">
-                    <label for="estado" class="form-label">Estado*</label>
-                    <select id="estado" class="form-select">
+                <div class="col-md-4">
+                    <label for="estado" class="form-label texto-card-pesquisar-eventos">Estado*</label>
+                    <select id="estado" class="form-select escolhas-formulario-eventos">
                         <option selected>Escolha...</option>
                         <option>SP</option>
                         <option>RJ</option>
                         <option>SC</option>
                     </select>
                 </div>
-                <div class="col-md-3">
-                    <label for="cidade" class="form-label">Cidade</label>
-                    <select id="cidade" class="form-select">
+                <div class="col-md-4">
+                    <label for="cidade" class="form-label texto-card-pesquisar-eventos">Cidade</label>
+                    <select id="cidade" class="form-select escolhas-formulario-eventos">
                         <option selected>Escolha...</option>
                         <option>São Paulo</option>
                         <option>Rio de Janeiro</option>
                         <option>Camboriú</option>
                     </select>
                 </div>
-                <div class="col-md-3">
-                    <label for="bairro" class="form-label">Bairro</label>
-                    <select id="bairro" class="form-select">
+                <div class="col-md-4">
+                    <label for="bairro" class="form-label texto-card-pesquisar-eventos">Bairro</label>
+                    <select id="bairro" class="form-select escolhas-formulario-eventos">
                         <option selected>Escolha...</option>
                         <option>Centro</option>
                         <option>Zona Sul</option>
                     </select>
                 </div>
-                <div class="col-md-3">
-                    <label for="paróquia" class="form-label">Paróquia</label>
-                    <select id="paróquia" class="form-select">
+                <div class="col-md-4">
+                    <label for="paróquia" class="form-label texto-card-pesquisar-eventos">Paróquia</label>
+                    <select id="paróquia" class="form-select escolhas-formulario-eventos">
                         <option selected>Escolha...</option>
                         <option>Paróquia A</option>
                         <option>Paróquia B</option>
                     </select>
                 </div>
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary">Buscar</button>
-                    <button type="button" class="btn btn-secondary">Pesquisar por minha localização atual</button>
+                <div class="col-12 botoes-pesquisar-eventos">
+                    <button type="button" class="btn btn-primary texto-card-pesquisar-eventos botao-buscar">Buscar</button>
+                    <button type="button" class="texto-botao-localizacao btn">
+                        <div>Pesquisar por minha localização atual</div>
+                        <div><img class="icone-localizacao" src="../css/Images/my_location.png"></div>
+                    </button>
                 </div>
             </form>
         </div>
     </div>
 
     <!-- Resultados da pesquisa - exibição em estilo de lista -->
-    <h5 class="mb-4">Resultado da pesquisa</h5>
+    <h2 class="titulo-resultado-pesquisa">Resultado da pesquisa</h2>
     <div class="list-group">
         @foreach (var item in Model)
         {
-            <div class="list-group-item d-flex justify-content-between align-items-start mb-3">
-                <div class="d-flex flex-column">
-                    <div class="text-muted mb-2">
-                        <strong>@item.DataInicio.ToString("dd MMM").ToUpper()</strong>
+            <div class="card mb-4 card-eventos">
+                <div class="card-body">
+                    <div class="row card-evento1">
+                        <div class="col-12 col-sm-3 col-md-2 quadro-data1 text-center">
+                            <h4 class="data-evento1">@item.DataInicio.ToString("dd")</h4>
+                            <h4 class="mes-evento1">@item.DataInicio.ToString("MMM").ToUpper()</h4>
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-6 coluna-informacoes-evento1">
+                            <h1 class="titulo-evento1">@item.TituloEvento</h1>
+                            <p class="texto-evento1">
+                                @item.DataInicio.ToString("dddd"), @item.HorarioInicio - @item.HorarioEncerramento<br>
+                                @item.NomeParoquia, @item.Logradouro, @item.Numero - @item.Bairro, @item.Cidade - @item.Estado
+                            </p>
+                            <a href="#" class="btn btn-outline-primary botao-ver-no-mapa">
+                                Ver no mapa <img class="icone-localizacao" src="../css/Images/my_location.png">
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 coluna-banner-evento1">
+                            @if (!string.IsNullOrEmpty(item.BannerPath))
+                            {
+                                <img class="banner-evento1 img-fluid" src="@Url.Content("~/uploads/" + item.BannerPath)" alt="Banner do Evento">
+                            }
+                        </div>
                     </div>
-                    <div>
-                        <h5 class="mb-1">@item.TituloEvento</h5>
-                        <p class="mb-1">
-                            <strong>Data:</strong> @item.DataInicio.ToString("dd MMM yyyy") - @item.DataEncerramento.ToString("dd MMM yyyy")<br>
-                            <strong>Horário:</strong> @item.HorarioInicio - @item.HorarioEncerramento<br>
-                            <strong>Local:</strong> @item.NomeParoquia, @item.Logradouro, @item.Numero - @item.Bairro, @item.Cidade - @item.Estado<br>
-                            <strong>Telefone:</strong> @item.Telefone<br>
-                            <strong>Email:</strong> @item.Email
-                        </p>
-
-                    </div>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Ver no mapa</a>
-                </div>
-                <div class="d-flex align-items-center">
-                    @if (!string.IsNullOrEmpty(item.BannerPath))
-                    {
-                        <img src="@Url.Content("~/uploads/" + item.BannerPath)" class="card-img-top" alt="Banner do Evento" height="250" width="250">
-                    }
-                   
                 </div>
             </div>
         }

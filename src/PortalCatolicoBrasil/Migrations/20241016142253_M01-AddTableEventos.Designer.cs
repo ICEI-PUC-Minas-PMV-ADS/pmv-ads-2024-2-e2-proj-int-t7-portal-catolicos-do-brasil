@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace PortalCatolicoBrasil.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241014190803_M01-AddTables")]
-    partial class M01AddTables
+    [Migration("20241016142253_M01-AddTableEventos")]
+    partial class M01AddTableEventos
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,17 +24,22 @@ namespace PortalCatolicoBrasil.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Evento", b =>
+            modelBuilder.Entity("PortalCatolicoBrasil.Models.Evento", b =>
                 {
-                    b.Property<string>("ID")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("Bairro")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Banner")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BannerPath")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CEP")
@@ -49,11 +54,11 @@ namespace PortalCatolicoBrasil.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DataEncerramento")
-                        .HasColumnType("datetime2");
+                    b.Property<DateOnly>("DataEncerramento")
+                        .HasColumnType("date");
 
-                    b.Property<DateTime>("DataInicio")
-                        .HasColumnType("datetime2");
+                    b.Property<DateOnly>("DataInicio")
+                        .HasColumnType("date");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -92,30 +97,6 @@ namespace PortalCatolicoBrasil.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Eventos");
-                });
-
-            modelBuilder.Entity("PortalCatolicoBrasil.Models.Liturgia", b =>
-                {
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
-
-                    b.ToTable("liturgia", (string)null);
-                });
-
-            modelBuilder.Entity("PortalCatolicoBrasil.Models.SantoDia", b =>
-                {
-                    b.Property<DateOnly>("data")
-                        .HasColumnType("date");
-
-                    b.Property<string>("descricao")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("nome")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("data");
-
-                    b.ToTable("santo_do_dia");
                 });
 #pragma warning restore 612, 618
         }

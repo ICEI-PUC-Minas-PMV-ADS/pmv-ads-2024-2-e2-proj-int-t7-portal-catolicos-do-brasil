@@ -56,6 +56,7 @@ namespace PortalCatolicoBrasil.Controllers
             return View(evento);
         }
 
+
         public async Task<IActionResult> Delete(int? ID)
         {
             if (ID == null)

@@ -450,3 +450,217 @@ footer {
 }
 /*-----------------FIM SEGUNDA PUBLICACAO-----------------*/
 
+/*-----------------INICIO PAGINA DE EVENTOS-----------------*/
+
+
+
+.container-eventos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner-anuncio-eventos {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-pesquisar-eventos {
+    font-size: 36px;
+    font-family: Poppins;
+}
+
+.texto-card-pesquisar-eventos {
+    font-size: 24px;
+    font-family: Poppins;
+}
+
+.botoes-pesquisar-eventos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-pesquisar-eventos {
+    background-color: rgba(217, 217, 217, 0.2);
+    border-radius: 15px;
+}
+
+.card-eventos {
+    background-color: rgba(217, 217, 217, 0.2) !important;
+}
+
+.icone-localizacao {
+    width: 22.8px;
+    height: 22.8px;
+}
+
+.escolhas-formulario-eventos {
+    background-color: rgba(237, 237, 237, 1) !important;
+}
+
+.texto-botao-localizacao {
+    width: 360px !important;
+    display: flex !important;
+    align-items: center;
+    font-family: Poppins !important;
+    color: rgba(24, 119, 242, 1) !important;
+    background-color: rgba(217, 217, 217, 0) !important;
+    border: none !important;
+    justify-content: space-between !important;
+}
+
+.botao-buscar {
+    width: auto;
+    height: auto;
+    border-radius: 50px !important;
+}
+
+.titulo-resultado-pesquisa {
+    font-size: 36px;
+    font-family: Poppins;
+}
+
+.data-evento1 {
+    font-size: 64px;
+    font-family: Poppins;
+    color: rgba(30, 30, 30, 1);
+}
+
+.texto-evento1 {
+    font-size: 20px;
+    font-family: Poppins;
+}
+
+.texto-botao-ver-no-mapa {
+    font-size: 24px;
+    font-family: Poppins;
+    margin-bottom: 0px;
+    border: none;
+}
+
+.card-evento1 {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.botao-ver-no-mapa {
+    border-radius: 50px !important;
+    padding: 4% !important;
+    color: white !important;
+    background-color: rgba(24, 119, 242, 1) !important;
+    justify-content: space-around !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    width: 200px !important;
+    height: 45.86px !important;
+}
+
+.quadro-data1 {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    align-items: center;
+    align-content: center;
+}
+
+.banner-evento1 {
+    width: fill;
+}
+
+.coluna-banner-evento1 {
+    display: flex;
+    justify-content: center;
+}
+
+.coluna-informacoes-evento1 {
+    align-content: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.titulo-evento1 {
+    font-size: 35px;
+    font-family: Poppins;
+}
+
+.mes-evento1 {
+    font-size: 20px;
+    color: rgba(30, 30, 30, 1);
+}
+/*-----------------FIM PAGINA DE EVENTOS-----------------*/
+
+/*INICIO PAGINA FORMULARIO EVENTOS------------------------*/
+.card1-paroquias {
+    border: 0px;
+}
+
+.header-cardparoquias1 {
+    border-bottom: none;
+    background-color: white;
+    padding: 0px;
+    box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.titulo-cardparoquias1 {
+    font-size: 32px;
+}
+
+.body-cardparoquias1 {
+    background-color: rgba(217, 217, 217, 0.2);
+    box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.textocardinformacoesparoquia {
+    font-size: 24px;
+}
+
+.textocardinformacoesevento {
+    font-size: 24px;
+}
+
+.textobannereventos {
+    font-size: 16px;
+}
+
+.botoesinformacoesparoquia {
+    background-color: rgba(237, 237, 237, 1);
+    box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.cardeventos {
+    border: 0px;
+}
+
+.header-cardeventos {
+    border-bottom: none;
+    background-color: white;
+    padding: 0px;
+}
+
+.titulo-card-eventos {
+    font-size: 32px;
+}
+
+.body-cardeventos {
+    background-color: rgba(217, 217, 217, 0.2);
+    box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.botoesdocadastrodeevento {
+    background-color: rgba(237, 237, 237, 1);
+    box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.botaoenviarformularioeventos {
+    box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+/*Fim do Formulario*/
