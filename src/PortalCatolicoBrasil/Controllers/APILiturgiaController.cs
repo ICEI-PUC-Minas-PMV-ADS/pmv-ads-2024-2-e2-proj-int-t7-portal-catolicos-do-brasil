@@ -13,10 +13,10 @@ namespace PortalCatolicoBrasil.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
-        {
-            var dados = await _context.Liturgia.ToListAsync();
-            return View(dados);
-        }
+        //public async Task<IActionResult> Index()
+        //{
+        //    var dados = await _context.Liturgia.ToListAsync();
+        //    return View(dados);
+        //}
     }
 }

@@ -1,12 +1,7 @@
-﻿/* NÃO MODIFICAR O CÓDIGO A PARTIR DAQUI--------------------------------------------------------------------------------*/
+﻿
+/* ------------------INICIO CABEÇALHO E FOOTER--------------------------------------------------------------------------------*/
 html {
-    font-size: 14px;
-}
-
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
+    font-size: 16px;
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
@@ -46,9 +41,6 @@ header {
     margin-right: auto;
     gap: 25px;
     justify-content: center;
-}
-
-.imagemCabecalho {
 }
 
 .cruz-back {
@@ -133,7 +125,905 @@ footer {
     padding: 50px;
     padding-top: 0;
 }
-/* NÃO MODIFICAR O CÓDIGO ANTES DAQUI--------------------------------------------------------------------------------*/
+
+.redes {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+.texto-welcome {
+    position: relative;
+    margin-bottom: 200px;
+    width: 650px;
+    font-size: 20px;
+    text-shadow: 0.1em 0.1em 0.2em gray;
+    text-align: justify;
+    color: #1E1E1E;
+    margin-left: 5%;
+    margin-right: auto;
+    margin-top: -250px;
+    min-width: 300px;
+}
+
+.reftexto-welcome {
+    text-align: right;
+    font-size: 16px;
+    font-style: italic;
+    color: #1E1E1E;
+}
+
+.mainindex {
+    z-index: 1;
+}
+
+@media (max-width: 1025px) {
+    .menu {
+        color: black;
+        font-size: 18px;
+        position: absolute;
+        height: 65px;
+        background: #F7F7F7;
+        box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        max-width: 800px;
+        margin-left: 10%;
+        margin-right: auto;
+        top: 155px;
+        width: 800px;
+    }
+
+    .ul--nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    .li--nav {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .a--nav {
+        text-decoration: none;
+        color: black;
+    }
+
+    body {
+        color: #1E1E1E;
+        width: 100%;
+    }
+
+    .cabecalho {
+        width: 1000px;
+        font-size: 25px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: baseline;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 25px;
+        justify-content: center;
+    }
+
+
+
+    .cruz-back {
+        width: 100%;
+        margin-top: 30px;
+        z-index: -1;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: relative;
+        width: 100%;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0px;
+        padding-top: 50px;
+        margin-top: 50px;
+        background: #EDEDED;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 50px;
+        position: absolute;
+        max-width: 800px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0px;
+        padding-top: 50px;
+        margin-top: 50px;
+        background: #EDEDED;
+        font-size: 14px;
+    }
+
+        .rodape h4 {
+            font-size: 18px;
+        }
+
+    .direitos {
+        font-size: 14px;
+    }
+
+    .redes {
+        text-decoration: none;
+        color: #1E1E1E;
+    }
+
+    .texto-welcome {
+        position: relative;
+        margin-bottom: 70px;
+        width: 500px;
+        font-size: 14px;
+        text-shadow: 0.1em 0.1em 0.2em gray;
+        text-align: justify;
+        color: #1E1E1E;
+        margin-left: 10%;
+        margin-right: auto;
+        margin-top: -160px;
+        min-width: 300px;
+    }
+
+    .reftexto-welcome {
+        text-align: right;
+        font-size: 16px;
+        font-style: italic;
+        color: #1E1E1E;
+    }
+
+    .mainindex {
+        z-index: 1;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .menu {
+        color: black;
+        font-size: 18px;
+        position: absolute;
+        height: 65px;
+        background: #F7F7F7;
+        box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        max-width: 700px;
+        margin-left: 20%;
+        margin-right: auto;
+        top: 155px;
+        width: 800px;
+        font-size: 16px;
+    }
+
+    .ul--nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    .li--nav {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .a--nav {
+        text-decoration: none;
+        color: black;
+    }
+
+    body {
+        color: #1E1E1E;
+        width: 765px;
+    }
+
+    .cabecalho {
+        width: 769px;
+        font-size: 25px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: baseline;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 25px;
+        justify-content: center;
+    }
+
+
+
+    .cruz-back {
+        width: 768px;
+        margin-top: 30px;
+        z-index: -1;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: relative;
+        width: 769px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0px;
+        padding-top: 50px;
+        margin-top: 50px;
+        background: #EDEDED;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 50px;
+        position: absolute;
+        max-width: 700px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0px;
+        padding-top: 50px;
+        margin-top: 50px;
+        background: #EDEDED;
+        font-size: 14px;
+    }
+
+        .rodape h4 {
+            font-size: 16px;
+        }
+
+    .imagemRodape {
+        width: 100%
+    }
+
+    .redessociais {
+        width: 30%;
+    }
+
+    .direitos {
+        font-size: 14px;
+        width: 769px;
+    }
+
+    .redes {
+        text-decoration: none;
+        color: #1E1E1E;
+    }
+
+    .texto-welcome {
+        position: relative;
+        margin-bottom: 30px;
+        width: 450px;
+        font-size: 14px;
+        text-shadow: 0.1em 0.1em 0.2em gray;
+        text-align: justify;
+        color: #1E1E1E;
+        margin-left: -5%;
+        margin-right: auto;
+        margin-top: -130px;
+        min-width: 300px;
+    }
+
+    .reftexto-welcome {
+        text-align: right;
+        font-size: 12px;
+        font-style: italic;
+        color: #1E1E1E;
+    }
+
+    .mainindex {
+        z-index: 1;
+    }
+}
+
+
+@media (max-width: 426px) {
+
+    .menu {
+        color: black;
+        font-size: 25px;
+        position: absolute;
+        height: 100px;
+        background: #F7F7F7;
+        box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-left: 20%;
+        margin-right: auto;
+        top: 155px;
+        width: 90%;
+        /*padding-right: 40px;*/
+    }
+
+    .ul--nav {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2px;
+        row-gap: 2px;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+
+    .li--nav {
+        list-style: none;
+        text-decoration: none;
+        padding: 1px;
+        margin-right: 50px;
+    }
+
+    .a--nav {
+        text-decoration: none;
+        color: black;
+    }
+
+    body {
+        color: #1E1E1E;
+        width: 765px;
+    }
+
+    .cabecalho {
+        width: 769px;
+        font-size: 25px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: baseline;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 25px;
+        justify-content: center;
+    }
+
+
+
+    .cruz-back {
+        width: 769px;
+        height: 230px;
+        margin-top: 80px;
+        z-index: -1;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 769px;
+        height: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0px;
+        padding-top: 1px;
+        margin-top: 50px;
+        background: #EDEDED;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        position: absolute;
+        max-width: 700px;
+        height: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0px;
+        padding-top: 5px;
+        margin-top: 50px;
+        background: #EDEDED;
+        font-size: 20px;
+    }
+
+        .rodape h4 {
+            font-size: 25px;
+        }
+
+    .imagemRodape {
+        width: 100%;
+    }
+
+    .redessociais {
+        width: 60%;
+    }
+
+    .direitos {
+        font-size: 18px;
+        width: 769px;
+    }
+
+    .redes {
+        text-decoration: none;
+        color: #1E1E1E;
+    }
+
+    .texto-welcome {
+        position: relative;
+        margin-bottom: 30px;
+        width: 700px;
+        font-size: 22px;
+        text-shadow: 0.1em 0.1em 0.2em gray;
+        text-align: justify;
+        color: #1E1E1E;
+        margin-left: -8%;
+        margin-right: auto;
+        margin-top: -180px;
+        min-width: 300px;
+    }
+
+    .reftexto-welcome {
+        text-align: right;
+        font-size: 16px;
+        font-style: italic;
+        color: #1E1E1E;
+        margin-top: -20px;
+    }
+
+    .mainindex {
+        z-index: 1;
+    }
+}
+
+/* ------------------FIM CABEÇALHO E FOOTER--------------------------------------------------------------------------------*/
+
+
+
+
+/*------------------------INICIO INDEX-------------------------------------------------------------------------------------*/
+
+.bg-info {
+    background-color: #E6F1FF !important;
+}
+
+.publicacoes {
+    background-color: #EFF5FE !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botaogps {
+    border-radius: 50px;
+}
+
+.pesqgps {
+    margin-left: 50px;
+}
+
+
+
+.buscar {
+    width: 130px;
+}
+
+.campoform {
+    background-color: #EDEDED;
+    border: none;
+}
+
+.titulo-form {
+    margin-top: 0;
+}
+
+.formpai {
+    border: none;
+    box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 1050px;
+    margin-left: -10px;
+    font-size: 20px;
+}
+
+.mainindex {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.anuncio {
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 15px !important;
+}
+
+.Drog {
+    padding-left: 130px;
+}
+
+.Calc {
+    padding-left: 130px;
+}
+
+.aqui {
+    text-decoration: none;
+}
+
+.leia-mais {
+    display: block; /* Garante que o link ocupe uma linha própria */
+    margin-top: 10px; /* Espaço adicional acima do link */
+    text-align: right; /* Alinha o link à direita */
+    text-decoration: none;
+}
+
+    .leia-mais:hover {
+        color: dodgerblue !important;
+    }
+
+
+@media (max-width: 1025px) {
+
+    .bg-info {
+        background-color: #E6F1FF !important;
+    }
+
+    .liturgiaSanto {
+        width: 900px;
+        /*border: 5px solid red;*/
+    }
+
+    .Litur {
+        width: 80%;
+    }
+
+    .Santo {
+        width: 80%;
+    }
+
+    .publicacoes {
+        background-color: #EFF5FE !important;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 900px;
+    }
+
+    .col-md-8 {
+        padding-left: 70px;
+    }
+
+    .botaogps {
+        border-radius: 50px;
+    }
+
+    .pesqgps {
+        margin-left: 50px;
+    }
+
+    .buscar {
+        width: 130px;
+    }
+
+    .campoform {
+        background-color: #EDEDED;
+        border: none;
+    }
+
+    .titulo-form {
+        margin-top: 0;
+    }
+
+    .formpai {
+        border: none;
+        box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        width: 900px;
+        margin-left: -10px;
+    }
+
+    .mainindex {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .anuncio {
+        align-items: center;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        border-radius: 15px !important;
+        width: 900px;
+    }
+
+    .Drog {
+        padding-left: 130px;
+    }
+
+    .Calc {
+        padding-left: 130px;
+    }
+
+    .aqui {
+        text-decoration: none;
+    }
+
+    .leia-mais {
+        display: block; /* Garante que o link ocupe uma linha própria */
+        margin-top: 10px; /* Espaço adicional acima do link */
+        text-align: right; /* Alinha o link à direita */
+        text-decoration: none;
+    }
+
+        .leia-mais:hover {
+            color: dodgerblue !important;
+        }
+}
+
+
+@media (max-width: 769px) {
+
+    .bg-info {
+        background-color: #E6F1FF !important;
+    }
+
+    .liturgiaSanto {
+        width: 700px;
+        margin-left: -40px;
+        /*border: 5px solid red;*/
+    }
+
+    .Litur {
+        width: 80%;
+    }
+
+    .Santo {
+        width: 80%;
+    }
+
+    .publicacoes {
+        background-color: #EFF5FE !important;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 700px;
+        margin-left: -40px;
+    }
+
+    .Terco {
+        width: 140%;
+    }
+
+    .EstatuaPapa {
+        width: 140%;
+    }
+
+    .botaogps {
+        border-radius: 50px;
+    }
+
+    .pesqgps {
+        margin-left: 50px;
+    }
+
+    .campoform {
+        background-color: #EDEDED;
+        border: none;
+    }
+
+    .titulo-form {
+        margin-top: 0;
+    }
+
+    .formpai {
+        border: none;
+        box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        width: 700px;
+        margin-left: -40px;
+    }
+
+
+
+    .mainindex {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .anuncio {
+        align-items: center;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        border-radius: 15px !important;
+        width: 700px;
+        margin-left: -40px;
+    }
+
+    .Drog {
+        padding-left: 60px;
+    }
+
+    .Calc {
+        padding-left: 60px;
+    }
+
+    .aqui {
+        text-decoration: none;
+    }
+
+    .leia-mais {
+        display: block; /* Garante que o link ocupe uma linha própria */
+        margin-top: 10px; /* Espaço adicional acima do link */
+        text-align: right; /* Alinha o link à direita */
+        text-decoration: none;
+    }
+
+        .leia-mais:hover {
+            color: dodgerblue !important;
+        }
+}
+
+
+@media (max-width: 426px) {
+
+    html {
+        font-size: 20px;
+    }
+
+    .bg-info {
+        background-color: #E6F1FF !important;
+    }
+
+    .liturgiaSanto {
+        width: 700px;
+        margin-left: -40px;
+        font-size: 22px;
+    }
+
+    .imglit {
+        width: 600px;
+        padding-left: 0px;
+    }
+
+    .liturgiaIndex {
+    }
+
+    .Litur {
+        width: 80%;
+        margin-left: 70px;
+        padding-bottom: 10px;
+    }
+
+    .Santo {
+        width: 80%;
+        margin-left: 70px;
+        padding-bottom: 10px;
+        padding-top: 30px;
+    }
+
+    .publicacoes {
+        background-color: #EFF5FE !important;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 700px;
+        margin-left: -40px;
+        font-size: 22px;
+    }
+
+    .Terco {
+        width: 60%;
+        margin-left: 110px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .EstatuaPapa {
+        width: 60%;
+        margin-left: 110px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .comorezar {
+        padding-bottom: 30px;
+    }
+
+    .botaogps {
+        border-radius: 50px;
+    }
+
+    .pesqgps {
+        margin-left: 50px;
+    }
+
+    .campoform {
+        background-color: #EDEDED;
+        border: none;
+    }
+
+    .titulo-form {
+        margin-top: 0;
+    }
+
+    .formpai {
+        border: none;
+        box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        width: 700px;
+        margin-left: -40px;
+    }
+
+
+
+    .mainindex {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .anuncio {
+        align-items: center;
+        display: flex;
+        padding: 20px;
+        justify-content: normal;
+        border-radius: 15px !important;
+        width: 700px;
+        margin-left: -40px;
+    }
+
+    .Drog {
+        padding-left: 5px;
+        width: 40%;
+        margin-left: 60px;
+    }
+
+    .Calc {
+        padding-left: 10px;
+        width: 10%;
+    }
+
+    .aqui {
+        text-decoration: none;
+    }
+
+    .leia-mais {
+        display: block; /* Garante que o link ocupe uma linha própria */
+        margin-top: 10px; /* Espaço adicional acima do link */
+        text-align: right; /* Alinha o link à direita */
+        text-decoration: none;
+    }
+
+        .leia-mais:hover {
+            color: dodgerblue !important;
+        }
+}
+
+
+/*-----------------FIM INDEX-----------------*/
+
 
 
 
@@ -327,43 +1217,6 @@ footer {
     margin-right: auto;
 }
 /*-----------------FIM SANTO DO DIA-----------------*/
-
-
-/*-----------------INICIO INDEX-----------------*/
-.bg-info {
-    background-color: #E6F1FF !important;
-}
-
-.publicacoes {
-    background-color: #EFF5FE !important;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.botaogps{
-    border-radius:50px;
-}
-
-.buscar{
-    width: 130px;
-}
-
-.campoform{
-    background-color: #EDEDED;
-    border: none;
-}
-
-.formpai {
-    border: none;
-    box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-}
-
-.mainindex{
-    width:1050px;
-    margin-left: auto;
-    margin-right: auto;
-}
-/*-----------------FIM INDEX-----------------*/
 
 
 /*-----------------INICIO PUBLICACOES-----------------*/

@@ -21,16 +21,15 @@ namespace PortalCatolicoBrasil.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Evento", b =>
+            modelBuilder.Entity("PortalCatolicoBrasil.Models.CadastroDeMissas", b =>
                 {
-                    b.Property<string>("ID")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Bairro")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Banner")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -46,11 +45,70 @@ namespace PortalCatolicoBrasil.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DataEncerramento")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DataInicio")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Logradouro")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NomeParoquia")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Numero")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Telefone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CadastroDeMissas");
+                });
+
+            modelBuilder.Entity("PortalCatolicoBrasil.Models.Evento", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("Bairro")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Banner")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BannerPath")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CEP")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CNPJ")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Cidade")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateOnly>("DataEncerramento")
+                        .HasColumnType("date");
+
+                    b.Property<DateOnly>("DataInicio")
+                        .HasColumnType("date");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -89,14 +147,6 @@ namespace PortalCatolicoBrasil.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Eventos");
-                });
-
-            modelBuilder.Entity("PortalCatolicoBrasil.Models.Liturgia", b =>
-                {
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
-
-                    b.ToTable("liturgia", (string)null);
                 });
 
             modelBuilder.Entity("PortalCatolicoBrasil.Models.SantoDia", b =>
