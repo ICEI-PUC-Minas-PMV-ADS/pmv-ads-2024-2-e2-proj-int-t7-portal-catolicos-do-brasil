@@ -1047,37 +1047,37 @@ form {
     box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
 }
 
-.btn--group > button {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.25s ease-in-out;
-    border: none;
-    outline: none;
-    position: relative;
-    background-color: #F7F7F7;
-}
+    .btn--group > button {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.25s ease-in-out;
+        border: none;
+        outline: none;
+        position: relative;
+        background-color: #F7F7F7;
+    }
 
-.btn--group .active {
-    background-color: var(--button-background);
-    color: var(--button-color);
-}
+    .btn--group .active {
+        background-color: var(--button-background);
+        color: var(--button-color);
+    }
 
-.btn--group > button:hover {
-    background: #E9F2FF;
-    color: var(--button-color);
-}
+    .btn--group > button:hover {
+        background: #E9F2FF;
+        color: var(--button-color);
+    }
 
-.btn--group > button:not(:last-child):after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 2px;
-    right: 0px;
-    z-index: 1;
-}
+    .btn--group > button:not(:last-child):after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        right: 0px;
+        z-index: 1;
+    }
 
 .liturgia-container {
     display: flex;
@@ -1090,16 +1090,15 @@ form {
     min-width: 300px;
     width: 75%;
     color: #1e1e1e;
-
 }
 
-.liturgia-header{
+.liturgia-header {
     display: flex;
     width: 100%;
     height: 70px;
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
     margin-bottom: 30px;
     padding-top: 0;
 }
@@ -1117,8 +1116,8 @@ form {
 .liturgia-data-current {
     display: flex;
     flex-direction: row;
-    justify-content:flex-end;
-    align-items:center;
+    justify-content: flex-end;
+    align-items: center;
     height: 30px;
     gap: 3px;
 }
@@ -1218,24 +1217,13 @@ form {
 }
 /*-----------------FIM SANTO DO DIA-----------------*/
 
-
-/*-----------------INICIO PUBLICACOES-----------------*/
-.container-publicacoes {
+.anuncio-publicacoes {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    width: 960px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.linha {
-    border: none;
-    border-top: 1px solid #333333; /* Cor mais escura para a linha */
-    margin: 0;
-    opacity: 0.3; /* Torna a linha um pouco mais opaca */
-    margin-top: 5px;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 15px !important;
+    margin-left: 0px;
 }
 
 .leia-mais {
@@ -1244,21 +1232,142 @@ form {
     text-align: right; /* Alinha o link à direita */
     text-decoration: none;
 }
-.leia-mais:hover {
-    color: dodgerblue !important;
+
+    .leia-mais:hover {
+        color: dodgerblue !important;
+    }
+
+.margem-titulo {
+    margin-top: 15px;
+}
+/*-----------------INICIO PUBLICACOES-----------------*/
+@media (max-width: 1025px) {
+    .container-publicacoes {
+        display: flex;
+        flex-direction: column;
+        max-width: 960px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .anuncio-publicacoes {
+        align-items: center;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        border-radius: 15px !important;
+        width: 900px;
+    }
+}
+
+@media (max-width: 769px) {
+    .container-publicacoes {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .imagem-publicacoes {
+        width: 80%;
+    }
+
+    .texto-publicacoes {
+        padding-right: 140px;
+    }
+
+    .anuncio-publicacoes {
+        align-items: center;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        border-radius: 15px !important;
+        width: 700px;
+        margin-left: -2px;
+    }
+}
+
+@media (max-width: 426px) {
+    .container-publicacoes {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imagem-publicacoes {
+        width: 60%;
+        margin-left: 140px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .texto-publicacoes {
+        padding-right: 50px;
+        padding-top: 30px;
+    }
+
+    .anuncio-publicacoes {
+        align-items: center;
+        display: flex;
+        padding: 20px;
+        justify-content: normal;
+        border-radius: 15px !important;
+        width: 700px;
+        margin-left: 0px;
+    }
 }
 /*-----------------FIM PUBLICACOES-----------------*/
 
 
 /*-----------------INICIO PRIMEIRA PUBLICACAO-----------------*/
-.container-primeirapublicacao {
-    display: flex;
-    flex-direction: column;
-    width: 960px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
+@media (max-width: 1025px) {
+    .container-primeira-publicacao {
+        display: flex;
+        flex-direction: column;
+        max-width: 960px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 769px) {
+    .container-primeira-publicacao {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imagem-primeira-publicacao {
+        width: 50%;
+    }
+}
+
+@media (max-width: 426px) {
+    .container-primeira-publicacao {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .botao-voltar {
@@ -1274,32 +1383,62 @@ form {
     color: black;
     width: 110px;
     text-decoration: none;
+    margin-top: 10px;
 }
 
-.botao-voltar::before {
-    content: '←';
-    margin-right: 10px;
-}
+    .botao-voltar::before {
+        content: '\2190';
+        margin-right: 10px;
+    }
 
-.botao-voltar:hover {
-    background-color: #e0e0e0;
-}
+    .botao-voltar:hover {
+        background-color: #e0e0e0;
+    }
 
-.botao-voltar:visited, .botao-voltar:link {
-    color: black; /* Garante que a cor do texto seja sempre preta */
-}
+    .botao-voltar:visited, .botao-voltar:link {
+        color: black; /* Garante que a cor do texto seja sempre preta */
+    }
 /*-----------------FIM PRIMEIRA PUBLICACAO-----------------*/
 
 
 /*-----------------INICIO SEGUNDA PUBLICACAO-----------------*/
-.container-segundapublicacao {
-    display: flex;
-    flex-direction: column;
-    width: 960px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
+@media (max-width: 1025px) {
+    .container-segunda-publicacao {
+        display: flex;
+        flex-direction: column;
+        width: 960px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 769px) {
+    .container-segunda-publicacao {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imagem-segunda-publicacao {
+        width: 50%;
+    }
+}
+
+@media (max-width: 426px) {
+    .container-segunda-publicacao {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 /*-----------------FIM SEGUNDA PUBLICACAO-----------------*/
-
