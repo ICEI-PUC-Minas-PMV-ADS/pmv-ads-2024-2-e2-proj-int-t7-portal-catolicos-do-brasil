@@ -20,20 +20,20 @@ Abaixo estão os elementos padrões de todas as páginas:
 
 
 <p>
-<h3>Head:</h3>
+<h4>Head:</h4>
 <img src="img/Printhead.png" width="500" />
 </p>
 <p>
-  <h3>Footer:</h3>
+  <h4>Footer:</h4>
 <img src="img/Printfooter.png" width="500" />
 </p>
 <p>
-  <h3>Área de anúncio:</h3>
+  <h4>Área de anúncio:</h4>
 <img src="img/Printanuncio.png" width="500" />
 </p>
 <p>
-  <h3>Botões:</h3>
-<img src="img/Printbotao.png" width="150" />
+  <h4>Botões:</h4>
+<img src="img/Printbotao.png" width="100" />
 </p>
 
 
