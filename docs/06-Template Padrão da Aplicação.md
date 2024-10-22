@@ -16,21 +16,23 @@ As páginas terão como elementos comuns o header, o menu de navegação e o foo
 
 As cores e fontes do site foram pensadas para falicitar a leitura do público alvo, que em sua maioria são pessoas mais velhas. Por isso utilizamos alto contraste entre as fontes e os backgrounds em todos os elementos, bem como tamanhos grandes nos caracteres; Priorizamos as cores "Branca" e "Azul" nas suas várias tonalidades pois remetem ao celeste, às coisas do céu, como exemplifica a imagem do head que aparece em todas as páginas do site; A navegabilidade foi outro ponto que foi pensado de modo a facilitar a interação do usuário. Trouxemos todas as funcionaliades no menu principal bem como uma prévia de todas elas distribuídas na página de início;
 
+Abaixo estão os elementos padrões de todas as páginas:
+
 
 <p>
-<h3>Head</h3>
+<h3>Head:</h3>
 <img src="img/Printhead.png" width="500" />
 </p>
 <p>
-  <h3>Footer</h3>
+  <h3>Footer:</h3>
 <img src="img/Printfooter.png" width="500" />
 </p>
 <p>
-  <h3>Área de anúncio</h3>
+  <h3>Área de anúncio:</h3>
 <img src="img/Printanuncio.png" width="500" />
 </p>
 <p>
-  <h3>Botões</h3>
+  <h3>Botões:</h3>
 <img src="img/Printbotao.png" width="150" />
 </p>
 
