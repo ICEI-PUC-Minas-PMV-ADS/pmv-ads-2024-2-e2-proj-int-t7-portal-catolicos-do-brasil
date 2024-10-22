@@ -62,6 +62,9 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 <h5>Etapa 1 e 2</h5>
 <img src="../docs/img/KANBAN etapa 1 e 2.jpg">
 
+<h5>Etapa 3</h5>
+<img src="../docs/img/Etapa3.jpg">
+
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
