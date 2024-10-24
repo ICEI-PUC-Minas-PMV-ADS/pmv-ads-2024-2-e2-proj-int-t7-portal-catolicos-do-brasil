@@ -442,18 +442,7 @@ function fillFormWithData(dados) {
 		preencherCampo(field, value); // Usando a função preencherCampo
 	}
 }
-
-
-
 /*-----------------FIM SANTO DIA-----------------*/
-
-window.onload = function () {
-	preencherLiturgia();
-	addBorderIcon();
-	validarFormularioPesquisa();
-};
-/*-----------------FIM LITURGIA-----------------*/
-
 
 /*-----------------INICIO CIDADES E ESTADOS EVENTO-----------------*/
     document.addEventListener("DOMContentLoaded", function() {
@@ -537,3 +526,10 @@ function filtrarEventos()
             mensagemResultado.classList.remove('hidden');
         });
 }
+/*-----------------Fim Filtro Pesquisa Eventos-----------------*/
+
+window.onload = function () {
+	preencherLiturgia();
+	addBorderIcon();
+	validarFormularioPesquisa();
+};

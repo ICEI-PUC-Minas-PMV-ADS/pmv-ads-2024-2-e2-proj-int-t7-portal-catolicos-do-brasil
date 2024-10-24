@@ -87,7 +87,7 @@ namespace PortalCatolicoBrasil.Controllers
         public IActionResult Search(string estado, string cidade, string bairro)
         {
             // Começamos com todos os eventos disponíveis
-            IQueryable<Evento> eventos = _context.Eventos.AsQueryable();
+            IQueryable<Evento> eventos = _context.Evento.AsQueryable();
 
             // Filtragem por estado
             if (!string.IsNullOrEmpty(estado))
