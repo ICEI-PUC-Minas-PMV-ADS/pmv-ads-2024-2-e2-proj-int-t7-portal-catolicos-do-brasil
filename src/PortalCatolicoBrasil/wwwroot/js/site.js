@@ -372,6 +372,48 @@ document.querySelector('.pesqgps').addEventListener('click', function () {
 		alert("Geolocalização não é suportada pelo seu navegador.");
 	}
 });
+
+//document.querySelector('.pesqgps').addEventListener('click', function () {
+//	if (navigator.geolocation) {
+//		navigator.geolocation.getCurrentPosition(function (position) {
+//			var lat = position.coords.latitude;
+//			var lon = position.coords.longitude;
+
+//			// Enviar a latitude e longitude para o servidor
+//			fetch('/Igreja/BuscarPorLocalizacao', {
+//				method: 'POST',
+//				headers: {
+//					'Content-Type': 'application/json'
+//				},
+//				body: JSON.stringify({
+//					latitude: lat,
+//					longitude: lon
+//				})
+//			})
+//				.then(response => response.json())
+//				.then(data => {
+//					// Exibir os resultados das igrejas
+//					console.log(data);
+//					// Aqui você pode manipular o DOM para exibir as igrejas encontradas
+//				})
+//				.catch(error => {
+//					console.error('Erro ao buscar igrejas:', error);
+//				});
+//		}, function () {
+//			alert("Não foi possível obter sua localização.");
+//		});
+//	} else {
+//		alert("Geolocalização não é suportada pelo seu navegador.");
+//	}
+//});
+
+
+
+function abrirMapa(endereco) {
+	const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(endereco)}`;
+	window.open(url, '_blank');
+}
+
 /*-----------------FIM HOME INDEX-----------------*/
 //document.getElementById('new-search-btn').addEventListener('click', function () {
 //	const filter = document.getElementById('filter');
