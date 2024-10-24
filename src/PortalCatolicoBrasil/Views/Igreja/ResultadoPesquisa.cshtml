@@ -45,10 +45,14 @@
         </div>
     </div>
 
-
-    @* <div>
-        Aparecerão aqui as igrejas que você selceionar no filtro...
-    </div> *@
+    <div class="anuncio-resultado-missa rounded row poppins-regular">
+        <div class="Drog col-sm-6">
+            <img src="~/css/Images/Drogaria.png">
+        </div>
+        <div class="Calc col-sm-6">
+            <img src="~/css/Images/Calcitran.png">
+        </div>
+    </div>
 
     <div id="search-results">
         @if (Model != null && Model.Any())
@@ -56,15 +60,12 @@
             @foreach (var igreja in Model)
             {
 
-                <h2 class="poppins-medium titulo-result-page">Resultado da pesquisa</h2> @*titulo da página*@
+                <h2 class="poppins-medium titulo-result-page">Resultado da pesquisa</h2>
                 <div class="conteudo-card">
-                    @*div que contem todo o conteudo do card*@
-                    <h3 class="titulo-card-igreja poppins-medium ">@igreja.NomeIgreja</h3>@* card-title *@
+                    <h3 class="titulo-card-igreja poppins-medium ">@igreja.NomeIgreja</h3>
                     <div class="dados-card">
-                        @*div que contem todo o conteudo de info e missas*@
                         <div id="card-endereco">
-                            @* class="card-body col-sm-8" *@
-                            <h5 class="poppins-medium card-title-endereco">Informações da igreja</h5>@* card-title *@
+                            <h5 class="poppins-medium card-title-endereco">Informações da igreja</h5>
                             <div class="endereco-e-botao">
                                 <p class="poppins-medium">
                                     @igreja.Logradouro, @igreja.Numero - @igreja.Bairro - @igreja.Cidade, @igreja.Estado<br>
@@ -76,14 +77,9 @@
                                     <i class="icone-btn-ver-mapa fas fa-location"></i>
                                 </button>
                             </div>
-                            @* <button href="https://maps.google.com/?q=@igreja" target="_blank" class="btn-ver-mapa poppins-regular btn btn-primary">
-                            Ver no mapa
-                            <i class="fas fa-location"></i>
-                            </button> *@
                         </div>
                         <div id="card-missas">
-                            @* class="card-body col-sm-4" *@
-                            <h5 class="poppins-mediumcard-title-missas">Missas</h5>  @* card-title *@
+                            <h5 class="poppins-mediumcard-title-missas">Missas</h5>
                             <p class="poppins-medium">
                                 07:00 - Domingo<br>
                                 12:00 - Quarta-feira<br>
@@ -94,10 +90,6 @@
                         </div>
                     </div>
                 </div>
-@*                 <div class="card-dados-igreja"> card principal
-                     card mb-3 d-flex flex-md-row 
-                    
-                </div> *@
             }
 
             <p class="link-cadastre-aqui poppins-medium">Não encontrou sua igreja? <a href="@Url.Action("Create", "Igreja")" class="link-cadastre-aqui-resultados">Cadastre aqui</a></p>
