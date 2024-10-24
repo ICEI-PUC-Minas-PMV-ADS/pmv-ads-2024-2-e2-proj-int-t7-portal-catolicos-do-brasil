@@ -1,13 +1,13 @@
-﻿@model IEnumerable<PortalCatolicoBrasil.Models.CadastroDeMissas>
+﻿@model IEnumerable<PortalCatolicoBrasil.Models.Igreja>
 
 @{
-    ViewData["Title"] = "Cadastro De Missas";
+    ViewData["Title"] = "Cadastro de Igreja";
 }
 
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Novo Cadastro</a>
 </p>
 <table class="table">
     <thead>
@@ -16,7 +16,7 @@
                 @Html.DisplayNameFor(model => model.CNPJ)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NomeParoquia)
+                @Html.DisplayNameFor(model => model.NomeIgreja)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Telefone)
@@ -52,7 +52,7 @@
                 @Html.DisplayFor(modelItem => item.CNPJ)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.NomeParoquia)
+                @Html.DisplayFor(modelItem => item.NomeIgreja)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Telefone)

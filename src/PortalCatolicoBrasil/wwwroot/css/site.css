@@ -1,4 +1,4 @@
-﻿
+
 /* ------------------INICIO CABEÇALHO E FOOTER--------------------------------------------------------------------------------*/
 html {
     font-size: 16px;
@@ -617,7 +617,7 @@ footer {
 }
 
 .titulo-form {
-    margin-top: 0;
+    margin-top: 0px;
 }
 
 .formpai {
@@ -627,6 +627,10 @@ footer {
     width: 1050px;
     margin-left: -10px;
     font-size: 20px;
+}
+
+select {
+    color: #717275;
 }
 
 .mainindex {
@@ -1661,3 +1665,58 @@ form {
 /*Fim do Formulario*/
 
 
+
+/*-----------------INÍCIO MISSAS-----------------*/
+
+.main-missas {
+    min-width: 300px;
+    width: 75%;
+    margin: 50px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#new-search-btn {
+    border-radius: 50px;
+    padding: 6px 30px;
+    font-size: 18px;
+    margin-left: 0;
+}
+
+#cancel-search-btn {
+    border-radius: 50px;
+    background-color: #e1e1e1 !important;
+    transition: all 0.25s ease-in-out;
+}
+
+#cancel-search-btn:hover {
+    border-radius: 50px;
+    background-color: #c2c2c2 !important;
+}
+
+#filter {
+    transition: all 0.5s ease-in-out;
+}
+
+.main-missa {
+    min-width: 300px;
+    width: 75%;
+    margin: 50px auto;
+}
+
+.dia-semana{
+    display:flex;
+    margin-top:15px;
+    gap: 10px !important;
+}
+
+.select-time {
+    width: 120px !important;
+    border-radius: 50px !important;
+    font-size: 17px;
+    background-color: #f0f0f0;
+}
+
+/*-----------------FIM MISSAS-----------------*/

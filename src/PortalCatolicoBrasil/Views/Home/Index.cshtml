@@ -1,21 +1,14 @@
-﻿@{
+@{
     ViewData["Title"] = "Início";
 }
 
-<head>
-
-</head>
-
 <div class="mainindex">
     <div class="texto-welcome row poppins-regular">
-
         <p>
             "Servo de Deus Carlo Acutis, que fizeste de tua vida uma contínua renúncia e aniquilamento,
             dá-me a graça de buscar as coisas do Céu e desprezar as que passam. Assim seja."
         </p>
-
         <p class="reftexto-welcome">Meditação do Primeiro Dia da Novena ao Venerável Carlo Acutis</p>
-
     </div>
 
     <div class="titulo-form poppins-regular">
@@ -23,33 +16,41 @@
     </div>
 
     <div class="formpai pesquisaMissa conteiner mt-3 pt-2 border p-4 bg-light poppins-regular">
-
-        <form>
+        <form asp-action="BuscarIgrejaPorId" asp-controller="Igreja" method="post" onsubmit="validarFormularioPesquisa()">
             <div class="row mt-4">
                 <div class="col-sm-2">
                     <label for="Estado">Estado*</label>
-                    <input type="text" class="campoform botaogps form-control" placeholder="" name="Estado">
+                    <select id="Estado" class="campoform botaogps form-control" name="Estado" onchange="carregarCidades()" required>
+                        <option value="" disabled selected></option>
+                    </select>
                 </div>
                 <div class="col-sm-5">
                     <label for="Cidade">Cidade*</label>
-                    <input type="text" class="campoform botaogps form-control" placeholder="" name="Cidade">
+                    <select id="Cidade" class="campoform botaogps form-control" name="Cidade" onchange="carregarBairros()" required>
+                        <option value="" disabled selected></option>
+                    </select>
                 </div>
                 <div class="col-sm-5">
                     <label for="Bairro">Bairro</label>
-                    <input type="text" class="campoform botaogps form-control" placeholder="" name="Bairro">
+                    <select id="Bairro" class="campoform botaogps form-control" name="Bairro" onchange="carregarIgrejaPorBairro()">
+                        <option value="" disabled selected></option>
+                    </select>
                 </div>
                 <div class="col-sm-12 pt-4">
-                    <label for="Paroquia">Paróquia</label>
-                    <input type="text" class="campoform botaogps form-control" placeholder="" name="Paróquia">
-                    <button type="button" class="buscar botaogps btn btn-primary mt-5 mb-4">Buscar</button>
-                    <button type="button" class="botaogps pesqgps btn btn-outline-primary mt-5 mb-4">Pesquisar por minha localização atual  <i class="fas fa-location"></i></button>
+                    <label for="Igreja">Igreja</label>
+                    <select id="Igreja" class="campoform botaogps form-control" name="Igreja">
+                        <option value="" disabled selected></option>
+                    </select>
 
+                    <button type="button" id="botaoBuscar" class="buscar botaogps btn btn-primary mt-5 mb-4">Buscar</button>
 
+                    <button type="button" class="botaogps pesqgps btn btn-outline-primary mt-5 mb-4">
+                        Pesquisar por minha localização atual
+                        <i class="fas fa-location"></i>
+                    </button>
                 </div>
-
             </div>
         </form>
-
     </div>
 
     <div class="anuncio container my-5 bg-info rounded row poppins-regular">
@@ -68,7 +69,9 @@
             </div>
             <h3>Liturgia diária</h3>
             <p>Naquele tempo, disse Jesus aos seus discípulos esta parábola: 1 "O Reino dos Céus é como a história das dez jovens que pegaram suas lâmpadas de óleo e saíram ao encontro do noivo. </p>
-            <span><a target="_blank" class="leia-mais" href="">LEIA MAIS...</a></span>
+            <span>
+                <a target="_blank" class="leia-mais" href="">LEIA MAIS...</a>
+            </span>
         </div>
 
         <div class="santoIndex col-sm-6">
@@ -77,171 +80,42 @@
             </div>
             <h3>Santo do dia ("São Fiacre")</h3>
             <p>São Fiacre (“Fiacro”) nasceu de família nobre na Irlanda e foi educado sob os cuidados de um bispo de eminente santidade, que teria sido, segundo alguns, Conan, o bispo de Soder ou das Ilhas Ocidentais (Hébridas Exteriores).</p>
-            <span><a target="_blank" class="leia-mais" href="">LEIA MAIS...</a></span>
+            <span>
+                <a target="_blank" class="leia-mais" href="">LEIA MAIS...</a>
+            </span>
         </div>
     </div>
 
     <div class="anuncio container my-5 bg-info rounded row poppins-regular">
-
         <div class="Drog col-sm-6">
             <img src="~/css/Images/Drogaria.png">
         </div>
-
         <div class="Calc col-sm-6">
             <img src="~/css/Images/Calcitran.png">
         </div>
-
     </div>
 
     <div class="publicacoes container p-5 my-5 bg-info rounded row poppins-regular">
-
-        <h6>PUBLICAÇÕES</h6> <hr />
-
-
+        <h6>PUBLICAÇÕES</h6> <hr/>
         <div class="col-md-4 pb-4">
             <img src="~/css/Images/ImageTerco.png" class="Terco">
         </div>
-
         <div class="comorezar col-md-8">
             <h3>Como rezar o terço</h3>
-
             <p>Aprenda de uma forma simples e divertida como rezar o terço para Nossa Mamãe do Céu;</p>
-
-            <span><a target="_blank" class="leia-mais" href="">LEIA MAIS...</a></span>
-        </div> <hr />
-
+            <span>
+                <a target="_blank" class="leia-mais" href="">LEIA MAIS...</a>
+            </span>
+        </div> <hr/>
         <div class="col-md-4 pb-4">
-
             <img src="~/css/Images/ImageEstatuaPapa.png" class="EstatuaPapa">
-
         </div>
-
-
-
         <div class="col-md-8 pb-5">
-
             <h3>Eleição do Papa</h3>
-
             <p>Uma dúvida comum não somente entre os católicos, mas também entre os não católicos é como é escolhido um Papa.</p>
-
-            <span><a target="_blank" class="leia-mais" href="">LEIA MAIS...</a></span>
-
-        </div> <hr />
-
+            <span>
+                <a target="_blank" class="leia-mais" href="">LEIA MAIS...</a>
+            </span>
+        </div> <hr/>
     </div>
-
-
-
 </div>
-
-
-
-
-
-
-
-
-@* <head>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-</head>
-
-<div class="mainindex">
-    <div class="poppins-regular mt-5">
-        <h3>Pesquisar Igrejas e missas</h3>
-    </div>
-
-    <div class="formpai pesquisaMissa conteiner mt-3 pt-2 border p-4 bg-light poppins-regular">
-        <form>
-            <div class="row mt-4">
-                <div class="col-sm-2">
-                    <label for="Estado">Estado*</label>
-                    <input type="text" class="campoform botaogps form-control" placeholder="" name="Estado">
-                </div>
-                <div class="col-sm-5">
-                    <label for="Cidade">Cidade*</label>
-                    <input type="text" class="campoform botaogps form-control" placeholder="" name="Cidade">
-                </div>
-                <div class="col-sm-5">
-                    <label for="Cidade">Bairro</label>
-                    <input type="text" class="campoform botaogps form-control" placeholder="" name="Bairro">
-                </div>
-                <div class="col-sm-10 pt-4">
-                    <label for="Cidade">Paróquia</label>
-                    <input type="text" class="campoform botaogps form-control" placeholder="" name="Paróquia">
-                </div>
-                <div class="col-sm-2 pt-5" style="width: 130px;">
-                    <button type="button" class="buscar botaogps btn btn-primary">Buscar</button>
-                </div>
-                <div class="col-sm-8 pt-4">
-                    <button type="button" class="botaogps btn btn-outline-primary ">Pesquisar por minha localização atual</button>
-                </div>
-            </div>
-        </form>
-    </div>
-
-    <div class="anuncio container my-5 bg-info rounded row poppins-regular">
-        <div class="Drog col-sm-6">
-            <img src="~/css/Images/Drogaria.png">
-        </div>
-        <div class="Calc col-sm-6">
-            <img src="~/css/Images/Calcitran.png">
-        </div>
-    </div>
-
-    <div class="liturgiaSanto container mt-5 row center poppins-regular">
-        <div class="liturgiaIndex col-sm-6">
-            <div>
-                <img src="~/css/Images/ImagensLiturigia.png" class="Litur">
-            </div>
-            <h3>Liturgia diária</h3>
-            <p>Naquele tempo, disse Jesus aos seus discípulos esta parábola: 1 "O Reino dos Céus é como a história das dez jovens que pegaram suas lâmpadas de óleo e saíram ao encontro do noivo. </p>
-            <span>LEIA MAIS</span>
-        </div>
-
-        <div class="santoIndex col-sm-6">
-            <div>
-                <img src="~/css/Images/ImagesSantoDia.png" class="Santo">
-            </div>
-            <h3>Santo do dia ("São Fiacre")</h3>
-            <p>São Fiacre (“Fiacro”) nasceu de família nobre na Irlanda e foi educado sob os cuidados de um bispo de eminente santidade, que teria sido, segundo alguns, Conan, o bispo de Soder ou das Ilhas Ocidentais (Hébridas Exteriores).</p>
-            <span>LEIA MAIS</span>
-        </div>
-    </div>
-
-    <div class="anuncio container my-5 bg-info rounded row poppins-regular">
-        <div class="Drog col-sm-6">
-            <img src="~/css/Images/Drogaria.png">
-        </div>
-
-        <div class="Calc col-sm-6">
-            <img src="~/css/Images/Calcitran.png">
-        </div>
-    </div>
-
-    <div class="publicacoes container p-5 my-5 bg-info rounded row poppins-regular">
-        <h6>PUBLICAÇÕES</h6> 
-        <hr/>
-
-        <div class="col-md-4">
-            <img src="~/css/Images/ImageTerco.png" class="Terco">
-        </div>
-
-        <div class="col-md-8 pb-5">
-            <h3>Como rezar o terço</h3>
-            <p>Aprenda de uma forma simples e divertida como rezar o terço para Nossa Mamãe do Céu;</p>
-            <span>LEIA MAIS</span>
-        </div> 
-        <hr/>
-
-        <div class="col-md-4">
-            <img src="~/css/Images/ImageEstatuaPapa.png" class="EstatuaPapa">
-        </div>
-
-        <div class="col-md-8 pb-5">
-            <h3>Eleição do Papa</h3>
-            <p>Uma dúvida comum não somente entre os católicos, mas também entre os não católicos é como é escolhido um Papa.</p>
-            <span>LEIA MAIS</span>
-        </div> 
-        <hr/>
-    </div>
-</div> *@

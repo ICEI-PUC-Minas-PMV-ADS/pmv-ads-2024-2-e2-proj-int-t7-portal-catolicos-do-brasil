@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PortalCatolicoBrasil.Models
 {
-    [Table("CadastroDeMissas")]
-    public class CadastroDeMissas
+    [Table("Igreja")]
+    public class Igreja
     {
         [Key]
         public int Id { get; set; }
@@ -12,13 +12,14 @@ namespace PortalCatolicoBrasil.Models
         [Required(ErrorMessage = "Informe o CNPJ")]
         public string CNPJ { get; set; }
 
-        [Required(ErrorMessage = "Informe o Nome da paróquia")]
-        public string NomeParoquia { get; set; }
+        [Required(ErrorMessage = "Informe o Nome da igreja")]
+        public string NomeIgreja { get; set; }
 
-        [Required(ErrorMessage = "Informe o Telefone de contato da paróquia")]
+        [Required(ErrorMessage = "Informe o Telefone de contato da igreja")]
         public string Telefone { get; set; }
 
         [Required(ErrorMessage = "Informe o Email")]
+        [EmailAddress(ErrorMessage = "Informe um endereço de email válido.")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Informe o Logradouro")]
@@ -39,6 +40,6 @@ namespace PortalCatolicoBrasil.Models
         [Required(ErrorMessage = "Informe o Bairro")]
         public string Bairro { get; set; }
 
-       
+        public ICollection<Missa> Missa { get; set; }
     }
 }

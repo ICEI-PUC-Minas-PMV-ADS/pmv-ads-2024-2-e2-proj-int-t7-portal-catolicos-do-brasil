@@ -1,0 +1,86 @@
+﻿@model IEnumerable<PortalCatolicoBrasil.Models.Igreja>
+
+<div class="main-missas">
+    <button type="button" id="new-search-btn" class="poppins-semibold btn btn-outline-primary border-2 mb-3 hidden">Nova Pesquisa</button>
+    <div id="filter" class="hidden">
+            <div class=" poppins-regular">
+                <h3>Pesquisar Igrejas e missas</h3>
+            </div>
+        <div class="formpai pesquisaMissa conteiner mt-3 pt-2 border p-4 bg-light poppins-regular">
+            <form asp-action="BuscarIgrejaPorId" asp-controller="Igreja" method="post" onsubmit="validarFormularioPesquisa()">
+                <div class="row mt-4">
+                    <div class="col-sm-2">
+                        <label for="Estado">Estado*</label>
+                        <select id="Estado" class="campoform botaogps form-control" name="Estado" onchange="carregarCidades()" required>
+                            <option value="" disabled selected></option>
+                        </select>
+                    </div>
+                    <div class="col-sm-5">
+                        <label for="Cidade">Cidade*</label>
+                        <select id="Cidade" class="campoform botaogps form-control" name="Cidade" onchange="carregarBairros()" required>
+                            <option value="" disabled selected></option>
+                        </select>
+                    </div>
+                    <div class="col-sm-5">
+                        <label for="Bairro">Bairro</label>
+                        <select id="Bairro" class="campoform botaogps form-control" name="Bairro" onchange="carregarIgrejaPorBairro()">
+                            <option value="" disabled selected></option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 pt-4">
+                        <label for="Igreja">Igreja</label>
+                        <select id="Igreja" class="campoform botaogps form-control" name="Igreja">
+                            <option value="" disabled selected></option>
+                        </select>
+
+                        <button type="button" id="botaoBuscar" class="buscar botaogps btn btn-primary mt-5 mb-4">Buscar</button>
+
+                        <button type="button" class="botaogps pesqgps btn btn-outline-primary mt-5 mb-4">
+                            Pesquisar por minha localização atual
+                            <i class="fas fa-location"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="search-results">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var igreja in Model)
+            {
+                <h2 class="poppins-medium">Resultado da pesquisa</h2>
+                <div class="card mb-3 d-flex flex-md-row">
+                    <div class="card-body col-sm-8">
+                        <h4 class="poppins-medium card-title">@igreja.NomeIgreja</h4>
+                        <p class="poppins-regular">
+                            Telefone: @igreja.Telefone<br>
+                            Endereço: @igreja.Logradouro, @igreja.Numero - @igreja.Bairro - @igreja.Cidade, @igreja.Estado
+                        </p>
+
+                        <a href="https://maps.google.com/?q=@igreja" target="_blank" class="btn btn-primary">
+                            Ver no mapa
+                        </a>
+                    </div>
+                    <div class="card-body col-sm-4">
+                        <h5 class="poppins-medium card-title">Missas</h5>
+                        <p class="poppins-regular">
+                            07:00 - Domingo<br>
+                            12:00 - Quarta-feira<br>
+                            19:30 - Domingo<br>
+                            12:00 - Celebração da palavra<br>
+                            12:00 - Celebração da palavra
+                        </p>
+                    </div>
+                </div>
+            }
+
+            <a class="poppins-regular" href="@Url.Action("CreateBoth", "Igreja")">Cadastre aqui</a>
+        }
+        else
+        {
+            <p>@ViewBag.Message</p>
+        }
+    </div>
+</div>
