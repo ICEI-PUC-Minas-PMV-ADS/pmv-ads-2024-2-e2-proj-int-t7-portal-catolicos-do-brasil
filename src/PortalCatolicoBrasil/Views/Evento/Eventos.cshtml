@@ -6,9 +6,6 @@
 
 <h1>Eventos</h1>
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">Criar Novo Evento</a>
-</p>
 
 <div class="container-fluid">
     <!-- Banner superior -->
@@ -22,56 +19,49 @@
 
     <!-- Formulário de busca -->
     <h2 class="titulo-pesquisar-eventos">Pesquisar eventos</h2>
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+    }
+
     <div class="card mb-4">
         <div class="card-body card-pesquisar-eventos">
-            <form class="row g-3">
+            <form method="get" action="@Url.Action("Search")" class="row g-3">
                 <div class="col-md-4">
                     <label for="estado" class="form-label texto-card-pesquisar-eventos">Estado*</label>
-                    <select id="estado" class="form-select escolhas-formulario-eventos">
-                        <option selected>Escolha...</option>
-                        <option>SP</option>
-                        <option>RJ</option>
-                        <option>SC</option>
+                    <select id="estado" name="estado" class="form-select escolhas-formulario-eventos">
+                        <option value="">Escolha...</option>
+                        
+                        <!-- Adicione as opções de estados -->
                     </select>
                 </div>
                 <div class="col-md-4">
                     <label for="cidade" class="form-label texto-card-pesquisar-eventos">Cidade</label>
-                    <select id="cidade" class="form-select escolhas-formulario-eventos">
-                        <option selected>Escolha...</option>
-                        <option>São Paulo</option>
-                        <option>Rio de Janeiro</option>
-                        <option>Camboriú</option>
+                    <select id="cidade" name="cidade" class="form-select escolhas-formulario-eventos">
+                        <option value="">Escolha...</option>
+                        <!-- Adicione as opções de cidades -->
                     </select>
                 </div>
                 <div class="col-md-4">
                     <label for="bairro" class="form-label texto-card-pesquisar-eventos">Bairro</label>
-                    <select id="bairro" class="form-select escolhas-formulario-eventos">
-                        <option selected>Escolha...</option>
-                        <option>Centro</option>
-                        <option>Zona Sul</option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    <label for="paróquia" class="form-label texto-card-pesquisar-eventos">Paróquia</label>
-                    <select id="paróquia" class="form-select escolhas-formulario-eventos">
-                        <option selected>Escolha...</option>
-                        <option>Paróquia A</option>
-                        <option>Paróquia B</option>
-                    </select>
+                    <input type="text" name="bairro" class="form-control" />
                 </div>
                 <div class="col-12 botoes-pesquisar-eventos">
-                    <button type="button" class="btn btn-primary texto-card-pesquisar-eventos botao-buscar">Buscar</button>
+                    <button type="submit" class="btn btn-primary texto-card-pesquisar-eventos botao-buscar">Buscar</button>
                     <button type="button" class="texto-botao-localizacao btn">
                         <div>Pesquisar por minha localização atual</div>
                         <div><img class="icone-localizacao" src="../css/Images/my_location.png"></div>
                     </button>
                 </div>
             </form>
+
         </div>
     </div>
 
-    <!-- Resultados da pesquisa - exibição em estilo de lista -->
-    <h2 class="titulo-resultado-pesquisa">Resultado da pesquisa</h2>
+    <!--  exibição em estilo de lista -->
+    <h2 class="titulo-resultado-pesquisa">Eventos</h2>
+   
+     
     <div class="list-group">
         @foreach (var item in Model)
         {
@@ -95,12 +85,13 @@
                         <div class="col-12 col-md-4 coluna-banner-evento1">
                             @if (!string.IsNullOrEmpty(item.BannerPath))
                             {
-                                <img class="banner-evento1 img-fluid" src="@Url.Content("~/uploads/" + item.BannerPath)" alt="Banner do Evento">
+                                <img class="banner-evento1 img-fluid" src="@Url.Content("~/uploads/" + item.BannerPath)" alt="Banner do Evento" width="276" height="276">
                             }
                         </div>
                     </div>
                 </div>
             </div>
+           
         }
     </div>
 
@@ -110,4 +101,4 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js"></script>

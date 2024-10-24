@@ -205,3 +205,87 @@ window.onload = function () {
     addBorderIcon();
 };
 /*-----------------FIM LITURGIA-----------------*/
+
+
+/*-----------------INICIO CIDADES E ESTADOS EVENTO-----------------*/
+    document.addEventListener("DOMContentLoaded", function() {
+    const estadoSelect = document.getElementById("estado");
+    const cidadeSelect = document.getElementById("cidade");
+
+    // Carregar estados
+    fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
+        .then(response => response.json())
+        .then(estados => {
+        estados.forEach(estado => {
+            const option = document.createElement("option");
+            option.value = estado.sigla;
+            option.text = estado.nome;
+            estadoSelect.appendChild(option);
+        });
+        });
+
+    // Atualizar cidades quando um estado é selecionado
+    estadoSelect.addEventListener("change", function() {
+        const estadoSigla = estadoSelect.value;
+
+    // Limpar cidades anteriores
+    cidadeSelect.innerHTML = '<option selected>Escolha...</option>';
+
+    if (estadoSigla) {
+        fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${estadoSigla}/municipios`)
+            .then(response => response.json())
+            .then(cidades => {
+                cidades.forEach(cidade => {
+                    const option = document.createElement("option");
+                    option.value = cidade.nome;
+                    option.text = cidade.nome;
+                    cidadeSelect.appendChild(option);
+                });
+            });
+        }
+    });
+});
+/*-----------------FIM CIDADES E ESTADOS EVENTO-----------------*/
+
+
+/*-----------------Inicio Filtro Pesquisa Eventos-----------------*/
+
+function filtrarEventos()
+{
+    const estado = document.getElementById('estado').value
+    const cidade = document.getElementById('cidade').cidade
+    const bairro = document.getElementById('bairro').bairro
+    const ResultadoPesquisa = document.getElementById("EventosResultados");
+    const MensagemResultado = document.getElementById("MensagemResultado")
+
+
+    fetch(`/Eventos/Buscar?estado=${estado}||cidade=${cidade}||bairro=${bairro}`)
+        .then(response => response.json())
+        .then(data => {
+            ResultadoPesquisa.innerHTML = '';
+            MensagemResultado.classList.add('hidden');
+            if (data.length === 0) {
+                MensagemResultado.classList.remove('hidden')
+            }
+            else
+            {
+                data.forEach(evento => {
+                    const eventoDiv = document.createElement('div');
+                    eventoDiv.classList.add('evento');
+
+                    eventoDiv.innerHTML = `
+                            <h2>${evento.TituloEvento}</h2>
+                            <p><strong>Data:</strong> ${evento.DataInicio}</p>
+                            <p><strong>Local:</strong> ${evento.Logradouro}, ${evento.Numero} - ${evento.Bairro}, ${evento.Cidade} - ${evento.Estado}</p>
+                        `;
+                    ResultadoPesquisa.appendChild(eventoDiv)
+                });
+            }
+
+        })
+        .catch(error => {
+            console.error('Erro ao buscar eventos:', error);
+            mensagemResultado.innerHTML = 'Ocorreu um erro ao buscar os eventos. Tente novamente mais tarde.';
+            mensagemResultado.classList.remove('hidden');
+        });
+}

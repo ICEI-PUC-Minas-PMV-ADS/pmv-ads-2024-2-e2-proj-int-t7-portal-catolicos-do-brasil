@@ -22,7 +22,7 @@
                         <span asp-validation-for="CNPJ" class="text-danger"></span>
                     </div>
                     <div class="form-group col-md-6">
-                        <label asp-for="NomeParoquia" class="textocardinformacoesparoquia"></label>
+                        <label asp-for="NomeParoquia" class="textocardinformacoesparoquia">Nome Paróquia</label>
                         <input asp-for="NomeParoquia" class="form-control botoesinformacoesparoquia" placeholder="Digite o nome da paróquia" />
                         <span asp-validation-for="NomeParoquia" class="text-danger"></span>
                     </div>
@@ -50,7 +50,7 @@
             <div class="card-body body-cardeventos">
                 <div class="form-row">
                     <div class="form-group col-md-12">
-                        <label asp-for="TituloEvento" class="textocardinformacoesevento"></label>
+                        <label asp-for="TituloEvento" class="textocardinformacoesevento">Titulo Evento</label>
                         <input asp-for="TituloEvento" class="form-control botoesdocadastrodeevento" placeholder="Digite o título do evento" />
                         <span asp-validation-for="TituloEvento" class="text-danger"></span>
                     </div>
@@ -76,19 +76,19 @@
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label asp-for="Estado" class="textocardinformacoesevento"></label>
-                        <select asp-for="Estado" class="form-control botoesdocadastrodeevento">
+                        <select asp-for="Estado" class="form-control botoesdocadastrodeevento" id="estado">
                             <option selected>Escolher...</option>
                             <!-- Opções de estados aqui -->
-                            <option>MG</option>
+                            
                         </select>
                         <span asp-validation-for="Estado" class="text-danger"></span>
                     </div>
                     <div class="form-group col-md-4">
                         <label asp-for="Cidade" class="textocardinformacoesevento"></label>
-                        <select asp-for="Cidade" class="form-control botoesdocadastrodeevento">
+                        <select asp-for="Cidade" class="form-control botoesdocadastrodeevento" id="cidade">
                             <option selected>Escolher...</option>
                             <!-- Opções de cidades aqui -->
-                            <option>Betim</option>
+                            
                         </select>
                         <span asp-validation-for="Cidade" class="text-danger"></span>
                     </div>
@@ -100,12 +100,12 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label asp-for="DataInicio" class="textocardinformacoesevento"></label>
+                        <label asp-for="DataInicio" class="textocardinformacoesevento">Data início</label>
                         <input asp-for="DataInicio" type="date" class="form-control botoesdocadastrodeevento" />
                         <span asp-validation-for="DataInicio" class="text-danger"></span>
                     </div>
                     <div class="form-group col-md-6">
-                        <label asp-for="HorarioInicio" class="textocardinformacoesevento"></label>
+                        <label asp-for="HorarioInicio" class="textocardinformacoesevento">Horario início</label>
                         <input asp-for="HorarioInicio" type="time" class="form-control botoesdocadastrodeevento" />
                         <span asp-validation-for="HorarioInicio" class="text-danger"></span>
                     </div>
@@ -138,3 +138,4 @@
         </div>
     </form>
 </div>
+<script src="~/js/site.js"></script>

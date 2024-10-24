@@ -84,5 +84,55 @@ namespace PortalCatolicoBrasil.Controllers
 
             return RedirectToAction("Eventos");
         }
+        public IActionResult Search(string estado, string cidade, string bairro)
+        {
+            // Começamos com todos os eventos disponíveis
+            IQueryable<Evento> eventos = _context.Eventos.AsQueryable();
+
+            // Filtragem por estado
+            if (!string.IsNullOrEmpty(estado))
+            {
+                eventos = eventos.Where(e => e.Estado.ToLower() == estado.ToLower());
+            }
+
+            // Filtragem por cidade
+            if (!string.IsNullOrEmpty(cidade) && !cidade.Equals("Escolha...", StringComparison.OrdinalIgnoreCase))
+            {
+                eventos = eventos.Where(e => e.Cidade.ToLower() == cidade.ToLower());
+            }
+
+            // Filtragem por bairro
+            if (!string.IsNullOrEmpty(bairro))
+            {
+                eventos = eventos.Where(e => e.Bairro.ToLower().Contains(bairro.ToLower()));
+            }
+
+            // Verificação de eventos encontrados
+            if (!eventos.Any())
+            {
+                string mensagem = "Nenhum evento encontrado para a busca informada.";
+
+                if (!string.IsNullOrEmpty(estado))
+                {
+                    mensagem += $" Estado: {estado}.";
+                }
+
+                if (!string.IsNullOrEmpty(cidade) && !cidade.Equals("Escolha...", StringComparison.OrdinalIgnoreCase))
+                {
+                    mensagem += $" Cidade: {cidade}.";
+                }
+
+                if (!string.IsNullOrEmpty(bairro))
+                {
+                    mensagem += $" Bairro: {bairro}.";
+                }
+
+                ViewBag.ErrorMessage = mensagem;
+            }
+
+            // Retorna a lista de eventos (mesmo que vazia)
+            return View("Eventos", eventos.ToList());
+        }
     }
 }
+

@@ -496,7 +496,9 @@ footer {
 .escolhas-formulario-eventos {
     background-color: rgba(237, 237, 237, 1) !important;
 }
-
+.form-control {
+    background-color: rgba(237, 237, 237, 1) !important;
+}
 .texto-botao-localizacao {
     width: 360px !important;
     display: flex !important;
@@ -664,3 +666,5 @@ footer {
 }
 
 /*Fim do Formulario*/
+
+
