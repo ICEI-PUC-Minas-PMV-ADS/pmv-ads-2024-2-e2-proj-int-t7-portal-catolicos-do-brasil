@@ -18,7 +18,7 @@ namespace PortalCatolicoBrasil.Controllers
 
         public async Task<IActionResult> Eventos()
         {
-            var dados = await _context.Eventos.ToListAsync();
+            var dados = await _context.Evento.ToListAsync();
             return View(dados);
         }
 
@@ -48,7 +48,7 @@ namespace PortalCatolicoBrasil.Controllers
                 // Store the file path or name in the Evento model if necessary
                 evento.BannerPath = fileName;
 
-                _context.Eventos.Add(evento);
+                _context.Evento.Add(evento);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Eventos");
             }
@@ -62,7 +62,7 @@ namespace PortalCatolicoBrasil.Controllers
             if (ID == null)
                 return NotFound();
 
-            var dados = await _context.Eventos.FindAsync(ID);
+            var dados = await _context.Evento.FindAsync(ID);
             if (dados == null)
                 return NotFound();
 
@@ -75,11 +75,11 @@ namespace PortalCatolicoBrasil.Controllers
             if (ID == null)
                 return NotFound();
 
-            var dados = await _context.Eventos.FindAsync(ID);
+            var dados = await _context.Evento.FindAsync(ID);
             if (dados == null)
                 return NotFound();
 
-            _context.Eventos.Remove(dados);
+            _context.Evento.Remove(dados);
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Eventos");

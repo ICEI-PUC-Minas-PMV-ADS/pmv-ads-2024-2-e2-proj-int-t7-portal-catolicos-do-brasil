@@ -53,7 +53,7 @@ namespace PortalCatolicoBrasil
 
             //app.UseHangfireDashboard("/hangfire");
 
-            //RecurringJob.AddOrUpdate("job-daily-youtube", () => Console.WriteLine("Buscando vídeo do YouTube..."), Cron.Daily);
+            //RecurringJob.AddOrUpdate("job-daily-youtube", () => Console.WriteLine("Buscando vï¿½deo do YouTube..."), Cron.Daily);
 
             app.MapControllerRoute(
                 name: "default",

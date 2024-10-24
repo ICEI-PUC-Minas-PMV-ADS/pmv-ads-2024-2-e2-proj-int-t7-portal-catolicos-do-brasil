@@ -6,7 +6,7 @@
 *.userosscache
 *.sln.docstates
 
-# Arquivos binários e de objetos
+# Arquivos binÃ¡rios e de objetos
 bin/
 obj/
 *.exe
@@ -17,12 +17,12 @@ obj/
 *.vspscc
 *.vssscc
 
-# Configurações de pacotes
+# ConfiguraÃ§Ãµes de pacotes
 packages/
 *.nupkg
 *.snupkg
 
-# Configurações do Visual Studio
+# ConfiguraÃ§Ãµes do Visual Studio
 .vs/
 .vscode/
 debug/
@@ -32,20 +32,24 @@ release/
 *.log
 log/
 
-# Configurações de banco de dados local
+# ConfiguraÃ§Ãµes de banco de dados local
 App_Data/
 
-# Configurações do Rider/JetBrains
+# ConfiguraÃ§Ãµes de banco de dados
+appsettings.json
+*.json
+
+# ConfiguraÃ§Ãµes do Rider/JetBrains
 .idea/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 
-# Arquivos de publicação
+# Arquivos de publicaï¿½ï¿½o
 publish/
 
-# Dependências do NuGet
+# DependÃªncias do NuGet
 project.lock.json
 project.fragment.lock.json
 artifacts/
@@ -54,7 +58,7 @@ artifacts/
 *.dbmdl
 *.jfm
 
-# Arquivos de configuração temporários
+# Arquivos de configuraÃ§Ã£o temporÃ¡rios
 *.tmp
 *.bak
 

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,16 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace PortalCatolicoBrasil.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+<<<<<<<< HEAD:src/PortalCatolicoBrasil/Migrations/20241016142253_M01-AddTableEventos.Designer.cs
+    [Migration("20241016142253_M01-AddTableEventos")]
+    partial class M01AddTableEventos
+========
+    [Migration("20241018142940_M06-AddtableMissa")]
+    partial class M06AddtableMissa
+>>>>>>>> c05d6f1c47fea78abfeb312f5deff51d5bac9760:src/PortalCatolicoBrasil/Migrations/20241018142940_M06-AddtableMissa.Designer.cs
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,6 +29,15 @@ namespace PortalCatolicoBrasil.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+<<<<<<<< HEAD:src/PortalCatolicoBrasil/Migrations/20241016142253_M01-AddTableEventos.Designer.cs
+            modelBuilder.Entity("PortalCatolicoBrasil.Models.Evento", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+========
             modelBuilder.Entity("PortalCatolicoBrasil.Models.CadastroDeMissas", b =>
                 {
                     b.Property<int>("Id")
@@ -28,11 +45,21 @@ namespace PortalCatolicoBrasil.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+>>>>>>>> c05d6f1c47fea78abfeb312f5deff51d5bac9760:src/PortalCatolicoBrasil/Migrations/20241018142940_M06-AddtableMissa.Designer.cs
 
                     b.Property<string>("Bairro")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+<<<<<<<< HEAD:src/PortalCatolicoBrasil/Migrations/20241016142253_M01-AddTableEventos.Designer.cs
+                    b.Property<string>("Banner")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BannerPath")
+                        .HasColumnType("nvarchar(max)");
+
+========
+>>>>>>>> c05d6f1c47fea78abfeb312f5deff51d5bac9760:src/PortalCatolicoBrasil/Migrations/20241018142940_M06-AddtableMissa.Designer.cs
                     b.Property<string>("CEP")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -45,6 +72,11 @@ namespace PortalCatolicoBrasil.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+<<<<<<<< HEAD:src/PortalCatolicoBrasil/Migrations/20241016142253_M01-AddTableEventos.Designer.cs
+                    b.Property<DateOnly>("DataEncerramento")
+                        .HasColumnType("date");
+
+========
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -107,6 +139,7 @@ namespace PortalCatolicoBrasil.Migrations
                     b.Property<DateOnly>("DataEncerramento")
                         .HasColumnType("date");
 
+>>>>>>>> c05d6f1c47fea78abfeb312f5deff51d5bac9760:src/PortalCatolicoBrasil/Migrations/20241018142940_M06-AddtableMissa.Designer.cs
                     b.Property<DateOnly>("DataInicio")
                         .HasColumnType("date");
 
@@ -148,6 +181,8 @@ namespace PortalCatolicoBrasil.Migrations
 
                     b.ToTable("Eventos");
                 });
+<<<<<<<< HEAD:src/PortalCatolicoBrasil/Migrations/20241016142253_M01-AddTableEventos.Designer.cs
+========
 
             modelBuilder.Entity("PortalCatolicoBrasil.Models.SantoDia", b =>
                 {
@@ -164,6 +199,7 @@ namespace PortalCatolicoBrasil.Migrations
 
                     b.ToTable("santo_do_dia");
                 });
+>>>>>>>> c05d6f1c47fea78abfeb312f5deff51d5bac9760:src/PortalCatolicoBrasil/Migrations/20241018142940_M06-AddtableMissa.Designer.cs
 #pragma warning restore 612, 618
         }
     }
