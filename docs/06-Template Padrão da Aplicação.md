@@ -20,7 +20,7 @@ Abaixo estão os elementos padrões de todas as páginas:
 
 
 <p>
-<h4>Head:</h4>
+<h4>Header:</h4>
 <img src="img/Printhead.png" width="500" />
 </p>
 <p>
