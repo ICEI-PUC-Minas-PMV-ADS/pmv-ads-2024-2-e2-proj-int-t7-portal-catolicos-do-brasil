@@ -8,14 +8,14 @@ Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos 
 
 |ID    | Descrição do Requisito  | Artefatos produzidos | Alunos(as) responsáveis |
 |------|-----------------------------------------|----|----|
-|RF-001| Pesquisar igrejas e horários de missas por geolocalização| Colocar link para a pasta do código  | Paulo Carvalho e João Leite|
-|RF-002| Trazer informações de Liturgia e homilia do dia| Colocar link para a pasta do código | Paulo Carvalho |
-|RF-003| Pesquisar eventos paroquiais cadastrados pelas igrejas | Colocar link para a pasta do código  | Estevão Silva e Gabriel Silva |
-|RF-004| Disponibilizar espaços para publicidades pagas | Colocar link para a pasta do código  | Todos |
-|RF-005| Enviar formulário para Cadastro de Paróquias e Missas | Colocar link para a pasta do código  | Paulo Carvalho e João Leite |
-|RF-006| Enviar formulário sobre os eventos das paróquias| Colocar link para a pasta do código  | Estevão Silva e Gabriel Silva  |
-|RF-008| Trazer informações do Santo do dia| Colocar link para a pasta do código | Tobias Domingos |
-|RF-009| Trazer Publicações de temas relevantes do cenário católico| Colocar link para a pasta do código | Thainá Bernardes |
+|RF-001| Pesquisar igrejas e horários de missas por geolocalização| \PortalCatolicoBrasil\Controllers\IgrejaController.cs<br>\PortalCatolicoBrasil\Models\Igreja.cs<br>\PortalCatolicoBrasil\wwwroot\js\site.js<br>\PortalCatolicoBrasil\wwwroot\css\site.css<br>\PortalCatolicoBrasil\Views\Home\Index.cshtml<br>\PortalCatolicoBrasil\Views\Igreja\ResultadoPesquisa.cshtml  | Paulo Carvalho e João Leite|
+|RF-002| Trazer informações de Liturgia e homilia do dia| \PortalCatolicoBrasil\Controllers\LiturgiaController.cs<br>\PortalCatolicoBrasil\Service\LiturgiaService.cs<br>\PortalCatolicoBrasil\Views\Home\Liturgia.cshtml<br>\PortalCatolicoBrasil\wwwroot\css\site.css<br>\PortalCatolicoBrasil\wwwroot\js\site.js | Paulo Carvalho |
+|RF-003| Pesquisar eventos paroquiais cadastrados pelas igrejas | \PortalCatolicoBrasil\Controllers\EventosController.cs<br>\PortalCatolicoBrasil\Models\Evento.cs<br>\PortalCatolicoBrasil\Views\Evento\Create.cshtml<br>\PortalCatolicoBrasil\Views\Evento\Eventos.cshtml<br>\PortalCatolicoBrasil\wwwroot\js\site.js<br>\PortalCatolicoBrasil\wwwroot\css\site.css | Estevão Silva e Gabriel Silva |
+|RF-004| Disponibilizar espaços para publicidades pagas | \PortalCatolicoBrasil\Views\Home\Index.cshtml<br>( Adicionado aqui a página principal pois este requisito está presente em 90% das telas desenvolvidas )  | Todos |
+|RF-005| Enviar formulário para Cadastro de Paróquias e Missas | \PortalCatolicoBrasil\Controllers\IgrejaController.cs<br>\PortalCatolicoBrasil\Models\Igreja.cs<br>\PortalCatolicoBrasil\wwwroot\js\site.js<br>\PortalCatolicoBrasil\wwwroot\css\site.css<br>\PortalCatolicoBrasil\Views\Igreja\Create.cshtml  | Paulo Carvalho e João Leite |
+|RF-006| Enviar formulário sobre os eventos das paróquias| \PortalCatolicoBrasil\Controllers\EventosController.cs<br>\PortalCatolicoBrasil\Models\Evento.cs<br>\PortalCatolicoBrasil\Views\Evento\Create.cshtml<br>\PortalCatolicoBrasil\wwwroot\js\site.js<br>\PortalCatolicoBrasil\wwwroot\css\site.css  | Estevão Silva e Gabriel Silva  |
+|RF-008| Trazer informações do Santo do dia| \PortalCatolicoBrasil\Controllers\SantoDiaController.cs<br>\PortalCatolicoBrasil\Models\SantoDia.cs<br>\PortalCatolicoBrasil\Views\Home\SantoDia.cshtml<br>\PortalCatolicoBrasil\wwwroot\js\site.js<br>\PortalCatolicoBrasil\wwwroot\css\site.css | Tobias Domingos |
+|RF-009| Trazer Publicações de temas relevantes do cenário católico| \PortalCatolicoBrasil\Views\Home\Publicacoes.cshtml<br>\PortalCatolicoBrasil\Views\Home\PrimeiraPublicacao.cshtml<br>\PortalCatolicoBrasil\Views\Home\SegundaPublicacao.cshtml<br>\PortalCatolicoBrasil\wwwroot\js\site.js<br>\PortalCatolicoBrasil\wwwroot\css\site.css | Thainá Bernardes |
 
 
 
