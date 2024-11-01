@@ -17,8 +17,15 @@ namespace PortalCatolicoBrasil
 
             builder.Services.AddHttpClient<ILiturgiaService, LiturgiaService>();
 
+            //builder.Services.AddDbContext<AppDbContext>(options =>
+            //    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
             builder.Services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            options.UseSqlServer("Server=PH-WIN11-DELL;Database=portalcatolico;User Id=PH-WIN11-DELL\\Paulo;Password=123456;TrustServerCertificate=True;Trusted_Connection=True"
+            , sqlOptions =>
+            {
+                sqlOptions.EnableRetryOnFailure();
+            }));
 
             //builder.Services.AddHangfire(configuration =>
             //    configuration.SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
