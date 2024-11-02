@@ -21,6 +21,27 @@ namespace PortalCatolicoBrasil.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("PortalCatolicoBrasil.Models.DiaMissa", b =>
+                {
+                    b.Property<int>("DiaMissaId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DiaMissaId"));
+
+                    b.Property<string>("DiaSemana")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("IgrejaId")
+                        .HasColumnType("int");
+
+                    b.HasKey("DiaMissaId");
+
+                    b.HasIndex("IgrejaId");
+
+                    b.ToTable("DiaMissa");
+                });
+
             modelBuilder.Entity("PortalCatolicoBrasil.Models.Evento", b =>
                 {
                     b.Property<int>("ID")
@@ -96,6 +117,42 @@ namespace PortalCatolicoBrasil.Migrations
                     b.ToTable("Eventos");
                 });
 
+            modelBuilder.Entity("PortalCatolicoBrasil.Models.HoraMissa", b =>
+                {
+                    b.Property<int>("HoraMissaId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HoraMissaId"));
+
+                    b.Property<int>("DiaMissaId")
+                        .HasColumnType("int");
+
+                    b.Property<TimeOnly?>("Hora1")
+                        .HasColumnType("time");
+
+                    b.Property<TimeOnly?>("Hora2")
+                        .HasColumnType("time");
+
+                    b.Property<TimeOnly?>("Hora3")
+                        .HasColumnType("time");
+
+                    b.Property<TimeOnly?>("Hora4")
+                        .HasColumnType("time");
+
+                    b.Property<TimeOnly?>("Hora5")
+                        .HasColumnType("time");
+
+                    b.Property<TimeOnly?>("Hora6")
+                        .HasColumnType("time");
+
+                    b.HasKey("HoraMissaId");
+
+                    b.HasIndex("DiaMissaId");
+
+                    b.ToTable("HoraMissa");
+                });
+
             modelBuilder.Entity("PortalCatolicoBrasil.Models.Igreja", b =>
                 {
                     b.Property<int>("Id")
@@ -149,73 +206,52 @@ namespace PortalCatolicoBrasil.Migrations
                     b.ToTable("Igreja");
                 });
 
-            modelBuilder.Entity("PortalCatolicoBrasil.Models.Missa", b =>
-                {
-                    b.Property<int>("missa_id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("missa_id"));
-
-                    b.Property<int?>("Id")
-                        .HasColumnType("int");
-
-                    b.Property<string>("dia_semana")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<TimeOnly?>("hora1")
-                        .HasColumnType("time");
-
-                    b.Property<TimeOnly?>("hora2")
-                        .HasColumnType("time");
-
-                    b.Property<TimeOnly?>("hora3")
-                        .HasColumnType("time");
-
-                    b.Property<TimeOnly?>("hora4")
-                        .HasColumnType("time");
-
-                    b.Property<TimeOnly?>("hora5")
-                        .HasColumnType("time");
-
-                    b.Property<TimeOnly?>("hora6")
-                        .HasColumnType("time");
-
-                    b.HasKey("missa_id");
-
-                    b.HasIndex("Id");
-
-                    b.ToTable("Missa");
-                });
-
             modelBuilder.Entity("PortalCatolicoBrasil.Models.SantoDia", b =>
                 {
-                    b.Property<DateOnly>("data")
+                    b.Property<DateOnly>("Data")
                         .HasColumnType("date");
 
-                    b.Property<string>("descricao")
+                    b.Property<string>("Descricao")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("nome")
+                    b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("data");
+                    b.HasKey("Data");
 
-                    b.ToTable("santo_do_dia");
+                    b.ToTable("SantoDia");
                 });
 
-            modelBuilder.Entity("PortalCatolicoBrasil.Models.Missa", b =>
+            modelBuilder.Entity("PortalCatolicoBrasil.Models.DiaMissa", b =>
                 {
-                    b.HasOne("PortalCatolicoBrasil.Models.Igreja", "igreja_id")
-                        .WithMany("Missa")
-                        .HasForeignKey("Id");
+                    b.HasOne("PortalCatolicoBrasil.Models.Igreja", "Igreja")
+                        .WithMany("DiaMissa")
+                        .HasForeignKey("IgrejaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("igreja_id");
+                    b.Navigation("Igreja");
+                });
+
+            modelBuilder.Entity("PortalCatolicoBrasil.Models.HoraMissa", b =>
+                {
+                    b.HasOne("PortalCatolicoBrasil.Models.DiaMissa", "DiaMissa")
+                        .WithMany("HoraMissa")
+                        .HasForeignKey("DiaMissaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DiaMissa");
+                });
+
+            modelBuilder.Entity("PortalCatolicoBrasil.Models.DiaMissa", b =>
+                {
+                    b.Navigation("HoraMissa");
                 });
 
             modelBuilder.Entity("PortalCatolicoBrasil.Models.Igreja", b =>
                 {
-                    b.Navigation("Missa");
+                    b.Navigation("DiaMissa");
                 });
 #pragma warning restore 612, 618
         }
