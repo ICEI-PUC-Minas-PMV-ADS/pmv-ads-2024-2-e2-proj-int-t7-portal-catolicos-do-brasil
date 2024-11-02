@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using PortalCatolicoBrasil.Models;
 
 public class AppDbContext : DbContext
@@ -8,6 +8,12 @@ public class AppDbContext : DbContext
     public DbSet<Evento> Evento { get; set; }
     public DbSet<SantoDia> SantoDia { get; set; }
     public DbSet<Igreja> Igreja { get; set; }
-    public DbSet<Missa> Missa { get; set; }
+    public DbSet<DiaMissa> DiaMissa { get; set; }
+    public DbSet<HoraMissa> HoraMissa { get; set; }
 
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+    }
 }

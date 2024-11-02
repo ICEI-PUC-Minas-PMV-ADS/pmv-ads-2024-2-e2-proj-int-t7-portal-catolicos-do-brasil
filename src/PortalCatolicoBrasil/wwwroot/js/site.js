@@ -201,47 +201,57 @@ function addBorderIcon() {
 
 
 /*-----------------INICIO HOME INDEX-----------------*/
-////GET CIDADES API
-//// Carregar estados ao carregar a página
-//$(document).ready(function () {
-//    $.getJSON('/Localidades/GetEstados', function (data) {
-//        $.each(data, function (key, estado) {
-//            $('#Estado').append(`<option value="${estado.id}">${estado.nome}</option>`);
-//        });
-//    });
-//});
+//GET ESTADOS API
+async function carregarEstadosAPI() {
+	try {
+		const response = await $.getJSON("/APIEstadoCidade/GetEstadosAPI");
+		response.sort((a, b) => a.nome.localeCompare(b.nome));
 
-//// Carregar cidades quando o estado for selecionado
-//function carregarCidadesAPI() {
-//    const estadoId = $('#Estado').val(); if (estadoId) {
-//        $.getJSON(`/Localidades/GetCidades?estadoId=${estadoId}`, function (data) {
-//            $('#Cidade').empty().append('<option value="">Selecione a Cidade</option>');
-//            $.each(data, function (key, cidade) {
-//                $('#Cidade').append(`<option value="${cidade.id}">${cidade.nome}</option>`);
-//            });
-//        });
-//    } else {
-//        $('#Cidade').empty().append('<option value="">Selecione a Cidade</option>');
-//    }
-//}
+		$('#EstadoAPI').empty().append('<option value="" disabled selected>Selecione o estado</option>');
+		response.forEach(estado => {
+			$('#EstadoAPI').append(`<option value="${estado.id}">${estado.nome}</option>`);
+		});
 
-//// Carregar cidades quando o estado for selecionado
-//function carregarBairrosAPI() {
-//    const cidadeId = $('#Cidade').val(); if (cidadeId) {
-//        $.getJSON(`/Localidades/GetBairros?cidadeId=${cidadeId}`, function (data) {
-//            $('#Bairro').empty().append('<option value="">Selecione o Bairro</option>');
-//            $.each(data, function (key, bairro) {
-//                $('#Bairro').append(`<option value="${bairro.id}">${bairro.nome}</option>`);
-//            });
-//        });
-//    } else {
-//        $('#Bairro').empty().append('<option value="">Selecione a o bairro</option>');
-//    }
-//}
+		$('#EstadoAPI').change(carregarCidadesAPI);
 
-//FIM GET CIDADES API
+	} catch (error) {
+		alert('Erro ao carregar os estados. Tente novamente mais tarde.');
+	}
+}
+
+//GET CIDADES API
+function carregarCidadesAPI() {
+	const estadoId = $('#EstadoAPI').val();
+	if (estadoId) {
+		$.getJSON(`/APIEstadoCidade/GetCidadesPorEstadoAPI?estadoId=${estadoId}`)
+			.done(function (data) {
+				$('#CidadeAPI').empty().append('<option value="" disabled selected>Selecione a cidade</option>');
+				data.forEach(cidade => {
+					$('#CidadeAPI').append(`<option value="${cidade.id}">${cidade.nome}</option>`);
+				});
+			})
+			.fail(function () {
+				alert('Erro ao carregar as cidades. Tente novamente mais tarde.');
+			});
+	} else {
+		$('#CidadeAPI').empty().append('<option value="" disabled selected>Selecione a cidade</option>');
+	}
+}
+
+$(document).ready(function () {
+	carregarEstadosAPI();
+});
 
 
+
+
+
+
+
+
+
+
+//GET ESTADOS BANCO
 async function carregarEstados() {
 	try {
 		const response = await $.getJSON(`/Igreja/GetEstados`);
@@ -258,6 +268,7 @@ $(document).ready(function () {
 	carregarEstados();
 });
 
+//GET CIDADES BANCO
 function carregarCidades() {
 	const estado = $('#Estado').val();
 	console.log(estado);
@@ -281,6 +292,7 @@ $('#Cidade').change(function () {
 	carregarBairros();
 });
 
+//GET BAIRROS BANCO
 function carregarBairros() {
 	const cidade = $('#Cidade').val();
 	console.log(cidade);
@@ -304,6 +316,7 @@ $('#Bairro').change(function () {
 	carregarIgrejaPorBairro();
 });
 
+//GET IGREJAS BANCO
 function carregarIgrejaPorBairro() {
 	const bairro = $('#Bairro').val();
 
@@ -345,7 +358,6 @@ $('#botaoBuscar').click(function (e) {
 		alert('Por favor, selecione uma igreja.');
 	}
 });
-
 
 function validarFormularioPesquisa() {
 	var estado = document.getElementById("Estado").value;
@@ -436,54 +448,24 @@ function abrirMapa(endereco) {
 //});
 
 /*-----------------INICIO SANTO DIA-----------------*/
-async function obterSantoDoDia() {
-	try {
-		const response = await fetch('/Controller/GetSantoDoDia');
-		const data = await response.json();
 
-		if (data.message) {
-			console.log(data.message); // Exibe mensagem se não houver santo
-		} else {
-			console.log(data); // Manipula os dados do santo do dia
-			// Exiba o nome e a descrição, por exemplo:
-			//document.getElementById('santo-nome').textContent = data.Nome;
-			//document.getElementById('santo-descricao').textContent = data.Descricao;
-		}
-
-		return data; // Retorna os dados para uso em outro lugar
-	} catch (error) {
-		console.error('Erro ao obter Santo do Dia:', error);
-	}
+async function carregarSantoDia() {
+	const response = await $.getJSON(`/SantoDia/GetSantoDia`);
+	console.log(response);
+	//try {
+	//	$('#Estado').empty().append('<option value="" disabled selected>Estado</option>');
+	//	response.forEach(estado => {
+	//		$('#Estado').append(`<option value="${estado}">${estado}</option>`);
+	//	});
+	//} catch (error) {
+	//	alert('Erro ao carregar os estados. Tente novamente mais tarde.');
+	//}
 }
 
-async function preencherSantoDoDia() {
-	try {
-		const santoDoDia = await obterSantoDoDia(); // Ajuste aqui para chamar a função que obtém o Santo do Dia
-		if (santoDoDia) {
-			fillFormWithData(santoDoDia); // Preencher com os dados do Santo do Dia
-		}
-	} catch (error) {
-		console.error('Erro ao preencher o formulário:', error);
-	}
-}
+$(document).ready(function () {
+	carregarSantoDia();
+});
 
-function preencherCampo(field, value) {
-	if (field) {
-		field.textContent = value;
-	}
-}
-
-function fillFormWithData(dados) {
-	const fieldsMapping = {
-		santoNome: dados.Nome,
-		santoDescricao: dados.Descricao.replace(/(\d+)(?=[a-zA-Z])/g, '$1 ').replace(/\b\d+\b/g, '<span class="poppins-medium">$& </span>')
-	};
-
-	for (const [fieldId, value] of Object.entries(fieldsMapping)) {
-		const field = document.getElementById(fieldId);
-		preencherCampo(field, value); // Usando a função preencherCampo
-	}
-}
 /*-----------------FIM SANTO DIA-----------------*/
 
 /*-----------------INICIO CIDADES E ESTADOS EVENTO-----------------*/
@@ -569,6 +551,54 @@ function filtrarEventos()
         });
 }
 /*-----------------Fim Filtro Pesquisa Eventos-----------------*/
+
+function mascaraCNPJ(campo) {
+	// Remove qualquer caractere que não seja número
+	let cnpj = campo.value.replace(/\D/g, "");
+
+	// Aplica a máscara ao CNPJ
+	if (cnpj.length <= 14) {
+		cnpj = cnpj.replace(/^(\d{2})(\d)/, "$1.$2");
+		cnpj = cnpj.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3");
+		cnpj = cnpj.replace(/\.(\d{3})(\d)/, ".$1/$2");
+		cnpj = cnpj.replace(/(\d{4})(\d)/, "$1-$2");
+	}
+
+	// Define o valor formatado no campo de input
+	campo.value = cnpj;
+}
+
+function mascaraTelefone(campo) {
+	// Remove qualquer caractere que não seja número
+	let telefone = campo.value.replace(/\D/g, "");
+
+	// Aplica a máscara de telefone conforme a quantidade de dígitos
+	if (telefone.length <= 10) {
+		// Formato para números fixos com 8 dígitos (ex: (00) 0000-0000)
+		telefone = telefone.replace(/^(\d{2})(\d)/, "($1) $2");
+		telefone = telefone.replace(/(\d{4})(\d)/, "$1-$2");
+	} else {
+		// Formato para números móveis com 9 dígitos (ex: (00) 00000-0000)
+		telefone = telefone.replace(/^(\d{2})(\d)/, "($1) $2");
+		telefone = telefone.replace(/(\d{5})(\d)/, "$1-$2");
+	}
+
+	// Atualiza o campo com a máscara aplicada
+	campo.value = telefone;
+}
+
+function mascaraCEP(campo) {
+	// Remove qualquer caractere que não seja número
+	let cep = campo.value.replace(/\D/g, "");
+
+	// Aplica a máscara de CEP (ex: 00000-000)
+	cep = cep.replace(/^(\d{5})(\d)/, "$1-$2");
+
+	// Atualiza o campo com a máscara aplicada
+	campo.value = cep;
+}
+
+
 
 window.onload = function () {
 	preencherLiturgia();

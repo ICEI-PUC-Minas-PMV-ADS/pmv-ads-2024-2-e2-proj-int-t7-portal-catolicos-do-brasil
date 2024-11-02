@@ -40,6 +40,46 @@ namespace PortalCatolicoBrasil.Models
         [Required(ErrorMessage = "Informe o Bairro")]
         public string Bairro { get; set; }
 
-        public ICollection<Missa> Missa { get; set; }
+        public ICollection<DiaMissa> DiaMissa { get; set; }
+    }
+
+    [Table("DiaMissa")]
+    public class DiaMissa
+    {
+        [Key]
+        public int DiaMissaId { get; set; }
+
+        [ForeignKey("Igreja")]
+        public int IgrejaId { get; set; }
+        public Igreja Igreja { get; set; }
+
+        public string DiaSemana { get; set; }
+
+        public ICollection<HoraMissa> HoraMissa { get; set; }
+    }
+
+    [Table("HoraMissa")]
+    public class HoraMissa
+    {
+        [Key]
+        public int HoraMissaId { get; set; }
+
+        [ForeignKey("DiaMissa")]
+        public int DiaMissaId { get; set; }
+        public DiaMissa DiaMissa { get; set; }
+
+        public TimeOnly? Hora1 { get; set; }
+        public TimeOnly? Hora2 { get; set; }
+        public TimeOnly? Hora3 { get; set; }
+        public TimeOnly? Hora4 { get; set; }
+        public TimeOnly? Hora5 { get; set; }
+        public TimeOnly? Hora6 { get; set; }
+    }
+
+    public class IgrejaMissaViewModel
+    {
+        public Igreja Igreja { get; set; }
+        public DiaMissa DiaMissa { get; set; }
+        public HoraMissa HoraMissa { get; set; }
     }
 }

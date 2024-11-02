@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PortalCatolicoBrasil.Models.Igreja>
+﻿@model List<Igreja>
 
 <div class="main-missas">
     <button type="button" id="new-search-btn" class="poppins-semibold btn btn-outline-primary border-2 mb-3 hidden">Nova Pesquisa</button>
@@ -55,24 +55,19 @@
     </div>
 
     <div id="search-results">
-        @if (Model != null && Model.Any())
-        {
-            @foreach (var igreja in Model)
-            {
-
-                <h2 class="poppins-medium titulo-result-page">Resultado da pesquisa</h2>
+        <h2 class="poppins-medium titulo-result-page">Resultado da pesquisa</h2>
                 <div class="conteudo-card">
-                    <h3 class="titulo-card-igreja poppins-medium ">@igreja.NomeIgreja</h3>
+                    <h3 class="titulo-card-igreja poppins-medium ">Igrejinha</h3>
                     <div class="dados-card">
                         <div id="card-endereco">
                             <h5 class="poppins-medium card-title-endereco">Informações da igreja</h5>
                             <div class="endereco-e-botao">
                                 <p class="poppins-medium">
-                                    @igreja.Logradouro, @igreja.Numero - @igreja.Bairro - @igreja.Cidade, @igreja.Estado<br>
-                                    @igreja.Telefone<br>
+                            ndbnbvcv, 45 - dfsbfg - ffff, ba<br>
+                                    (96) 98145-5080<br>
                                 </p>
 
-                                <button onclick="abrirMapa('@igreja.Logradouro, @igreja.Numero, @igreja.Bairro, @igreja.Cidade, @igreja.Estado')" class="btn-ver-mapa poppins-semibold btn btn-primary">
+                                <button onclick="abrirMapa('ndbnbvcv, 45, dfsbfg, ffff, ba')" class="btn-ver-mapa poppins-semibold btn btn-primary">
                                     Ver no mapa
                                     <i class="icone-btn-ver-mapa fas fa-location"></i>
                                 </button>
@@ -81,11 +76,48 @@
                         <div id="card-missas">
                             <h5 class="poppins-mediumcard-title-missas">Missas</h5>
                             <p class="poppins-medium">
-                                07:00 - Domingo<br>
-                                12:00 - Quarta-feira<br>
-                                19:30 - Domingo<br>
-                                12:00 - Celebração da palavra<br>
-                                12:00 - Celebração da palavra
+                        10:00 - Segunda-feira<br>
+                        16:00 - Sexta-feira<br>
+                        19:00 - Sexta-feira<br>
+                        15:00 - Domingo<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <p class="link-cadastre-aqui poppins-medium">Não encontrou sua igreja? <a href="@Url.Action("Create", "Igreja")" class="link-cadastre-aqui-resultados">Cadastre aqui</a></p>
+    </div>
+
+@*     <div id="search-results">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var igreja in Model)
+            {
+
+                <h2 class="poppins-medium titulo-result-page">Resultado da pesquisa</h2>
+                <div class="conteudo-card">
+                    <h3 class="titulo-card-igreja poppins-medium ">@igreja.Igreja.NomeIgreja</h3>
+                    <div class="dados-card">
+                        <div id="card-endereco">
+                            <h5 class="poppins-medium card-title-endereco">Informações da igreja</h5>
+                            <div class="endereco-e-botao">
+                                <p class="poppins-medium">
+                                    @igreja.Igreja.Logradouro, @igreja.Igreja.Numero - @igreja.Igreja.Bairro - @igreja.Igreja.Cidade, @igreja.Igreja.Estado<br>
+                                    @igreja.Igreja.Telefone<br>
+                                </p>
+
+                                <button onclick="abrirMapa('@igreja.Igreja.Logradouro, @igreja.Igreja.Numero, @igreja.Igreja.Bairro, @igreja.Igreja.Cidade, @igreja.Igreja.Estado')" class="btn-ver-mapa poppins-semibold btn btn-primary">
+                                    Ver no mapa
+                                    <i class="icone-btn-ver-mapa fas fa-location"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="card-missas">
+                            <h5 class="poppins-mediumcard-title-missas">Missas</h5>
+                            <p class="poppins-medium">
+                                @igreja.HoraMissa.Hora1 - @igreja.DiaMissa.DiaSemana<br>
+                                @igreja.HoraMissa.Hora2 - @igreja.DiaMissa.DiaSemana<br>
+                                @igreja.HoraMissa.Hora3 - @igreja.DiaMissa.DiaSemana<br>
+                                @igreja.HoraMissa.Hora4 - @igreja.DiaMissa.DiaSemana<br>
                             </p>
                         </div>
                     </div>
@@ -98,5 +130,5 @@
         {
             <p>@ViewBag.Message</p>
         }
-    </div>
+    </div> *@
 </div>

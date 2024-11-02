@@ -27,21 +27,38 @@ namespace PortalCatolicoBrasil.Controllers
 
         public IActionResult Create()
         {
-            return View();
+            var viewModel = new IgrejaMissaViewModel
+            {
+                Igreja = new Igreja(),
+                DiaMissa = new DiaMissa(),
+                HoraMissa = new HoraMissa()
+            };
+
+            return View(viewModel);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Igreja igreja)
+        public IActionResult Create(IgrejaMissaViewModel viewModel)
         {
             if (ModelState.IsValid)
             {
-                _context.Igreja.Add(igreja);
-                await _context.SaveChangesAsync();
-                TempData["SuccessMessage"] = "Igreja cadastrada com sucesso!";
+                // Salvar dados da Igreja e HoraMissa no banco de dados
+                _context.Igreja.Add(viewModel.Igreja);
+                _context.SaveChanges();
+
+                viewModel.DiaMissa.IgrejaId = viewModel.Igreja.Id;
+                _context.DiaMissa.Add(viewModel.DiaMissa);
+                _context.SaveChanges();
+
+                viewModel.HoraMissa.DiaMissaId = viewModel.DiaMissa.DiaMissaId;
+                _context.HoraMissa.Add(viewModel.HoraMissa);
+                _context.SaveChanges();
+
+                TempData["SuccessMessage"] = "Igreja e horários de missa cadastrados com sucesso!";
                 return RedirectToAction("Index", "Home");
             }
 
-            return View(igreja);
+            return View(viewModel);
         }
 
         public IActionResult ResultadoPesquisa()
@@ -56,14 +73,7 @@ namespace PortalCatolicoBrasil.Controllers
             {
                 return NotFound();
             }
-
             return View(igreja);
-        }
-
-        public IActionResult CreateBoth()
-        {
-            var viewModel = new Tuple<Igreja, Missa>(new Igreja(), new Missa());
-            return View(viewModel);
         }
 
         [HttpGet]
@@ -90,7 +100,6 @@ namespace PortalCatolicoBrasil.Controllers
 
                 return Json(cidades);
             }
-
             return Json(new List<string>());
         }
 
@@ -107,7 +116,6 @@ namespace PortalCatolicoBrasil.Controllers
 
                 return Json(bairros);
             }
-
             return Json(new List<string>());
         }
 
@@ -157,6 +165,42 @@ namespace PortalCatolicoBrasil.Controllers
         }
     }
 }
+//[HttpPost]
+//public IActionResult BuscarPorLocalizacao([FromBody] CoordenadasViewModel coordenadas)
+//{
+//    var latitudeUsuario = coordenadas.Latitude;
+//    var longitudeUsuario = coordenadas.Longitude;
+
+//    // Aqui você precisa definir o raio de busca, por exemplo, 10 km
+//    double raioKm = 10.0;
+
+//    // Exemplo simples de busca por distância (essa lógica depende de como você armazena as coordenadas das igrejas)
+//    var igrejasProximas = _context.Igreja
+//        .Where(igreja => CalcularDistancia(latitudeUsuario, longitudeUsuario, igreja.Latitude, igreja.Longitude) <= raioKm)
+//        .ToList();
+
+//    return Json(igrejasProximas);
+//}
+
+//// Método auxiliar para calcular a distância entre duas coordenadas (em quilômetros)
+//private double CalcularDistancia(double lat1, double lon1, double lat2, double lon2)
+//{
+//    var R = 6371; // Raio da Terra em km
+//    var dLat = GrausParaRadianos(lat2 - lat1);
+//    var dLon = GrausParaRadianos(lon2 - lon1);
+//    var a =
+//        Math.Sin(dLat / 2) * Math.Sin(dLat / 2) +
+//        Math.Cos(GrausParaRadianos(lat1)) * Math.Cos(GrausParaRadianos(lat2)) *
+//        Math.Sin(dLon / 2) * Math.Sin(dLon / 2);
+//    var c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
+//    var distancia = R * c;
+//    return distancia;
+//}
+
+//private double GrausParaRadianos(double graus)
+//{
+//    return graus * (Math.PI / 180);
+//}
 
 //    public async Task<IActionResult> Details(int? id)
 //    {
@@ -199,22 +243,3 @@ namespace PortalCatolicoBrasil.Controllers
 
 //        return View(dadosFiltrados);
 //    }
-
-/*
-// Método para buscar os estados por API
-public async Task<IActionResult> GetEstadosAPI()
-{
-    var response = await client.GetStringAsync("https://servicodados.ibge.gov.br/api/v1/localidades/estados");
-    var estados = JsonConvert.DeserializeObject<List<Estado>>(response);
-    return Json(estados);
-}
-
-
-// Modelos para os dados retornados pela API
-public class Estado
-{
-    public int Id { get; set; }
-    public string Nome { get; set; }
-    public string Sigla { get; set; }
-}
-*/
