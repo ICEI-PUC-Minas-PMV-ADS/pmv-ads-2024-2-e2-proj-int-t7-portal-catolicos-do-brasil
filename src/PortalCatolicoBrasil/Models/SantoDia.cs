@@ -1,9 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PortalCatolicoBrasil.Models
 {
-    [Table("santo_do_dia")]
+    [Table("SantoDia")]
     public class SantoDia
     {
         [Key]
