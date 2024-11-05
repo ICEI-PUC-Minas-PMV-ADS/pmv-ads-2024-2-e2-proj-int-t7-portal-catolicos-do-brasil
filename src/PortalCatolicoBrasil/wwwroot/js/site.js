@@ -57,24 +57,23 @@ function converterDiaSemana(input) {
 
 async function obterLiturgia() {
 	const container = document.getElementById('liturgiaText');
-
 	container.classList.add('poppins-regular');
 	container.innerHTML = '<p>Carregando a liturgia...</p>';
 
 	try {
-		const response = await fetch('/liturgia');
-		if (!response.ok) {
-			throw new Error('Erro ao buscar a liturgia');
-		}
-		const dados = await response.json();
+		const dados = await $.getJSON("/Liturgia/GetLiturgiaAPI");
 		console.log('Dados da liturgia:', dados);
 		return dados;
 	} catch (error) {
-		console.error('Erro:', error);
+		console.error('Erro ao carregar a liturgia:', error);
 		container.innerHTML = '<p>Erro ao carregar a liturgia.</p>';
 		return null;
 	}
 }
+
+$(document).ready(function () {
+	preencherLiturgia();
+});
 
 async function preencherLiturgia() {
 	try {
@@ -88,75 +87,46 @@ async function preencherLiturgia() {
 	}
 }
 
-function preencherCampo(field, value) {
-	if (field) {
-		field.textContent = value;
-	}
-}
-
 function fillFormWithData(dados) {
 	const fieldsMapping = {
 		liturgiaData: formatarData(new Date()),
-		liturgiaText: `
-            <p>${converterDiaSemana(dados.liturgia)}</p>
-        `,
+		liturgiaText: `<p>${converterDiaSemana(dados.liturgia)}</p>`,
 		corLiturgia: "COR LITÚRGICA: " + dados.cor.toUpperCase(),
-		primeiraLeituraReferenciaText: `
-            <p>Primeira Leitura (${dados.primeiraLeitura.referencia})</p>
-        `,
-		primeiraLeituraTituloText: `
-            <p>${dados.primeiraLeitura.titulo}</p>
-        `,
+		primeiraLeituraReferenciaText: `<p>Primeira Leitura (${dados.primeiraLeitura.referencia})</p>`,
+		primeiraLeituraTituloText: `<p>${dados.primeiraLeitura.titulo}</p>`,
 		primeiraLeituraTextoText: `
             <p>${dados.primeiraLeitura.texto.replace(/(\d+)(?=[a-zA-Z])/g, '$1 ').replace(/\b\d+\b/g, '<span class="poppins-medium">$& </span>')}</p>
             <p>— Palavra do Senhor.</p>
-            <p class="poppins-medium">— Graças a Deus.</p>
-        `,
-		salmoReferenciaText: `
-            <p>Responsório (${dados.salmo.referencia})</p>
-        `,
-		salmoRefraoText: `
-            <p class="poppins-light">— ${dados.salmo.refrao}</p>
-            <p>— ${dados.salmo.refrao}</p>
-        `,
+            <p class="poppins-medium">— Graças a Deus.</p>`,
+		salmoReferenciaText: `<p>Responsório (${dados.salmo.referencia})</p>`,
+		salmoRefraoText: `<p class="poppins-light">— ${dados.salmo.refrao}</p><p>— ${dados.salmo.refrao}</p>`,
 		salmoTextoText: dados.salmo.texto
 			? `<p>${dados.salmo.texto.replace(/([—])\s*/g, '<br><br> $1 ')}.</p>`
-			: `<p>Salmo não disponível.</p>
-        `,
+			: `<p>Salmo não disponível.</p>`,
 		segundaLeituraReferenciaText: dados.segundaLeitura?.referencia
 			? `<p>Segunda Leitura (${dados.segundaLeitura.referencia})</p>`
 			: `<p class="poppins-regular-italic">Não há segunda leitura hoje!</p>`,
-		segundaLeituraTituloText: dados.segundaLeitura.titulo
+		segundaLeituraTituloText: dados.segundaLeitura?.titulo
 			? `<p>${dados.segundaLeitura.titulo}</p>`
 			: ``,
-		segundaLeituraTextoText: dados.segundaLeitura.texto
+		segundaLeituraTextoText: dados.segundaLeitura?.texto
 			? `<p>${dados.segundaLeitura.texto.replace(/(\d+)(?=[a-zA-Z])/g, '$1 ').replace(/\b\d+\b/g, '<span class="poppins-medium">$& </span>')}</p>
-            <p>— Palavra do Senhor.</p>
-            <p class="poppins-medium">— Graças a Deus.</p>`
+               <p>— Palavra do Senhor.</p>
+               <p class="poppins-medium">— Graças a Deus.</p>`
 			: ``,
-		evangelhoReferenciaText: `
-            <p>Evangelho (${dados.evangelho.referencia})</p>
-        `,
-		evangelhoTituloText: `
-            <p class="poppins-medium">— Aleluia, Aleluia, Aleluia.</p>
-            <p>${dados.evangelho.titulo}<p>
-        `,
+		evangelhoReferenciaText: `<p>Evangelho (${dados.evangelho.referencia})</p>`,
+		evangelhoTituloText: `<p class="poppins-medium">— Aleluia, Aleluia, Aleluia.</p><p>${dados.evangelho.titulo}<p>`,
 		evangelhoTextoText: `
             <p class="poppins-medium">— Glória a vós, Senhor.</p>
             <p>${dados.evangelho.texto.replace(/(\d+)(?=[a-zA-Z])/g, '$1 ').replace(/\b\d+\b/g, '<span class="poppins-medium">$& </span>')}</p>
             <p>— Palavra da Salvação.</p>
-            <p class="poppins-medium">— Glória a vós, Senhor.</p>
-        `,
+            <p class="poppins-medium">— Glória a vós, Senhor.</p>`,
 	};
 
 	for (const [fieldId, value] of Object.entries(fieldsMapping)) {
 		const field = document.getElementById(fieldId);
 		if (field) {
-			if (fieldId === 'evangelhoTextoText', 'evangelhoReferenciaText') {
-				field.innerHTML = value;
-			} else {
-				field.textContent = value;
-			}
+			field.innerHTML = value;
 		}
 	}
 }
@@ -176,7 +146,7 @@ function atualizarCorLiturgica(corLiturgica) {
 				cor = 'purple';
 				break;
 			case 'branco':
-				cor = 'white';
+				cor = 'lightgray';
 				break;
 			case 'rosa':
 				cor = 'pink';

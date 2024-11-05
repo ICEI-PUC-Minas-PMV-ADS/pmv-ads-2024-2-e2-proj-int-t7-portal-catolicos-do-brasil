@@ -13,8 +13,8 @@ namespace PortalCatolicoBrasil.Service
 
         public async Task<string> ObterLiturgiaDiariaAsync(DateTime date)
         {
-            var formattedDate = date.ToString("dd-MM");
-            var response = await _httpClient.GetAsync($"https://liturgiadiaria.site/{formattedDate}");
+            //var formattedDate = date.ToString("dd-MM");
+            var response = await _httpClient.GetAsync("https://liturgia.up.railway.app/05-11");
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         }

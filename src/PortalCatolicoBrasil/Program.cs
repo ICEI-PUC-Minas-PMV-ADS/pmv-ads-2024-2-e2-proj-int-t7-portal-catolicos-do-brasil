@@ -16,32 +16,12 @@ namespace PortalCatolicoBrasil
             builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
             builder.Services.AddHttpClient<ILiturgiaService, LiturgiaService>();
-
-            //builder.Services.AddDbContext<AppDbContext>(options =>
-            //    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
             builder.Services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer("Server=PH-WIN11-DELL;Database=portalcatolico;User Id=PH-WIN11-DELL\\Paulo;Password=123456;TrustServerCertificate=True;Trusted_Connection=True"
+            options.UseSqlServer("Server=PH-WIN11-DELL;Database=portalcatolico;User Id=PH-WIN11-DELL\\Paulo;Password=123456;TrustServerCertificate=True;Trusted_Connection=True;"
             , sqlOptions =>
             {
                 sqlOptions.EnableRetryOnFailure();
             }));
-
-            //builder.Services.AddHangfire(configuration =>
-            //    configuration.SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
-            //                 .UseSimpleAssemblyNameTypeSerializer()
-            //                 .UseRecommendedSerializerSettings()
-            //                 .UseSqlServerStorage(builder.Configuration.GetConnectionString("DefaultConnection"),
-            //                     new Hangfire.SqlServer.SqlServerStorageOptions
-            //                     {
-            //                         CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
-            //                         SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
-            //                         QueuePollInterval = TimeSpan.Zero,
-            //                         UseRecommendedIsolationLevel = true,
-            //                         DisableGlobalLocks = true
-            //                     }));
-
-            //builder.Services.AddHangfireServer();
 
             var app = builder.Build();
 
@@ -58,10 +38,6 @@ namespace PortalCatolicoBrasil
 
             app.UseAuthorization();
 
-            //app.UseHangfireDashboard("/hangfire");
-
-            //RecurringJob.AddOrUpdate("job-daily-youtube", () => Console.WriteLine("Buscando v�deo do YouTube..."), Cron.Daily);
-
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
@@ -69,5 +45,29 @@ namespace PortalCatolicoBrasil
             app.Run();
         }
     }
-
 }
+
+//builder.Services.AddDbContext<AppDbContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+//app.UseHangfireDashboard("/hangfire");
+
+//RecurringJob.AddOrUpdate("job-daily-youtube", () => Console.WriteLine("Buscando v�deo do YouTube..."), Cron.Daily);
+
+
+//builder.Services.AddHangfire(configuration =>
+//    configuration.SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
+//                 .UseSimpleAssemblyNameTypeSerializer()
+//                 .UseRecommendedSerializerSettings()
+//                 .UseSqlServerStorage(builder.Configuration.GetConnectionString("DefaultConnection"),
+//                     new Hangfire.SqlServer.SqlServerStorageOptions
+//                     {
+//                         CommandBatchMaxTimeout = TimeSpan.FromMinutes(5),
+//                         SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
+//                         QueuePollInterval = TimeSpan.Zero,
+//                         UseRecommendedIsolationLevel = true,
+//                         DisableGlobalLocks = true
+//                     }));
+
+//builder.Services.AddHangfireServer();
