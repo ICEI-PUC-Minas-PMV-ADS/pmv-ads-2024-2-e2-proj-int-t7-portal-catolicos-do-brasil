@@ -11,8 +11,13 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace PortalCatolicoBrasil.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241101175331_EditNameTableSntoDia")]
-    partial class EditNameTableSntoDia
+<<<<<<<< Updated upstream:src/PortalCatolicoBrasil/Migrations/20241031035213_M02-AddNewDatabase.Designer.cs
+    [Migration("20241031035213_M02-AddNewDatabase")]
+    partial class M02AddNewDatabase
+========
+    [Migration("20241105200654_M01-Addtables")]
+    partial class M01Addtables
+>>>>>>>> Stashed changes:src/PortalCatolicoBrasil/Migrations/20241105200654_M01-Addtables.Designer.cs
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -222,8 +227,9 @@ namespace PortalCatolicoBrasil.Migrations
 
                     b.HasKey("Data");
 
-                    b.ToTable("SantoDia");
+                    b.ToTable("santo_do_dia");
                 });
+<<<<<<<< Updated upstream:src/PortalCatolicoBrasil/Migrations/20241031035213_M02-AddNewDatabase.Designer.cs
 
             modelBuilder.Entity("PortalCatolicoBrasil.Models.DiaMissa", b =>
                 {
@@ -256,6 +262,8 @@ namespace PortalCatolicoBrasil.Migrations
                 {
                     b.Navigation("DiaMissa");
                 });
+========
+>>>>>>>> Stashed changes:src/PortalCatolicoBrasil/Migrations/20241105200654_M01-Addtables.Designer.cs
 #pragma warning restore 612, 618
         }
     }
