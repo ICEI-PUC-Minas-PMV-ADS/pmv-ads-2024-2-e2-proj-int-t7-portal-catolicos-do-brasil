@@ -1,6 +1,7 @@
 using Hangfire;
 using Hangfire.SqlServer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using PortalCatolicoBrasil.Interfaces;
 using PortalCatolicoBrasil.Service;
 
@@ -16,12 +17,13 @@ namespace PortalCatolicoBrasil
             builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
             builder.Services.AddHttpClient<ILiturgiaService, LiturgiaService>();
+
             builder.Services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer("Server=PH-WIN11-DELL;Database=portalcatolico;User Id=PH-WIN11-DELL\\Paulo;Password=123456;TrustServerCertificate=True;Trusted_Connection=True;"
-            , sqlOptions =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), sqlOptions =>
             {
                 sqlOptions.EnableRetryOnFailure();
             }));
+
 
             var app = builder.Build();
 

@@ -1,3 +1,5 @@
+//import { carregarSantoDia } from './santo.js';
+
 /*-----------------INÍCIO LITURGIA-----------------*/
 const buttons = document.querySelectorAll(".btn--group button");
 const contents = {
@@ -213,13 +215,7 @@ $(document).ready(function () {
 });
 
 
-
-
-
-
-
-
-
+/*----------------------------------------------------------------------------------------------------*/
 
 //GET ESTADOS BANCO
 async function carregarEstados() {
@@ -309,7 +305,6 @@ function carregarIgrejaPorBairro() {
 	}
 }
 
-
 $('#botaoBuscar').click(function (e) {
 	e.preventDefault();
 
@@ -397,46 +392,7 @@ function abrirMapa(endereco) {
 }
 
 /*-----------------FIM HOME INDEX-----------------*/
-//document.getElementById('new-search-btn').addEventListener('click', function () {
-//	const filter = document.getElementById('filter');
-//	const results = document.getElementById('search-results');
 
-//	filter.classList.remove('hidden')
-//	filter.scrollIntoView({behavior: 'smooth'});
-//});
-
-//if (sessionStorage.getItem('redirectFromHome') === 'true') {
-//	document.getElementById('filter').classList.add('hidden');
-//	sessionStorage.removeItem('redirectFromHome');
-//}
-
-//document.getElementById('cancel-search-btn').addEventListener('click', function () {
-//	const filter = document.getElementById('filter');
-
-//	filter.classList.add('hidden')
-//	filter.scrollIntoView({behavior: 'smooth'});
-//});
-
-/*-----------------INICIO SANTO DIA-----------------*/
-
-async function carregarSantoDia() {
-	const response = await $.getJSON(`/SantoDia/GetSantoDia`);
-	console.log(response);
-	//try {
-	//	$('#Estado').empty().append('<option value="" disabled selected>Estado</option>');
-	//	response.forEach(estado => {
-	//		$('#Estado').append(`<option value="${estado}">${estado}</option>`);
-	//	});
-	//} catch (error) {
-	//	alert('Erro ao carregar os estados. Tente novamente mais tarde.');
-	//}
-}
-
-$(document).ready(function () {
-	carregarSantoDia();
-});
-
-/*-----------------FIM SANTO DIA-----------------*/
 
 /*-----------------INICIO CIDADES E ESTADOS EVENTO-----------------*/
     document.addEventListener("DOMContentLoaded", function() {
@@ -480,7 +436,6 @@ $(document).ready(function () {
 
 
 /*-----------------Inicio Filtro Pesquisa Eventos-----------------*/
-
 function filtrarEventos()
 {
     const estado = document.getElementById('estado').value

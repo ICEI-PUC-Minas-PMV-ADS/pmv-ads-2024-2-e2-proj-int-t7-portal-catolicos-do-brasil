@@ -8,13 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\SantoDia\**" />
-    <Content Remove="Views\SantoDia\**" />
-    <EmbeddedResource Remove="Views\SantoDia\**" />
-    <None Remove="Views\SantoDia\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Remove="Views\Home\CadastroDeEventos.cshtml" />
     <Content Remove="Views\Home\Eventos.cshtml" />
     <Content Remove="Views\Igreja\CreateBoth.cshtml" />

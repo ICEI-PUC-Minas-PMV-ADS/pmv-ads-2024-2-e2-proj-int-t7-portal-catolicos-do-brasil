@@ -11,7 +11,6 @@ public class AppDbContext : DbContext
     public DbSet<DiaMissa> DiaMissa { get; set; }
     public DbSet<HoraMissa> HoraMissa { get; set; }
 
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

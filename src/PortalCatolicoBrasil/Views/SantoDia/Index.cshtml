@@ -1,0 +1,22 @@
+﻿@model PortalCatolicoBrasil.Models.SantoDia
+
+@{
+    ViewData["Title"] = "Santo do Dia";
+}
+
+<div class="container-santodia">
+    <img class="banner-santodia" src="~/css/Images/banner_paleativo.png" />
+
+    <div class="santodia-header">
+        <div class="combo-data-santodia">
+            <div class="santodia-data-current">
+                <i class="icon-event material-symbols-outlined">event</i>
+                <p class="santodiaData poppins-medium">@Model.Data.ToString("dd MMM yy")</p>
+            </div>
+        </div>
+        <p class="santodiaNome poppins-medium">@Model.Nome</p>
+    </div>
+    <p class="santodiaText poppins-regular">@Model.Descricao</p>
+    <br />
+    <hr class="hr-santodia"/>
+</div>

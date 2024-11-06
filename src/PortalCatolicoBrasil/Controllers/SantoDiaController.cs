@@ -12,31 +12,47 @@ namespace PortalCatolicoBrasil.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
-        {
-            var santo = await _context.SantoDia.ToListAsync();
+        //public async Task<IActionResult> Index()
+        //{
+        //    var santo = await _context.SantoDia.ToListAsync();
 
-            return View(santo);
-        }
+        //    return View(santo);
+        //}
 
         [HttpGet]
-        public async Task<IActionResult> GetSanto()
+        public async Task<IActionResult> Index()
         {
             var dataAtual = DateOnly.FromDateTime(DateTime.Now);
-            Console.WriteLine($"Data atual: {dataAtual}");
-
             var santoDoDia = await _context.SantoDia
                 .Where(s => s.Data == dataAtual)  // Ajuste aqui se necessário
-                .Select(s => new { s.Data, s.Nome, s.Descricao })
                 .FirstOrDefaultAsync();
 
             if (santoDoDia == null)
             {
-                return Json(new { message = "Nenhum santo encontrado para a data atual." });
+                return View("Erro", new { message = "Nenhum santo encontrado para a data atual." });
             }
 
-            return Json(santoDoDia);
+            return View(santoDoDia);
         }
+
+        //[HttpGet]
+        //public async Task<IActionResult> GetSanto()
+        //{
+        //    var dataAtual = DateOnly.FromDateTime(DateTime.Now);
+        //    Console.WriteLine($"Data atual: {dataAtual}");
+
+        //    var santoDoDia = await _context.SantoDia
+        //        .Where(s => s.Data == dataAtual)  // Ajuste aqui se necessário
+        //        .Select(s => new { s.Data, s.Nome, s.Descricao })
+        //        .FirstOrDefaultAsync();
+
+        //    if (santoDoDia == null)
+        //    {
+        //        return Json(new { message = "Nenhum santo encontrado para a data atual." });
+        //    }
+
+        //    return Json(santoDoDia);
+        //}
 
         [HttpGet]
         public async Task<JsonResult> GetSantoDia()
@@ -52,4 +68,3 @@ namespace PortalCatolicoBrasil.Controllers
 
     }
 }
-

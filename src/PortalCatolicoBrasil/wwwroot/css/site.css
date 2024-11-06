@@ -1110,7 +1110,7 @@ form {
     padding-top: 0;
 }
 
-.combo-data {
+.combo-data-liturgia {
     padding-top: 6px;
     height: 100%;
     width: 300px;
@@ -1212,17 +1212,81 @@ form {
     color: gray;
 }
 /*-----------------FIM LITURGIA-----------------*/
+
+
+
+
 /*-----------------INICIO SANTO DO DIA-----------------*/
 .container-santodia {
     display: flex;
     flex-direction: column;
-    width: 960px;
+    width: 81%;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
 }
+
+.banner-santodia {
+    border-radius: 10px;
+}
+
+.santodia-header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 0;
+}
+
+.combo-data-santodia {
+    padding-top: 2px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.santodia-data-current {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    gap: 3px;
+    width: 100%;
+}
+
+.santodiaData {
+    padding-top: 2px;
+    font-size: 1.9em;
+    height: 100%;
+    color: #717275;
+}
+
+.santodiaNome {
+    line-height: 1.1em;
+    font-size: 2.3em;
+    padding-top: 4px;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.santodiaText {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hr-santodia{
+    border: 1px solid;
+}
 /*-----------------FIM SANTO DO DIA-----------------*/
+
+
+
+
 
 .anuncio-publicacoes {
     align-items: center;
@@ -1247,6 +1311,7 @@ form {
 .margem-titulo {
     margin-top: 15px;
 }
+
 /*-----------------INICIO PUBLICACOES-----------------*/
 @media (max-width: 1025px) {
     .container-publicacoes {
@@ -1451,9 +1516,6 @@ form {
 /*-----------------FIM SEGUNDA PUBLICACAO-----------------*/
 
 /*-----------------INICIO PAGINA DE EVENTOS-----------------*/
-
-
-
 .container-eventos {
     display: flex;
     flex-wrap: wrap;
@@ -1672,7 +1734,6 @@ form {
 
 
 /*-----------------INÍCIO IGREJAS-----------------*/
-
 .main-missas {
     min-width: 300px;
     width: 81%;
@@ -1716,8 +1777,6 @@ form {
     margin-top: 15px;
     gap: 10px !important;
 }
-
-/*-----------------FIM MISSAS-----------------*/
 
 #search-results {
     margin-top: 50px;
@@ -1823,28 +1882,12 @@ form {
 .link-cadastre-aqui-resultados {
     text-decoration: none;
 }
+/*-----------------FIM IGREJAS-----------------*/
 
-/*fim resultados*/
 
-/*.card-missas {
-    display:flex;
-    background-color: #EDEDED;
-    border-radius: 10px;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px red;
-    width: 960px;
-    margin: 0 auto;
-}
 
-.content-missas {
-    width: 100%;
-    height: 95%;
-    border: solid 2px blue;
-}*/
 
-/*inicio cadastro de igrejas e missas*/
+/*-----------------INICIO CADASTRO IGREJAS E MISSAS-----------------*/
 .cadastro-igreja {
     margin-top: 50px;
     margin-left: auto;
@@ -1995,3 +2038,4 @@ form {
 
     
 }
+/*-----------------FIM CADASTRO IGREJAS E MISSAS-----------------*/

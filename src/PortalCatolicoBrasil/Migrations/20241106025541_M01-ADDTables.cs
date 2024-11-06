@@ -6,11 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace PortalCatolicoBrasil.Migrations
 {
     /// <inheritdoc />
-<<<<<<<< Updated upstream:src/PortalCatolicoBrasil/Migrations/20241025190437_MO1-AddTables.cs
-    public partial class MO1AddTables : Migration
-========
-    public partial class M01Addtables : Migration
->>>>>>>> Stashed changes:src/PortalCatolicoBrasil/Migrations/20241105200654_M01-Addtables.cs
+    public partial class M01ADDTables : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -67,7 +63,7 @@ namespace PortalCatolicoBrasil.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "santo_do_dia",
+                name: "SantoDia",
                 columns: table => new
                 {
                     Data = table.Column<DateOnly>(type: "date", nullable: false),
@@ -76,7 +72,7 @@ namespace PortalCatolicoBrasil.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_santo_do_dia", x => x.Data);
+                    table.PrimaryKey("PK_SantoDia", x => x.Data);
                 });
 
             migrationBuilder.CreateTable(
@@ -142,14 +138,10 @@ namespace PortalCatolicoBrasil.Migrations
                 name: "Eventos");
 
             migrationBuilder.DropTable(
-<<<<<<<< Updated upstream:src/PortalCatolicoBrasil/Migrations/20241025190437_MO1-AddTables.cs
                 name: "HoraMissa");
-========
-                name: "Igreja");
->>>>>>>> Stashed changes:src/PortalCatolicoBrasil/Migrations/20241105200654_M01-Addtables.cs
 
             migrationBuilder.DropTable(
-                name: "santo_do_dia");
+                name: "SantoDia");
 
             migrationBuilder.DropTable(
                 name: "DiaMissa");

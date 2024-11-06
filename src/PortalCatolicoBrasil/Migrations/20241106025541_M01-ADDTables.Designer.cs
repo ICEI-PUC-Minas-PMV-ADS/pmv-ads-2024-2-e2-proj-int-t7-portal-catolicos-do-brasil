@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace PortalCatolicoBrasil.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241025190437_MO1-AddTables")]
-    partial class MO1AddTables
+    [Migration("20241106025541_M01-ADDTables")]
+    partial class M01ADDTables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -222,7 +222,7 @@ namespace PortalCatolicoBrasil.Migrations
 
                     b.HasKey("Data");
 
-                    b.ToTable("santo_do_dia");
+                    b.ToTable("SantoDia");
                 });
 
             modelBuilder.Entity("PortalCatolicoBrasil.Models.DiaMissa", b =>
