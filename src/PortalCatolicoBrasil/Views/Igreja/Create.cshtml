@@ -13,7 +13,7 @@
     }
 
     <div class="cards">
-        <form asp-action="Create" method="post">
+        <form asp-action="CreateIgreja" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <h3 class="poppins-semibold">Informações da Igreja</h3>
             <div class="card-info-igreja row mt-3 pt-3 px-3 pb-4 bg-light poppins-regular">
@@ -69,9 +69,65 @@
                     <span asp-validation-for="Igreja.Bairro" class="text-danger"></span>
                 </div>
             </div>
+
+
+
+
+
+
+            @*HORÁRIOS DE MISSAS*@
+
+            <h3 class="poppins-semibold">Informações das Missas</h3>
+            <div class="card-missa-igreja  row mt-3 pt-3 px-3 pb-4 bg-light poppins-regular">
+                <div class="content-missas">
+                    <div class="header-missas">
+                        <h4 class="dia">Dias</h4>
+                        <h4 class="horario">Horários</h4>
+                    </div>
+                    <div class="option-missas poppins-medium">
+                        <div class="horas domingo">
+                            <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Domingo</h5>
+                            <div class="form-group">
+                                <input type="time" asp-for="HoraMissa.Hora1" class="form-control hora-field" />
+                                <span asp-validation-for="HoraMissa.Hora1" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" asp-for="HoraMissa.Hora2" class="form-control hora-field" />
+                                <span asp-validation-for="HoraMissa.Hora2" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" asp-for="HoraMissa.Hora3" class="form-control hora-field" />
+                                <span asp-validation-for="HoraMissa.Hora3" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" asp-for="HoraMissa.Hora4" class="form-control hora-field" />
+                                <span asp-validation-for="HoraMissa.Hora4" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" asp-for="HoraMissa.Hora5" class="form-control hora-field" />
+                                <span asp-validation-for="HoraMissa.Hora5" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" asp-for="HoraMissa.Hora6" class="form-control hora-field" />
+                                <span asp-validation-for="HoraMissa.Hora6" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
+
+
+
+
+
+
+
+
+
+
         <div class="form-group">
-            <input type="submit" value="Create" class="btn btn-primary btn-cadastrar-igreja poppins-medium fs-5" />
+            <button type="submit" value="Create" class="btn btn-primary btn-cadastrar-igreja poppins-medium fs-5">Cadastrar</button>
         </div>
         </form>
     </div>
@@ -82,6 +138,231 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+@* <div class="card-missa-igreja  row mt-3 pt-3 px-3 pb-4 bg-light poppins-regular">
+    <div class="content-missas">
+        <div class="header-missas">
+            <h4 class="dia">Dias</h4>
+            <h4 class="horario">Horários</h4>
+        </div>
+        <div class="option-missas poppins-medium">
+            <div class="horas domingo">
+                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Domingo</h5>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora1" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora1" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora2" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora2" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora3" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora3" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora4" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora4" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora5" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora5" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora6" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora6" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="horas segunda">
+                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Segunda-feira</h5>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora1" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora1" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora2" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora2" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora3" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora3" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora4" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora4" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora5" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora5" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora6" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora6" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="horas terca">
+                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Terça-feira</h5>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora1" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora1" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora2" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora2" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora3" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora3" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora4" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora4" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora5" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora5" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora6" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora6" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="horas quarta">
+                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Quarta-feira</h5>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora1" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora1" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora2" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora2" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora3" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora3" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora4" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora4" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora5" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora5" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora6" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora6" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="horas quinta">
+                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Quinta-feira</h5>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora1" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora1" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora2" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora2" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora3" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora3" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora4" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora4" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora5" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora5" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora6" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora6" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="horas sexta">
+                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Sexta-feira</h5>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora1" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora1" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora2" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora2" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora3" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora3" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora4" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora4" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora5" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora5" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora6" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora6" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="horas sabado">
+                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Sábado</h5>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora1" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora1" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora2" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora2" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora3" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora3" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora4" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora4" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora5" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora5" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="time" asp-for="HoraMissa.Hora6" class="form-control hora-field" />
+                    <span asp-validation-for="HoraMissa.Hora6" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> *@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @*<h3 class="poppins-semibold">Informações das Missas</h3>
              <div class="card-missa-igreja  row mt-3 pt-3 px-3 pb-4 bg-light poppins-regular">

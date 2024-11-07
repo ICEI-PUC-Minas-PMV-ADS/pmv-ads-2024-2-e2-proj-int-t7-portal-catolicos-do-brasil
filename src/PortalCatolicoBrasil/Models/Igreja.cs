@@ -25,9 +25,6 @@ namespace PortalCatolicoBrasil.Models
         [Required(ErrorMessage = "Informe o Logradouro")]
         public string Logradouro { get; set; }
 
-        [Required(ErrorMessage = "Informe o Número do logradouro")]
-        public string Numero { get; set; }
-
         [Required(ErrorMessage = "Informe o CEP")]
         public string CEP { get; set; }
 
@@ -82,4 +79,20 @@ namespace PortalCatolicoBrasil.Models
         public DiaMissa DiaMissa { get; set; }
         public HoraMissa HoraMissa { get; set; }
     }
+
+
+
+    //[Table("Missa")]                   NOVA TABELA DE SUBSTITUIÇÃO
+    //public class Missa
+    //{
+    //    [Key]
+    //    public int MissaId { get; set; }
+
+    //    [ForeignKey("Igreja")]
+    //    public int IgrejaId { get; set; }
+    //    public Igreja Igreja { get; set; }
+
+    //    public string DiaSemana { get; set; }
+    //    public TimeOnly? Hora { get; set; }
+    //}
 }

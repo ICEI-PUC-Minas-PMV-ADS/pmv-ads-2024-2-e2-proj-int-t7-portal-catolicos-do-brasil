@@ -38,14 +38,14 @@ namespace PortalCatolicoBrasil.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(IgrejaMissaViewModel viewModel)
+        public IActionResult CreateIgreja(IgrejaMissaViewModel viewModel)
         {
             if (ModelState.IsValid)
             {
-                // Salvar dados da Igreja e HoraMissa no banco de dados
                 _context.Igreja.Add(viewModel.Igreja);
                 _context.SaveChanges();
 
+                viewModel.DiaMissa = new DiaMissa(); // Ver esse cara (feito gato aqui)
                 viewModel.DiaMissa.IgrejaId = viewModel.Igreja.Id;
                 _context.DiaMissa.Add(viewModel.DiaMissa);
                 _context.SaveChanges();
@@ -57,7 +57,6 @@ namespace PortalCatolicoBrasil.Controllers
                 TempData["SuccessMessage"] = "Igreja e horários de missa cadastrados com sucesso!";
                 return RedirectToAction("Index", "Home");
             }
-
             return View(viewModel);
         }
 
@@ -122,14 +121,12 @@ namespace PortalCatolicoBrasil.Controllers
         [HttpPost]
         public async Task<IActionResult> BuscarIgrejas(string estado, string cidade, string bairro)
         {
-            // Filtra as igrejas com base no estado, cidade e bairro
             var igrejas = await _context.Igreja
                 .Where(i => (string.IsNullOrEmpty(estado) || i.Estado == estado) &&
                             (string.IsNullOrEmpty(cidade) || i.Cidade == cidade) &&
                             (string.IsNullOrEmpty(bairro) || i.Bairro == bairro))
                 .ToListAsync();
 
-            // Retorna as igrejas como JSON
             return Json(igrejas);
         }
 
@@ -138,33 +135,60 @@ namespace PortalCatolicoBrasil.Controllers
         {
             try
             {
-                // Verifica se o ID foi passado corretamente
                 if (igrejaId <= 0)
                 {
                     return BadRequest("ID de igreja inválido.");
                 }
 
-                // Busca a igreja no banco de dados
                 var igreja = await _context.Igreja.FirstOrDefaultAsync(i => i.Id == igrejaId);
 
                 if (igreja == null)
                 {
                     ViewBag.Message = "Igreja não encontrada.";
-                    return View("ResultadoPesquisa", new List<Igreja>()); // Retorna uma lista vazia para manter consistência
+                    return View("ResultadoPesquisa", new List<Igreja>());
                 }
 
-                // Retorna a igreja selecionada para a página de resultado
                 return View("ResultadoPesquisa", new List<Igreja> { igreja });
             }
             catch (Exception ex)
             {
-                // Loga a exceção no console para ajudar a identificar o problema
                 Console.WriteLine($"Erro ao buscar a igreja: {ex.Message}");
                 return StatusCode(500, "Erro interno do servidor.");
             }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //[HttpPost]
 //public IActionResult BuscarPorLocalizacao([FromBody] CoordenadasViewModel coordenadas)
 //{
