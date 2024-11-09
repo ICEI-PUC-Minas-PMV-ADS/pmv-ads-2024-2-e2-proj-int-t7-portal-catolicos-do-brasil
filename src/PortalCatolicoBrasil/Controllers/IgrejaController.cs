@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using PortalCatolicoBrasil.Models;
-using System.Composition;
-using ThirdParty.Json.LitJson;
 
 namespace PortalCatolicoBrasil.Controllers
 {
@@ -30,33 +26,47 @@ namespace PortalCatolicoBrasil.Controllers
             var viewModel = new IgrejaMissaViewModel
             {
                 Igreja = new Igreja(),
-                DiaMissa = new DiaMissa(),
-                HoraMissa = new HoraMissa()
+                Missa = new Missa()
             };
 
             return View(viewModel);
         }
 
         [HttpPost]
-        public IActionResult CreateIgreja(IgrejaMissaViewModel viewModel)
+        public async Task<IActionResult> CreateIgreja(IgrejaMissaViewModel viewModel, List<List<TimeOnly?>> horarios)
         {
             if (ModelState.IsValid)
-            {
+            { 
                 _context.Igreja.Add(viewModel.Igreja);
                 _context.SaveChanges();
 
-                viewModel.DiaMissa = new DiaMissa(); // Ver esse cara (feito gato aqui)
-                viewModel.DiaMissa.IgrejaId = viewModel.Igreja.Id;
-                _context.DiaMissa.Add(viewModel.DiaMissa);
-                _context.SaveChanges();
+                int igrejaId = viewModel.Igreja.Id;
 
-                viewModel.HoraMissa.DiaMissaId = viewModel.DiaMissa.DiaMissaId;
-                _context.HoraMissa.Add(viewModel.HoraMissa);
-                _context.SaveChanges();
+                string[] diasSemana = { "domingo", "segunda", "terca", "quarta", "quinta", "sexta", "sabado" };
 
-                TempData["SuccessMessage"] = "Igreja e horários de missa cadastrados com sucesso!";
+                for (int i = 0; i < horarios.Count; i++)
+                {
+                    var horariosDia = horarios[i];
+
+                    foreach (var hora in horariosDia)
+                    {
+                        if (hora.HasValue)
+                        {
+                            var missa = new Missa
+                            {
+                                IgrejaId = igrejaId,
+                                DiaSemana = diasSemana[i],
+                                Hora = hora.Value
+                            };
+                            _context.Missa.Add(missa);
+                        }
+                    }
+                }
+
+                await _context.SaveChangesAsync();
+
                 return RedirectToAction("Index", "Home");
-            }
+             }
             return View(viewModel);
         }
 
@@ -163,6 +173,41 @@ namespace PortalCatolicoBrasil.Controllers
 
 
 
+
+//public IActionResult Create()
+//{
+//    var viewModel = new IgrejaMissaViewModel
+//    {
+//        Igreja = new Igreja(),
+//        DiaMissa = new DiaMissa(),
+//        HoraMissa = new HoraMissa()
+//    };
+
+//    return View(viewModel);
+//}
+
+//[HttpPost]
+//public IActionResult CreateIgreja(IgrejaMissaViewModel viewModel)
+//{
+//    if (ModelState.IsValid)
+//    {
+//        _context.Igreja.Add(viewModel.Igreja);
+//        _context.SaveChanges();
+
+//        viewModel.DiaMissa = new DiaMissa(); // Ver esse cara (feito gato aqui)
+//        viewModel.DiaMissa.IgrejaId = viewModel.Igreja.Id;
+//        _context.DiaMissa.Add(viewModel.DiaMissa);
+//        _context.SaveChanges();
+
+//        viewModel.HoraMissa.DiaMissaId = viewModel.DiaMissa.DiaMissaId;
+//        _context.HoraMissa.Add(viewModel.HoraMissa);
+//        _context.SaveChanges();
+
+//        TempData["SuccessMessage"] = "Igreja e horários de missa cadastrados com sucesso!";
+//        return RedirectToAction("Index", "Home");
+//    }
+//    return View(viewModel);
+//}
 
 
 

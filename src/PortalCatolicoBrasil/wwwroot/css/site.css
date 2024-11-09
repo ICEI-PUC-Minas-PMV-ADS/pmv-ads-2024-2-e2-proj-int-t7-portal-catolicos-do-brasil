@@ -1903,6 +1903,12 @@ form {
     width: 100%;
 }
 
+.igreja-card,
+.endereco-card,
+.missa-card {
+    margin-top: 50px;
+}
+
 .card-info-igreja {
     border-radius: 15px;
     background-color: #d9d9d92d;
@@ -1948,9 +1954,14 @@ form {
     width: 180px;
 }
 
+.form-control::placeholder{
+    color: #bababa;
+}
+
 .header-missas {
     display: flex;
     gap: 10px;
+    margin-bottom: 15px;
 }
 
 .option-missas {
@@ -1974,16 +1985,18 @@ form {
     color: #1E1E1E;
     outline:none;
     width: 20%;
+    font-size: 21px;
 }
 
 .dia {
     width: 20%;
-    border-bottom: solid 1px #6f6f6f;
+    border-bottom: solid 2px #c7c7c7;
+    height: 40px;
 }
 
 .horario {
     width: 80%;
-    border-bottom: solid 1px #6f6f6f;
+    border-bottom: solid 2px #c7c7c7;
 }
 
 .semana-field {
@@ -2004,23 +2017,19 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 20px;
 }
 
 .horas-options {
     display: flex;
     width: 100%;
     flex-direction: column;
-    gap: 10px;
 }
 
 .horas {
     display: flex;
-    gap: 15px;
+    column-gap: 15px;
     flex-wrap: wrap;
     width: 100%;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #ebebeb;
 }
 
 .btn-cadastrar-igreja {
@@ -2028,6 +2037,7 @@ form {
     width: 200px;
     font-size: 17px;
     margin-left: -13px;
+    margin-top: 20px;
     box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
 }
 
