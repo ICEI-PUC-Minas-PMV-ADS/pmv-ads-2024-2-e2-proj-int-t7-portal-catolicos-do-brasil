@@ -26,9 +26,8 @@ namespace PortalCatolicoBrasil.Controllers
             var viewModel = new IgrejaMissaViewModel
             {
                 Igreja = new Igreja(),
-                Missa = new Missa()
+                Missa = new List<Missa> { new Missa() }
             };
-
             return View(viewModel);
         }
 
@@ -36,13 +35,13 @@ namespace PortalCatolicoBrasil.Controllers
         public async Task<IActionResult> CreateIgreja(IgrejaMissaViewModel viewModel, List<List<TimeOnly?>> horarios)
         {
             if (ModelState.IsValid)
-            { 
+            {
                 _context.Igreja.Add(viewModel.Igreja);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
 
                 int igrejaId = viewModel.Igreja.Id;
 
-                string[] diasSemana = { "domingo", "segunda", "terca", "quarta", "quinta", "sexta", "sabado" };
+                string[] diasSemana = { "Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado" };
 
                 for (int i = 0; i < horarios.Count; i++)
                 {
@@ -52,11 +51,13 @@ namespace PortalCatolicoBrasil.Controllers
                     {
                         if (hora.HasValue)
                         {
+                            string horaFormatada = hora.Value.ToString("HH:mm");
+
                             var missa = new Missa
                             {
                                 IgrejaId = igrejaId,
                                 DiaSemana = diasSemana[i],
-                                Hora = hora.Value
+                                Hora = horaFormatada
                             };
                             _context.Missa.Add(missa);
                         }
@@ -64,15 +65,47 @@ namespace PortalCatolicoBrasil.Controllers
                 }
 
                 await _context.SaveChangesAsync();
-
-                return RedirectToAction("Index", "Home");
-             }
+                TempData["AlertMessage"] = "Igreja cadastrada com sucesso!";
+                return RedirectToAction("Create", "Igreja");
+            }
             return View(viewModel);
         }
 
-        public IActionResult ResultadoPesquisa()
+        public IActionResult ResultadoPesquisa(int? igrejaId, string estado, string cidade, string bairro)
         {
-            return View();
+            if (igrejaId.HasValue)
+            {
+                var igreja = _context.Igreja
+                    .Include(i => i.Missas)
+                    .FirstOrDefault(i => i.Id == igrejaId.Value);
+
+                if (igreja == null)
+                {
+                    return NotFound();
+                }
+
+                var viewModel = new IgrejaMissaViewModel
+                {
+                    Igreja = igreja
+                };
+
+                return View(viewModel);
+            }
+            else
+            {
+                var igrejas = _context.Igreja
+                    .Where(i => i.Estado == estado && i.Cidade == cidade && i.Bairro == bairro)
+                    .Include(i => i.Missas)
+                    .OrderBy(i => i.NomeIgreja)
+                    .ToList();
+
+                var viewModel = new IgrejaMissaViewModel
+                {
+                    Igrejas = igrejas
+                };
+
+                return View(viewModel);
+            }
         }
 
         public IActionResult Details(int id)
@@ -131,10 +164,13 @@ namespace PortalCatolicoBrasil.Controllers
         [HttpPost]
         public async Task<IActionResult> BuscarIgrejas(string estado, string cidade, string bairro)
         {
+            Console.WriteLine($"Estado: {estado}, Cidade: {cidade}, Bairro: {bairro}"); // Debug
+
             var igrejas = await _context.Igreja
                 .Where(i => (string.IsNullOrEmpty(estado) || i.Estado == estado) &&
                             (string.IsNullOrEmpty(cidade) || i.Cidade == cidade) &&
                             (string.IsNullOrEmpty(bairro) || i.Bairro == bairro))
+                .Select(i => new { i.Id, i.NomeIgreja })
                 .ToListAsync();
 
             return Json(igrejas);
@@ -150,15 +186,23 @@ namespace PortalCatolicoBrasil.Controllers
                     return BadRequest("ID de igreja inválido.");
                 }
 
-                var igreja = await _context.Igreja.FirstOrDefaultAsync(i => i.Id == igrejaId);
+                var igreja = await _context.Igreja
+                    .Include(i => i.Missas)
+                    .FirstOrDefaultAsync(i => i.Id == igrejaId);
 
                 if (igreja == null)
                 {
                     ViewBag.Message = "Igreja não encontrada.";
-                    return View("ResultadoPesquisa", new List<Igreja>());
+                    return NotFound("Igreja não encontrada.");
                 }
 
-                return View("ResultadoPesquisa", new List<Igreja> { igreja });
+                var viewModel = new IgrejaMissaViewModel 
+                { 
+                    Igreja = igreja, 
+                    Missa = igreja.Missas.ToList() 
+                };
+
+                return View("ResultadoPesquisa", viewModel);
             }
             catch (Exception ex)
             {
@@ -168,71 +212,6 @@ namespace PortalCatolicoBrasil.Controllers
         }
     }
 }
-
-
-
-
-
-
-//public IActionResult Create()
-//{
-//    var viewModel = new IgrejaMissaViewModel
-//    {
-//        Igreja = new Igreja(),
-//        DiaMissa = new DiaMissa(),
-//        HoraMissa = new HoraMissa()
-//    };
-
-//    return View(viewModel);
-//}
-
-//[HttpPost]
-//public IActionResult CreateIgreja(IgrejaMissaViewModel viewModel)
-//{
-//    if (ModelState.IsValid)
-//    {
-//        _context.Igreja.Add(viewModel.Igreja);
-//        _context.SaveChanges();
-
-//        viewModel.DiaMissa = new DiaMissa(); // Ver esse cara (feito gato aqui)
-//        viewModel.DiaMissa.IgrejaId = viewModel.Igreja.Id;
-//        _context.DiaMissa.Add(viewModel.DiaMissa);
-//        _context.SaveChanges();
-
-//        viewModel.HoraMissa.DiaMissaId = viewModel.DiaMissa.DiaMissaId;
-//        _context.HoraMissa.Add(viewModel.HoraMissa);
-//        _context.SaveChanges();
-
-//        TempData["SuccessMessage"] = "Igreja e horários de missa cadastrados com sucesso!";
-//        return RedirectToAction("Index", "Home");
-//    }
-//    return View(viewModel);
-//}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //[HttpPost]
 //public IActionResult BuscarPorLocalizacao([FromBody] CoordenadasViewModel coordenadas)

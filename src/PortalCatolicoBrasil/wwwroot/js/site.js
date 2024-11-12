@@ -1,5 +1,3 @@
-//import { carregarSantoDia } from './santo.js';
-
 /*-----------------INÍCIO LITURGIA-----------------*/
 const buttons = document.querySelectorAll(".btn--group button");
 const contents = {
@@ -173,23 +171,6 @@ function addBorderIcon() {
 
 
 /*-----------------INICIO HOME INDEX-----------------*/
-////GET ESTADOS API
-//async function carregarEstadosAPI() {
-//	try {
-//		const response = await $.getJSON("/APIEstadoCidade/GetEstadosAPI");
-//		response.sort((a, b) => a.nome.localeCompare(b.nome));
-
-//		$('#EstadoAPI').empty().append('<option value="" disabled selected>Selecione o estado</option>');
-//		response.forEach(estado => {
-//			$('#EstadoAPI').append(`<option value="${estado.id}">${estado.nome}</option>`);
-//		});
-
-//		$('#EstadoAPI').change(carregarCidadesAPI);
-
-//	} catch (error) {
-//		alert('Erro ao carregar os estados. Tente novamente mais tarde.');
-//	}
-//}
 async function carregarEstadosAPI() {
     try {
         const response = await $.getJSON("/APIEstadoCidade/GetEstadosAPI");
@@ -203,7 +184,7 @@ async function carregarEstadosAPI() {
         // Ao selecionar o estado, armazena o nome ou sigla no campo escondido que representa a propriedade Estado de Igreja
         $('#EstadoAPI').change(function () {
             const estadoSelecionado = $('#EstadoAPI option:selected');
-            const nomeEstado = estadoSelecionado.data('nome'); // Captura o nome do estado
+            const nomeEstado = estadoSelecionado.data('sigla'); // Captura o nome do estado
             $('#estadoIgreja').val(nomeEstado);  // Coloca o nome no campo escondido
         });
 
@@ -236,31 +217,38 @@ function carregarCidadesAPI() {
 $(document).ready(function () {
     carregarEstadosAPI();
 });
-
-
 /*----------------------------------------------------------------------------------------------------*/
 
 //GET ESTADOS BANCO
+$(document).ready(function () {
+    carregarEstados();
+});
+
 async function carregarEstados() {
     try {
         const response = await $.getJSON(`/Igreja/GetEstados`);
+        console.log(response);
         $('#Estado').empty().append('<option value="" disabled selected>Estado</option>');
         response.forEach(estado => {
             $('#Estado').append(`<option value="${estado}">${estado}</option>`);
         });
+
+        $('#Estado').on('change', carregarCidades);
+
     } catch (error) {
         alert('Erro ao carregar os estados. Tente novamente mais tarde.');
     }
 }
 
-$(document).ready(function () {
-    carregarEstados();
-});
-
 //GET CIDADES BANCO
 function carregarCidades() {
     const estado = $('#Estado').val();
     console.log(estado);
+
+    $('#Cidade').empty().append('<option value="" disabled selected>Cidade</option>');
+    $('#Bairro').empty().append('<option value="" disabled selected>Bairro</option>');
+    $('#Igreja').empty().append('<option value="" disabled selected>Selecione uma igreja</option>');
+
     if (estado) {
         $.getJSON(`/Igreja/GetCidadesPorEstado?estado=${estado}`)
             .done(function (data) {
@@ -268,6 +256,7 @@ function carregarCidades() {
                 $.each(data, function (index, cidade) {
                     $('#Cidade').append(`<option value="${cidade}">${cidade}</option>`);
                 });
+                $('#Cidade').on('change', carregarBairros);
             })
             .fail(function () {
                 alert('Erro ao carregar as cidades. Tente novamente mais tarde.');
@@ -277,14 +266,14 @@ function carregarCidades() {
     }
 }
 
-$('#Cidade').change(function () {
-    carregarBairros();
-});
-
 //GET BAIRROS BANCO
 function carregarBairros() {
     const cidade = $('#Cidade').val();
     console.log(cidade);
+
+    $('#Bairro').empty().append('<option value="" disabled selected>Bairro</option>');
+    $('#Igreja').empty().append('<option value="" disabled selected>Selecione uma igreja</option>');
+
     if (cidade) {
         $.getJSON(`/Igreja/GetBairrosPorCidade?cidade=${cidade}`)
             .done(function (data) {
@@ -292,6 +281,8 @@ function carregarBairros() {
                 $.each(data, function (index, bairro) {
                     $('#Bairro').append(`<option value="${bairro}">${bairro}</option>`);
                 });
+
+                $('#Bairro').on('change', carregarIgrejaPorBairro);
             })
             .fail(function () {
                 alert('Erro ao carregar os bairros. Tente novamente mais tarde.');
@@ -301,30 +292,42 @@ function carregarBairros() {
     }
 }
 
-$('#Bairro').change(function () {
-    carregarIgrejaPorBairro();
-});
-
-//GET IGREJAS BANCO
+let requisicaoEmAndamento = false;
 function carregarIgrejaPorBairro() {
+    const estado = $('#Estado').val();
+    const cidade = $('#Cidade').val();
     const bairro = $('#Bairro').val();
+    console.log("Estado: ", estado, ", Cidade: ", cidade, ", Bairro: ", bairro);
+
+    // Verifica se uma requisição já está em andamento
+    if (requisicaoEmAndamento) {
+        console.log("Requisição já em andamento.");
+        return;  // Evita fazer outra requisição
+    }
+
+    // Marca que a requisição está em andamento
+    requisicaoEmAndamento = true;
+
+    $('#Igreja').empty().append('<option value="" disabled selected>Selecione uma igreja</option>');
 
     if (bairro) {
-        let url = `/Igreja/BuscarIgrejas`;
-        $.post(url, { estado: $('#Estado').val(), cidade: $('#Cidade').val(), bairro: bairro }, function (data) {
-            $('#Igreja').empty().append('<option value="" disabled selected>Selecione uma igreja</option>');
-            if (data.length > 0) {
-                $.each(data, function (index, igreja) {
-                    $('#Igreja').append(`<option value="${igreja.id}">${igreja.nomeIgreja}</option>`);
-                });
-            } else {
-                $('#Igreja').append('<option value="" disabled>Nenhuma igreja encontrada</option>');
-            }
-        }).fail(function () {
-            alert('Erro ao carregar as igrejas. Tente novamente mais tarde.');
-        });
-    } else {
-        $('#Igreja').empty().append('<option value="" disabled selected>Selecione uma igreja</option>');
+        $.post(`/Igreja/BuscarIgrejas`, { estado: estado, cidade: cidade, bairro: bairro })
+            .done(function (data) {
+                if (data.length > 0) {
+                    $.each(data, function (index, igreja) {
+                        $('#Igreja').append(`<option value="${igreja.id}">${igreja.nomeIgreja}</option>`);
+                    });
+                } else {
+                    $('#Igreja').append('<option value="" disabled>Nenhuma igreja encontrada</option>');
+                }
+            })
+            .fail(function () {
+                alert('Erro ao carregar as igrejas. Tente novamente mais tarde.');
+            })
+            .always(function () {
+                // Marca que a requisição terminou
+                requisicaoEmAndamento = false;
+            });
     }
 }
 
@@ -334,29 +337,24 @@ $('#botaoBuscar').click(function (e) {
     const igrejaId = $('#Igreja').val();
     console.log('ID da igreja selecionada:', igrejaId);
 
+    // Caso o usuário tenha selecionado uma igreja específica
     if (igrejaId) {
+        // Redireciona para a página de resultados com a igreja selecionada
         $.post(`/Igreja/BuscarIgrejaPorId?igrejaId=${igrejaId}`, { igrejaId: igrejaId }, function (data) { // TODO: MODIFICAR PARA GET PASSANDO UMA URL SOMENTE COM Igreja/igrejaId E MANIPULAR O OBJETO/JSON QUE É RETORNADO DA CONTROLLER (como foi feito com o resultado da api da liturgia)
             console.log(data);
             $('body').html(data);
-        }).fail(function (xhr, status, error) {
-            console.log('Erro:', status, error);
-            alert('Erro ao buscar a igreja. Tente novamente mais tarde.');
         });
     } else {
-        alert('Por favor, selecione uma igreja.');
+        // Caso contrário, pega os filtros de bairro, cidade e estado
+        const bairro = $('#Bairro').val();
+        const cidade = $('#Cidade').val();
+        const estado = $('#Estado').val();
+
+        // Redireciona para a página de resultados com os filtros de bairro/cidade/estado
+        window.location.href = `/Igreja/ResultadoPesquisa?estado=${estado}&cidade=${cidade}&bairro=${bairro}`;
     }
 });
 
-function validarFormularioPesquisa() {
-    var estado = document.getElementById("Estado").value;
-    var cidade = document.getElementById("Cidade").value;
-
-    if (estado === "" || cidade === "") {
-        alert("Por favor, preencha os campos de Estado e Cidade antes de buscar.");
-        return false;
-    }
-    return true;
-}
 
 document.querySelector('.pesqgps').addEventListener('click', function () {
     if (navigator.geolocation) {
@@ -372,42 +370,6 @@ document.querySelector('.pesqgps').addEventListener('click', function () {
         alert("Geolocalização não é suportada pelo seu navegador.");
     }
 });
-
-//document.querySelector('.pesqgps').addEventListener('click', function () {
-//	if (navigator.geolocation) {
-//		navigator.geolocation.getCurrentPosition(function (position) {
-//			var lat = position.coords.latitude;
-//			var lon = position.coords.longitude;
-
-//			// Enviar a latitude e longitude para o servidor
-//			fetch('/Igreja/BuscarPorLocalizacao', {
-//				method: 'POST',
-//				headers: {
-//					'Content-Type': 'application/json'
-//				},
-//				body: JSON.stringify({
-//					latitude: lat,
-//					longitude: lon
-//				})
-//			})
-//				.then(response => response.json())
-//				.then(data => {
-//					// Exibir os resultados das igrejas
-//					console.log(data);
-//					// Aqui você pode manipular o DOM para exibir as igrejas encontradas
-//				})
-//				.catch(error => {
-//					console.error('Erro ao buscar igrejas:', error);
-//				});
-//		}, function () {
-//			alert("Não foi possível obter sua localização.");
-//		});
-//	} else {
-//		alert("Geolocalização não é suportada pelo seu navegador.");
-//	}
-//});
-
-
 
 function abrirMapa(endereco) {
     const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(endereco)}`;
@@ -499,8 +461,8 @@ function filtrarEventos() {
 /*-----------------Fim Filtro Pesquisa Eventos-----------------*/
 
 function mascaraCNPJ(campo) {
-	// Remove qualquer caractere que não seja número
-	let cnpj = campo.value.replace(/\D/g, "");
+    // Remove qualquer caractere que não seja número
+    let cnpj = campo.value.replace(/\D/g, "");
 
     // Aplica a máscara ao CNPJ
     if (cnpj.length <= 14) {
@@ -544,10 +506,48 @@ function mascaraCEP(campo) {
     campo.value = cep;
 }
 
-
-
 window.onload = function () {
     preencherLiturgia();
     addBorderIcon();
     validarFormularioPesquisa();
 };
+
+
+
+
+
+
+
+//document.querySelector('.pesqgps').addEventListener('click', function () {
+//	if (navigator.geolocation) {
+//		navigator.geolocation.getCurrentPosition(function (position) {
+//			var lat = position.coords.latitude;
+//			var lon = position.coords.longitude;
+
+//			// Enviar a latitude e longitude para o servidor
+//			fetch('/Igreja/BuscarPorLocalizacao', {
+//				method: 'POST',
+//				headers: {
+//					'Content-Type': 'application/json'
+//				},
+//				body: JSON.stringify({
+//					latitude: lat,
+//					longitude: lon
+//				})
+//			})
+//				.then(response => response.json())
+//				.then(data => {
+//					// Exibir os resultados das igrejas
+//					console.log(data);
+//					// Aqui você pode manipular o DOM para exibir as igrejas encontradas
+//				})
+//				.catch(error => {
+//					console.error('Erro ao buscar igrejas:', error);
+//				});
+//		}, function () {
+//			alert("Não foi possível obter sua localização.");
+//		});
+//	} else {
+//		alert("Geolocalização não é suportada pelo seu navegador.");
+//	}
+//});

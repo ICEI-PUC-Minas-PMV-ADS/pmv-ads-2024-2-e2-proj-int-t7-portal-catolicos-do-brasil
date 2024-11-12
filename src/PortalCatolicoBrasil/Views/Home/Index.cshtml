@@ -1,3 +1,5 @@
+@model List<PortalCatolicoBrasil.Models.IgrejaMissaViewModel>
+
 @{
     ViewData["Title"] = "Início";
 }
@@ -16,24 +18,24 @@
     </div>
 
     <div class="formpai pesquisaMissa conteiner mt-3 pt-2 border p-4 bg-light poppins-regular">
-        <form asp-action="BuscarIgrejaPorId" asp-controller="Igreja" method="post" onsubmit="validarFormularioPesquisa()">
+        <form asp-action="BuscarIgrejaPorId" asp-controller="Igreja" method="post">
             <div class="row mt-4">
                 <div class="col-sm-2">
                     <label for="Estado">Estado*</label>
-                    <select id="Estado" class="campoform botaogps form-control" name="Estado" onchange="carregarCidades()" required>
+                    <select id="Estado" class="campoform botaogps form-control" name="Estado" required>
                         <option value="" disabled selected></option>
                     </select>
                 </div>
                 <div class="col-sm-5">
                     <label for="Cidade">Cidade*</label>
-                    <select id="Cidade" class="campoform botaogps form-control" name="Cidade" onchange="carregarBairros()" required>
+                    <select id="Cidade" class="campoform botaogps form-control" name="Cidade" required>
                         <option value="" disabled selected></option>
                     </select>
                 </div>
                 <div class="col-sm-5">
-                    <label for="Bairro">Bairro</label>
-                    <select id="Bairro" class="campoform botaogps form-control" name="Bairro" onchange="carregarIgrejaPorBairro()">
-                        <option value="" disabled selected></option>
+                    <label for="Bairro">Bairro*</label>
+                    <select id="Bairro" class="campoform botaogps form-control" name="Bairro" required>
+                            <option value="" disabled selected></option>
                     </select>
                 </div>
                 <div class="col-sm-12 pt-4">

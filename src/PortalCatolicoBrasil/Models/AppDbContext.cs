@@ -10,14 +10,11 @@ public class AppDbContext : DbContext
     public DbSet<Igreja> Igreja { get; set; }
     public DbSet<Missa> Missa { get; set; }
 
-
-    //Mantido comentado para se caso precisar posteriormente
-
-    //public DbSet<DiaMissa> DiaMissa { get; set; }
-    //public DbSet<HoraMissa> HoraMissa { get; set; }
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<IgrejaMissaViewModel>()
+            .HasNoKey();
     }
 }

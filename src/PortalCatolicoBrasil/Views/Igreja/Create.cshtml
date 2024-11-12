@@ -5,10 +5,10 @@
 }
 
 <div class="cadastro-igreja">
-    @if (TempData["SuccessMessage"] != null)
+    @if (TempData["AlertMessage"] != null)
     {
         <div class="alert alert-success">
-            @TempData["SuccessMessage"]
+            @TempData["AlertMessage"]
         </div>
     }
 
@@ -20,22 +20,22 @@
                 <div class="card-info-igreja row mt-3 pt-3 px-3 pb-4 bg-light poppins-regular">
                     <div class="form-group">
                         <label asp-for="Igreja.CNPJ" class="poppins-medium fs-5 control-label">CNPJ*</label>
-                        <input asp-for="Igreja.CNPJ" class="input-cnpj form-control" type="text" id="cnpj" maxlength="18" placeholder="00.000.000/0000-00" autocomplete="off"/>
+                        <input asp-for="Igreja.CNPJ" name="viewModel.Igreja.CNPJ" class="input-cnpj form-control" type="text" id="cnpj" maxlength="18" placeholder="00.000.000/0000-00" autocomplete="off"/>
                         <span asp-validation-for="Igreja.CNPJ" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label asp-for="Igreja.NomeIgreja" class="poppins-medium fs-5 control-label">Nome da igreja*</label>
-                        <input asp-for="Igreja.NomeIgreja" class="input-nome-igreja form-control" placeholder="Digite o nome" autocomplete="off" />
+                        <input asp-for="Igreja.NomeIgreja" name="viewModel.Igreja.NomeIgreja" class="input-nome-igreja form-control" placeholder="Digite o nome" autocomplete="off" />
                         <span asp-validation-for="Igreja.NomeIgreja" class="text-danger"></span>
                     </div>
                     <div class="form-group col-sm-5">
                         <label asp-for="Igreja.Telefone" class="poppins-medium fs-5 control-label">Telefone*</label>
-                        <input asp-for="Igreja.Telefone" class="input-telefone form-control" type="text" id="telefone" maxlength="12" placeholder="(00) 00000-0000" autocomplete="off" />
+                        <input asp-for="Igreja.Telefone" name="viewModel.Igreja.Telefone" class="input-telefone form-control" type="text" id="telefone" maxlength="15" placeholder="(00) 00000-0000" autocomplete="off" />
                         <span asp-validation-for="Igreja.Telefone" class="text-danger"></span>
                     </div>
                     <div class="form-group col-sm-7">
                         <label asp-for="Igreja.Email" class="poppins-medium fs-5 control-label">E-mail*</label>
-                        <input asp-for="Igreja.Email" class="input-email form-control" placeholder="Digite o e-mail" autocomplete="off" />
+                        <input asp-for="Igreja.Email" name="viewModel.Igreja.Email" class="input-email form-control" placeholder="Digite o e-mail" autocomplete="off" />
                         <span asp-validation-for="Igreja.Email" class="text-danger"></span>
                     </div>
                     <p class=" text-danger mt-2"><span class="fs-5">*</span><span class="fs-6"> Campos obrigatórios</span></p>
@@ -46,31 +46,31 @@
                 <div class="card-end-igreja row mt-3 pt-3 px-3 pb-4 bg-light poppins-regular">
                     <div class="form-group">
                         <label asp-for="Igreja.CEP" class="poppins-medium fs-5 control-label">CEP*</label>
-                        <input asp-for="Igreja.CEP" class="input-cep form-control" type="text" id="cep" maxlength="9" placeholder="00000-000" autocomplete="off" />
+                        <input asp-for="Igreja.CEP" name="viewModel.Igreja.CEP" class="input-cep form-control" type="text" id="cep" maxlength="9" placeholder="00000-000" autocomplete="off" />
                         <span asp-validation-for="Igreja.CEP" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label asp-for="Igreja.Logradouro" class="poppins-medium fs-5 control-label">Logradouro*</label><span class="fs-6"> (Rua, Avenida, Travessa, etc.)</span>
-                        <input asp-for="Igreja.Logradouro" class="input-logradouro form-control" placeholder="Digite o endereço com número" autocomplete="off" />
+                        <input asp-for="Igreja.Logradouro" name="viewModel.Igreja.Logradouro" class="input-logradouro form-control" placeholder="Digite o endereço com número" autocomplete="off" />
                         <span asp-validation-for="Igreja.Logradouro" class="text-danger"></span>
                     </div>
                     <div class="form-group col-sm-4">
                         <label asp-for="Igreja.Estado" class="poppins-medium fs-5 control-label">Estado*</label>
-                         <select asp-for="Igreja.Estado" id="EstadoAPI" class="input-estado form-control">
+                         <select asp-for="Igreja.Estado" name="Igreja.Estado" id="EstadoAPI" class="input-estado form-control">
                         </select>
                         <input type="hidden" id="estadoIgreja" name="viewModel.Igreja.Estado" />
                         <span asp-validation-for="Igreja.Estado" class="text-danger"></span>
                     </div>
                     <div class="form-group col-sm-4">
                         <label asp-for="Igreja.Cidade" class="poppins-medium fs-5 control-label">Cidade*</label>
-                        <select asp-for="Igreja.Cidade" id="CidadeAPI" class="input-cidade form-control">
+                        <select asp-for="Igreja.Cidade" name="viewModel.Igreja.Cidade" id="CidadeAPI" class="input-cidade form-control">
                             <option value="" disabled selected>Selecione a cidade</option>
                         </select>
                         <span asp-validation-for="Igreja.Cidade" class="text-danger"></span>
                     </div>
                     <div class="form-group col-sm-4">
                         <label asp-for="Igreja.Bairro" class="poppins-medium fs-5 control-label">Bairro*</label>
-                        <input asp-for="Igreja.Bairro" class="input-bairro form-control" placeholder="Digite o bairro corretamente" autocomplete="off" />
+                        <input asp-for="Igreja.Bairro" name="viewModel.Igreja.Bairro" class="input-bairro form-control" placeholder="Digite o bairro corretamente" autocomplete="off" />
                         <span asp-validation-for="Igreja.Bairro" class="text-danger"></span>
                     </div>
                     <p class=" text-danger mt-2"><span class="fs-5">*</span><span class="fs-6"> Campos obrigatórios</span></p>
@@ -84,77 +84,74 @@
                             <h4 class="dia">Dias</h4>
                             <h4 class="horario">Horários</h4>
                         </div>
-                        <div class="option-missas poppins-semibold">
-                            <div class="horas domingo">
-                                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Domingo</h5>
-                                <input type="time" asp-for="Missa.Hora" name="horarios[0][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[0][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[0][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[0][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[0][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[0][]" class="form-control hora-field" />
+                        @for (int i = 0; i < Model.Missa.Count; i++)
+                        {
+                            <div class="option-missas poppins-semibold">
+                                <div class="horas domingo">
+                                    <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Domingo</h5>
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[0][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[0][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[0][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[0][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[0][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[0][]" class="form-control hora-field" />
+                                </div>
+                                <div class="horas segunda">
+                                    <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Segunda-feira</h5>
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[1][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[1][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[1][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[1][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[1][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[1][]" class="form-control hora-field" />
+                                </div>
+                                <div class="horas terca">
+                                    <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Terça-feira</h5>
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[2][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[2][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[2][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[2][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[2][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[2][]" class="form-control hora-field" />
+                                </div>
+                                <div class="horas quarta">
+                                    <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Quarta-feira</h5>
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[3][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[3][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[3][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[3][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[3][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[3][]" class="form-control hora-field" />
+                                </div>
+                                <div class="horas quinta">
+                                    <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Quinta-feira</h5>
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[4][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[4][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[4][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[4][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[4][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[4][]" class="form-control hora-field" />
+                                </div>
+                                <div class="horas sexta">
+                                    <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Sexta-feira</h5>
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[5][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[5][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[5][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[5][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[5][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[5][]" class="form-control hora-field" />
+                                </div>
+                                <div class="horas sabado">
+                                    <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Sábado</h5>
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[6][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[6][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[6][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[6][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[6][]" class="form-control hora-field" />
+                                    <input type="time" asp-for="Missa[i].Hora" name="horarios[6][]" class="form-control hora-field" />
+                                </div>
                             </div>
-
-                            <div class="horas segunda">
-                                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Segunda-feira</h5>
-                                <input type="time" asp-for="Missa.Hora" name="horarios[1][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[1][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[1][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[1][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[1][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[1][]" class="form-control hora-field" />
-                            </div>
-
-                            <div class="horas terca">
-                                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Terça-feira</h5>
-                                <input type="time" asp-for="Missa.Hora" name="horarios[2][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[2][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[2][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[2][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[2][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[2][]" class="form-control hora-field" />
-                            </div>
-
-                            <div class="horas quarta">
-                                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Quarta-feira</h5>
-                                <input type="time" asp-for="Missa.Hora" name="horarios[3][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[3][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[3][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[3][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[3][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[3][]" class="form-control hora-field" />
-                            </div>
-
-                            <div class="horas quinta">
-                                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Quinta-feira</h5>
-                                <input type="time" asp-for="Missa.Hora" name="horarios[4][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[4][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[4][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[4][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[4][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[4][]" class="form-control hora-field" />
-                            </div>
-
-                            <div class="horas sexta">
-                                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Sexta-feira</h5>
-                                <input type="time" asp-for="Missa.Hora" name="horarios[5][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[5][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[5][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[5][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[5][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[5][]" class="form-control hora-field" />
-                            </div>
-
-                            <div class="horas sabado">
-                                <h5 asp-validation-for="DiaMissa.DiaSemana" class="dia-da-semana">Sábado</h5>
-                                <input type="time" asp-for="Missa.Hora" name="horarios[6][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[6][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[6][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[6][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[6][]" class="form-control hora-field" />
-                                <input type="time" asp-for="Missa.Hora" name="horarios[6][]" class="form-control hora-field" />
-                            </div>
-                        </div>
+                        }
                     </div>
                 </div>
             </div>
