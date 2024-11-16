@@ -18,7 +18,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label asp-for="CNPJ" class="textocardinformacoesparoquia"></label>
-                        <input asp-for="CNPJ" class="form-control botoesinformacoesparoquia" placeholder="Digite o CNPJ" />
+                        <input asp-for="CNPJ" class="form-control botoesinformacoesparoquia" placeholder="000.000.000-00" />
                         <span asp-validation-for="CNPJ" class="text-danger"></span>
                     </div>
                     <div class="form-group col-md-6">
@@ -74,7 +74,7 @@
 
 
                 <div class="form-row">
-                    <div class="form-group col-md-4">
+                   @*  <div class="form-group col-md-4">
                         <label asp-for="Estado" class="textocardinformacoesevento"></label>
                         <select asp-for="Estado" class="form-control botoesdocadastrodeevento" id="estado">
                             <option selected>Escolher...</option>
@@ -89,6 +89,20 @@
                             <option selected>Escolher...</option>
                             <!-- Opções de cidades aqui -->
 
+                        </select>
+                        <span asp-validation-for="Cidade" class="text-danger"></span>
+                    </div> *@
+                    <div class="form-group col-sm-4">
+                        <label asp-for="Estado" class="poppins-medium fs-5 control-label">Estado*</label>
+                        <select asp-for="Estado" name="Estado" id="EstadoAPI" class="input-estado form-control">
+                        </select>
+                        <input type="hidden" id="estadoIgreja" name="viewModel.Igreja.Estado" />
+                        <span asp-validation-for="Estado" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label asp-for="Cidade" class="poppins-medium fs-5 control-label">Cidade*</label>
+                        <select asp-for="Cidade" name="Cidade" id="CidadeAPI" class="input-cidade form-control">
+                            <option value="" disabled selected>Selecione a cidade</option>
                         </select>
                         <span asp-validation-for="Cidade" class="text-danger"></span>
                     </div>
