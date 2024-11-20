@@ -9,7 +9,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-01 – Pesquisar igrejas e horários de missas por geolocalização** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-001 - A aplicação deve implementar uma funcionalidade de busca que permita aos usuários encontrar igrejas e horários de missas baseados na geolocalização. |
-|Resultado do teste | Classificar "Teste executado com êxito" ou "Teste executado com erro (especificar o erro)" |
+|Resultado do teste | Teste executado com erro - Na opção "Missas" do menu principal não há um filtro para pesquisar as missas (como na página inícial), ao acessamos essa opção á página retorna a mensagem "Nenhuma igreja encontrada com os critérios informados." / O filtro da página inícial consegue fazer a consulta com sucesso, porém o Botão "Ver no Mapa" não está funcionando; / Um outro ponto de melhoria seria um espaçamento maior entre os cards com os resultados e não repetir os dias de missa para cada horário. O ídeal seria retornar o dia uma vez com todos os horário para aquela dia. Ex.: Domingo - 07:00, 09:00, 18:00 e 19:00 |
 |Registro de evidência | Colocar o link do vídeo do teste (João H)|
 
 | **Caso de Teste** 	| **CT-02 – Trazer informações de Liturgia e homilia do dia** 	|
