@@ -40,7 +40,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-006 - A aplicação deve fornecer um formulário para as igrejas divulgarem seus eventos pastorais com um CRUD para gerenciamento dessas informações que deverá ser gerenciado pelos administradores do site. |
 |Resultado do teste | Teste executado com erro - A mascara de cadastro do telefone não está permitindo a inserção de telefone fixo, apresentando erro, só sendo possível o envio caso seja inserido o número "9" na frente / O ícone de localização do botão "Ver no mapa" está com as cores invertidas. O ícone deveria ser branco e fundo transparente ou da cor do botão |
-|Registro de evidência | Colocar o link do vídeo do teste (João H.) |
+|Registro de evidência | [Vídeo do Teste](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/blob/main/presentation/Teste%20Cadastro%20Eventos.mp4) |
 
 | **Caso de Teste** 	| **CT-07 – Gerenciar informações do portal** 	|
 |:---:	|:---:	|
