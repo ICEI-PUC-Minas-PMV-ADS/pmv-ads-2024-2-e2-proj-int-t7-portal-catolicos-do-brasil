@@ -92,7 +92,7 @@ function fillFormWithData(dados) {
         liturgiaData: formatarData(new Date()),
         liturgiaText: `<p>${converterDiaSemana(dados.liturgia)}</p>`,
         corLiturgia: "COR LITÚRGICA: " + dados.cor.toUpperCase(),
-        primeiraLeituraReferenciaText: `<p>Primeira Leitura (${dados.primeiraLeitura.referencia})</p>`,
+        primeiraLeituraReferenciaText: `<p class="poppins-regular fs-5">${dados.dia}</p><br> <p>Primeira Leitura (${dados.primeiraLeitura.referencia})</p>`,
         primeiraLeituraTituloText: `<p>${dados.primeiraLeitura.titulo}</p>`,
         primeiraLeituraTextoText: `
             <p>${dados.primeiraLeitura.texto.replace(/(\d+)(?=[a-zA-Z])/g, '$1 ').replace(/\b\d+\b/g, '<span class="poppins-medium">$& </span>')}</p>
@@ -170,7 +170,11 @@ function addBorderIcon() {
 /*-----------------FIM LITURGIA-----------------*/
 
 
-/*-----------------INICIO HOME INDEX-----------------*/
+
+
+
+
+/*-----------------INICIO CREATE IGREJA-----------------*/
 async function carregarEstadosAPI() {
     try {
         const response = await $.getJSON("/APIEstadoCidade/GetEstadosAPI");
@@ -217,8 +221,57 @@ function carregarCidadesAPI() {
 $(document).ready(function () {
     carregarEstadosAPI();
 });
-/*----------------------------------------------------------------------------------------------------*/
 
+// Função para formatar o CNPJ
+function formatarCNPJ(cnpj) {
+    cnpj = cnpj.replace(/\D/g, ""); // Remove qualquer coisa que não seja número
+    cnpj = cnpj.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, "$1.$2.$3/$4-$5"); // Formata o CNPJ
+    return cnpj;
+}
+
+// Função para formatar o CEP
+function formatarCEP(cep) {
+    cep = cep.replace(/\D/g, ""); // Remove qualquer coisa que não seja número
+    cep = cep.replace(/^(\d{5})(\d{3})$/, "$1-$2"); // Formata o CEP
+    return cep;
+}
+
+// Função para formatar o Celular
+function formatarCelular(celular) {
+    celular = celular.replace(/\D/g, ""); // Remove qualquer coisa que não seja número
+    celular = celular.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3"); // Formata o celular
+    return celular;
+}
+
+// Adicionar eventos de digitação para os campos CNPJ, CEP e Celular
+document.addEventListener("DOMContentLoaded", function () {
+    const cnpjInput = document.querySelector("input[name='viewModel.Igreja.CNPJ']");
+    const cepInput = document.querySelector("input[name='viewModel.Igreja.CEP']");
+    const celularInput = document.querySelector("input[name='viewModel.Igreja.Telefone']");
+
+    // Formatar CNPJ enquanto digita
+    cnpjInput.addEventListener("input", function () {
+        this.value = formatarCNPJ(this.value);
+    });
+
+    // Formatar CEP enquanto digita
+    cepInput.addEventListener("input", function () {
+        this.value = formatarCEP(this.value);
+    });
+
+    // Formatar Celular enquanto digita
+    celularInput.addEventListener("input", function () {
+        this.value = formatarCelular(this.value);
+    });
+});
+/*-----------------FIM CREATE IGREJA-----------------*/
+
+
+
+
+
+
+/*-----------------INICIO HOME INDEX-----------------*/
 //GET ESTADOS BANCO
 $(document).ready(function () {
     carregarEstados();
@@ -355,7 +408,6 @@ $('#botaoBuscar').click(function (e) {
     }
 });
 
-
 document.querySelector('.pesqgps').addEventListener('click', function () {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
@@ -371,12 +423,74 @@ document.querySelector('.pesqgps').addEventListener('click', function () {
     }
 });
 
+//INÍCIO PREENCHIMENTO LITURGIA
+async function obterLiturgia2() {
+    const containerIndexLiturgia = document.getElementById('liturgiaIndexHome');
+    containerIndexLiturgia.innerHTML = '<p>Carregando a liturgia...</p>';
+
+    try {
+        const dados = await $.getJSON("/Liturgia/GetLiturgiaAPI");
+        console.log('Dados da liturgia:', dados);
+        return dados;
+    } catch (error) {
+        console.error('Erro ao carregar a liturgia:', error);
+        containerIndexLiturgia.innerHTML = '<p>Erro ao carregar a liturgia.</p>';
+        return null;
+    }
+}
+
+$(document).ready(function () {
+    preencherLiturgia2();
+});
+
+async function preencherLiturgia2() {
+    try {
+        const liturgia = await obterLiturgia2();
+        if (liturgia) {
+            fillFormWithData2(liturgia);
+        }
+    } catch (error) {
+        console.error('Erro ao preencher o formulário:', error);
+    }
+}
+
+function fillFormWithData2(dados) {
+    const fieldsMapping = {
+        liturgiaIndexHome: `<p>${dados.dia}</p>`,
+    };
+
+    for (const [fieldId, value] of Object.entries(fieldsMapping)) {
+        const field = document.getElementById(fieldId);
+        if (field) {
+            field.innerHTML = value;
+        }
+    }
+}
+//FIM PREENCHIMENTO LITURGIA
+/*-----------------FIM HOME INDEX-----------------*/
+
+
+
+
+
+
+/*-----------------INÍCIO RESULTADO MISSAS-----------------*/
+document.getElementById('btn-view-in-map').addEventListener('click', function () {
+
+});
+
 function abrirMapa(endereco) {
+    //const endereco = document.getElementsByClassName("endereco").value;
+    console.log(endereco);
+
     const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(endereco)}`;
     window.open(url, '_blank');
 }
+/*-----------------FIM RESULTADO MISSAS-----------------*/
 
-/*-----------------FIM HOME INDEX-----------------*/
+
+
+
 
 
 /*-----------------INICIO CIDADES E ESTADOS EVENTO-----------------*/
@@ -420,6 +534,10 @@ document.addEventListener("DOMContentLoaded", function () {
 /*-----------------FIM CIDADES E ESTADOS EVENTO-----------------*/
 
 
+
+
+
+
 /*-----------------Inicio Filtro Pesquisa Eventos-----------------*/
 function filtrarEventos() {
     const estado = document.getElementById('estado').value
@@ -460,53 +578,13 @@ function filtrarEventos() {
 }
 /*-----------------Fim Filtro Pesquisa Eventos-----------------*/
 
-function mascaraCNPJ(campo) {
-    // Remove qualquer caractere que não seja número
-    let cnpj = campo.value.replace(/\D/g, "");
 
-    // Aplica a máscara ao CNPJ
-    if (cnpj.length <= 14) {
-        cnpj = cnpj.replace(/^(\d{2})(\d)/, "$1.$2");
-        cnpj = cnpj.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3");
-        cnpj = cnpj.replace(/\.(\d{3})(\d)/, ".$1/$2");
-        cnpj = cnpj.replace(/(\d{4})(\d)/, "$1-$2");
-    }
 
-    // Define o valor formatado no campo de input
-    campo.value = cnpj;
-}
 
-function mascaraTelefone(campo) {
-    // Remove qualquer caractere que não seja número
-    let telefone = campo.value.replace(/\D/g, "");
 
-    // Aplica a máscara de telefone conforme a quantidade de dígitos
-    if (telefone.length <= 10) {
-        // Formato para números fixos com 8 dígitos (ex: (00) 0000-0000)
-        telefone = telefone.replace(/^(\d{2})(\d)/, "($1) $2");
-        telefone = telefone.replace(/(\d{4})(\d)/, "$1-$2");
-    } else {
-        // Formato para números móveis com 9 dígitos (ex: (00) 00000-0000)
-        telefone = telefone.replace(/^(\d{2})(\d)/, "($1) $2");
-        telefone = telefone.replace(/(\d{5})(\d)/, "$1-$2");
-    }
-
-    // Atualiza o campo com a máscara aplicada
-    campo.value = telefone;
-}
-
-function mascaraCEP(campo) {
-    // Remove qualquer caractere que não seja número
-    let cep = campo.value.replace(/\D/g, "");
-
-    // Aplica a máscara de CEP (ex: 00000-000)
-    cep = cep.replace(/^(\d{5})(\d)/, "$1-$2");
-
-    // Atualiza o campo com a máscara aplicada
-    campo.value = cep;
-}
 
 window.onload = function () {
+    obterLiturgia();
     preencherLiturgia();
     addBorderIcon();
     validarFormularioPesquisa();

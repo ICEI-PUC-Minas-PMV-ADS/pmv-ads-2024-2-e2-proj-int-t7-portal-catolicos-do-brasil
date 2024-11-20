@@ -210,58 +210,60 @@ namespace PortalCatolicoBrasil.Controllers
                 return StatusCode(500, "Erro interno do servidor.");
             }
         }
+
+        //[HttpPost]
+        //public IActionResult BuscarPorLocalizacao([FromBody] CoordenadasViewModel coordenadas)
+        //{
+        //    var latitudeUsuario = coordenadas.Latitude;
+        //    var longitudeUsuario = coordenadas.Longitude;
+
+        //    // Aqui você precisa definir o raio de busca, por exemplo, 10 km
+        //    double raioKm = 10.0;
+
+        //    // Exemplo simples de busca por distância (essa lógica depende de como você armazena as coordenadas das igrejas)
+        //    var igrejasProximas = _context.Igreja
+        //        .Where(igreja => CalcularDistancia(latitudeUsuario, longitudeUsuario, igreja.Latitude, igreja.Longitude) <= raioKm)
+        //        .ToList();
+
+        //    return Json(igrejasProximas);
+        //}
+
+        //// Método auxiliar para calcular a distância entre duas coordenadas (em quilômetros)
+        //private double CalcularDistancia(double lat1, double lon1, double lat2, double lon2)
+        //{
+        //    var R = 6371; // Raio da Terra em km
+        //    var dLat = GrausParaRadianos(lat2 - lat1);
+        //    var dLon = GrausParaRadianos(lon2 - lon1);
+        //    var a =
+        //        Math.Sin(dLat / 2) * Math.Sin(dLat / 2) +
+        //        Math.Cos(GrausParaRadianos(lat1)) * Math.Cos(GrausParaRadianos(lat2)) *
+        //        Math.Sin(dLon / 2) * Math.Sin(dLon / 2);
+        //    var c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
+        //    var distancia = R * c;
+        //    return distancia;
+        //}
+
+        //private double GrausParaRadianos(double graus)
+        //{
+        //    return graus * (Math.PI / 180);
+        //}
+
     }
 }
 
-//[HttpPost]
-//public IActionResult BuscarPorLocalizacao([FromBody] CoordenadasViewModel coordenadas)
+//public async Task<IActionResult> Details(int? id)
 //{
-//    var latitudeUsuario = coordenadas.Latitude;
-//    var longitudeUsuario = coordenadas.Longitude;
+//    if (id == null)
+//        return NotFound();
+//    var dados = await _context.Igreja.FindAsync(id);
 
-//    // Aqui você precisa definir o raio de busca, por exemplo, 10 km
-//    double raioKm = 10.0;
+//    if (dados == null)
+//        return NotFound();
 
-//    // Exemplo simples de busca por distância (essa lógica depende de como você armazena as coordenadas das igrejas)
-//    var igrejasProximas = _context.Igreja
-//        .Where(igreja => CalcularDistancia(latitudeUsuario, longitudeUsuario, igreja.Latitude, igreja.Longitude) <= raioKm)
-//        .ToList();
+//    return View(dados);
 
-//    return Json(igrejasProximas);
 //}
 
-//// Método auxiliar para calcular a distância entre duas coordenadas (em quilômetros)
-//private double CalcularDistancia(double lat1, double lon1, double lat2, double lon2)
-//{
-//    var R = 6371; // Raio da Terra em km
-//    var dLat = GrausParaRadianos(lat2 - lat1);
-//    var dLon = GrausParaRadianos(lon2 - lon1);
-//    var a =
-//        Math.Sin(dLat / 2) * Math.Sin(dLat / 2) +
-//        Math.Cos(GrausParaRadianos(lat1)) * Math.Cos(GrausParaRadianos(lat2)) *
-//        Math.Sin(dLon / 2) * Math.Sin(dLon / 2);
-//    var c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
-//    var distancia = R * c;
-//    return distancia;
-//}
-
-//private double GrausParaRadianos(double graus)
-//{
-//    return graus * (Math.PI / 180);
-//}
-
-//    public async Task<IActionResult> Details(int? id)
-//    {
-//        if (id == null)
-//            return NotFound();
-//        var dados = await _context.Igreja.FindAsync(id);
-
-//        if (dados == null)
-//            return NotFound();
-
-//        return View(dados);
-
-//    }
 
 //    public async Task<IActionResult> Pesquisar(string Estado, string Cidade, string Bairro, string Igreja)
 //    {

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using static PortalCatolicoBrasil.Controllers.LiturgiaController;
 
 namespace PortalCatolicoBrasil.Controllers
 {
@@ -31,7 +32,6 @@ namespace PortalCatolicoBrasil.Controllers
             {
                 return View("Erro", new { message = "Nenhum santo encontrado para a data atual." });
             }
-
             return View(santoDoDia);
         }
 
@@ -57,11 +57,15 @@ namespace PortalCatolicoBrasil.Controllers
         [HttpGet]
         public async Task<JsonResult> GetSantoDia()
         {
+            var dataAtual = DateOnly.FromDateTime(DateTime.Now);
             var santo = await _context.SantoDia
-                .Select(s => new { s.Data, s.Nome, s.Descricao })
-                .Distinct()
-                .ToListAsync();
+                .Where(s => s.Data == dataAtual)  // Ajuste aqui se necessário
+                .FirstOrDefaultAsync();
 
+            if (santo == null)
+            {
+                return Json("Erro", new { message = "Nenhum santo encontrado para a data atual." });
+            }
             return Json(santo);
         }
 

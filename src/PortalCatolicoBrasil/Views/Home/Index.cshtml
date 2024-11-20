@@ -65,14 +65,15 @@
     </div>
 
     <div class="liturgiaSanto container mt-5 row center poppins-regular ">
-        <div class="liturgiaIndex col-sm-6">
+        <div class="liturgiaIndex col-sm-6" id="liturgiaTextContent">
             <div class="imglit mb-3">
                 <img src="~/css/Images/ImagensLiturigia.png" class="Litur">
             </div>
             <h3>Liturgia diária</h3>
-            <p>Naquele tempo, disse Jesus aos seus discípulos esta parábola: 1 "O Reino dos Céus é como a história das dez jovens que pegaram suas lâmpadas de óleo e saíram ao encontro do noivo. </p>
+            <p id="liturgiaIndexHome"></p>
+            @* <p>Naquele tempo, disse Jesus aos seus discípulos esta parábola: 1 "O Reino dos Céus é como a história das dez jovens que pegaram suas lâmpadas de óleo e saíram ao encontro do noivo. </p> *@
             <span>
-                <a target="_blank" class="leia-mais" href="">LEIA MAIS...</a>
+                <a class="leia-mais poppins-medium" asp-controller="Home" asp-action="Liturgia">LEIA MAIS...</a>
             </span>
         </div>
 
@@ -80,10 +81,11 @@
             <div class="mb-3">
                 <img src="~/css/Images/ImagesSantoDia.png" class="Santo">
             </div>
-            <h3>Santo do dia ("São Fiacre")</h3>
-            <p>São Fiacre (“Fiacro”) nasceu de família nobre na Irlanda e foi educado sob os cuidados de um bispo de eminente santidade, que teria sido, segundo alguns, Conan, o bispo de Soder ou das Ilhas Ocidentais (Hébridas Exteriores).</p>
+            <h3>Santo do dia <span id="santoNomeIndexHome"></span></h3> @* ("São Fiacre") *@
+            <p id="santoTextoIndexHome"></p>
+            @* São Fiacre (“Fiacro”) nasceu de família nobre na Irlanda e foi educado sob os cuidados de um bispo de eminente santidade, que teria sido, segundo alguns, Conan, o bispo de Soder ou das Ilhas Ocidentais (Hébridas Exteriores). *@
             <span>
-                <a target="_blank" class="leia-mais" href="">LEIA MAIS...</a>
+                <a class="leia-mais poppins-medium" asp-controller="SantoDia" asp-action="Index">LEIA MAIS...</a>
             </span>
         </div>
     </div>

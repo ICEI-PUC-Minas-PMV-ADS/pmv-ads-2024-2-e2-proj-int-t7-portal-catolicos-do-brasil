@@ -1801,7 +1801,7 @@ form {
 }
 
 .titulo-result-page {
-    padding: 0 23px;
+    padding: 0 15px;
 }
 
 .conteudo-card {
@@ -1811,6 +1811,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin-bottom: 40px;
     gap: 0px;
 }
 
@@ -1867,8 +1868,8 @@ form {
 }
 
 .link-cadastre-aqui {
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 15px;
+    margin-top: -30px;
 }
 
 .card-title-missas {
@@ -1888,6 +1889,28 @@ form {
 
 
 /*-----------------INICIO CADASTRO IGREJAS E MISSAS-----------------*/
+.alert-div {
+    width: 100% !important;
+    border-radius: 10px 10px 10px 10px !important;
+    border: none !important;
+}
+
+.alert-nenhuma {
+    background-color: rgb(255, 220, 124, 0.25);
+    height: 45px;
+    margin: 20px 15px 40px 15px;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content:flex-start;
+    border-radius: 10px;
+}
+
+.nenhuma {
+    height: 30px;
+    text-align: center;
+}
+
 .cadastro-igreja {
     margin-top: 50px;
     margin-left: auto;

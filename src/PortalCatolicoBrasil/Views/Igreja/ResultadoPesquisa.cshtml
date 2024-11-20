@@ -15,6 +15,53 @@
         </div>
     </div>
 
+    @* Testando *@
+    
+    <div class="titulo-form poppins-regular">
+        <h3>Pesquisar Igrejas e missas</h3>
+    </div>
+
+    <div class="formpai pesquisaMissa conteiner mt-3 pt-2 border p-4 bg-light poppins-regular">
+        <form asp-action="BuscarIgrejaPorId" asp-controller="Igreja" method="post">
+            <div class="row mt-4">
+                <div class="col-sm-2">
+                    <label for="Estado">Estado*</label>
+                    <select id="Estado" class="campoform botaogps form-control" name="Estado" required>
+                        <option value="" disabled selected></option>
+                    </select>
+                </div>
+                <div class="col-sm-5">
+                    <label for="Cidade">Cidade*</label>
+                    <select id="Cidade" class="campoform botaogps form-control" name="Cidade" required>
+                        <option value="" disabled selected></option>
+                    </select>
+                </div>
+                <div class="col-sm-5">
+                    <label for="Bairro">Bairro*</label>
+                    <select id="Bairro" class="campoform botaogps form-control" name="Bairro" required>
+                        <option value="" disabled selected></option>
+                    </select>
+                </div>
+                <div class="col-sm-12 pt-4">
+                    <label for="Igreja">Igreja</label>
+                    <select id="Igreja" class="campoform botaogps form-control" name="Igreja">
+                        <option value="" disabled selected></option>
+                    </select>
+
+                    <button type="button" id="botaoBuscar" class="buscar botaogps btn btn-primary mt-5 mb-4">Buscar</button>
+
+                    <button type="button" class="botaogps pesqgps btn btn-outline-primary mt-5 mb-4">
+                        Pesquisar por minha localização atual
+                        <i class="fas fa-location"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    @* Testando *@
+
+
     <div id="search-results">
         <h2 class="poppins-medium titulo-result-page">Resultado da pesquisa</h2>
 
@@ -31,10 +78,14 @@
                                 @Model.Igreja.Logradouro - @Model.Igreja.Bairro - @Model.Igreja.Cidade, @Model.Igreja.Estado<br>
                                 @Model.Igreja.Telefone<br>
                             </p>
-                            <button onclick="abrirMapa('@Model.Igreja.Logradouro, @Model.Igreja.Bairro, @Model.Igreja.Cidade, @Model.Igreja.Estado')" class="btn-ver-mapa poppins-semibold btn btn-primary">
+                            @*< button id="btn-view-in-map" class="btn-ver-mapa poppins-semibold btn btn-primary"> *@
+                                @* onclick="abrirMapa('@Model.Igreja.Logradouro, @Model.Igreja.Bairro, @Model.Igreja.Cidade, @Model.Igreja.Estado') *@
+                                <a id="btn-view-in-map" class="btn-ver-mapa poppins-semibold btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=@(Model.Igreja.Logradouro), @(Model.Igreja.Bairro), @(Model.Igreja.Cidade), @(Model.Igreja.Estado)"
+                               target="_blank">
                                 Ver no mapa
                                 <i class="icone-btn-ver-mapa fas fa-location"></i>
-                            </button>
+                            </a>
+                            @* </button> *@
                         </div>
                     </div>
                     <div id="card-missas">
@@ -68,14 +119,18 @@
                         <div id="card-endereco">
                             <h5 class="poppins-medium card-title-endereco">Informações da igreja</h5>
                             <div class="endereco-e-botao">
-                                <p class="poppins-medium">
+                                <p class="endereco poppins-medium">
                                     @igreja.Logradouro - @igreja.Bairro - @igreja.Cidade, @igreja.Estado<br>
                                     @igreja.Telefone<br>
                                 </p>
-                                <button type="submit" onclick="abrirMapa('@igreja.Logradouro, @igreja.Bairro, @igreja.Cidade, @igreja.Estado')" class="btn-ver-mapa poppins-semibold btn btn-primary">
+                                @*< button id="btn-view-in-map" class="btn-ver-mapa poppins-semibold btn btn-primary"> *@
+                                @* onclick="abrirMapa('@Model.Igreja.Logradouro, @Model.Igreja.Bairro, @Model.Igreja.Cidade, @Model.Igreja.Estado') *@
+                                <a id="btn-view-in-map" class="btn-ver-mapa poppins-semibold btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=@(igreja.Logradouro), @(igreja.Bairro), @(igreja.Cidade), @(igreja.Estado)"
+                                   target="_blank">
                                     Ver no mapa
                                     <i class="icone-btn-ver-mapa fas fa-location"></i>
-                                </button>
+                                </a>
+                                @* </button> *@
                             </div>
                         </div>
                         <div id="card-missas">
@@ -100,7 +155,9 @@
         }
         else
         {
-            <p>Nenhuma igreja encontrada com os critérios informados.</p>
+            <div class="alert-nenhuma poppins-medium">
+                <p class="nenhuma poppins-regular">Nenhuma igreja encontrada com os critérios informados.</p>
+            </div>
         }
 
         <p class="link-cadastre-aqui poppins-medium">Não encontrou sua igreja? <a href="@Url.Action("Create", "Igreja")" class="link-cadastre-aqui-resultados">Cadastre aqui</a></p>

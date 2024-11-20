@@ -11,12 +11,14 @@ namespace PortalCatolicoBrasil.Models
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Informe o CNPJ")]
+        [RegularExpression(@"\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}", ErrorMessage = "Formato de CNPJ inválido. O formato correto é 00.000.0000/0000-00")]
         public string CNPJ { get; set; }
 
         [Required(ErrorMessage = "Informe o Nome da igreja")]
         public string NomeIgreja { get; set; }
 
         [Required(ErrorMessage = "Informe o Telefone de contato da igreja")]
+        [RegularExpression(@"\(\d{2}\) \d{5}-\d{4}", ErrorMessage = "Formato de telefone inválido. O formato correto é (00) 00000-0000.")]
         public string Telefone { get; set; }
 
         [Required(ErrorMessage = "Informe o Email")]
@@ -27,6 +29,7 @@ namespace PortalCatolicoBrasil.Models
         public string Logradouro { get; set; }
 
         [Required(ErrorMessage = "Informe o CEP")]
+        [RegularExpression(@"\d{5}-\d{3}", ErrorMessage = "Formato de CEP inválido. O formato correto é 00000-000.")]
         public string CEP { get; set; }
 
         [Required(ErrorMessage = "Informe o Estado")]
