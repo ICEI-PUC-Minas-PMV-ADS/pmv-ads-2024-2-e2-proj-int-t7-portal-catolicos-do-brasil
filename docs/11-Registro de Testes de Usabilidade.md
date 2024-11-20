@@ -3,13 +3,13 @@
 
 | | **Tarefas** | **Facilidade de Uso (Em uma escala de 1 a 5, o quão fácil foi concluir a tarefa?)** | **Feedback Detalhado (Descreva os erros que por ventura aconteceram)** | **Tempo de execução (Qual foi o tempo para concluir a tarefa? ele poderia ser mais baixo?)** | **Número de Erros (Quantos erros ocorreram na execução da tarefa?)** |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | Pesquisar igrejas e horários de missas por geolocalização |  |  |  |  |
+| 1 | Pesquisar igrejas e horários de missas por geolocalização | 5 | Teste executado com erro - Na opção "Missas" do menu principal não há um filtro para pesquisar as missas (como na página inícial), ao acessamos essa opção á página retorna a mensagem "Nenhuma igreja encontrada com os critérios informados." / O filtro da página inícial consegue fazer a consulta com sucesso, porém o Botão "Ver no Mapa" não está funcionando; / Um outro ponto de melhoria seria um espaçamento maior entre os cards com os resultados e não repetir os dias de missa para cada horário. O ídeal seria retornar o dia uma vez com todos os horário para aquela dia. Ex.: Domingo - 07:00, 09:00, 18:00 e 19:00 | 15 segundos. Tempo de resposta muito bom. | 2 erros (Botão "ver no mapa" e ausência do filtro na página "Missas" |
 | 2 | Consultar informações dobre Liturgia e homilia do dia |  |  |  |  |
 | 3 | Pesquisar eventos paroquiais cadastrados pelas igrejas |  |  |  |  |
 | 4 | Subir anuncio publicitário e verificar se o mesmo foi publicado corretamente |  |  |  |  |
 | 5 | Enviar formulário para Cadastro de Paróquias e Missas e verificar se o mesmo foi salvo no banco de dados |  |  |  |  |
 | 6 | Enviar formulário sobre os eventos das paróquias e verificar se o mesmo foi salvo no banco de dados |  |  |  |  |
-| 7 | Verificar se o modulo de gerenciamento do site está funcionando corretamente e disponibilizando acesso a todos os CRUD's |  |  |  |  |
+| 7 | Verificar se o modulo de gerenciamento do site está funcionando corretamente e disponibilizando acesso a todos os CRUD's | 5 | Não ocorreram erros | 2 minutos. O tempo varia de acordo com a consulta que se quer fazer. A resposta do software foi muito boa | Nenhum erro ocorreu durante a execução da tarefa |
 | 8 | Navegar pela página inícial verificando a qualidade de visualização e testando os links |  |  |  |  |
 | 9 | Navegar pela página de artigos verificando a qualidade de visualização e os links |  |  |  |  |
 | 10 | Navegar pela página de Santos do Dia verificando a qualidade de visualização e se está correspondendo à data do acesso |  |  |  |  |
