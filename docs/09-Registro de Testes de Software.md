@@ -45,8 +45,8 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-07 – Gerenciar informações do portal** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-007 - A aplicação deve fornecer um módulo simples para que gestores/desenvolvedores possam gerenciar todas as informações do portal, incluindo usuários, conteúdos, anúncios e eventos. |
-|Resultado do teste | Classificar "Teste executado com êxito" ou "Teste executado com erro (especificar o erro)" |
-|Registro de evidência | Colocar o link do vídeo do teste (João H.)|
+|Resultado do teste | Teste executado com êxito |
+|Registro de evidência | [Vídeo do teste](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/blob/main/presentation/Apresenta%C3%A7%C3%A3o%20Gerenciador%20Banco%20de%20Dados.mp4)|
 
 | **Caso de Teste** 	| **CT-08 – Trazer informações do Santo do dia** 	|
 |:---:	|:---:	|
