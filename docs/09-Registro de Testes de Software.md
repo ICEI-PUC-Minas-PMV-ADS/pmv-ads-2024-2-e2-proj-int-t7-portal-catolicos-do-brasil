@@ -15,7 +15,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-02 – Trazer informações de Liturgia e homilia do dia** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-002 - A aplicação deve permitir a exibição diaria das informações de liturgia e homilia do dia, obtidas por meio de uma API confiável. |
-|Resultado do teste | Teste executado com êxito - O teste foi executado corretamente, a 1ª Leitura, Salmo, 2ª Leitura e Evangelho estão retornando corretamente, de acordo com o dia em que o usuário visualiza. A cada dia, é retornado o conteúdo correto. A Homilia trás um video fixo, interligado ao Youtube, perfeitamente.,  |
+|Resultado do teste | Teste executado com êxito - O teste foi executado corretamente. A 1ª Leitura, Salmo, 2ª Leitura e Evangelho estão retornando perfeitamente, de acordo com o dia em que o usuário está visualizando, a cada dia retornando o conteúdo correto. A Homilia trás um video fixo, interligado ao Youtube, perfeitamente.,  |
 |Registro de evidência | [Vídeo do teste](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/blob/aabdac5a03d2cd8f2f37d372fb7b77fa2300182b/presentation/Teste%20exibir%20Homilia%20e%20Liturgia.mp4) |
 
 | **Caso de Teste** 	| **CT-03 – Pesquisar eventos paroquiais cadastrados pelas igrejas** 	|
