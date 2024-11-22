@@ -27,8 +27,8 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-04 – Disponibilizar espaços para publicidades pagas** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-004 - A aplicação apresentar espaços para exibição de publicidades pagas, com um CRUD para gerenciar tais inserções. |
-|Resultado do teste | Classificar "Teste executado com êxito" ou "Teste executado com erro (especificar o erro)" |
-|Registro de evidência | Colocar o link do vídeo do teste (Paulo H.) |
+|Resultado do teste | Teste executado com êxito - O teste foi realizado corretamente. As páginas necessárias contém suas devidas seções de publicidade. |
+|Registro de evidência | [Vídeo teste](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/blob/main/presentation/Teste%20Publicidades.mp4) |
 
 | **Caso de Teste** 	| **CT-05 – Enviar formulário para Cadastro de Paróquias e Missas** 	|
 |:---:	|:---:	|
