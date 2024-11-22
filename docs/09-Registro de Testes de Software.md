@@ -33,8 +33,8 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-05 – Enviar formulário para Cadastro de Paróquias e Missas** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-005 - A aplicação deve fornecer um formulário para as igrejas enviarem seus dados como nome, endereço, telefone, bem como dia e horário de suas missas, com um CRUD para gerenciamento dessas informações que deverá ser feito pelos administradores do site. |
-|Resultado do teste | Classificar "Teste executado com êxito" ou "Teste executado com erro (especificar o erro)" |
-|Registro de evidência | Colocar o link do vídeo do teste (Gabriel) |
+|Resultado do teste | Teste executado com êxito |
+|Registro de evidência | [Vídeo teste](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/blob/main/presentation/Teste%20formul%C3%A1rio%20para%20cadastro%20de%20par%C3%B3quias%20e%20missas.mp4) |
 
 | **Caso de Teste** 	| **CT-06 – Enviar formulário sobre os eventos das paróquias** 	|
 |:---:	|:---:	|
