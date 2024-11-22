@@ -4,7 +4,8 @@
 | | **Tarefas** | **Facilidade de Uso (Em uma escala de 1 a 5, o quão fácil foi concluir a tarefa?)** | **Feedback Detalhado (Descreva os erros que por ventura aconteceram)** | **Tempo de execução (Qual foi o tempo para concluir a tarefa? ele poderia ser mais baixo?)** | **Número de Erros (Quantos erros ocorreram na execução da tarefa?)** |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | 1 | Pesquisar igrejas e horários de missas por geolocalização | 5 | Teste executado com erro - Na opção "Missas" do menu principal não há um filtro para pesquisar as missas (como na página inícial), ao acessamos essa opção á página retorna a mensagem "Nenhuma igreja encontrada com os critérios informados." / O filtro da página inícial consegue fazer a consulta com sucesso, porém o Botão "Ver no Mapa" não está funcionando; / Um outro ponto de melhoria seria um espaçamento maior entre os cards com os resultados e não repetir os dias de missa para cada horário. O ídeal seria retornar o dia uma vez com todos os horário para aquela dia. Ex.: Domingo - 07:00, 09:00, 18:00 e 19:00 | 15 segundos. Tempo de resposta muito bom. | 2 erros (Botão "ver no mapa" e ausência do filtro na página "Missas" |
-| 2 | Consultar informações dobre Liturgia e homilia do dia |  |  |  |  |
+| 2 | Consultar informações dobre Liturgia e homilia do dia | 5 | Não houveram erros. | 
+O tempo de resposta foi excelente. Assim que cada módulo foi aberto, os dados foram exibidos imediatamente. | 0 erros. |
 | 3 | Pesquisar eventos paroquiais cadastrados pelas igrejas |  |  |  |  |
 | 4 | Subir anuncio publicitário e verificar se o mesmo foi publicado corretamente |  |  |  |  |
 | 5 | Enviar formulário para Cadastro de Paróquias e Missas e verificar se o mesmo foi salvo no banco de dados |  |  |  |  |
