@@ -595,6 +595,8 @@ footer {
 .publicacoes {
     background-color: #EFF5FE !important;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 0 auto;
 }
 
 .botaogps {
@@ -605,7 +607,9 @@ footer {
     margin-left: 50px;
 }
 
-
+.data-santohome {
+    color: #717275;
+}
 
 .buscar {
     width: 130px;
@@ -1904,6 +1908,10 @@ form {
     align-content: center;
     justify-content:flex-start;
     border-radius: 10px;
+}
+
+.filtro-missas {
+    margin-top: 50px;
 }
 
 .nenhuma {

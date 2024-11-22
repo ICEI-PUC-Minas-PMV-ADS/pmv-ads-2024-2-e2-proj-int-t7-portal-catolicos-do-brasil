@@ -1,4 +1,4 @@
-@model List<PortalCatolicoBrasil.Models.IgrejaMissaViewModel>
+@model PortalCatolicoBrasil.Models.HomeViewModel
 
 @{
     ViewData["Title"] = "Início";
@@ -81,8 +81,19 @@
             <div class="mb-3">
                 <img src="~/css/Images/ImagesSantoDia.png" class="Santo">
             </div>
-            <h3>Santo do dia <span id="santoNomeIndexHome"></span></h3> @* ("São Fiacre") *@
-            <p id="santoTextoIndexHome"></p>
+
+            @if (Model.SantoDoDia != null)
+            {
+                <h3>Santo do Dia</h3>
+                <h4 style="color: #575757;">@Model.SantoDoDia.Nome</h4>
+                <p>@Model.SantoDoDia.Descricao</p>
+            }
+            else
+            {
+                <p>Nenhum santo encontrado para hoje.</p>
+            }
+
+            @*<h3>Santo do dia ("São Fiacre")</h3>*@
             @* São Fiacre (“Fiacro”) nasceu de família nobre na Irlanda e foi educado sob os cuidados de um bispo de eminente santidade, que teria sido, segundo alguns, Conan, o bispo de Soder ou das Ilhas Ocidentais (Hébridas Exteriores). *@
             <span>
                 <a class="leia-mais poppins-medium" asp-controller="SantoDia" asp-action="Index">LEIA MAIS...</a>
@@ -99,7 +110,7 @@
         </div>
     </div>
 
-    <div class="publicacoes container p-5 my-5 bg-info rounded row poppins-regular">
+    <div class="publicacoes container p-5 bg-info row poppins-regular">
         <h6>PUBLICAÇÕES</h6> <hr/>
         <div class="col-md-4 pb-4">
             <img src="~/css/Images/ImageTerco.png" class="Terco">
@@ -108,7 +119,7 @@
             <h3>Como rezar o terço</h3>
             <p>Aprenda de uma forma simples e divertida como rezar o terço para Nossa Mamãe do Céu;</p>
             <span>
-                <a target="_blank" class="leia-mais" href="">LEIA MAIS...</a>
+                <a target="_blank" class="leia-mais poppins-medium" href="">LEIA MAIS...</a>
             </span>
         </div> <hr/>
         <div class="col-md-4 pb-4">
@@ -118,7 +129,7 @@
             <h3>Eleição do Papa</h3>
             <p>Uma dúvida comum não somente entre os católicos, mas também entre os não católicos é como é escolhido um Papa.</p>
             <span>
-                <a target="_blank" class="leia-mais" href="">LEIA MAIS...</a>
+                <a target="_blank" class="leia-mais poppins-medium" href="">LEIA MAIS...</a>
             </span>
         </div> <hr/>
     </div>
