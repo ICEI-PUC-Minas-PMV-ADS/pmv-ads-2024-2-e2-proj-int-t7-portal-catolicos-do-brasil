@@ -408,6 +408,48 @@ $('#botaoBuscar').click(function (e) {
     }
 });
 
+$('#buscar').click(function (e) {
+    e.preventDefault();
+
+    const igrejaId = $('#Igreja').val();
+    console.log('ID da igreja selecionada:', igrejaId);
+
+    // Caso o usuário tenha selecionado uma igreja específica
+    if (igrejaId) {
+        // Redireciona para a página de resultados com a igreja selecionada
+        $.post(`/Igreja/BuscarIgrejaPorId?igrejaId=${igrejaId}`, { igrejaId: igrejaId }, function (data) { // TODO: MODIFICAR PARA GET PASSANDO UMA URL SOMENTE COM Igreja/igrejaId E MANIPULAR O OBJETO/JSON QUE É RETORNADO DA CONTROLLER (como foi feito com o resultado da api da liturgia)
+            console.log(data);
+            $('body').html(data);
+        });
+
+        document.getElementById('buscar').addEventListener('click', function () {
+            // Busca a seção de resultados pelo ID
+            const resultados = document.getElementById('search-results');
+            if (resultados) {
+                // Faz o scroll suave até a seção
+                resultados.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    } else {
+        // Caso contrário, pega os filtros de bairro, cidade e estado
+        const bairro = $('#Bairro').val();
+        const cidade = $('#Cidade').val();
+        const estado = $('#Estado').val();
+
+        // Redireciona para a página de resultados com os filtros de bairro/cidade/estado
+        window.location.href = `/Igreja/ResultadoPesquisa?estado=${estado}&cidade=${cidade}&bairro=${bairro}`;
+
+        document.getElementById('buscar').addEventListener('click', function () {
+            // Busca a seção de resultados pelo ID
+            const resultados = document.getElementById('search-results');
+            if (resultados) {
+                // Faz o scroll suave até a seção
+                resultados.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    }
+});
+
 document.querySelector('.pesqgps').addEventListener('click', function () {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
@@ -422,71 +464,8 @@ document.querySelector('.pesqgps').addEventListener('click', function () {
         alert("Geolocalização não é suportada pelo seu navegador.");
     }
 });
-
-//INÍCIO PREENCHIMENTO LITURGIA
-async function obterLiturgia2() {
-    const containerIndexLiturgia = document.getElementById('liturgiaIndexHome');
-    containerIndexLiturgia.innerHTML = '<p>Carregando a liturgia...</p>';
-
-    try {
-        const dados = await $.getJSON("/Liturgia/GetLiturgiaAPI");
-        console.log('Dados da liturgia:', dados);
-        return dados;
-    } catch (error) {
-        console.error('Erro ao carregar a liturgia:', error);
-        containerIndexLiturgia.innerHTML = '<p>Erro ao carregar a liturgia.</p>';
-        return null;
-    }
-}
-
-$(document).ready(function () {
-    preencherLiturgia2();
-});
-
-async function preencherLiturgia2() {
-    try {
-        const liturgia = await obterLiturgia2();
-        if (liturgia) {
-            fillFormWithData2(liturgia);
-        }
-    } catch (error) {
-        console.error('Erro ao preencher o formulário:', error);
-    }
-}
-
-function fillFormWithData2(dados) {
-    const fieldsMapping = {
-        liturgiaIndexHome: `<p>${dados.dia}</p>`,
-    };
-
-    for (const [fieldId, value] of Object.entries(fieldsMapping)) {
-        const field = document.getElementById(fieldId);
-        if (field) {
-            field.innerHTML = value;
-        }
-    }
-}
-//FIM PREENCHIMENTO LITURGIA
 /*-----------------FIM HOME INDEX-----------------*/
 
-
-
-
-
-
-/*-----------------INÍCIO RESULTADO MISSAS-----------------*/
-document.getElementById('btn-view-in-map').addEventListener('click', function () {
-
-});
-
-function abrirMapa(endereco) {
-    //const endereco = document.getElementsByClassName("endereco").value;
-    console.log(endereco);
-
-    const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(endereco)}`;
-    window.open(url, '_blank');
-}
-/*-----------------FIM RESULTADO MISSAS-----------------*/
 
 
 
