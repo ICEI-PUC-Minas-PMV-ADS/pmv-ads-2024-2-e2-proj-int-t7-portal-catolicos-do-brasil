@@ -64,7 +64,9 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 ## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Os testes dos casos CT-01, CT-03 e CT-06 apresentaram falhas. No CT-01, problemas foram identificados na funcionalidade de filtro de missas e no botão "Ver no Mapa". No CT-03, os dropdowns não funcionaram corretamente, e houve falhas no layout e nos botões de busca. No CT-06, a máscara de telefone não permite números fixos, e o ícone de localização apresenta cores invertidas.
+
+Os casos CT-02, CT-04, CT-05, CT-07, CT-09 e CT-08 foram executados com sucesso, atendendo às especificações funcionais. Destaca-se a exibição correta de liturgia, homilia, publicidades, e o funcionamento adequado dos formulários de cadastro e gerenciamento do portal.
 
 <!--
 > **Links Úteis**:
