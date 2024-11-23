@@ -12,7 +12,7 @@
 | 7 | Verificar se o modulo de gerenciamento do site está funcionando corretamente e disponibilizando acesso a todos os CRUD's | 5 | Não ocorreram erros | 2 minutos. O tempo varia de acordo com a consulta que se quer fazer. A resposta do software foi muito boa | Nenhum erro ocorreu durante a execução da tarefa |
 | 8 | Navegar pela página inícial verificando a qualidade de visualização e testando os links |  |  |  |  |
 | 9 | Navegar pela página de artigos verificando a qualidade de visualização e os links |  |  |  |  |
-| 10 | Navegar pela página de Santos do Dia verificando a qualidade de visualização e se está correspondendo à data do acesso | 5 | Não houve erros | Menos de 1 minuto e 50 segungos. O tempo vai variar de acordo com o consulta |  0|
+| 10 | Navegar pela página de Santos do Dia verificando a qualidade de visualização e se está correspondendo à data do acesso | 5 | Não houve erros | Menos de 1 minuto e 50 segungos. O tempo vai variar de acordo com o consulta |  0 erros|
 
 
 
