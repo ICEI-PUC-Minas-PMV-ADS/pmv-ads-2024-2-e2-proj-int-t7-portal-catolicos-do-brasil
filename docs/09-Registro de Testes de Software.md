@@ -51,7 +51,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-08 – Trazer informações do Santo do dia** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-008 - A aplicação deve Exibir os santos celebrados no dia correspondente à data da pesquisa.|
-|Resultado do teste | Classificar "Teste executado com êxito" ou "Teste executado com erro (especificar o erro)" |
+|Resultado do teste |Teste executado com êxito |
 |Registro de evidência | [Vídeo do teste ](https://github.com/user-attachments/assets/6c6bc545-bddf-4eed-b818-1d3c57853d93)|
 
 | **Caso de Teste** 	| **CT-09 – Trazer Publicações de temas relevantes do cenário católico** 	|
