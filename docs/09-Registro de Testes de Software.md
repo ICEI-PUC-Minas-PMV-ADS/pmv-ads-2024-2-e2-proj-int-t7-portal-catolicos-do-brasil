@@ -21,8 +21,8 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 | **Caso de Teste** 	| **CT-03 – Pesquisar eventos paroquiais cadastrados pelas igrejas** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-003 - A aplicação deve permitir aos usuários ter acesso aos eventos paroquiais das igrejas que os cadastrarem para serem divulgados. |
-|Resultado do teste | Classificar "Teste executado com êxito" ou "Teste executado com erro (especificar o erro)" |
-|Registro de evidência | Colocar o link do vídeo do teste (Paulo H.) |
+|Resultado do teste | Teste executado com erro - No teste realizado, foram identificados os seguintes erros: os dropdowns de estado e cidade não retornam as opções corretamente, o botão "Buscar" não redireciona pois não recupera os dados selecionados, o botão "Pesquisar por minha localização" está desabilitado devido à ausência de localização geográfica, e os cards não seguem o layout padrão da aplicação, apresentando problemas em bordas arredondadas, fontes e dimensões. |
+|Registro de evidência | [Vídeo teste](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/blob/main/presentation/Teste%20Pesquisa%20Eventos.mp4) |
 
 | **Caso de Teste** 	| **CT-04 – Disponibilizar espaços para publicidades pagas** 	|
 |:---:	|:---:	|
