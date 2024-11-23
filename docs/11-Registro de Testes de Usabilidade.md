@@ -11,7 +11,7 @@
 | 6 | Enviar formulário sobre os eventos das paróquias e verificar se o mesmo foi salvo no banco de dados | 5 | Teste executado com erro - A mascara de cadastro do telefone não está permitindo a inserção de telefone fixo, apresentando erro, só sendo possível o envio caso seja inserido o número "9" na frente / O ícone de localização do botão "Ver no mapa" está com as cores invertidas. O ícone deveria ser branco e fundo transparente ou da cor do botão | 1 minuto. Tempo de resposta muito bom | 1 erro (Mascará do telefone que só permite o cadastro do celular) |
 | 7 | Verificar se o modulo de gerenciamento do site está funcionando corretamente e disponibilizando acesso a todos os CRUD's | 5 | Não ocorreram erros | 2 minutos. O tempo varia de acordo com a consulta que se quer fazer. A resposta do software foi muito boa | Nenhum erro ocorreu durante a execução da tarefa |
 | 8 | Navegar pela página inícial verificando a qualidade de visualização e testando os links | 5 | Não ocorreram erros | 1 minuto e 30 segundos (testados todos os links). A resposta do software foi muito boa | Nenhum erro ocorreu durante a execução da tarefa |
-| 9 | Navegar pela página de artigos verificando a qualidade de visualização e os links |  |  |  |  |
+| 9 | Navegar pela página de artigos verificando a qualidade de visualização e os links | 5 | ão houve erros | 1 minuto e 55 segundos | Nenhum erro durante a execução |
 | 10 | Navegar pela página de Santos do Dia verificando a qualidade de visualização e se está correspondendo à data do acesso | 5 | Não houve erros | Menos de 1 minuto e 50 segungos. O tempo vai variar de acordo com o consulta |  0 erros|
 
 
