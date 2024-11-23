@@ -464,6 +464,51 @@ document.querySelector('.pesqgps').addEventListener('click', function () {
         alert("Geolocalização não é suportada pelo seu navegador.");
     }
 });
+
+//INÍCIO PREENCHIMENTO LITURGIA
+async function obterLiturgia2() {
+    const containerIndexLiturgia = document.getElementById('liturgiaIndexHome');
+    containerIndexLiturgia.innerHTML = '<p>Carregando a liturgia...</p>';
+
+    try {
+        const dados = await $.getJSON("/Liturgia/GetLiturgiaAPI");
+        console.log('Dados da liturgia:', dados);
+        return dados;
+    } catch (error) {
+        console.error('Erro ao carregar a liturgia:', error);
+        containerIndexLiturgia.innerHTML = '<p>Erro ao carregar a liturgia.</p>';
+        return null;
+    }
+}
+
+$(document).ready(function () {
+    preencherLiturgia2();
+});
+
+async function preencherLiturgia2() {
+    try {
+        const liturgia = await obterLiturgia2();
+        if (liturgia) {
+            fillFormWithData2(liturgia);
+        }
+    } catch (error) {
+        console.error('Erro ao preencher o formulário:', error);
+    }
+}
+
+function fillFormWithData2(dados) {
+    const fieldsMapping = {
+        liturgiaIndexHome: `<p>${dados.dia}</p>`,
+    };
+
+    for (const [fieldId, value] of Object.entries(fieldsMapping)) {
+        const field = document.getElementById(fieldId);
+        if (field) {
+            field.innerHTML = value;
+        }
+    }
+}
+//FIM PREENCHIMENTO LITURGIA
 /*-----------------FIM HOME INDEX-----------------*/
 
 
