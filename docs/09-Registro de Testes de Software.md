@@ -58,7 +58,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-009 - A aplicação deve Exibir matérias relevantes do cenário Católico.|
 |Resultado do teste | Teste executado com êxito |
-|Registro de evidência | [Video do teste](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/blob/main/presentation/Teste%20Publica%C3%A7%C3%B5es.mp4) |
+|Registro de evidência | [Vídeo do teste](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/blob/main/presentation/Teste%20Publica%C3%A7%C3%B5es.mp4) |
 
 <br><br>
 
