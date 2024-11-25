@@ -1,0 +1,67 @@
+# Sistema e ambientes locais
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Arquivos binários e de objetos
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.vspscc
+*.vssscc
+
+# Configurações de pacotes
+packages/
+*.nupkg
+*.snupkg
+
+# Configurações do Visual Studio
+.vs/
+.vscode/
+debug/
+release/
+
+# Logs
+*.log
+log/
+
+# Configurações de banco de dados local
+App_Data/
+
+# Configurações de banco de dados
+appsettings.json
+*.json
+
+# Configurações do Rider/JetBrains
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+
+# Arquivos de publica��o
+publish/
+
+# Dependências do NuGet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Cache de build
+*.dbmdl
+*.jfm
+
+# Arquivos de configuração temporários
+*.tmp
+*.bak
+
+# Certificados de desenvolvimento
+*.pfx
+*.cer

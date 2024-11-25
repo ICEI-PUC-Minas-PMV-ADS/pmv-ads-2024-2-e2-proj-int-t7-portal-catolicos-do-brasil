@@ -1,0 +1,136 @@
+@model PortalCatolicoBrasil.Models.HomeViewModel
+
+@{
+    ViewData["Title"] = "Início";
+}
+
+<div class="mainindex">
+    <div class="texto-welcome row poppins-regular">
+        <p>
+            "Servo de Deus Carlo Acutis, que fizeste de tua vida uma contínua renúncia e aniquilamento,
+            dá-me a graça de buscar as coisas do Céu e desprezar as que passam. Assim seja."
+        </p>
+        <p class="reftexto-welcome">Meditação do Primeiro Dia da Novena ao Venerável Carlo Acutis</p>
+    </div>
+
+    <div class="titulo-form poppins-regular">
+        <h3>Pesquisar Igrejas e missas</h3>
+    </div>
+
+    <div class="formpai pesquisaMissa conteiner mt-3 pt-2 border p-4 bg-light poppins-regular">
+        <form asp-action="BuscarIgrejaPorId" asp-controller="Igreja" method="post">
+            <div class="row mt-4">
+                <div class="col-sm-2">
+                    <label for="Estado">Estado*</label>
+                    <select id="Estado" class="campoform botaogps form-control" name="Estado" required>
+                        <option value="" disabled selected></option>
+                    </select>
+                </div>
+                <div class="col-sm-5">
+                    <label for="Cidade">Cidade*</label>
+                    <select id="Cidade" class="campoform botaogps form-control" name="Cidade" required>
+                        <option value="" disabled selected></option>
+                    </select>
+                </div>
+                <div class="col-sm-5">
+                    <label for="Bairro">Bairro*</label>
+                    <select id="Bairro" class="campoform botaogps form-control" name="Bairro" required>
+                            <option value="" disabled selected></option>
+                    </select>
+                </div>
+                <div class="col-sm-12 pt-4">
+                    <label for="Igreja">Igreja</label>
+                    <select id="Igreja" class="campoform botaogps form-control" name="Igreja">
+                        <option value="" disabled selected></option>
+                    </select>
+
+                    <button type="button" id="botaoBuscar" class="buscar botaogps btn btn-primary mt-5 mb-4">Buscar</button>
+
+                    <button type="button" class="botaogps pesqgps btn btn-outline-primary mt-5 mb-4">
+                        Pesquisar por minha localização atual
+                        <i class="fas fa-location"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="anuncio container my-5 bg-info rounded row poppins-regular">
+        <div class="Drog col-sm-6">
+            <img src="~/css/Images/Drogaria.png">
+        </div>
+        <div class="Calc col-sm-6">
+            <img src="~/css/Images/Calcitran.png">
+        </div>
+    </div>
+
+    <div class="liturgiaSanto container mt-5 row center poppins-regular ">
+        <div class="liturgiaIndex col-sm-6" id="liturgiaTextContent">
+            <div class="imglit mb-3">
+                <img src="~/css/Images/ImagensLiturigia.png" class="Litur">
+            </div>
+            <h3>Liturgia diária</h3>
+            <p id="liturgiaIndexHome"></p>
+            @* <p>Naquele tempo, disse Jesus aos seus discípulos esta parábola: 1 "O Reino dos Céus é como a história das dez jovens que pegaram suas lâmpadas de óleo e saíram ao encontro do noivo. </p> *@
+            <span>
+                <a class="leia-mais poppins-medium" asp-controller="Home" asp-action="Liturgia">LEIA MAIS...</a>
+            </span>
+        </div>
+
+        <div class="santoIndex col-sm-6">
+            <div class="mb-3">
+                <img src="~/css/Images/ImagesSantoDia.png" class="Santo">
+            </div>
+
+            @if (Model.SantoDoDia != null)
+            {
+                <h3>Santo do Dia</h3>
+                <h4 style="color: #575757;">@Model.SantoDoDia.Nome</h4>
+                <p>@Model.SantoDoDia.Descricao</p>
+            }
+            else
+            {
+                <p>Nenhum santo encontrado para hoje.</p>
+            }
+
+            @*<h3>Santo do dia ("São Fiacre")</h3>*@
+            @* São Fiacre (“Fiacro”) nasceu de família nobre na Irlanda e foi educado sob os cuidados de um bispo de eminente santidade, que teria sido, segundo alguns, Conan, o bispo de Soder ou das Ilhas Ocidentais (Hébridas Exteriores). *@
+            <span>
+                <a class="leia-mais poppins-medium" asp-controller="SantoDia" asp-action="Index">LEIA MAIS...</a>
+            </span>
+        </div>
+    </div>
+
+    <div class="anuncio container my-5 bg-info rounded row poppins-regular">
+        <div class="Drog col-sm-6">
+            <img src="~/css/Images/Drogaria.png">
+        </div>
+        <div class="Calc col-sm-6">
+            <img src="~/css/Images/Calcitran.png">
+        </div>
+    </div>
+
+    <div class="publicacoes container p-5 bg-info row poppins-regular">
+        <h6>PUBLICAÇÕES</h6> <hr/>
+        <div class="col-md-4 pb-4">
+            <img src="~/css/Images/ImageTerco.png" class="Terco">
+        </div>
+        <div class="comorezar col-md-8">
+            <h3>Como rezar o terço</h3>
+            <p>Aprenda de uma forma simples e divertida como rezar o terço para Nossa Mamãe do Céu;</p>
+            <span>
+                <a target="_blank" class="leia-mais poppins-medium" href="">LEIA MAIS...</a>
+            </span>
+        </div> <hr/>
+        <div class="col-md-4 pb-4">
+            <img src="~/css/Images/ImageEstatuaPapa.png" class="EstatuaPapa">
+        </div>
+        <div class="col-md-8 pb-5">
+            <h3>Eleição do Papa</h3>
+            <p>Uma dúvida comum não somente entre os católicos, mas também entre os não católicos é como é escolhido um Papa.</p>
+            <span>
+                <a target="_blank" class="leia-mais poppins-medium" href="">LEIA MAIS...</a>
+            </span>
+        </div> <hr/>
+    </div>
+</div>

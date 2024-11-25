@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Portal Católico do Brasil</title>
+    <link href="~/fonts/fonts.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="~/emojione_church.ico" rel="icon" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <header>
+
+        <div class="cabecalho">
+            <img src="~/css/Images/emojione_church.png" class="imagemCabecalho">
+            <h1 class="poppins-regular nomePortal">PORTAL CATÓLICO DO BRASIL</h1>
+
+        </div>
+
+
+        <nav class="menu poppins-medium">
+            <ul class="ul--nav">
+                <li class="li--nav">
+                    <a class="a--nav" asp-area="" asp-controller="Home" asp-action="Index">INÍCIO</a>
+                </li>
+                <li class="li--nav">
+                    <a class="a--nav" asp-area="" asp-controller="Igreja" asp-action="ResultadoPesquisa">MISSAS</a>
+                </li>
+                <li class="li--nav">
+                    <a class="a--nav" asp-area="" asp-controller="Home" asp-action="Liturgia">LITURGIA</a>
+                </li>
+                <li class="li--nav">
+                    <a class="a--nav" asp-area="" asp-controller="Evento" asp-action="Eventos">EVENTOS</a>
+                </li>
+                <li class="li--nav">
+                    <a class="a--nav" asp-area="" asp-controller="SantoDia" asp-action="Index">SANTO DO DIA</a>
+                </li>
+                <li class="li--nav">
+                    <a class="a--nav" asp-area="" asp-controller="Home" asp-action="Publicacoes">PUBLICAÇÕES</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+
+            <img src="~/css/Images/cruz_background.png" class="cruz-back">
+
+        </div>
+
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <footer class="footer poppins-regular">
+
+        <div class="rodape">
+
+            <div>
+                <img class="imagemRodape" src="~/css/images/emojione_church.png">
+            </div>
+
+
+            <div class="colabore">
+                <h4>Colabore Conosco</h4>
+                <p>Cadastro de paróquias e missas <a target="_blank" href="~/Igreja/Create" class="aqui">aqui!</a></p>
+                <p>Cadastre os eventos de sua paróquias <a target="_blank" href="~/Evento/Create" class="aqui">aqui!</a></p>
+            </div>
+
+            <div class="contato">
+                <h4>Contato</h4>
+                <p>portalcatolicobrasil@gmail.com</p>
+            </div>
+
+            <div class="redessociais">
+                <h4>Redes Sociais</h4>
+                <nav>
+                    <a target="_blank" class="redes" href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i>/Facebook</a> <br />
+                    <a target="_blank" class="redes" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i>/Instagram</a>
+                </nav>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <div class="direitos poppins-regular">
+        <p>&copy; Portal Católico do Brasil - Todos os direitos reservados</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/52d98fe718.js" crossorigin="anonymous"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" type="module" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
