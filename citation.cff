@@ -1,29 +1,30 @@
-message: Please cite this software using these metadata.
-title:
+cff-version: 1.0.1
+message: Sistema para consulta de localização e contato de igrejas, horário de missas, Santo do dia, Liturgia e homilia diária. 
+Além de cadastro e divulgação gratuita de eventos paroquiais e publicação de artigos relevantes para o universo católico; 
+title: Portal Católicos do Brasil
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Andrade Leite
+    given-names: João Henrique
+  - family-names: Sousa Carvalho
+    given-names: Paulo Henrique 
+  - family-names: Crisóstomo Bernardes
+    given-names: Thainá
+  - family-names: Barboza da Gama Reis Silva
+    given-names: Gabriel 
+  - family-names: Barboza da Gama dos Reis Silva
+    given-names: Estevão
+  - family-names: Quintão Bastos Domingos
+    given-names: Tobias
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Jeunon de Alencar
+    given-names: Bernardo
 keywords:
-  - 
-  - 
-repository-code: 
+  - católicos
+  - missas
+  - liturgia
+  - igreja
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil
+license: CC-BY-4.0
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2024-11-28
