@@ -1,4 +1,4 @@
-# Pipeline para build e deploy do Portal Católico Brasil no Azure App Service
+# Pipeline para build e deploy do Portal CatÃ³lico Brasil no Azure App Service
 name: Build and deploy ASP.Net Core app to Azure Web App - portal-catolico-brasil
 
 on:
@@ -12,16 +12,16 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      # Checkout do repositório
+      # Checkout do repositÃ³rio
       - uses: actions/checkout@v4
 
-      # Configuração do .NET Core
+      # ConfiguraÃ§Ã£o do .NET Core
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.x'
 
-      # Restaurar dependências
+      # Restaurar dependÃªncias
       - name: Restore dependencies
         run: dotnet restore src/PortalCatolicoBrasil/PortalCatolicoBrasil.csproj
 
@@ -29,11 +29,11 @@ jobs:
       - name: Build with dotnet
         run: dotnet build src/PortalCatolicoBrasil/PortalCatolicoBrasil.csproj --configuration Release
 
-      # Publicação do projeto
+      # PublicaÃ§Ã£o do projeto
       - name: Publish project
         run: dotnet publish src/PortalCatolicoBrasil/PortalCatolicoBrasil.csproj --configuration Release --output "${{github.workspace}}/publish"
 
-      # Upload dos artefatos publicados para o próximo job
+      # Upload dos artefatos publicados para o prÃ³ximo job
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
@@ -47,7 +47,7 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write # JWT necessário para autenticação
+      id-token: write # JWT necessÃ¡rio para autenticaÃ§Ã£o
 
     steps:
       # Baixar os artefatos publicados do job de build
@@ -60,9 +60,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D323DFA03093422988FBEA58FBD2B9FC }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3EA0303009AC4741B5EAFFFB96535EA3 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_AB3DD239F30F48CA8ABC97D88C1C6DF4 }}
 
       # Deploy para o Azure Web App
       - name: Deploy to Azure Web App
