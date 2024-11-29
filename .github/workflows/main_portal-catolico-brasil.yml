@@ -1,6 +1,4 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
+# Pipeline para build e deploy do Portal Católico Brasil no Azure App Service
 name: Build and deploy ASP.Net Core app to Azure Web App - portal-catolico-brasil
 
 on:
@@ -14,24 +12,33 @@ jobs:
     runs-on: windows-latest
 
     steps:
+      # Checkout do repositório
       - uses: actions/checkout@v4
 
+      # Configuração do .NET Core
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.x'
 
+      # Restaurar dependências
+      - name: Restore dependencies
+        run: dotnet restore src/PortalCatolicoBrasil/PortalCatolicoBrasil.csproj
+
+      # Build do projeto
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build src/PortalCatolicoBrasil/PortalCatolicoBrasil.csproj --configuration Release
 
-      - name: dotnet publish
-        run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
+      # Publicação do projeto
+      - name: Publish project
+        run: dotnet publish src/PortalCatolicoBrasil/PortalCatolicoBrasil.csproj --configuration Release --output "${{github.workspace}}/publish"
 
+      # Upload dos artefatos publicados para o próximo job
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: ${{github.workspace}}/publish
 
   deploy:
     runs-on: windows-latest
@@ -40,26 +47,28 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write #This is required for requesting the JWT
+      id-token: write # JWT necessário para autenticação
 
     steps:
+      # Baixar os artefatos publicados do job de build
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
           name: .net-app
-      
+
+      # Login no Azure
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D323DFA03093422988FBEA58FBD2B9FC }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3EA0303009AC4741B5EAFFFB96535EA3 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_AB3DD239F30F48CA8ABC97D88C1C6DF4 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
 
+      # Deploy para o Azure Web App
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'portal-catolico-brasil'
-          slot-name: 'Production'
+          app-name: 'portal-catolico-brasil' # Nome do App Service no Azure
+          slot-name: 'production'
           package: .
-          
