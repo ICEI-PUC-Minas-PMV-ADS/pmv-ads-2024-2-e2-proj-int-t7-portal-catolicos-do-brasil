@@ -63,7 +63,8 @@ namespace PortalCatolicoBrasil.Migrations
 
                     b.Property<string>("Estado")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(2)
+                        .HasColumnType("nvarchar(2)");
 
                     b.Property<TimeSpan>("HorarioEncerramento")
                         .HasColumnType("time");
@@ -77,7 +78,8 @@ namespace PortalCatolicoBrasil.Migrations
 
                     b.Property<string>("NomeParoquia")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Numero")
                         .IsRequired()
@@ -89,7 +91,8 @@ namespace PortalCatolicoBrasil.Migrations
 
                     b.Property<string>("TituloEvento")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
 
                     b.HasKey("ID");
 
