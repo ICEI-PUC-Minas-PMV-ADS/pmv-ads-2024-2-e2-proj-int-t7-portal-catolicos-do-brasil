@@ -22,10 +22,10 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build src/PortalCatolicoBrasil/PortalCatolicoBrasil.csproj --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
+        run: dotnet publish src/PortalCatolicoBrasil/PortalCatolicoBrasil.csproj --configuration Release --output "${{github.workspace}}/publish"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -61,5 +61,6 @@ jobs:
         with:
           app-name: 'portalcatolico'
           slot-name: 'Production'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F161A093CF1C4BFC876E41FBBDD3CBAD }}
           package: .
           
