@@ -1,7 +1,4 @@
 # Apresentação
-
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
-
 ## Título do Projeto
 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/blob/main/docs/img/titulo_pagina.png">
