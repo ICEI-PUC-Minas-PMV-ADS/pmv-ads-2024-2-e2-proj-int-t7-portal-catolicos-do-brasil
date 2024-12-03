@@ -51,7 +51,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'portal-catolico'
+          app-name: 'portalcatolico'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F161A093CF1C4BFC876E41FBBDD3CBAD }}
           package: .
