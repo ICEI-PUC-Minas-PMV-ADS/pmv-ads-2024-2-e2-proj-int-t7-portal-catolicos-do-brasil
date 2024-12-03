@@ -23,10 +23,10 @@ jobs:
           include-prerelease: true
 
       - name: Build with dotnet
-        run: dotnet build src/PortalCatolicoBrasil/PortalCatolicoBrasil.csproj --configuration Release
+        run: dotnet build src/PortalCatolico/PortalCatolico.csproj --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish src/PortalCatolicoBrasil/PortalCatolicoBrasil.csproj --configuration Release --output "${{github.workspace}}/publish"
+        run: dotnet publish src/PortalCatolico/PortalCatolico.csproj --configuration Release --output "${{github.workspace}}/publish"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
