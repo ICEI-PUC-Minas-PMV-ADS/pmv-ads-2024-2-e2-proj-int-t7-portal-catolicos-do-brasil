@@ -121,16 +121,35 @@
 }
 
 
-<div class="anuncio-resultado-missa rounded row poppins-regular">
+@* <div class="anuncio-resultado-missa rounded row poppins-regular">
     <div class="Drog col-sm-6">
         <img src="~/css/Images/Drogaria.png">
     </div>
     <div class="Calc col-sm-6">
         <img src="~/css/Images/Calcitran.png">
     </div>
-</div>
+</div> *@
+
+
 <div class="container mt-4">
 
+    @* <div class="anuncio container my-5 bg-info rounded row poppins-regular">
+        <div class="Drog col-sm-6">
+            <img src="~/css/Images/Drogaria.png">
+        </div>
+        <div class="Calc col-sm-6">
+            <img src="~/css/Images/Calcitran.png">
+        </div>
+    </div> *@
+
+    <div class="" style="display: flex; background:">
+        <div class="">
+            <img src="~/css/Images/Drogaria.png">
+        </div>
+        <div class="">
+            <img src="~/css/Images/Calcitran.png">
+        </div>
+    </div>
     <!-- Formulário de busca -->
     <h2 class="titulo-pesquisar-eventos" style="margin-left: 15px;">Pesquisar eventos</h2>
     @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
