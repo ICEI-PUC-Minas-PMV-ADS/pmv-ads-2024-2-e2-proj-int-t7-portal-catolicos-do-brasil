@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace PortalCatolico.Migrations
 {
     /// <inheritdoc />
-    public partial class M01NewDatabase : Migration
+    public partial class M01AddNewDatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -31,9 +31,7 @@ namespace PortalCatolico.Migrations
                     DataInicio = table.Column<DateOnly>(type: "date", nullable: false),
                     HorarioInicio = table.Column<TimeSpan>(type: "time", nullable: false),
                     DataEncerramento = table.Column<DateOnly>(type: "date", nullable: false),
-                    HorarioEncerramento = table.Column<TimeSpan>(type: "time", nullable: false),
-                    Banner = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    BannerPath = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    HorarioEncerramento = table.Column<TimeSpan>(type: "time", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -66,8 +64,8 @@ namespace PortalCatolico.Migrations
                 columns: table => new
                 {
                     Data = table.Column<DateOnly>(type: "date", nullable: false),
-                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Descricao = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -78,7 +76,7 @@ namespace PortalCatolico.Migrations
                 name: "IgrejaMissaViewModel",
                 columns: table => new
                 {
-                    IgrejaId = table.Column<int>(type: "int", nullable: false)
+                    IgrejaId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -86,8 +84,7 @@ namespace PortalCatolico.Migrations
                         name: "FK_IgrejaMissaViewModel_Igreja_IgrejaId",
                         column: x => x.IgrejaId,
                         principalTable: "Igreja",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -97,8 +94,8 @@ namespace PortalCatolico.Migrations
                     MissaId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IgrejaId = table.Column<int>(type: "int", nullable: false),
-                    DiaSemana = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Hora = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    DiaSemana = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Hora = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

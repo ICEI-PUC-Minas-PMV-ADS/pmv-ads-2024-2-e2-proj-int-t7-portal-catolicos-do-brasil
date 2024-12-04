@@ -63,8 +63,8 @@ namespace PortalCatolicoBrasil.Models
         [Required(ErrorMessage = "Informe o Horário de encerramento")]
         public TimeSpan HorarioEncerramento { get; set; }
 
-        public string Banner { get; set; }
+        //public string Banner { get; set; }
 
-        public string BannerPath { get; set; }
+        //public string BannerPath { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace PortalCatolico.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241204034548_M03-EditTableEventos")]
+    partial class M03EditTableEventos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,10 +63,10 @@ namespace PortalCatolico.Migrations
                         .HasMaxLength(2)
                         .HasColumnType("nvarchar(2)");
 
-                    b.Property<TimeSpan>("HorarioEncerramento")
+                    b.Property<TimeOnly>("HorarioEncerramento")
                         .HasColumnType("time");
 
-                    b.Property<TimeSpan>("HorarioInicio")
+                    b.Property<TimeOnly>("HorarioInicio")
                         .HasColumnType("time");
 
                     b.Property<string>("Logradouro")

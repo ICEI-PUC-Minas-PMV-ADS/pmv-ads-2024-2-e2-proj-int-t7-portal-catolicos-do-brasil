@@ -168,21 +168,21 @@ namespace WebApplication1
         {
             if (ModelState.IsValid)
             {
-                string uploadsfolder = Path.Combine(_webhost.WebRootPath, "uploads");
-                if (!Directory.Exists(uploadsfolder))
-                {
-                    Directory.CreateDirectory(uploadsfolder);
-                }
+                //string uploadsfolder = Path.Combine(_webhost.WebRootPath, "uploads");
+                //if (!Directory.Exists(uploadsfolder))
+                //{
+                //    Directory.CreateDirectory(uploadsfolder);
+                //}
 
-                string fileName = Path.GetFileName(file.FileName);
-                string filesavepath = Path.Combine(uploadsfolder, fileName);
-                using (FileStream stream = new FileStream(filesavepath, FileMode.Create))
-                {
-                    await file.CopyToAsync(stream);
-                }
+                //string fileName = Path.GetFileName(file.FileName);
+                //string filesavepath = Path.Combine(uploadsfolder, fileName);
+                //using (FileStream stream = new FileStream(filesavepath, FileMode.Create))
+                //{
+                //    await file.CopyToAsync(stream);
+                //}
 
                 // Store the file path or name in the Evento model if necessary
-                evento.BannerPath = fileName;
+                //evento.BannerPath = fileName;
 
                 _context.Eventos.Add(evento);
                 await _context.SaveChangesAsync();
