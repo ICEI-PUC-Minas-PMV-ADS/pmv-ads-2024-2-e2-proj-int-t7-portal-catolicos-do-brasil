@@ -1,4 +1,6 @@
-﻿@* @model IEnumerable<PortalCatolicoBrasil.Models.Evento>
+﻿@using System.Globalization
+
+@* @model IEnumerable<PortalCatolicoBrasil.Models.Evento>
 
 
 @{
@@ -109,71 +111,78 @@
 </div>
 
 <script src="~/js/site.js"></script>
- *@
+*@
+
+
  @model IEnumerable<PortalCatolicoBrasil.Models.Evento>
 
 @{
     ViewData["Title"] = "Eventos";
 }
 
-<h1>Eventos</h1>
 
-
-<div class="container-fluid">
-    <!-- Banner superior -->
-    <div class="row mb-4">
-        <div class="col banner-anuncio-eventos">
-            <img src="../css/Images/card_divulgacao1.png" class="img-fluid" alt="Banner Superior">
-        </div>
+<div class="anuncio-resultado-missa rounded row poppins-regular">
+    <div class="Drog col-sm-6">
+        <img src="~/css/Images/Drogaria.png">
+    </div>
+    <div class="Calc col-sm-6">
+        <img src="~/css/Images/Calcitran.png">
     </div>
 </div>
 <div class="container mt-4">
 
     <!-- Formulário de busca -->
-    <h2 class="titulo-pesquisar-eventos">Pesquisar eventos</h2>
+    <h2 class="titulo-pesquisar-eventos" style="margin-left: 15px;">Pesquisar eventos</h2>
     @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
     {
         <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
     }
 
-    <div class="card mb-4">
+    <div class="card mb-4" style="border:none;">
         <div class="card-body card-pesquisar-eventos">
             <form method="get" action="@Url.Action("Search")" class="row g-3">
                 <div class="col-md-4">
-                    <label for="estado" class="form-label texto-card-pesquisar-eventos">Estado*</label>
-                   
-                        <input type="text" name="name" value="" />
+                    <label for="estado" class="form-label texto-card-pesquisar-eventos ">Estado*</label>
+
+                    @* <input type="text" name="name" value="" class="campoform botaogps form-control" /> *@
+
+                    <select class="campoform botaogps form-control" name="name" required>
+                        <option value="" disabled selected></option>
+                    </select>
 
                         <!-- Adicione as opções de estados -->
                   
                 </div>
                 <div class="col-md-4">
                     <label for="cidade" class="form-label texto-card-pesquisar-eventos">Cidade</label>
-                    
-                        <input type="text" name="name" value="" />
+
+                    @* <input type="text" name="name" value="" class="campoform botaogps form-control" /> *@
+
+                    <select class="campoform botaogps form-control" name="name" required>
+                        <option value="" disabled selected></option>
+                    </select>
 
                         <!-- Adicione as opções de cidades -->
                    
                 </div>
                 <div class="col-md-4">
                     <label for="bairro" class="form-label texto-card-pesquisar-eventos">Bairro</label>
-                    <input type="text" name="bairro" class="form-control" />
+                    @* <input type="text" name="bairro" class="campoform botaogps form-control" /> *@
+                    <select class="campoform botaogps form-control" name="bairro" >
+                        <option value="" disabled selected></option>
+                    </select>
                 </div>
                 <div class="col-12 botoes-pesquisar-eventos">
-                    <button type="submit" class="btn btn-primary texto-card-pesquisar-eventos botao-buscar">Buscar</button>
-                    <button type="button" class="texto-botao-localizacao btn">
+                    <button type="submit" class="btn btn-primary mt-5 mb-4 texto-card-pesquisar-eventos botao-buscar botaogps">Buscar</button>
+                    @* <button type="button" class="texto-botao-localizacao btn">
                         <div>Pesquisar por minha localização atual</div>
                         <div><img class="icone-localizacao" src="../css/Images/my_location.png"></div>
-                    </button>
+                    </button> *@
                 </div>
             </form>
 
         </div>
     </div>
-
-    <!--  exibição em estilo de lista -->
-    <h2 class="titulo-resultado-pesquisa">Eventos</h2>
-
 
     <div class="list-group">
         @foreach (var item in Model)
@@ -187,26 +196,28 @@
                         </div>
                         <div class="col-12 col-sm-9 col-md-6 coluna-informacoes-evento1">
                             <h1 class="titulo-evento1">@item.TituloEvento</h1>
-                            <p class="texto-evento1">
-                                @item.DataInicio.ToString("dddd"), @item.HorarioInicio.ToString(@"hh\:mm") -
-                                @item.DataEncerramento.ToString("dddd"), @item.HorarioEncerramento.ToString(@"hh\:mm")<br>
-                                @item.NomeParoquia, @item.Logradouro, @item.Numero - @item.Bairro, @item.Cidade - @item.Estado
+                                <h4 class="poppins-semibold" style="margin-top: 10px;">@item.NomeParoquia</h4><br />
+                            <p class="texto-evento1" style="margin-top: -25px;">
+                                @item.Logradouro, @item.Numero - @item.Bairro, @item.Cidade - @item.Estado
                             </p>
-
+                            <p class="poppins-medium fs-5">
+                                @item.DataInicio.ToString("dddd", new CultureInfo("pt-BR")), @item.HorarioInicio.ToString(@"hh\:mm") -
+                                @item.DataEncerramento.ToString("dddd", new CultureInfo("pt-BR")), @item.HorarioEncerramento.ToString(@"hh\:mm")
+                            </p>
 
                             <a href="https://www.google.com/maps/search/?api=1&query=@(item.Logradouro), @(item.Numero), @(item.Bairro), @(item.Cidade), @(item.Estado)"
                                target="_blank"
-                               class="btn btn-outline-primary botao-ver-no-mapa">
-                                Ver no mapa <img class="icone-localizacao" src="../css/Images/my_location.png">
+                               class="btn btn-outline-primary botao-ver-no-mapa poppins-medium fs-6">
+                                Ver no mapa <i class="icone-btn-ver-mapa fas fa-location fs-6"></i>
                             </a>
 
                         </div>
-                        <div class="col-12 col-md-4 coluna-banner-evento1">
+@*                         <div class="col-12 col-md-4 coluna-banner-evento1">
                             @if (!string.IsNullOrEmpty(item.BannerPath))
                             {
                                 <img class="banner-evento1 img-fluid" src="@Url.Content("~/uploads/" + item.BannerPath)" alt="Banner do Evento" width="276" height="276">
                             }
-                        </div>
+                        </div> *@
                     </div>
                 </div>
             </div>
@@ -215,7 +226,7 @@
     </div>
 
     <!-- Link para cadastrar evento -->
-    <p class="link-cadastre-aqui poppins-medium">Não encontrou evento da sua igreja? <a href="@Url.Action("Create", "Evento")" class="link-cadastre-aqui-resultados">Cadastre aqui</a></p>
+    <p class="link-cadastre-aqui poppins-medium" style="margin-top: -10px;">Não encontrou evento da sua igreja? <a href="@Url.Action("Create", "Evento")" class="link-cadastre-aqui-resultados">Cadastre aqui</a></p>
 </div>
 
 <script src="~/js/site.js"></script>

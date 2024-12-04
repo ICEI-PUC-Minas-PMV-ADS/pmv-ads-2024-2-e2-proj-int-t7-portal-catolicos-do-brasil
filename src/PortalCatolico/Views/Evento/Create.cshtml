@@ -7,12 +7,12 @@
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <link href="~/css/site.css" rel="stylesheet" />
 
-<div class="container mt-5">
+<div class="container mt-5 poppins-regular">
     <form asp-action="Create" method="post" enctype="multipart/form-data">
         <!-- Informações da Paróquia -->
         <div class="card mb-4 card1-paroquias">
             <div class="card-header header-cardparoquias1">
-                <h5 class="titulo-cardparoquias1">Informações da Paróquia</h5>
+                <h5 class="titulo-cardparoquias1 ">Informações da Paróquia</h5>
             </div>
             <div class="card-body body-cardparoquias1">
                 <div class="form-row">
@@ -126,29 +126,31 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label class="textocardinformacoesevento" for="DataEncerramento">Data de encerramento</label>
-                        <input type="date" class="form-control botoesdocadastrodeevento" id="DataEncerramento" name="DataEncerramento">
+                        <label asp-for="DataEncerramento" class="textocardinformacoesevento">Data encerramento</label>
+                        <input asp-for="DataEncerramento" type="date" class="form-control botoesdocadastrodeevento" />
+                        <span asp-validation-for="DataEncerramento" class="text-danger"></span>
                     </div>
                     <div class="form-group col-md-6">
-                        <label class="textocardinformacoesevento" for="HoraEncerramento">Horário de encerramento</label>
-                        <input type="time" class="form-control botoesdocadastrodeevento" id="HoraEncerramento" name="HoraEncerramento">
+                        <label asp-for="HorarioEncerramento" class="textocardinformacoesevento">Horario encerramento</label>
+                        <input asp-for="HorarioEncerramento" type="time" class="form-control botoesdocadastrodeevento" />
+                        <span asp-validation-for="HorarioEncerramento" class="text-danger"></span>
                     </div>
                 </div>
 
-                <div class="form-row">
+                @* <div class="form-row">
                     <div class="form-group col-md-12">
                         <label asp-for="Banner" class="textocardinformacoesevento"></label>
                         <input asp-for="Banner" type="file" name="file" class="form-control-file" />
                         <p class="textobannereventos">Formato PNG/resolução 276x276px / tamanho máximo do arquivo: 1MB</p>
                         <span asp-validation-for="Banner" class="text-danger"></span>
                     </div>
-                </div>
+                </div> *@
             </div>
         </div>
 
         <!-- Botão de enviar -->
         <div class="text-left">
-            <button type="submit" class="btn btn-primary botaoenviarformularioeventos">ENVIAR</button>
+            <button type="submit" class="btn btn-primary botaoenviarformularioeventos poppins-semibold">ENVIAR</button>
         </div>
     </form>
 </div>

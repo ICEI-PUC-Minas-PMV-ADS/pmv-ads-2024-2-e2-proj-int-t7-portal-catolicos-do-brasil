@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace PortalCatolico.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241203171846_M01-NewDatabase")]
-    partial class M01NewDatabase
+    [Migration("20241204032949_M02-EditTableEvento")]
+    partial class M02EditTableEvento
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,14 +33,6 @@ namespace PortalCatolico.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("Bairro")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Banner")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("BannerPath")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -71,11 +63,13 @@ namespace PortalCatolico.Migrations
                         .HasMaxLength(2)
                         .HasColumnType("nvarchar(2)");
 
-                    b.Property<TimeSpan>("HorarioEncerramento")
-                        .HasColumnType("time");
+                    b.Property<string>("HorarioEncerramento")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<TimeSpan>("HorarioInicio")
-                        .HasColumnType("time");
+                    b.Property<string>("HorarioInicio")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Logradouro")
                         .IsRequired()
@@ -155,7 +149,7 @@ namespace PortalCatolico.Migrations
 
             modelBuilder.Entity("PortalCatolicoBrasil.Models.IgrejaMissaViewModel", b =>
                 {
-                    b.Property<int>("IgrejaId")
+                    b.Property<int?>("IgrejaId")
                         .HasColumnType("int");
 
                     b.HasIndex("IgrejaId");
@@ -172,11 +166,9 @@ namespace PortalCatolico.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MissaId"));
 
                     b.Property<string>("DiaSemana")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Hora")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IgrejaId")
@@ -195,11 +187,9 @@ namespace PortalCatolico.Migrations
                         .HasColumnType("date");
 
                     b.Property<string>("Descricao")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Data");
@@ -211,9 +201,7 @@ namespace PortalCatolico.Migrations
                 {
                     b.HasOne("PortalCatolicoBrasil.Models.Igreja", "Igreja")
                         .WithMany()
-                        .HasForeignKey("IgrejaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("IgrejaId");
 
                     b.Navigation("Igreja");
                 });
