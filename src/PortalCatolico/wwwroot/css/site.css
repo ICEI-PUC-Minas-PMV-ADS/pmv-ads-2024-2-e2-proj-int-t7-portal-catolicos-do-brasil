@@ -645,17 +645,17 @@ form {
     align-items: center;
     display: flex;
     padding: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
     border-radius: 15px !important;
 }
 
-.Drog {
+/*.Drog {
     padding-left: 130px;
 }
 
 .Calc {
     padding-left: 130px;
-}
+}*/
 
 .aqui {
     text-decoration: none;
@@ -1510,6 +1510,11 @@ form {
 /*-----------------FIM SEGUNDA PUBLICACAO-----------------*/
 
 /*-----------------INICIO PAGINA DE EVENTOS-----------------*/
+.container-principal {
+    width: 81%;
+    margin: 0 auto;
+}
+
 .container-eventos {
     display: flex;
     flex-wrap: wrap;
@@ -1652,6 +1657,22 @@ form {
 .mes-evento1 {
     font-size: 20px;
     color: rgba(30, 30, 30, 1);
+}
+
+.anuncio-resultado-evento {
+    display: flex;
+    align-items: center;
+    border-radius: 15px !important;
+    margin: -75px auto 30px auto;
+    width: 100%;
+    padding: 10px 0;
+    justify-content: space-evenly;
+    background-color: #E6F1FF;
+    z-index: 1000;
+    position: sticky;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 30px;
 }
 /*-----------------FIM PAGINA DE EVENTOS-----------------*/
 
