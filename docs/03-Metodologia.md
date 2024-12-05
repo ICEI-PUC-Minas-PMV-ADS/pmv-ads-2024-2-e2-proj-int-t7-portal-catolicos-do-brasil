@@ -65,6 +65,9 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 <h5>Etapa 3</h5>
 <img src="../docs/img/Etapa3.jpg">
 
+<h5>Etapa 4 e 5</h5>
+<img src="../docs/img/Kanban Etapa 5.png">
+
 ### Ferramentas
 
 As ferramentas empregadas no projeto são:
@@ -75,6 +78,7 @@ As ferramentas empregadas no projeto são:
 	<li><strong>Ferramenta de Hospedagem:</strong></li>
 	<li><strong>Quadro de Tasks:</strong> GitHub Projects.</li>
 </ul>
+
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
