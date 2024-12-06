@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using PortalCatolicoBrasil.Interfaces;
-using PortalCatolicoBrasil.Service;
+using PortalCatolico.Interfaces;
+using PortalCatolico.Service;
 
-namespace PortalCatolicoBrasil
+namespace PortalCatolico
 {
     public class Program
     {

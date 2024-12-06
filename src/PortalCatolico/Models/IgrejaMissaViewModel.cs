@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace PortalCatolicoBrasil.Models
+namespace PortalCatolico.Models
 {
     public class IgrejaMissaViewModel
     {

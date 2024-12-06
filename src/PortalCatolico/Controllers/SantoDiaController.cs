@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using static PortalCatolicoBrasil.Controllers.LiturgiaController;
+using static PortalCatolico.Controllers.LiturgiaController;
 
-namespace PortalCatolicoBrasil.Controllers
+namespace PortalCatolico.Controllers
 {
     public class SantoDiaController : Controller
     {

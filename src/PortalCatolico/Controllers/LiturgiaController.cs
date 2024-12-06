@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.DotNet.MSIdentity.Shared;
 using Newtonsoft.Json;
-using static PortalCatolicoBrasil.Controllers.LiturgiaController;
+using static PortalCatolico.Controllers.LiturgiaController;
 
-namespace PortalCatolicoBrasil.Controllers
+namespace PortalCatolico.Controllers
 {
     public class LiturgiaController : Controller
     {

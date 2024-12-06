@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace PortalCatolicoBrasil.Controllers
+namespace PortalCatolico.Controllers
 {
     public class APIEstadoCidadeController : Controller
     {

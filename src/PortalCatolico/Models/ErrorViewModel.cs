@@ -1,4 +1,4 @@
-namespace PortalCatolicoBrasil.Models
+namespace PortalCatolico.Models
 {
     public class ErrorViewModel
     {

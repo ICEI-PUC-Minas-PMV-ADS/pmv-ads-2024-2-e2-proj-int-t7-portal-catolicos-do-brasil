@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
-namespace PortalCatolicoBrasil.Models
+namespace PortalCatolico.Models
 {
     [Table("Igreja")]
     public class Igreja

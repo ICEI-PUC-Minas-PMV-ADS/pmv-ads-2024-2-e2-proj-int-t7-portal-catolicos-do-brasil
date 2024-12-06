@@ -1,6 +1,6 @@
-using PortalCatolicoBrasil.Interfaces;
+using PortalCatolico.Interfaces;
 
-namespace PortalCatolicoBrasil.Service
+namespace PortalCatolico.Service
 {
     public class LiturgiaService : ILiturgiaService
     {

@@ -1914,13 +1914,14 @@ form {
 }
 
 .alert-nenhuma {
-    background-color: rgb(255, 220, 124, 0.25);
-    height: 45px;
+    display: flex;
+    background-color: rgb(255, 220, 124, 0.18);
+    height: auto;
     margin: 20px 15px 40px 15px;
     padding: 10px;
-    display: flex;
-    align-content: center;
-    justify-content:flex-start;
+
+    align-items: center;
+    justify-content:center;
     border-radius: 10px;
 }
 
@@ -1929,8 +1930,9 @@ form {
 }
 
 .nenhuma {
-    height: 30px;
     text-align: center;
+    line-height: 24px;
+    margin: 0 auto;
 }
 
 .cadastro-igreja {

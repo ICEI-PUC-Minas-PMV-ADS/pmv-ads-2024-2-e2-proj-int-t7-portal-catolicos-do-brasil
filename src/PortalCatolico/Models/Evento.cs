@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.RegularExpressions;
 
-namespace PortalCatolicoBrasil.Models
+namespace PortalCatolico.Models
 {
     [Table("Eventos")]
     public class Evento

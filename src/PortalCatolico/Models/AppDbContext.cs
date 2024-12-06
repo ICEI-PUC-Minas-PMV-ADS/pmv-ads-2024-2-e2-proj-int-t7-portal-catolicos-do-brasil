@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PortalCatolicoBrasil.Models;
+using PortalCatolico.Models;
 
 public class AppDbContext : DbContext
 {

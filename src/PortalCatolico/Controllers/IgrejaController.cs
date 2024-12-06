@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using PortalCatolicoBrasil.Models;
+using PortalCatolico.Models;
 
-namespace PortalCatolicoBrasil.Controllers
+namespace PortalCatolico.Controllers
 {
     public class IgrejaController : Controller
     {
