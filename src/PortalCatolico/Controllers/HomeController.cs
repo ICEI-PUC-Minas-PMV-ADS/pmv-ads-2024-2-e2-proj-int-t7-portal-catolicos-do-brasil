@@ -60,7 +60,7 @@ namespace PortalCatolico.Controllers
             return View();
         }
 
-        public IActionResult Eventos()
+        public IActionResult Evento()
         {
             return View();
         }

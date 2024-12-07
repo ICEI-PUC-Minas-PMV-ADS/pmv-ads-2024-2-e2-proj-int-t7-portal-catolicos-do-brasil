@@ -249,9 +249,9 @@ footer {
         font-size: 14px;
     }
 
-        .rodape h4 {
-            font-size: 18px;
-        }
+    .rodape h4 {
+        font-size: 18px;
+    }
 
     .direitos {
         font-size: 14px;
@@ -383,9 +383,9 @@ footer {
         font-size: 14px;
     }
 
-        .rodape h4 {
-            font-size: 16px;
-        }
+    .rodape h4 {
+        font-size: 16px;
+    }
 
     .imagemRodape {
         width: 100%
@@ -532,9 +532,9 @@ footer {
         font-size: 20px;
     }
 
-        .rodape h4 {
-            font-size: 25px;
-        }
+    .rodape h4 {
+        font-size: 25px;
+    }
 
     .imagemRodape {
         width: 100%;
@@ -668,9 +668,9 @@ form {
     text-decoration: none;
 }
 
-    .leia-mais:hover {
-        color: dodgerblue !important;
-    }
+.leia-mais:hover {
+    color: dodgerblue !important;
+}
 
 
 @media (max-width: 1025px) {
@@ -770,9 +770,9 @@ form {
         text-decoration: none;
     }
 
-        .leia-mais:hover {
-            color: dodgerblue !important;
-        }
+    .leia-mais:hover {
+        color: dodgerblue !important;
+    }
 }
 
 
@@ -878,9 +878,9 @@ form {
         text-decoration: none;
     }
 
-        .leia-mais:hover {
-            color: dodgerblue !important;
-        }
+    .leia-mais:hover {
+        color: dodgerblue !important;
+    }
 }
 
 
@@ -1017,9 +1017,9 @@ form {
         text-decoration: none;
     }
 
-        .leia-mais:hover {
-            color: dodgerblue !important;
-        }
+    .leia-mais:hover {
+        color: dodgerblue !important;
+    }
 }
 
 
@@ -1048,37 +1048,37 @@ form {
     box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);
 }
 
-    .btn--group > button {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        transition: all 0.25s ease-in-out;
-        border: none;
-        outline: none;
-        position: relative;
-        background-color: #F7F7F7;
-    }
+.btn--group > button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    border: none;
+    outline: none;
+    position: relative;
+    background-color: #F7F7F7;
+}
 
-    .btn--group .active {
-        background-color: var(--button-background);
-        color: var(--button-color);
-    }
+.btn--group .active {
+    background-color: var(--button-background);
+    color: var(--button-color);
+}
 
-    .btn--group > button:hover {
-        background: #E9F2FF;
-        color: var(--button-color);
-    }
+.btn--group > button:hover {
+    background: #E9F2FF;
+    color: var(--button-color);
+}
 
-    .btn--group > button:not(:last-child):after {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 2px;
-        right: 0px;
-        z-index: 1;
-    }
+.btn--group > button:not(:last-child):after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    right: 0px;
+    z-index: 1;
+}
 
 .liturgia-container {
     display: flex;
@@ -1273,7 +1273,7 @@ form {
     margin-bottom: 30px;
 }
 
-.hr-santodia{
+.hr-santodia {
     border: 1px solid;
 }
 /*-----------------FIM SANTO DO DIA-----------------*/
@@ -1298,9 +1298,9 @@ form {
     text-decoration: none;
 }
 
-    .leia-mais:hover {
-        color: dodgerblue !important;
-    }
+.leia-mais:hover {
+    color: dodgerblue !important;
+}
 
 .margem-titulo {
     margin-top: 15px;
@@ -1452,18 +1452,18 @@ form {
     margin-top: 10px;
 }
 
-    .botao-voltar::before {
-        content: '\2190';
-        margin-right: 10px;
-    }
+.botao-voltar::before {
+    content: '\2190';
+    margin-right: 10px;
+}
 
-    .botao-voltar:hover {
-        background-color: #e0e0e0;
-    }
+.botao-voltar:hover {
+    background-color: #e0e0e0;
+}
 
-    .botao-voltar:visited, .botao-voltar:link {
-        color: black; /* Garante que a cor do texto seja sempre preta */
-    }
+.botao-voltar:visited, .botao-voltar:link {
+    color: black; /* Garante que a cor do texto seja sempre preta */
+}
 /*-----------------FIM PRIMEIRA PUBLICACAO-----------------*/
 
 
@@ -1589,7 +1589,7 @@ form {
 }
 
 .data-evento1 {
-    font-size: 64px;
+    font-size: 50px;
     font-family: Poppins;
     color: rgba(30, 30, 30, 1);
 }
@@ -1620,7 +1620,7 @@ form {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    width: 200px !important;
+    width: 250px !important;
     height: 45.86px !important;
 }
 
@@ -1643,10 +1643,9 @@ form {
 
 .coluna-informacoes-evento1 {
     align-content: center;
-    justify-content: space-between;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    padding: 0;
 }
 
 .titulo-evento1 {
@@ -1655,7 +1654,7 @@ form {
 }
 
 .mes-evento1 {
-    font-size: 20px;
+    font-size: 35px;
     color: rgba(30, 30, 30, 1);
 }
 
@@ -1919,9 +1918,8 @@ form {
     height: auto;
     margin: 20px 15px 40px 15px;
     padding: 10px;
-
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     border-radius: 10px;
 }
 
@@ -1995,13 +1993,27 @@ form {
     border: none;
 }
 
+.input-border-none-radius {
+    border-radius: 50px !important;
+    border: none;
+}
+    /*
+.input-border-none-radius::placeholder {
+    color: #bababa;
+}*/
+
+.input-border-none-radius::-webkit-input-placeholder { /* Para navegadores baseados em WebKit (Chrome, Safari) */
+    color: #ff5733;
+    opacity: 1; /* Controle de opacidade (1 é totalmente visível) */
+}
+
 .input-cep {
     border-radius: 50px !important;
     border: none;
     width: 180px;
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
     color: #bababa;
 }
 
@@ -2030,7 +2042,7 @@ form {
     background-color: transparent;
     border: none;
     color: #1E1E1E;
-    outline:none;
+    outline: none;
     width: 20%;
     font-size: 21px;
 }
@@ -2092,7 +2104,5 @@ form {
     .cadastro-igreja {
         width: 90%;
     }
-
-    
 }
 /*-----------------FIM CADASTRO IGREJAS E MISSAS-----------------*/

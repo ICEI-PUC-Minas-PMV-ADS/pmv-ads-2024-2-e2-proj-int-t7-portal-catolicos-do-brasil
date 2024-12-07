@@ -1,157 +1,121 @@
-﻿@model PortalCatolico.Models.Evento
+﻿@model PortalCatolico.Models.EventoViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Cadastro de Evento";
 }
 
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<link href="~/css/site.css" rel="stylesheet" />
-
-<div class="container mt-5 poppins-regular">
-    <form asp-action="Create" method="post" enctype="multipart/form-data">
-        <!-- Informações da Paróquia -->
-        <div class="card mb-4 card1-paroquias">
-            <div class="card-header header-cardparoquias1">
-                <h5 class="titulo-cardparoquias1 ">Informações da Paróquia</h5>
-            </div>
-            <div class="card-body body-cardparoquias1">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label asp-for="CNPJ" class="textocardinformacoesparoquia"></label>
-                        <input asp-for="CNPJ" class="form-control botoesinformacoesparoquia" placeholder="000.000.000-00" />
-                        <span asp-validation-for="CNPJ" class="text-danger"></span>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label asp-for="NomeParoquia" class="textocardinformacoesparoquia">Nome Paróquia</label>
-                        <input asp-for="NomeParoquia" class="form-control botoesinformacoesparoquia" placeholder="Digite o nome da paróquia" />
-                        <span asp-validation-for="NomeParoquia" class="text-danger"></span>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label asp-for="Telefone" class="textocardinformacoesparoquia"></label>
-                        <input asp-for="Telefone" type="tel" class="form-control botoesinformacoesparoquia" placeholder="Digite o telefone" />
-                        <span asp-validation-for="Telefone" class="text-danger"></span>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label asp-for="Email" class="textocardinformacoesparoquia"></label>
-                        <input asp-for="Email" type="email" class="form-control botoesinformacoesparoquia" placeholder="Digite o e-mail" />
-                        <span asp-validation-for="Email" class="text-danger"></span>
-                    </div>
-                </div>
-            </div>
+<div class="cadastro-igreja">
+    @if (TempData["AlertMessage"] != null)
+    {
+        <div class="alert alert-success alert-div poppins-medium">
+            @TempData["AlertMessage"]
         </div>
+    }
 
-        <!-- Informações do Evento -->
-        <div class="card mb-4 cardeventos">
-            <div class="card-header header-cardeventos">
-                <h5 class="titulo-card-eventos">Informações do Evento</h5>
+    <div class="cards">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="igreja-card">
+                <h3 class="poppins-semibold">Informações da Igreja</h3>
+                <div class="card-info-igreja row mt-3 pt-3 px-3 pb-4 bg-light poppins-regular">
+                    <div class="form-group">
+                        <label asp-for="Evento.CNPJ" class="poppins-medium fs-5 control-label">CNPJ*</label>
+                        <input asp-for="Evento.CNPJ" name="viewModel.Evento.CNPJ" class="input-cnpj form-control" type="text" id="cnpj" maxlength="18" placeholder="00.000.000/0000-00" autocomplete="off" />
+                        <span asp-validation-for="Evento.CNPJ" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Evento.NomeParoquia" class="poppins-medium fs-5 control-label">Nome da igreja*</label>
+                        <input asp-for="Evento.NomeParoquia" name="viewModel.Evento.NomeParoquia" class="input-border-none-radius form-control" placeholder="Digite o nome" autocomplete="off" />
+                        <span asp-validation-for="Evento.NomeParoquia" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-sm-5">
+                        <label asp-for="Evento.Telefone" class="poppins-medium fs-5 control-label">Telefone*</label>
+                        <input asp-for="Evento.Telefone" name="viewModel.Evento.Telefone" class="input-border-none-radius form-control" type="tel" id="telefone" maxlength="15" placeholder="(00) 00000-0000" />
+                        <span asp-validation-for="Evento.Telefone" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-sm-7">
+                        <label asp-for="Evento.Email" class="poppins-medium fs-5 control-label">E-mail*</label>
+                        <input asp-for="Evento.Email" name="viewModel.Evento.Email" class="input-border-none-radius form-control" placeholder="Digite o e-mail" autocomplete="off" />
+                        <span asp-validation-for="Evento.Email" class="text-danger"></span>
+                    </div>
+                    <p class=" text-danger mt-2"><span class="fs-5">*</span><span class="fs-6"> Campos obrigatórios</span></p>
+                </div>
             </div>
-            <div class="card-body body-cardeventos">
-                <div class="form-row">
-                    <div class="form-group col-md-12">
-                        <label asp-for="TituloEvento" class="textocardinformacoesevento">Titulo Evento</label>
-                        <input asp-for="TituloEvento" class="form-control botoesdocadastrodeevento" placeholder="Digite o título do evento" />
-                        <span asp-validation-for="TituloEvento" class="text-danger"></span>
+            <div class="endereco-card">
+                <h3 class="poppins-semibold">Informações do Evento</h3>
+                <div class="card-end-igreja row mt-3 pt-3 px-3 pb-4 bg-light poppins-regular">
+                    <div class="form-group">
+                        <label asp-for="Evento.TituloEvento" class="poppins-medium fs-5 control-label">Título do Evento*</label>
+                        <input asp-for="Evento.TituloEvento" name="viewModel.Evento.TituloEvento" class="input-border-none-radius form-control" placeholder="Título do Evento" />
+                        <span asp-validation-for="Evento.TituloEvento" class="text-danger"></span>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label asp-for="CEP" class="textocardinformacoesevento"></label>
-                        <input asp-for="CEP" class="form-control botoesdocadastrodeevento" placeholder="Digite o CEP" />
-                        <span asp-validation-for="CEP" class="text-danger"></span>
-                        <label asp-for="Numero" class="textocardinformacoesevento"></label>
-                        <input asp-for="Numero" class="form-control botoesdocadastrodeevento" />
-                        <span asp-validation-for="Numero" class="text-danger"></span>
+                    <div class="form-group">
+                        <label asp-for="Evento.CEP" class="poppins-medium fs-5 control-label">CEP*</label>
+                        <input asp-for="Evento.CEP" name="viewModel.Evento.CEP" class="input-cep form-control" type="text" id="cep" maxlength="9" placeholder="00000-000" autocomplete="off" />
+                        <span asp-validation-for="Evento.CEP" class="text-danger"></span>
                     </div>
-                    <div class="form-group col-md-8">
-                        <label asp-for="Logradouro" class="textocardinformacoesevento"></label>
-                        <input asp-for="Logradouro" class="form-control botoesdocadastrodeevento" placeholder="Rua, Avenida, Travessa, etc." />
-                        <span asp-validation-for="Logradouro" class="text-danger"></span>
-
-                    </div>
-                </div>
-
-
-                <div class="form-row">
-                   @*  <div class="form-group col-md-4">
-                        <label asp-for="Estado" class="textocardinformacoesevento"></label>
-                        <select asp-for="Estado" class="form-control botoesdocadastrodeevento" id="estado">
-                            <option selected>Escolher...</option>
-                            <!-- Opções de estados aqui -->
-
-                        </select>
-                        <span asp-validation-for="Estado" class="text-danger"></span>
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label asp-for="Cidade" class="textocardinformacoesevento"></label>
-                        <select asp-for="Cidade" class="form-control botoesdocadastrodeevento" id="cidade">
-                            <option selected>Escolher...</option>
-                            <!-- Opções de cidades aqui -->
-
-                        </select>
-                        <span asp-validation-for="Cidade" class="text-danger"></span>
-                    </div> *@
-                    <div class="form-group col-sm-4">
-                        <label asp-for="Estado" class="poppins-medium fs-5 control-label">Estado*</label>
-                        <select asp-for="Estado" name="Estado" id="EstadoAPI" class="input-estado form-control">
-                        </select>
-                        <input type="hidden" id="estadoIgreja" name="viewModel.Igreja.Estado" />
-                        <span asp-validation-for="Estado" class="text-danger"></span>
+                    <div class="form-group">
+                        <label asp-for="Evento.Logradouro" class="poppins-medium fs-5 control-label">Logradouro*</label><span class="fs-6"> (Rua, Avenida, Travessa, etc.)</span>
+                        <input asp-for="Evento.Logradouro" name="viewModel.Evento.Logradouro" class="input-border-none-radius form-control" placeholder="Digite o endereço com número" autocomplete="off" />
+                        <span asp-validation-for="Evento.Logradouro" class="text-danger"></span>
                     </div>
                     <div class="form-group col-sm-4">
-                        <label asp-for="Cidade" class="poppins-medium fs-5 control-label">Cidade*</label>
-                        <select asp-for="Cidade" name="Cidade" id="CidadeAPI" class="input-cidade form-control">
-                            <option value="" disabled selected>Selecione a cidade</option>
+                        <label asp-for="Evento.Estado" class="poppins-medium fs-5 control-label">Estado*</label>
+                        <input type="hidden" id="estadoEventoHidden" name="viewModel.Evento.Estado">
+                        <select asp-for="Evento.Estado" name="viewModel.Evento.Estado" class="estado-select input-border-none-radius form-control" data-cidade="CidadeIgreja" data-hidden="estadoEventoHidden">
+                            <option disabled selected>Selecione o estado</option>
                         </select>
-                        <span asp-validation-for="Cidade" class="text-danger"></span>
+                        <span asp-validation-for="Evento.Estado" class="text-danger"></span>
                     </div>
-                    <div class="form-group col-md-4">
-                        <label asp-for="Bairro" class="textocardinformacoesevento"></label>
-                        <input asp-for="Bairro" class="form-control botoesdocadastrodeevento" placeholder="Digite o bairro" />
-                        <span asp-validation-for="Bairro" class="text-danger"></span>
+                    <div class="form-group col-sm-4">
+                        <label asp-for="Evento.Cidade" class="poppins-medium fs-5 control-label">Cidade*</label>
+                        <select asp-for="Evento.Cidade" name="viewModel.Evento.Cidade" id="CidadeIgreja" class="cidade-select input-border-none-radius form-control">
+                            <option disabled selected>Selecione a cidade</option>
+                        </select>
+                        <span asp-validation-for="Evento.Cidade" class="text-danger"></span>
                     </div>
+                    <div class="form-group col-sm-4">
+                        <label asp-for="Evento.Bairro" class="poppins-medium fs-5 control-label">Bairro*</label>
+                        <input asp-for="Evento.Bairro" name="viewModel.Evento.Bairro" class="input-border-none-radius form-control" placeholder="Digite o bairro corretamente" autocomplete="off" />
+                        <span asp-validation-for="Evento.Bairro" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label asp-for="Evento.DataInicio" class="poppins-medium fs-5 control-label">Data de Início*</label>
+                        <input type="date" asp-for="Evento.DataInicio" name="viewModel.Evento.DataInicio" class="input-border-none-radius form-control" />
+                        <span asp-validation-for="Evento.DataInicio" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label asp-for="Evento.HorarioInicio" class="poppins-medium fs-5 control-label">Horário de Início*</label>
+                        <input type="time" asp-for="Evento.HorarioInicio" name="viewModel.Evento.HorarioInicio" class="input-border-none-radius form-control" />
+                        <span asp-validation-for="Evento.HorarioInicio" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label asp-for="Evento.DataEncerramento" class="poppins-medium fs-5 control-label">Data de Encerramento*</label>
+                        <input type="date" asp-for="Evento.DataEncerramento" name="viewModel.Evento.DataEncerramento" class="input-border-none-radius form-control" />
+                        <span asp-validation-for="Evento.DataEncerramento" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label asp-for="Evento.HorarioEncerramento" class="poppins-medium fs-5 control-label">Horário de Encerramento*</label>
+                        <input type="time" asp-for="Evento.HorarioEncerramento" name="viewModel.Evento.HorarioEncerramento" class="input-border-none-radius form-control" />
+                        <span asp-validation-for="Evento.HorarioEncerramento" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Evento.LinkEvento" class="poppins-medium fs-5 control-label">Link do Evento</label><span class="fs-6"> Opcional</span>
+                        <input type="text" asp-for="Evento.LinkEvento" name="viewModel.Evento.LinkEvento" class="input-border-none-radius form-control" placeholder="Link do Evento " />
+                        <span asp-validation-for="Evento.LinkEvento" class="text-danger"></span>
+                    </div>
+                    <p class=" text-danger mt-2"><span class="fs-5">*</span><span class="fs-6"> Campos obrigatórios</span></p>
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label asp-for="DataInicio" class="textocardinformacoesevento">Data início</label>
-                        <input asp-for="DataInicio" type="date" class="form-control botoesdocadastrodeevento" />
-                        <span asp-validation-for="DataInicio" class="text-danger"></span>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label asp-for="HorarioInicio" class="textocardinformacoesevento">Horario início</label>
-                        <input asp-for="HorarioInicio" type="time" class="form-control botoesdocadastrodeevento" />
-                        <span asp-validation-for="HorarioInicio" class="text-danger"></span>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label asp-for="DataEncerramento" class="textocardinformacoesevento">Data encerramento</label>
-                        <input asp-for="DataEncerramento" type="date" class="form-control botoesdocadastrodeevento" />
-                        <span asp-validation-for="DataEncerramento" class="text-danger"></span>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label asp-for="HorarioEncerramento" class="textocardinformacoesevento">Horario encerramento</label>
-                        <input asp-for="HorarioEncerramento" type="time" class="form-control botoesdocadastrodeevento" />
-                        <span asp-validation-for="HorarioEncerramento" class="text-danger"></span>
-                    </div>
-                </div>
-
-                @* <div class="form-row">
-                    <div class="form-group col-md-12">
-                        <label asp-for="Banner" class="textocardinformacoesevento"></label>
-                        <input asp-for="Banner" type="file" name="file" class="form-control-file" />
-                        <p class="textobannereventos">Formato PNG/resolução 276x276px / tamanho máximo do arquivo: 1MB</p>
-                        <span asp-validation-for="Banner" class="text-danger"></span>
-                    </div>
-                </div> *@
             </div>
-        </div>
-
-        <!-- Botão de enviar -->
-        <div class="text-left">
-            <button type="submit" class="btn btn-primary botaoenviarformularioeventos poppins-semibold">ENVIAR</button>
-        </div>
-    </form>
+            <div class="form-group">
+                <button type="submit" value="Create" class="btn btn-primary btn-cadastrar-igreja poppins-medium fs-5">Cadastrar</button>
+            </div>
+        </form>
+    </div>
 </div>
-<script src="~/js/site.js"></script>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -56,15 +56,16 @@
                     </div>
                     <div class="form-group col-sm-4">
                         <label asp-for="Igreja.Estado" class="poppins-medium fs-5 control-label">Estado*</label>
-                        <select asp-for="Igreja.Estado" name="Igreja.Estado" id="EstadoAPI" class="input-estado form-control">
+                        <select asp-for="Igreja.Estado" name="Igreja.Estado" class="estado-select input-estado form-control" data-cidade="CidadeIgreja" data-hidden="estadoIgrejaHidden">
+                            <option disabled selected>Selecione o estado</option>
                         </select>
-                        <input type="hidden" id="estadoIgreja" name="viewModel.Igreja.Estado" />
+                        <input type="hidden" id="estadoIgrejaHidden" name="viewModel.Igreja.Estado">
                         <span asp-validation-for="Igreja.Estado" class="text-danger"></span>
                     </div>
                     <div class="form-group col-sm-4">
                         <label asp-for="Igreja.Cidade" class="poppins-medium fs-5 control-label">Cidade*</label>
-                        <select asp-for="Igreja.Cidade" name="viewModel.Igreja.Cidade" id="CidadeAPI" class="input-cidade form-control">
-                            <option value="" disabled selected>Selecione a cidade</option>
+                        <select asp-for="Igreja.Cidade" name="viewModel.Igreja.Cidade" id="CidadeIgreja" class="cidade-select input-cidade form-control">
+                            <option disabled selected>Selecione a cidade</option>
                         </select>
                         <span asp-validation-for="Igreja.Cidade" class="text-danger"></span>
                     </div>

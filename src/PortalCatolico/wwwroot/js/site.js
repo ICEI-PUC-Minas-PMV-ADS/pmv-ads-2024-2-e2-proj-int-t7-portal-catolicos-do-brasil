@@ -174,109 +174,147 @@ function addBorderIcon() {
 
 
 
-/*-----------------INICIO CREATE IGREJA-----------------*/
+/*-----------------INÍCIO GET ESTADOS E CIDADE API-----------------*/
 async function carregarEstadosAPI() {
     try {
         const response = await $.getJSON("/APIEstadoCidade/GetEstadosAPI");
         response.sort((a, b) => a.nome.localeCompare(b.nome));
 
-        $('#EstadoAPI').empty().append('<option value="" disabled selected>Selecione o estado</option>');
-        response.forEach(estado => {
-            $('#EstadoAPI').append(`<option value="${estado.id}" data-nome="${estado.nome}" data-sigla="${estado.sigla}">${estado.nome}</option>`);
+        // Para cada seletor de estado na página
+        $('.estado-select').each(function () {
+            const $estadoSelect = $(this);
+            const cidadeSelectId = $estadoSelect.data('cidade');
+            const hiddenFieldId = $estadoSelect.data('hidden');
+
+            $estadoSelect.empty().append('<option value="" disabled selected>Selecione o estado</option>');
+            response.forEach(estado => {
+                $estadoSelect.append(`<option value="${estado.id}" data-nome="${estado.nome}" data-sigla="${estado.sigla}">${estado.nome}</option>`);
+            });
+
+            // Evento de mudança no estado
+            $estadoSelect.change(function () {
+                const estadoSelecionado = $estadoSelect.find("option:selected");
+                const nomeEstado = estadoSelecionado.data('nome'); // Captura o nome do estado
+
+                // Atualizar campo oculto com o nome do estado
+                if (hiddenFieldId) {
+                    $(`#${hiddenFieldId}`).val(nomeEstado); // Agora armazena o nome do estado no campo oculto
+                }
+
+                // Carregar cidades para o estado selecionado
+                carregarCidadesAPI($estadoSelect, cidadeSelectId);
+            });
         });
-
-        // Ao selecionar o estado, armazena o nome ou sigla no campo escondido que representa a propriedade Estado de Igreja
-        $('#EstadoAPI').change(function () {
-            const estadoSelecionado = $('#EstadoAPI option:selected');
-            const nomeEstado = estadoSelecionado.data('sigla'); // Captura o nome do estado
-            $('#estadoIgreja').val(nomeEstado);  // Coloca o nome no campo escondido
-        });
-
-        $('#EstadoAPI').change(carregarCidadesAPI);
-
     } catch (error) {
         alert('Erro ao carregar os estados. Tente novamente mais tarde.');
     }
 }
 
-//GET CIDADES API
-function carregarCidadesAPI() {
-    const estadoId = $('#EstadoAPI').val();
+function carregarCidadesAPI($estadoSelect, cidadeSelectId) {
+    const estadoId = $estadoSelect.val();
+    const $cidadeSelect = $(`#${cidadeSelectId}`);
+
     if (estadoId) {
         $.getJSON(`/APIEstadoCidade/GetCidadesPorEstadoAPI?estadoId=${estadoId}`)
             .done(function (data) {
-                $('#CidadeAPI').empty().append('<option value="" disabled selected>Selecione a cidade</option>');
+                $cidadeSelect.empty().append('<option value="" disabled selected>Selecione a cidade</option>');
                 data.forEach(cidade => {
-                    $('#CidadeAPI').append(`<option value="${cidade.nome}">${cidade.nome}</option>`);
+                    $cidadeSelect.append(`<option value="${cidade.nome}">${cidade.nome}</option>`);
                 });
             })
             .fail(function () {
                 alert('Erro ao carregar as cidades. Tente novamente mais tarde.');
             });
     } else {
-        $('#CidadeAPI').empty().append('<option value="" disabled selected>Selecione a cidade</option>');
+        $cidadeSelect.empty().append('<option value="" disabled selected>Selecione a cidade</option>');
     }
 }
 
 $(document).ready(function () {
     carregarEstadosAPI();
 });
+/*-----------------FIM GET ESTADOS E CIDADE API-----------------*/
 
-// Função para formatar o CNPJ
+
+
+
+
+
+/*-----------------INÍCIO FORMATAÇÃO CNPJ / TELEFONE / CEP-----------------*/
 function formatarCNPJ(cnpj) {
     cnpj = cnpj.replace(/\D/g, ""); // Remove qualquer coisa que não seja número
     cnpj = cnpj.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, "$1.$2.$3/$4-$5"); // Formata o CNPJ
     return cnpj;
 }
-
-// Função para formatar o CEP
 function formatarCEP(cep) {
     cep = cep.replace(/\D/g, ""); // Remove qualquer coisa que não seja número
     cep = cep.replace(/^(\d{5})(\d{3})$/, "$1-$2"); // Formata o CEP
     return cep;
 }
-
-// Função para formatar o Celular
 function formatarCelular(celular) {
     celular = celular.replace(/\D/g, ""); // Remove qualquer coisa que não seja número
     celular = celular.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3"); // Formata o celular
     return celular;
 }
 
-// Adicionar eventos de digitação para os campos CNPJ, CEP e Celular
+// CADASTRO EVENTO
 document.addEventListener("DOMContentLoaded", function () {
     const cnpjInput = document.querySelector("input[name='viewModel.Igreja.CNPJ']");
     const cepInput = document.querySelector("input[name='viewModel.Igreja.CEP']");
     const celularInput = document.querySelector("input[name='viewModel.Igreja.Telefone']");
 
-    // Formatar CNPJ enquanto digita
     cnpjInput.addEventListener("input", function () {
         this.value = formatarCNPJ(this.value);
     });
 
-    // Formatar CEP enquanto digita
     cepInput.addEventListener("input", function () {
         this.value = formatarCEP(this.value);
     });
 
-    // Formatar Celular enquanto digita
     celularInput.addEventListener("input", function () {
         this.value = formatarCelular(this.value);
     });
 });
-/*-----------------FIM CREATE IGREJA-----------------*/
+
+// CADASTRO EVENTO
+document.addEventListener("DOMContentLoaded", function () {
+    const cnpjInputEvento = document.querySelector("input[name='viewModel.Evento.CNPJ']");
+    const cepInputEvento = document.querySelector("input[name='viewModel.Evento.CEP']");
+    const celularInputEvento = document.querySelector("input[name='viewModel.Evento.Telefone']");
+
+    cnpjInputEvento.addEventListener("input", function () {
+        this.value = formatarCNPJ(this.value);
+    });
+
+    cepInputEvento.addEventListener("input", function () {
+        this.value = formatarCEP(this.value);
+    });
+
+    celularInputEvento.addEventListener("input", function () {
+        this.value = formatarCelular(this.value);
+    });
+});
+/*-----------------FIM FORMATAÇÃO CNPJ / TELEFONE / CEP-----------------*/
 
 
 
 
 
 
-/*-----------------INICIO HOME INDEX-----------------*/
-//GET ESTADOS BANCO
+
+
+
+
+
+
+/*-----------------INÍCIO GET ESTADOS / CIDADE / BAIRRO / IGREJAS / IGREJA / EVENTOS / EVENTO BANCO-----------------*/
+// ESTADOS
 $(document).ready(function () {
     carregarEstados();
+    carregarEstadosEventos();
 });
 
+// ESTADOS DAS IGREJAS CADASTRADAS
 async function carregarEstados() {
     try {
         const response = await $.getJSON(`/Igreja/GetEstados`);
@@ -285,22 +323,37 @@ async function carregarEstados() {
         response.forEach(estado => {
             $('#Estado').append(`<option value="${estado}">${estado}</option>`);
         });
-
         $('#Estado').on('change', carregarCidades);
-
     } catch (error) {
         alert('Erro ao carregar os estados. Tente novamente mais tarde.');
     }
 }
 
-//GET CIDADES BANCO
+// ESTADOS DOS EVENTOS CADASTRADOS
+async function carregarEstadosEventos() {
+    try {
+        const response = await $.getJSON(`/Evento/GetEstadosEventos`);
+        console.log(response);
+        $('#EstadoEvento').empty().append('<option value="" disabled selected>Estado</option>');
+        response.forEach(estado => {
+            $('#EstadoEvento').append(`<option value="${estado}">${estado}</option>`);
+        });
+        $('#EstadoEvento').on('change', carregarCidadesEventos);
+    } catch (error) {
+        alert('Erro ao carregar os estados. Tente novamente mais tarde.');
+    }
+}
+/*----------------------------------------------------------------------------------------------------*/
+// CIDADES
+
+// CIDADES DAS IGREJAS CADASTRADAS
 function carregarCidades() {
     const estado = $('#Estado').val();
     console.log(estado);
 
     $('#Cidade').empty().append('<option value="" disabled selected>Cidade</option>');
     $('#Bairro').empty().append('<option value="" disabled selected>Bairro</option>');
-    $('#Igreja').empty().append('<option value="" disabled selected>Selecione uma igreja</option>');
+    $('#Igreja').empty().append('<option value="" disabled selected>Igreja</option>');
 
     if (estado) {
         $.getJSON(`/Igreja/GetCidadesPorEstado?estado=${estado}`)
@@ -319,13 +372,42 @@ function carregarCidades() {
     }
 }
 
-//GET BAIRROS BANCO
+// CIDADES DOS EVENTOS CADASTRADOS
+function carregarCidadesEventos() {
+    const estado = $('#EstadoEvento').val();
+    console.log(estado);
+
+    $('#CidadeEvento').empty().append('<option value="" disabled selected>Cidade</option>');
+    $('#BairroEvento').empty().append('<option value="" disabled selected>Bairro</option>');
+    $('#Evento').empty().append('<option value="" disabled selected>Evento</option>');
+
+
+    if (estado) {
+        $.getJSON(`/Evento/GetCidadesPorEstadoEventos?estado=${estado}`)
+            .done(function (data) {
+                $('#CidadeEvento').empty().append('<option value="" disabled selected>Cidade</option>');
+                $.each(data, function (index, cidade) {
+                    $('#CidadeEvento').append(`<option value="${cidade}">${cidade}</option>`);
+                });
+                $('#CidadeEvento').on('change', carregarBairrosEventos);
+            })
+            .fail(function () {
+                alert('Erro ao carregar as cidades. Tente novamente mais tarde.');
+            });
+    } else {
+        $('#CidadeEvento').empty().append('<option value="" disabled selected>Cidade</option>');
+    }
+}
+/*----------------------------------------------------------------------------------------------------*/
+// BAIRROS
+
+// BAIRROS DAS IGREJAS CADASTRADAS
 function carregarBairros() {
     const cidade = $('#Cidade').val();
     console.log(cidade);
 
     $('#Bairro').empty().append('<option value="" disabled selected>Bairro</option>');
-    $('#Igreja').empty().append('<option value="" disabled selected>Selecione uma igreja</option>');
+    $('#Igreja').empty().append('<option value="" disabled selected>Igreja</option>');
 
     if (cidade) {
         $.getJSON(`/Igreja/GetBairrosPorCidade?cidade=${cidade}`)
@@ -345,7 +427,36 @@ function carregarBairros() {
     }
 }
 
+// BAIRROS DOS EVENTOS CADASTRADOS
+function carregarBairrosEventos() {
+    const cidade = $('#CidadeEvento').val();
+    console.log(cidade);
+
+    $('#BairroEvento').empty().append('<option value="" disabled selected>Bairro</option>');
+    $('#Evento').empty().append('<option value="" disabled selected>Evento</option>');
+
+    if (cidade) {
+        $.getJSON(`/Evento/GetBairrosPorCidadeEventos?cidade=${cidade}`)
+            .done(function (data) {
+                $('#BairroEvento').empty().append('<option value="" disabled selected>Bairro</option>');
+                $.each(data, function (index, bairro) {
+                    $('#BairroEvento').append(`<option value="${bairro}">${bairro}</option>`);
+                });
+
+                $('#BairroEvento').on('change', carregarEventosPorBairro);
+            })
+            .fail(function () {
+                alert('Erro ao carregar os bairros. Tente novamente mais tarde.');
+            });
+    } else {
+        $('#BairroEvento').empty().append('<option value="" disabled selected>Bairro</option>');
+    }
+}
+/*----------------------------------------------------------------------------------------------------*/
+// IGREJAS E EVENTOS
+
 let requisicaoEmAndamento = false;
+// IGREJAS CADASTRADAS
 function carregarIgrejaPorBairro() {
     const estado = $('#Estado').val();
     const cidade = $('#Cidade').val();
@@ -361,7 +472,7 @@ function carregarIgrejaPorBairro() {
     // Marca que a requisição está em andamento
     requisicaoEmAndamento = true;
 
-    $('#Igreja').empty().append('<option value="" disabled selected>Selecione uma igreja</option>');
+    $('#Igreja').empty().append('<option value="" disabled selected>Igreja</option>');
 
     if (bairro) {
         $.post(`/Igreja/BuscarIgrejas`, { estado: estado, cidade: cidade, bairro: bairro })
@@ -384,6 +495,87 @@ function carregarIgrejaPorBairro() {
     }
 }
 
+// EVENTOS CADASTRADOS
+function carregarEventosPorBairro() {
+    const estado = $('#EstadoEvento').val();
+    const cidade = $('#CidadeEvento').val();
+    const bairro = $('#BairroEvento').val();
+    console.log("Estado: ", estado, ", Cidade: ", cidade, ", Bairro: ", bairro);
+
+    // Verifica se uma requisição já está em andamento
+    if (requisicaoEmAndamento) {
+        console.log("Requisição já em andamento.");
+        return;  // Evita fazer outra requisição
+    }
+
+    // Marca que a requisição está em andamento
+    requisicaoEmAndamento = true;
+
+    $('#Evento').empty().append('<option value="" disabled selected>Evento</option>');
+
+    if (bairro) {
+        $.post(`/Evento/BuscarEventos`, { estado: estado, cidade: cidade, bairro: bairro })
+            .done(function (data) {
+                if (data.length > 0) {
+                    $.each(data, function (index, evento) {
+                        $('#Evento').append(`<option value="${evento.id}">${evento.tituloEvento}</option>`);
+                    });
+                } else {
+                    $('#Evento').append('<option value="" disabled>Nenhum evento encontrado</option>');
+                }
+            })
+            .fail(function () {
+                alert('Erro ao carregar os eventos. Tente novamente mais tarde.');
+            })
+            .always(function () {
+                // Marca que a requisição terminou
+                requisicaoEmAndamento = false;
+            });
+    }
+}
+/*----------------------------------------------------------------------------------------------------*/
+// BOTÕES
+// FILTRO EVENTOS
+$('#buscarEventos').click(function (e) {
+    e.preventDefault();
+
+    const eventoId = $('#Evento').val();
+    console.log('ID do evento selecionado:', eventoId);
+
+    // Caso o usuário tenha selecionado uma igreja específica
+    if (eventoId) {
+        // Realiza a requisição POST para buscar os dados da igreja
+        $.post(`/Evento/BuscarEventoPorId?eventoId=${eventoId}`, { eventoId: eventoId })
+            .done(function (data) {
+                console.log(data);
+                $('body').html(data);
+
+                setTimeout(() => {
+                    const resultados = document.getElementById('search-results');
+                    if (resultados) {
+                        resultados.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    } else {
+                        console.warn('Seção de resultados não encontrada!');
+                    }
+                }, 100); // Ajusta o delay, se necessário
+            })
+            .fail(function () {
+                console.error('Erro ao buscar o evento.');
+                alert('Erro ao buscar o evento. Tente novamente mais tarde.');
+            });
+    } else {
+        // Caso contrário, pega os filtros de bairro, cidade e estado
+        const bairro = $('#BairroEvento').val();
+        const cidade = $('#CidadeEvento').val();
+        const estado = $('#EstadoEvento').val();
+
+        // Faz o redirecionamento e usa sessionStorage para armazenar a intenção de rolar
+        sessionStorage.setItem('scrollToResults', 'true');
+        window.location.href = `/Evento/Index?estado=${estado}&cidade=${cidade}&bairro=${bairro}`;
+    }
+});
+
+// FILTRO INDEX
 $('#botaoBuscar').click(function (e) { //
     e.preventDefault();
 
@@ -405,7 +597,11 @@ $('#botaoBuscar').click(function (e) { //
                     console.warn('Seção de resultados não encontrada!');
                 }
             }, 100);
-        });
+        })
+            .fail(function () {
+                console.error('Erro ao buscar a igreja.');
+                alert('Erro ao buscar a igreja. Tente novamente mais tarde.');
+            });
     } else {
         // Caso contrário, pega os filtros de bairro, cidade e estado
         const bairro = $('#Bairro').val();
@@ -418,6 +614,7 @@ $('#botaoBuscar').click(function (e) { //
     }
 });
 
+// FILTRO MISSAS
 $('#buscar').click(function (e) {
     e.preventDefault();
 
@@ -430,11 +627,8 @@ $('#buscar').click(function (e) {
         $.post(`/Igreja/BuscarIgrejaPorId?igrejaId=${igrejaId}`, { igrejaId: igrejaId })
             .done(function (data) {
                 console.log(data);
-
-                // Atualiza o conteúdo do corpo da página
                 $('body').html(data);
 
-                // Garante que a rolagem ocorra após o conteúdo ser injetado
                 setTimeout(() => {
                     const resultados = document.getElementById('search-results');
                     if (resultados) {
@@ -442,7 +636,7 @@ $('#buscar').click(function (e) {
                     } else {
                         console.warn('Seção de resultados não encontrada!');
                     }
-                }, 100); // Ajusta o delay, se necessário
+                }, 100);
             })
             .fail(function () {
                 console.error('Erro ao buscar a igreja.');
@@ -454,12 +648,9 @@ $('#buscar').click(function (e) {
         const cidade = $('#Cidade').val();
         const estado = $('#Estado').val();
 
-        // Define a URL de redirecionamento
-        const url = `/Igreja/ResultadoPesquisa?estado=${estado}&cidade=${cidade}&bairro=${bairro}`;
-
         // Faz o redirecionamento e usa sessionStorage para armazenar a intenção de rolar
         sessionStorage.setItem('scrollToResults', 'true');
-        window.location.href = url;
+        window.location.href = `/Igreja/ResultadoPesquisa?estado=${estado}&cidade=${cidade}&bairro=${bairro}`;
     }
 });
 
@@ -478,115 +669,7 @@ $(document).ready(function () {
     }
 });
 
-document.querySelector('.pesqgps').addEventListener('click', function () {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            var lat = position.coords.latitude;
-            var lon = position.coords.longitude;
-            alert("Sua localização atual é: Latitude: " + lat + ", Longitude: " + lon);
-            // lógica pra pegar pelo endereço do usuário
-        }, function () {
-            alert("Não foi possível obter sua localização.");
-        });
-    } else {
-        alert("Geolocalização não é suportada pelo seu navegador.");
-    }
-});
-/*-----------------FIM HOME INDEX-----------------*/
-
-
-
-
-
-
-
-/*-----------------INICIO CIDADES E ESTADOS EVENTO-----------------*/
-document.addEventListener("DOMContentLoaded", function () {
-    const estadoSelect = document.getElementById("estado");
-    const cidadeSelect = document.getElementById("cidade");
-
-    // Carregar estados
-    fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
-        .then(response => response.json())
-        .then(estados => {
-            estados.forEach(estado => {
-                const option = document.createElement("option");
-                option.value = estado.sigla;
-                option.text = estado.nome;
-                estadoSelect.appendChild(option);
-            });
-        });
-
-    // Atualizar cidades quando um estado é selecionado
-    estadoSelect.addEventListener("change", function () {
-        const estadoSigla = estadoSelect.value;
-
-        // Limpar cidades anteriores
-        cidadeSelect.innerHTML = '<option selected>Escolha...</option>';
-
-        if (estadoSigla) {
-            fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${estadoSigla}/municipios`)
-                .then(response => response.json())
-                .then(cidades => {
-                    cidades.forEach(cidade => {
-                        const option = document.createElement("option");
-                        option.value = cidade.nome;
-                        option.text = cidade.nome;
-                        cidadeSelect.appendChild(option);
-                    });
-                });
-        }
-    });
-});
-/*-----------------FIM CIDADES E ESTADOS EVENTO-----------------*/
-
-
-
-
-
-
-/*-----------------Inicio Filtro Pesquisa Eventos-----------------*/
-function filtrarEventos() {
-    const estado = document.getElementById('estado').value
-    const cidade = document.getElementById('cidade').cidade
-    const bairro = document.getElementById('bairro').bairro
-    const ResultadoPesquisa = document.getElementById("EventosResultados");
-    const MensagemResultado = document.getElementById("MensagemResultado")
-
-
-    fetch(`/Eventos/Buscar?estado=${estado}||cidade=${cidade}||bairro=${bairro}`)
-        .then(response => response.json())
-        .then(data => {
-            ResultadoPesquisa.innerHTML = '';
-            MensagemResultado.classList.add('hidden');
-            if (data.length === 0) {
-                MensagemResultado.classList.remove('hidden')
-            }
-            else {
-                data.forEach(evento => {
-                    const eventoDiv = document.createElement('div');
-                    eventoDiv.classList.add('evento');
-
-                    eventoDiv.innerHTML = `
-                            <h2>${evento.TituloEvento}</h2>
-                            <p><strong>Data:</strong> ${evento.DataInicio}</p>
-                            <p><strong>Local:</strong> ${evento.Logradouro}, ${evento.Numero} - ${evento.Bairro}, ${evento.Cidade} - ${evento.Estado}</p>
-                        `;
-                    ResultadoPesquisa.appendChild(eventoDiv)
-                });
-            }
-
-        })
-        .catch(error => {
-            console.error('Erro ao buscar eventos:', error);
-            mensagemResultado.innerHTML = 'Ocorreu um erro ao buscar os eventos. Tente novamente mais tarde.';
-            mensagemResultado.classList.remove('hidden');
-        });
-}
-/*-----------------Fim Filtro Pesquisa Eventos-----------------*/
-
-
-
+/*-----------------FIM GET ESTADOS / CIDADE / BAIRRO / IGREJAS / IGREJA / EVENTOS / EVENTO BANCO-----------------*/
 
 
 
@@ -596,43 +679,3 @@ window.onload = function () {
     addBorderIcon();
     validarFormularioPesquisa();
 };
-
-
-
-
-
-
-
-//document.querySelector('.pesqgps').addEventListener('click', function () {
-//	if (navigator.geolocation) {
-//		navigator.geolocation.getCurrentPosition(function (position) {
-//			var lat = position.coords.latitude;
-//			var lon = position.coords.longitude;
-
-//			// Enviar a latitude e longitude para o servidor
-//			fetch('/Igreja/BuscarPorLocalizacao', {
-//				method: 'POST',
-//				headers: {
-//					'Content-Type': 'application/json'
-//				},
-//				body: JSON.stringify({
-//					latitude: lat,
-//					longitude: lon
-//				})
-//			})
-//				.then(response => response.json())
-//				.then(data => {
-//					// Exibir os resultados das igrejas
-//					console.log(data);
-//					// Aqui você pode manipular o DOM para exibir as igrejas encontradas
-//				})
-//				.catch(error => {
-//					console.error('Erro ao buscar igrejas:', error);
-//				});
-//		}, function () {
-//			alert("Não foi possível obter sua localização.");
-//		});
-//	} else {
-//		alert("Geolocalização não é suportada pelo seu navegador.");
-//	}
-//});
