@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using PortalCatolicoBrasil.Models;
+using PortalCatolico.Models;
 using System.Diagnostics;
 using System.Net.Http;
 
-namespace PortalCatolicoBrasil.Controllers
+namespace PortalCatolico.Controllers
 {
     public class HomeController : Controller
     {
@@ -60,7 +60,7 @@ namespace PortalCatolicoBrasil.Controllers
             return View();
         }
 
-        public IActionResult Eventos()
+        public IActionResult Evento()
         {
             return View();
         }

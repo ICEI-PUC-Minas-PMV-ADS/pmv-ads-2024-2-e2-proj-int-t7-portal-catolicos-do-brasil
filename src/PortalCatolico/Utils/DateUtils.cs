@@ -1,4 +1,4 @@
-﻿namespace PortalCatolicoBrasil.Utils
+﻿namespace PortalCatolico.Utils
 {
     public static class DateUtils
     {

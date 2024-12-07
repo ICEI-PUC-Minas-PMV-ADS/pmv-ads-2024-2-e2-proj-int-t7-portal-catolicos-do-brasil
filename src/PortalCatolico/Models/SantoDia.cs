@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace PortalCatolicoBrasil.Models
+namespace PortalCatolico.Models
 {
     [Table("SantoDia")]
     public class SantoDia

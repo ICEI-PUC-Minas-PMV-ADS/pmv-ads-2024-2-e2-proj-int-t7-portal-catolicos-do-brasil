@@ -1,0 +1,160 @@
+﻿@using System.Globalization;
+@model PortalCatolico.Models.EventoViewModel
+
+@{
+    ViewData["Title"] = "Eventos";
+}
+
+<div class="container-principal">
+    <div class="anuncio-resultado-evento">
+        <div class="">
+            <img src="~/css/Images/Drogaria.png">
+        </div>
+        <div class="">
+            <img src="~/css/Images/Calcitran.png">
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+    }
+
+    <div class="titulo-form poppins-regular">
+        <h2>Pesquisar Eventos</h2>
+    </div>
+
+    <div class="formpai pesquisaMissa conteiner mt-3 mb-5 pt-1 border p-4 bg-light poppins-regular w-auto mx-auto">
+        <form asp-action="BuscarEventoPorId" asp-controller="Evento" method="post">
+            <div class="row mt-4">
+                <div class="col-sm-2">
+                    <label for="Estado">Estado*</label>
+                    <select id="EstadoEvento" class="campoform botaogps form-control" name="Estado" required>
+                        <option value="" disabled selected></option>
+                    </select>
+                </div>
+                <div class="col-sm-5">
+                    <label for="Cidade">Cidade*</label>
+                    <select id="CidadeEvento" class="campoform botaogps form-control" name="Cidade" required>
+                        <option value="" disabled selected></option>
+                    </select>
+                </div>
+                <div class="col-sm-5">
+                    <label for="Bairro">Bairro*</label>
+                    <select id="BairroEvento" class="campoform botaogps form-control" name="Bairro" required>
+                        <option value="" disabled selected></option>
+                    </select>
+                </div>
+                <div class="col-sm-12 pt-4">
+                    <label for="Evento">Evento</label>
+                    <select id="Evento" class="campoform botaogps form-control" name="Evento">
+                        <option value="" disabled selected></option>
+                    </select>
+
+                    <div class="col-sm-12 mt-4" style="height:40px;">
+                        <button type="button" id="buscarEventos" class="buscar botaogps btn btn-primary">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="search-results">
+        <h2 class="poppins-medium titulo-result-page">Resultado da pesquisa</h2>
+
+        @* Exibe card para um evento específica *@
+        @if (Model.Evento != null)
+        {
+            <div class="card mb-5 card-eventos" style="border: none; border-radius: 15px; box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);">
+                <div class="card-body">
+                    <div class="row card-evento1">
+                        <div class="col-12 col-sm-3 col-md-2 quadro-data1 text-center" style="justify-content:center;">
+                            <h4 class="data-evento1">@Model.Evento.DataInicio.ToString("dd")</h4>
+                            <h4 class="mes-evento1">@Model.Evento.DataInicio.ToString("MMM").ToUpper()</h4>
+                        </div>
+                        <div class="col-12 col-sm-9 col-md-6 coluna-informacoes-evento1">
+                            <h1 class="titulo-evento1">@Model.Evento.TituloEvento</h1>
+                            <div class="d-flex flex-column">
+                                <h4 class="poppins-semibold" style="margin-top: 10px;">@Model.Evento.NomeParoquia</h4>
+
+                                <p class="texto-evento1">
+                                    @Model.Evento.Logradouro - @Model.Evento.Bairro, @Model.Evento.Cidade - @Model.Evento.Estado
+                                </p>
+                            </div>
+                            <p class="poppins-medium fs-5">
+                                @Model.Evento.DataInicio.ToString("dddd", new CultureInfo("pt-BR")), @Model.Evento.HorarioInicio.ToString(@"hh\:mm") -
+                                @Model.Evento.DataEncerramento.ToString("dddd", new CultureInfo("pt-BR")), @Model.Evento.HorarioEncerramento.ToString(@"hh\:mm")
+                            </p>
+
+                            @if (Model.Evento.LinkEvento != null)
+                            {
+                                <p class="poppins-regular mb-3">Link do evento: <a style="cursor: pointer;" href="@Model.Evento.LinkEvento" target="_blank">@Model.Evento.LinkEvento</a></p>
+                            }
+
+                            <a href="https://www.google.com/maps/search/?api=1&query=@(Model.Evento.Logradouro), @(Model.Evento.Bairro), @(Model.Evento.Cidade), @(Model.Evento.Estado)"
+                               target="_blank"
+                               class="btn btn-outline-primary botao-ver-no-mapa poppins-medium fs-5">
+                                Ver no mapa <i class="icone-btn-ver-mapa fas fa-location fs-6"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+        @* Exibe cards para múltiplos eventos *@
+        else if (Model.Eventos != null && Model.Eventos.Count > 0)
+        {
+            @foreach (var evento in Model.Eventos)
+            {
+                <div class="card mb-5 card-eventos" style="border: none; border-radius: 15px; box-shadow: 0px 4px 10.6px rgba(0, 0, 0, 0.25);">
+                    <div class="card-body">
+                        <div class="row card-evento1">
+                            <div class="col-12 col-sm-3 col-md-2 quadro-data1 text-center" style="justify-content:center;">
+                                <h4 class="data-evento1">@evento.DataInicio.ToString("dd")</h4>
+                                <h4 class="mes-evento1">@evento.DataInicio.ToString("MMM").ToUpper()</h4>
+                            </div>
+                            <div class="col-12 col-sm-9 col-md-6 coluna-informacoes-evento1">
+                                <h1 class="titulo-evento1">@evento.TituloEvento</h1>
+                                <div class="d-flex flex-column">
+                                    <h4 class="poppins-semibold" style="margin-top: 10px;">@evento.NomeParoquia</h4>
+
+                                    <p class="texto-evento1">
+                                        @evento.Logradouro - @evento.Bairro, @evento.Cidade - @evento.Estado
+                                    </p>
+                                </div>
+                                <p class="poppins-medium fs-5">
+                                    @evento.DataInicio.ToString("dddd", new CultureInfo("pt-BR")), @evento.HorarioInicio.ToString(@"hh\:mm") -
+                                    @evento.DataEncerramento.ToString("dddd", new CultureInfo("pt-BR")), @evento.HorarioEncerramento.ToString(@"hh\:mm")
+                                </p>
+
+                                @if (evento.LinkEvento != null)
+                                {
+                                    <p class="poppins-regular mb-3">Link do evento: <a style="cursor: pointer;" href="@evento.LinkEvento" target="_blank">@evento.LinkEvento</a></p>
+                                }
+
+                                <a href="https://www.google.com/maps/search/?api=1&query=@(evento.Logradouro), @(evento.Bairro), @(evento.Cidade), @(evento.Estado)"
+                                   target="_blank"
+                                   class="btn btn-outline-primary botao-ver-no-mapa poppins-medium fs-5">
+                                    Ver no mapa <i class="icone-btn-ver-mapa fas fa-location fs-6"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="alert-nenhuma poppins-medium">
+                <p class="nenhuma poppins-regular">Nenhum evento encontrado com os critérios informados.</p>
+            </div>
+        }
+
+        <p class="link-cadastre-aqui poppins-medium">
+            Não encontrou evento da sua igreja? <a href="@Url.Action("Create", "Evento")" class="link-cadastre-aqui-resultados">Cadastre aqui</a>
+        </p>
+    </div>
+</div>

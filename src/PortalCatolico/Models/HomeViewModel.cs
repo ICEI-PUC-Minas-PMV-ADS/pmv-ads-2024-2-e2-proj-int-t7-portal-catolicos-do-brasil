@@ -1,6 +1,6 @@
-﻿using PortalCatolicoBrasil.Controllers;
+﻿using PortalCatolico.Controllers;
 
-namespace PortalCatolicoBrasil.Models
+namespace PortalCatolico.Models
 {
     public class HomeViewModel
     {

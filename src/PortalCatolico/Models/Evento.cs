@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.RegularExpressions;
 
-namespace PortalCatolicoBrasil.Models
+namespace PortalCatolico.Models
 {
     [Table("Eventos")]
     public class Evento
@@ -12,7 +12,7 @@ namespace PortalCatolicoBrasil.Models
         public int ID { get; set; }
 
         [Required(ErrorMessage = "Informe o CNPJ")]
-        [RegularExpression(@"\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}", ErrorMessage = "Formato de CNPJ inválido. O formato correto é 99.999.999/0001-99")]
+        [RegularExpression(@"\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}", ErrorMessage = "Formato de CNPJ inválido. O formato correto é 00.000.0000/0000-00")]
         public string CNPJ { get; set; }
 
         [Required(ErrorMessage = "Informe o Nome da paróquia")]
@@ -20,7 +20,7 @@ namespace PortalCatolicoBrasil.Models
         public string NomeParoquia { get; set; }
 
         [Required(ErrorMessage = "Informe o Telefone de contato da paróquia")]
-        [RegularExpression(@"\(\d{2}\) \d{5}-\d{4}", ErrorMessage = "Formato de telefone inválido. O formato correto é (99) 99999-9999.")]
+        [RegularExpression(@"\(\d{2}\) \d{5}-\d{4}", ErrorMessage = "Formato de telefone inválido. O formato correto é (00) 00000-0000.")]
         public string Telefone { get; set; }
 
         [Required(ErrorMessage = "Informe o Email")]
@@ -34,15 +34,12 @@ namespace PortalCatolicoBrasil.Models
         [Required(ErrorMessage = "Informe o Logradouro")]
         public string Logradouro { get; set; }
 
-        [Required(ErrorMessage = "Informe o Número do logradouro")]
-        public string Numero { get; set; }
-
         [Required(ErrorMessage = "Informe o CEP")]
-        [RegularExpression(@"\d{5}-\d{3}", ErrorMessage = "Formato de CEP inválido. O formato correto é 99999-999.")]
+        [RegularExpression(@"\d{5}-\d{3}", ErrorMessage = "Formato de CEP inválido. O formato correto é 00000-000.")]
         public string CEP { get; set; }
 
         [Required(ErrorMessage = "Informe o Estado")]
-        [StringLength(2, ErrorMessage = "O estado deve ser composto por 2 caracteres (sigla).")]
+        //[StringLength(2, ErrorMessage = "O estado deve ser composto por 2 caracteres (sigla).")]
         public string Estado { get; set; }
 
         [Required(ErrorMessage = "Informe a Cidade")]
@@ -62,6 +59,8 @@ namespace PortalCatolicoBrasil.Models
 
         [Required(ErrorMessage = "Informe o Horário de encerramento")]
         public TimeSpan HorarioEncerramento { get; set; }
+
+        public string LinkEvento { get; set; }
 
         //public string Banner { get; set; }
 

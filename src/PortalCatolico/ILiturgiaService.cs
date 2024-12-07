@@ -1,4 +1,4 @@
-﻿namespace PortalCatolicoBrasil.Interfaces
+﻿namespace PortalCatolico.Interfaces
 {
     public interface ILiturgiaService
     {
