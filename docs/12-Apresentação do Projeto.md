@@ -23,3 +23,7 @@ Paleta base do projeto:<br><br>
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/blob/main/docs/img/Slide 6.png">
 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/blob/main/docs/img/Slide 7.png">
+
+## Apresentação Final da aplicação
+
+Esse é o [link](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e2-proj-int-t7-portal-catolicos-do-brasil/blob/main/presentation/Apresenta%C3%A7%C3%A3o%20Final%20Portal%20Catolico%20do%20Brasil.mp4) com um pequeno vídeo monstrando o funcionamento da aplicação.
