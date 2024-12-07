@@ -52,7 +52,7 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+<li><a href="src/PortalCatolico"> Código Fonte</a></li>
 
 # Apresentação
 
