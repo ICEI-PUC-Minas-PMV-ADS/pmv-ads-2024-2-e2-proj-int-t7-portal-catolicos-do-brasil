@@ -1,38 +1,35 @@
-# Portal Católico do Brasil
+<img src="docs/img/titulo_pagina2.png" alt="Título do projeto Portal Católico do Brasil"> 
+<br>
 
-`Tecnologia em Análise e Desenv. de Sistemas - EAD - UNID. EDUC. PUC MINAS VIRTUAL - PUV - Virtual`
+`Tecnologia em Análise e Desenvolvimento de Sistemas - EAD - UNID. EDUC. PUC MINAS VIRTUAL`
 
 `Eixo 2 - Projeto: Desenvolvimento de uma Aplicação Interativa - Turma 07 - 2024/2`
 
-`Eixo 2 - 2024/2`
-
 Este projeto visa solucionar a dificuldade que muitos católicos enfrentam ao buscar informações online sobre paróquias e arquidioceses, como localização de igrejas, horários de missas e agendas de eventos. Para isso, propõe-se o desenvolvimento de um portal prático e acessível, que oferecerá funcionalidades como busca por geolocalização, informações diárias de liturgia e homilia, notícias católicas, agenda de eventos e espaço para publicidades.
-
+<br>
+<br>
 
 ## Integrantes
 
-* Tobias Quintão Bastos Domingos
 * Estevão Barboza da Gama dos Reis Silva
 * Gabriel Barboza da Gama Reis Silva
 * João Henrique Andrade Leite
 * Paulo Henrique Sousa Carvalho
 * Thainá Crisóstomo Bernardes
+* Tobias Quintão Bastos Domingos
+<br>
 
 ## Orientador
 
 * Bernardo Jeunon de Alencar
+<br>
 
-## Instruções de utilização
+## Acesso
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+* Link de acesso ao portal [https://portalcatolicobrasil.azurewebsites.net](https://portalcatolicobrasil.azurewebsites.net).
+<br>
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
-
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
-
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
-
-# Documentação
+## Documentação
 
 <ol>
 <li><a href="docs/01-Documentação de Contexto.md"> Documentação de Contexto</a></li>
@@ -49,11 +46,12 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 <li><a href="docs/12-Apresentação do Projeto.md"> Apresentação do Projeto</a></li>
 <li><a href="docs/13-Referências.md"> Referências</a></li>
 </ol>
+<br>
 
-# Código
+## Código
 
-<li><a href="src/PortalCatolico"> Código Fonte</a></li>
+<li><a href="src/PortalCatolico"> Código Fonte</a></li><br>
 
-# Apresentação
+## Apresentação
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+<li><a href="presentation/README.md"> Apresentação da solução</a></li><br>
